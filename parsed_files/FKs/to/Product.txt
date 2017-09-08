@@ -1,0 +1,245 @@
+Product:
+
+1	Entity: ProductManufacturingRule
+	Foreign Key Name: PRODUCT_IN
+	related field: productId
+
+2	Entity: CommunicationEventProduct
+	Foreign Key Name: COMEV_PROD_PROD
+	related field: productId
+
+3	Entity: ProductCategoryMember
+	Foreign Key Name: PROD_CMBR_PRODUCT
+	related field: productId
+
+4	Entity: ProductAssoc
+	Foreign Key Name: PROD_ASSOC_MPROD
+	related field: productId
+
+5	Entity: SalesForecastDetail
+	Foreign Key Name: SALES4CDTL_PROD
+	related field: productId
+
+6	Entity: ReturnItem
+	Foreign Key Name: RTN_ITEM_PROD
+	related field: productId
+
+7	Entity: FixedAssetProduct
+	Foreign Key Name: FIXDASTPRD_PRD
+	related field: productId
+
+8	Entity: CartAbandonedLine
+	Foreign Key Name: CART_ABLN_PRD
+	related field: productId
+
+9	Entity: ProductPrice
+	Foreign Key Name: PROD_PRICE_PROD
+	related field: productId
+
+10	Entity: ReorderGuideline
+	Foreign Key Name: REORDER_GD_PROD
+	related field: productId
+
+11	Entity: SupplierProduct
+	Foreign Key Name: SUPPL_PROD_PROD
+	related field: productId
+
+12	Entity: ProductConfigProduct
+	Foreign Key Name: PROD_CONFP_PROD
+	related field: productId
+
+13	Entity: ProductFacility
+	Foreign Key Name: PROD_FAC_PROD
+	related field: productId
+
+14	Entity: Requirement
+	Foreign Key Name: REQ_PRODUCT
+	related field: productId
+
+15	Entity: CustRequestItem
+	Foreign Key Name: CUST_REQITM_PRD
+	related field: productId
+
+16	Entity: FixedAsset
+	Foreign Key Name: FIXEDAST_IOPROD
+	related field: productId
+
+17	Entity: ProductCostComponentCalc
+	Foreign Key Name: PR_COS_COMPCALC
+	related field: productId
+
+18	Entity: ProductGlAccount
+	Foreign Key Name: PROD_GLACT_PROD
+	related field: productId
+
+19	Entity: ProductGeo
+	Foreign Key Name: PRDGEO_PRODUCT
+	related field: productId
+
+20	Entity: ShipmentItem
+	Foreign Key Name: SHPMNT_ITM_PROD
+	related field: productId
+
+21	Entity: ProductAverageCost
+	Foreign Key Name: AVG_COST_PROD
+	related field: productId
+
+22	Entity: ProductRole
+	Foreign Key Name: PROD_RLE_PRODUCT
+	related field: productId
+
+23	Entity: ShipmentPackageContent
+	Foreign Key Name: PCK_CNTNT_PROD
+	related field: productId
+
+24	Entity: AgreementProductAppl
+	Foreign Key Name: AGRMNT_PRDA_PRD
+	related field: productId
+
+25	Entity: PartyNeed
+	Foreign Key Name: PARTY_NEED_PROD
+	related field: productId
+
+26	Entity: ProductContent
+	Foreign Key Name: PROD_CNT_PROD
+	related field: productId
+
+27	Entity: MrpEvent
+	Foreign Key Name: MRPEV_PROD
+	related field: productId
+
+28	Entity: CostComponent
+	Foreign Key Name: COST_COMP_PRODUCT
+	related field: productId
+
+29	Entity: WorkEffortGoodStandard
+	Foreign Key Name: WKEFF_GDSTD_PROD
+	related field: productId
+
+30	Entity: ProductPaymentMethodType
+	Foreign Key Name: PROD_PMT_PROD
+	related field: productId
+
+31	Entity: ProductFeatureApplAttr
+	Foreign Key Name: PROD_FAPPA_PRODUCT
+	related field: productId
+
+32	Entity: ProductCalculatedInfo
+	Foreign Key Name: PRODCI_PROD
+	related field: productId
+
+33	Entity: ProductManufacturingRule
+	Foreign Key Name: PRODUCT_FOR
+	related field: productId
+
+34	Entity: ProductAttribute
+	Foreign Key Name: PROD_ATTR
+	related field: productId
+
+35	Entity: ProductReview
+	Foreign Key Name: PROD_REVIEW_PROD
+	related field: productId
+
+36	Entity: ProductMaint
+	Foreign Key Name: PRODMNT_PROD
+	related field: productId
+
+37	Entity: ShipmentReceipt
+	Foreign Key Name: SHP_RCPT_PROD
+	related field: productId
+
+38	Entity: VendorProduct
+	Foreign Key Name: VENDPROD_PROD
+	related field: productId
+
+39	Entity: ProductPromoProduct
+	Foreign Key Name: PROD_PRPRD_PROD
+	related field: productId
+
+40	Entity: ProductManufacturingRule
+	Foreign Key Name: PRODUCT_PARENT
+	related field: productId
+
+41	Entity: QuoteItem
+	Foreign Key Name: QUOTE_ITM_PROD
+	related field: productId
+
+42	Entity: ProductOrderItem
+	Foreign Key Name: PROD_OITEM_PROD
+	related field: productId
+
+43	Entity: ProductSubscriptionResource
+	Foreign Key Name: PROD_SBRS_PROD
+	related field: productId
+
+44	Entity: InvoiceItem
+	Foreign Key Name: INVCE_ITM_PROD
+	related field: productId
+
+45	Entity: ProductConfigStats
+	Foreign Key Name: PROD_CONFS_PROD
+	related field: productId
+
+46	Entity: Subscription
+	Foreign Key Name: SUBSC_PRODUCT
+	related field: productId
+
+47	Entity: OrderSummaryEntry
+	Foreign Key Name: ORDER_SMENT_PROD
+	related field: productId
+
+48	Entity: InventoryItem
+	Foreign Key Name: INV_ITEM_PRODUCT
+	related field: productId
+
+49	Entity: ProductManufacturingRule
+	Foreign Key Name: PRODUCT_SUBST
+	related field: productId
+
+50	Entity: ProductConfig
+	Foreign Key Name: PROD_CONF_PROD
+	related field: productId
+
+51	Entity: InventoryItemTempRes
+	Foreign Key Name: INV_ITEM_TR_PROD
+	related field: productId
+
+52	Entity: ProductKeyword
+	Foreign Key Name: PROD_KWD_PROD_NEW
+	related field: productId
+
+53	Entity: ProductAssoc
+	Foreign Key Name: PROD_ASSOC_APROD
+	related field: productId
+
+54	Entity: GoodIdentification
+	Foreign Key Name: GOOD_ID_PRODICT
+	related field: productId
+
+55	Entity: ProductMeter
+	Foreign Key Name: PRODMTR_PROD
+	related field: productId
+
+56	Entity: Agreement
+	Foreign Key Name: AGRMNT_PRODUCT
+	related field: productId
+
+57	Entity: ProductFeatureAppl
+	Foreign Key Name: PROD_FAPPL_PRODUCT
+	related field: productId
+
+58	Entity: ProductFacilityLocation
+	Foreign Key Name: PROD_FCL_PROD
+	related field: productId
+
+59	Entity: ShoppingListItem
+	Foreign Key Name: SHLIST_ITEM_PROD
+	related field: productId
+
+60	Entity: ProductGroupOrder
+	Foreign Key Name: PROD_GROUP_ORDER
+	related field: productId
+
+61	Entity: OrderItem
+	Foreign Key Name: ORDER_ITEM_PRODUCT
+	related field: productId

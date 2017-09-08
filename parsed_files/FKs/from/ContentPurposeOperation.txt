@@ -1,0 +1,26 @@
+ContentPurposeOperation:
+
+1: Foreign Key Name:		CONTENT_PRO_TYPE
+	Related Entity:		ContentPurposeType
+	referenced Field:	contentPurposeTypeId
+
+
+2: Foreign Key Name:		CONTENT_PRO_OPER
+	Related Entity:		ContentOperation
+	referenced Field:	contentOperationId
+
+
+3: Foreign Key Name:		CONTENT_PRO_RLT
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		CONTENT_PRO_STI
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+5: Foreign Key Name:		CONTENT_PRO_PEI
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

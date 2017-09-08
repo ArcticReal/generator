@@ -1,0 +1,31 @@
+PicklistRole:
+
+1: Foreign Key Name:		PCKLST_RLE_PKLT
+	Related Entity:		Picklist
+	referenced Field:	picklistId
+
+
+2: Foreign Key Name:		PCKLST_RLE_PRLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		
+	Related Entity:		PartyNameView
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		PCKLST_RLE_CBUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+6: Foreign Key Name:		PCKLST_RLE_LMUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

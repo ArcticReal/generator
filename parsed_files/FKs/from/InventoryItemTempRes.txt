@@ -1,0 +1,11 @@
+InventoryItemTempRes:
+
+1: Foreign Key Name:		INV_ITEM_TR_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		INV_ITEM_TR_PRDS
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+

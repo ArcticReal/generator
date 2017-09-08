@@ -1,0 +1,11 @@
+DocumentAttribute:
+
+1: Foreign Key Name:		DOCUMENT_ATTR
+	Related Entity:		Document
+	referenced Field:	documentId
+
+
+2: Foreign Key Name:		
+	Related Entity:		DocumentTypeAttr
+	referenced Field:	attrName
+

@@ -1,0 +1,4 @@
+OrderNotification:
+
+1: Primary Key Attribute: orderNotificationId
+

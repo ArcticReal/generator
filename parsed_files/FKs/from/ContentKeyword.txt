@@ -1,0 +1,11 @@
+ContentKeyword:
+
+1: Foreign Key Name:		PORTPAL_HELP_CONT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+2: Foreign Key Name:		CNT_KWD_CNT
+	Related Entity:		Content
+	referenced Field:	contentId
+

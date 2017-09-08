@@ -1,0 +1,6 @@
+InventoryItemType:
+
+1: Foreign Key Name:		INV_ITEM_TYPPAR
+	Related Entity:		InventoryItemType
+	referenced Field:	inventoryItemTypeId
+

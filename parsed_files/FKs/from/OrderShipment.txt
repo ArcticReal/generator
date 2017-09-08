@@ -1,0 +1,26 @@
+OrderShipment:
+
+1: Foreign Key Name:		ORDER_SHPMT_OHDR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+2: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		ORDER_SHPMT_SHPMT
+	Related Entity:		Shipment
+	referenced Field:	shipmentId
+
+
+4: Foreign Key Name:		
+	Related Entity:		ShipmentItem
+	referenced Field:	shipmentId
+
+
+5: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroupAssoc
+	referenced Field:	orderId
+

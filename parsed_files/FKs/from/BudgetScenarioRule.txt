@@ -1,0 +1,11 @@
+BudgetScenarioRule:
+
+1: Foreign Key Name:		BUDGET_SRLE_BSCN
+	Related Entity:		BudgetScenario
+	referenced Field:	budgetScenarioId
+
+
+2: Foreign Key Name:		BUDGET_SRLE_BITP
+	Related Entity:		BudgetItemType
+	referenced Field:	budgetItemTypeId
+

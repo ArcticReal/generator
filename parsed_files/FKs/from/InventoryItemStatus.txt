@@ -1,0 +1,16 @@
+InventoryItemStatus:
+
+1: Foreign Key Name:		INV_ITEM_STTS_II
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+2: Foreign Key Name:		INV_ITEM_STTS_SI
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+3: Foreign Key Name:		INV_ITEM_STTS_USER
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

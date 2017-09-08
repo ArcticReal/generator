@@ -1,0 +1,11 @@
+PartyNote:
+
+1: Foreign Key Name:		PARTY_NOTE_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PARTY_NOTE_NOTE
+	Related Entity:		NoteData
+	referenced Field:	noteId
+

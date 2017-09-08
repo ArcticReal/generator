@@ -1,0 +1,7 @@
+PartyInvitationRoleAssoc:
+
+1: Primary Key Attribute: partyInvitationId
+
+
+2: Primary Key Attribute: roleTypeId
+

@@ -1,0 +1,17 @@
+SurveyResponse:
+
+1	Entity: SurveyResponseAnswer
+	Foreign Key Name: SRVYRSPA_SVRSP
+	related field: surveyResponseId
+
+2	Entity: GiftCardFulfillment
+	Foreign Key Name: GC_FILL_SURVY
+	related field: surveyResponseId
+
+3	Entity: ShoppingListItemSurvey
+	Foreign Key Name: SHLIST_ITSUR_RESP
+	related field: surveyResponseId
+
+4	Entity: DataResource
+	Foreign Key Name: DATA_REC_SVRSP
+	related field: surveyResponseId

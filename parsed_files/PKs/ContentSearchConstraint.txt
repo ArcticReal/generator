@@ -1,0 +1,7 @@
+ContentSearchConstraint:
+
+1: Primary Key Attribute: contentSearchResultId
+
+
+2: Primary Key Attribute: constraintSeqId
+

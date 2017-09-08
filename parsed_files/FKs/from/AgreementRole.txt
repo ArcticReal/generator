@@ -1,0 +1,21 @@
+AgreementRole:
+
+1: Foreign Key Name:		AGRMNT_ROLE_AGR
+	Related Entity:		Agreement
+	referenced Field:	agreementId
+
+
+2: Foreign Key Name:		AGRMNT_ROLE_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		AGRMNT_ROLE_PRLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

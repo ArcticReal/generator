@@ -1,0 +1,16 @@
+AgreementTypeAttr:
+
+1: Foreign Key Name:		AGRMNT_TYPE_ATTR
+	Related Entity:		AgreementType
+	referenced Field:	agreementTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		AgreementAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		Agreement
+	referenced Field:	agreementTypeId
+

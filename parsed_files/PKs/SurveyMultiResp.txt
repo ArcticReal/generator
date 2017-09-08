@@ -1,0 +1,7 @@
+SurveyMultiResp:
+
+1: Primary Key Attribute: surveyId
+
+
+2: Primary Key Attribute: surveyMultiRespId
+

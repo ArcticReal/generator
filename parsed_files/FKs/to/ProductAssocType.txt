@@ -1,0 +1,9 @@
+ProductAssocType:
+
+1	Entity: ProductAssoc
+	Foreign Key Name: PROD_ASSOC_TYPE
+	related field: productAssocTypeId
+
+2	Entity: ProductAssocType
+	Foreign Key Name: PROD_ASSOC_TYPEPAR
+	related field: productAssocTypeId

@@ -1,0 +1,26 @@
+ProductStoreSurveyAppl:
+
+1: Foreign Key Name:		PRDSTRSVY_PRDS
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+2: Foreign Key Name:		PRDSTRSVY_SRVY
+	Related Entity:		Survey
+	referenced Field:	surveyId
+
+
+3: Foreign Key Name:		PRDSTRSVY_SATP
+	Related Entity:		SurveyApplType
+	referenced Field:	surveyApplTypeId
+
+
+4: Foreign Key Name:		
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+5: Foreign Key Name:		
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+

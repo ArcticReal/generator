@@ -1,0 +1,4 @@
+GlXbrlClass:
+
+1: Primary Key Attribute: glXbrlClassId
+

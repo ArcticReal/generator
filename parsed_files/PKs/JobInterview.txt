@@ -1,0 +1,4 @@
+JobInterview:
+
+1: Primary Key Attribute: jobInterviewId
+

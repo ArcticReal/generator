@@ -1,0 +1,16 @@
+PaymentContent:
+
+1: Foreign Key Name:		PAYMENT_CNT_PROD
+	Related Entity:		Payment
+	referenced Field:	paymentId
+
+
+2: Foreign Key Name:		PAYMENT_CNT_CNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		PAYMENT_CNT_TYPE
+	Related Entity:		PaymentContentType
+	referenced Field:	paymentContentTypeId
+

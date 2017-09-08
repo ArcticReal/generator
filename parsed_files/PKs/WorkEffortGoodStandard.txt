@@ -1,0 +1,13 @@
+WorkEffortGoodStandard:
+
+1: Primary Key Attribute: workEffortId
+
+
+2: Primary Key Attribute: productId
+
+
+3: Primary Key Attribute: workEffortGoodStdTypeId
+
+
+4: Primary Key Attribute: fromDate
+

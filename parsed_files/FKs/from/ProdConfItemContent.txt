@@ -1,0 +1,16 @@
+ProdConfItemContent:
+
+1: Foreign Key Name:		CIMT_CNT_PCIT
+	Related Entity:		ProductConfigItem
+	referenced Field:	configItemId
+
+
+2: Foreign Key Name:		CIMT_CNT_CNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		CIMT_CNT_TYPE
+	Related Entity:		ProdConfItemContentType
+	referenced Field:	confItemContentTypeId
+

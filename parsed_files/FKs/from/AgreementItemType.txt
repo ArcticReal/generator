@@ -1,0 +1,6 @@
+AgreementItemType:
+
+1: Foreign Key Name:		AGRMNT_TYPEPAR
+	Related Entity:		AgreementItemType
+	referenced Field:	agreementItemTypeId
+

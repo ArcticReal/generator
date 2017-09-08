@@ -1,0 +1,16 @@
+OrderNotification:
+
+1: Foreign Key Name:		ORD_NOTIFY_ORDHDR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+2: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		ORD_NOTIFY_ENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

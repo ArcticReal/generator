@@ -1,0 +1,16 @@
+ProductCostComponentCalc:
+
+1: Foreign Key Name:		PR_COS_COMPCALC
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		PR_COS_CCT
+	Related Entity:		CostComponentType
+	referenced Field:	costComponentTypeId
+
+
+3: Foreign Key Name:		PR_COS_CCC
+	Related Entity:		CostComponentCalc
+	referenced Field:	costComponentCalcId
+

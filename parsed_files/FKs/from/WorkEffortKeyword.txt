@@ -1,0 +1,6 @@
+WorkEffortKeyword:
+
+1: Foreign Key Name:		WEFF_KWD_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+

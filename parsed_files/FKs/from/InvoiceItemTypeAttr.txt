@@ -1,0 +1,16 @@
+InvoiceItemTypeAttr:
+
+1: Foreign Key Name:		INVOICE_ITEM_TATR
+	Related Entity:		InvoiceItemType
+	referenced Field:	invoiceItemTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		InvoiceItemAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		InvoiceItem
+	referenced Field:	invoiceItemTypeId
+

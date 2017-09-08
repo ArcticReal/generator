@@ -1,0 +1,13 @@
+FixedAssetProduct:
+
+1: Primary Key Attribute: fixedAssetId
+
+
+2: Primary Key Attribute: productId
+
+
+3: Primary Key Attribute: fixedAssetProductTypeId
+
+
+4: Primary Key Attribute: fromDate
+

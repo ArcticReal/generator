@@ -1,0 +1,21 @@
+FixedAssetProduct:
+
+1: Foreign Key Name:		FIXDASTPRD_PRD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		FIXDASTPRD_FA
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+3: Foreign Key Name:		FIXDASTPRD_FAPT
+	Related Entity:		FixedAssetProductType
+	referenced Field:	fixedAssetProductTypeId
+
+
+4: Foreign Key Name:		FIXDASTPRD_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+

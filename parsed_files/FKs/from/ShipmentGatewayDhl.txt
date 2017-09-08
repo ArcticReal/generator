@@ -1,0 +1,6 @@
+ShipmentGatewayDhl:
+
+1: Foreign Key Name:		SGDHL_SGC
+	Related Entity:		ShipmentGatewayConfig
+	referenced Field:	shipmentGatewayConfigId
+

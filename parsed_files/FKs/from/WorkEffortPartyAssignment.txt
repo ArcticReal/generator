@@ -1,0 +1,51 @@
+WorkEffortPartyAssignment:
+
+1: Foreign Key Name:		WKEFF_PA_WE
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		WKEFF_PA_PRTY_ROLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+5: Foreign Key Name:		WKEFF_PA_ABUSRLOG
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+6: Foreign Key Name:		WKEFF_PA_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+7: Foreign Key Name:		WKEFF_PA_EXP_ENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+8: Foreign Key Name:		WKEFF_PA_DELR_ENM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+9: Foreign Key Name:		WKEFF_PA_FACILITY
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+10: Foreign Key Name:		WKEFF_PA_AVSTTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

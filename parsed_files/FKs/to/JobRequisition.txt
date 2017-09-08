@@ -1,0 +1,9 @@
+JobRequisition:
+
+1	Entity: EmploymentApp
+	Foreign Key Name: EMPLMNT_APP_JBRQ
+	related field: jobRequisitionId
+
+2	Entity: JobInterview
+	Foreign Key Name: JOB_INTW_JBREQ
+	related field: jobRequisitionId

@@ -1,0 +1,6 @@
+CustRequestCategory:
+
+1: Foreign Key Name:		CUST_RQCT_TYPE
+	Related Entity:		CustRequestType
+	referenced Field:	custRequestTypeId
+

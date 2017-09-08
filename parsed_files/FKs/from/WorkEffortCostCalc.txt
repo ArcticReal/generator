@@ -1,0 +1,16 @@
+WorkEffortCostCalc:
+
+1: Foreign Key Name:		WK_EFFRT_COS_WEF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WK_EFFRT_COS_CCT
+	Related Entity:		CostComponentType
+	referenced Field:	costComponentTypeId
+
+
+3: Foreign Key Name:		WK_EFFRT_COS_CCC
+	Related Entity:		CostComponentCalc
+	referenced Field:	costComponentCalcId
+

@@ -1,0 +1,16 @@
+FixedAssetTypeAttr:
+
+1: Foreign Key Name:		FIXEDAST_TYPATTR
+	Related Entity:		FixedAssetType
+	referenced Field:	fixedAssetTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		FixedAssetAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetTypeId
+

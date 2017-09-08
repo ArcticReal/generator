@@ -1,0 +1,9 @@
+PaymentGatewayResponse:
+
+1	Entity: Payment
+	Foreign Key Name: PAYMENT_PAYGATR
+	related field: paymentGatewayResponseId
+
+2	Entity: PaymentGatewayRespMsg
+	Foreign Key Name: PAYGATRM_PAYGR
+	related field: paymentGatewayResponseId

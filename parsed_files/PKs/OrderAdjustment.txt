@@ -1,0 +1,4 @@
+OrderAdjustment:
+
+1: Primary Key Attribute: orderAdjustmentId
+

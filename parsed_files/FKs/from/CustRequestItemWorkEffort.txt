@@ -1,0 +1,16 @@
+CustRequestItemWorkEffort:
+
+1: Foreign Key Name:		WORK_REQFL_CSTRQ
+	Related Entity:		CustRequestItem
+	referenced Field:	custRequestId
+
+
+2: Foreign Key Name:		
+	Related Entity:		CustRequest
+	referenced Field:	custRequestId
+
+
+3: Foreign Key Name:		CUST_REQ_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+

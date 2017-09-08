@@ -1,0 +1,10 @@
+WebSiteContactList:
+
+1: Primary Key Attribute: webSiteId
+
+
+2: Primary Key Attribute: contactListId
+
+
+3: Primary Key Attribute: fromDate
+

@@ -1,0 +1,21 @@
+SalesForecastDetail:
+
+1: Foreign Key Name:		SALES4CDTL_SALES4C
+	Related Entity:		SalesForecast
+	referenced Field:	salesForecastId
+
+
+2: Foreign Key Name:		SALES4CDTL_QTY_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+3: Foreign Key Name:		SALES4CDTL_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+4: Foreign Key Name:		SALES4CDTL_PCTGRY
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+

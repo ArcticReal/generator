@@ -1,0 +1,5 @@
+WorkReqFulfType:
+
+1	Entity: WorkRequirementFulfillment
+	Foreign Key Name: WORK_REQFL_WRFT
+	related field: workReqFulfTypeId

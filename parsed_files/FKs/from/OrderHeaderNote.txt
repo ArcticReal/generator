@@ -1,0 +1,11 @@
+OrderHeaderNote:
+
+1: Foreign Key Name:		ORDER_HDRNT_HDR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+2: Foreign Key Name:		ORDER_HDRNT_NOTE
+	Related Entity:		NoteData
+	referenced Field:	noteId
+

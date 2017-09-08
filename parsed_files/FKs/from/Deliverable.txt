@@ -1,0 +1,6 @@
+Deliverable:
+
+1: Foreign Key Name:		DELIVERABLE_DLTYP
+	Related Entity:		DeliverableType
+	referenced Field:	deliverableTypeId
+

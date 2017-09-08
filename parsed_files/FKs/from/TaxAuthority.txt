@@ -1,0 +1,11 @@
+TaxAuthority:
+
+1: Foreign Key Name:		TAXAUTH_TAGEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+2: Foreign Key Name:		TAXAUTH_TAPARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+

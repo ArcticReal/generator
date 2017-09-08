@@ -1,0 +1,21 @@
+ProdCatalog:
+
+1	Entity: ProductStoreCatalog
+	Foreign Key Name: PS_CAT_CATALOG
+	related field: prodCatalogId
+
+2	Entity: ProdCatalogCategory
+	Foreign Key Name: PROD_CC_CATALOG
+	related field: prodCatalogId
+
+3	Entity: ProdCatalogRole
+	Foreign Key Name: PCATRLE_CATALOG
+	related field: prodCatalogId
+
+4	Entity: CartAbandonedLine
+	Foreign Key Name: CART_ABLN_PRDCAT
+	related field: prodCatalogId
+
+5	Entity: ProdCatalogInvFacility
+	Foreign Key Name: PROD_CIF_CATALOG
+	related field: prodCatalogId

@@ -1,0 +1,7 @@
+GlAccountTypeDefault:
+
+1: Primary Key Attribute: glAccountTypeId
+
+
+2: Primary Key Attribute: organizationPartyId
+

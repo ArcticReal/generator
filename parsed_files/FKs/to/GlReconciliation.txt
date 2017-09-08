@@ -1,0 +1,9 @@
+GlReconciliation:
+
+1	Entity: FinAccountTrans
+	Foreign Key Name: FIN_ACT_TX_GLREC
+	related field: glReconciliationId
+
+2	Entity: GlReconciliationEntry
+	Foreign Key Name: GL_RECENT_GLREC
+	related field: glReconciliationId

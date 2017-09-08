@@ -1,0 +1,20 @@
+package com.skytala.eCommerce.event;
+
+import com.skytala.eCommerce.control.Event;
+
+public class InventoryItemLabelDeleted implements Event{
+
+	private boolean success;
+
+	public InventoryItemLabelDeleted(boolean success) {
+		this.setSuccess(success);
+	}
+
+	public boolean isSuccess()	{
+		return success;
+	}
+
+	public void setSuccess(boolean success)	{
+		this.success = success;
+	}
+}

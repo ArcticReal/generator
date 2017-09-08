@@ -1,0 +1,16 @@
+WorkEffortReview:
+
+1: Foreign Key Name:		WEFF_REVIEW_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WEFF_REVIEW_UL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+3: Foreign Key Name:		WEFF_REVIEW_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

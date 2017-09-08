@@ -1,0 +1,4 @@
+ShipmentType:
+
+1: Primary Key Attribute: shipmentTypeId
+

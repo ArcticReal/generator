@@ -1,0 +1,6 @@
+InvoiceItemAssocType:
+
+1: Foreign Key Name:		INITMASCTYP_PRNT
+	Related Entity:		InvoiceItemAssocType
+	referenced Field:	invoiceItemAssocTypeId
+

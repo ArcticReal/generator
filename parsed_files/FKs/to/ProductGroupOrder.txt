@@ -1,0 +1,5 @@
+ProductGroupOrder:
+
+1	Entity: OrderItemGroupOrder
+	Foreign Key Name: OIGO_GROUP_ORDER
+	related field: groupOrderId

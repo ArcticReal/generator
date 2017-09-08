@@ -1,0 +1,13 @@
+WorkEffortAssocAttribute:
+
+1: Primary Key Attribute: workEffortIdFrom
+
+
+2: Primary Key Attribute: workEffortIdTo
+
+
+3: Primary Key Attribute: workEffortAssocTypeId
+
+
+4: Primary Key Attribute: attrName
+

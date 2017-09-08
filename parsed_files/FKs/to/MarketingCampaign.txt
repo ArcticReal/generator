@@ -1,0 +1,29 @@
+MarketingCampaign:
+
+1	Entity: MarketingCampaignPromo
+	Foreign Key Name: MKTGCPN_PROMO_MC
+	related field: marketingCampaignId
+
+2	Entity: MarketingCampaignPrice
+	Foreign Key Name: MKTGCPN_PRICE_MC
+	related field: marketingCampaignId
+
+3	Entity: MarketingCampaignRole
+	Foreign Key Name: MKTGCPN_ROLE_MC
+	related field: marketingCampaignId
+
+4	Entity: MarketingCampaign
+	Foreign Key Name: MKTGCPN_PRNT
+	related field: marketingCampaignId
+
+5	Entity: ContactList
+	Foreign Key Name: CNCT_LST_MKCMPN
+	related field: marketingCampaignId
+
+6	Entity: MarketingCampaignNote
+	Foreign Key Name: MKTGCPN_NOTE_CMPN
+	related field: marketingCampaignId
+
+7	Entity: TrackingCode
+	Foreign Key Name: TKNG_COD_MKCMPN
+	related field: marketingCampaignId

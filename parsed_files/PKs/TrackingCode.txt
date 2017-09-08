@@ -1,0 +1,4 @@
+TrackingCode:
+
+1: Primary Key Attribute: trackingCodeId
+

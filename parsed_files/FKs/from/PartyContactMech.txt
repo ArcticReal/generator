@@ -1,0 +1,46 @@
+PartyContactMech:
+
+1: Foreign Key Name:		PARTY_CMECH_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		
+	Related Entity:		Person
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		PartyGroup
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		PARTY_CMECH_PROLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		PARTY_CMECH_ROLE
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+6: Foreign Key Name:		PARTY_CMECH_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+7: Foreign Key Name:		
+	Related Entity:		TelecomNumber
+	referenced Field:	contactMechId
+
+
+8: Foreign Key Name:		
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+
+
+9: Foreign Key Name:		
+	Related Entity:		PartyContactMechPurpose
+	referenced Field:	partyId
+

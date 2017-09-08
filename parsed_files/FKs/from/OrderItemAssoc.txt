@@ -1,0 +1,46 @@
+OrderItemAssoc:
+
+1: Foreign Key Name:		ORDER_ITASS_TYPE
+	Related Entity:		OrderItemAssocType
+	referenced Field:	orderItemAssocTypeId
+
+
+2: Foreign Key Name:		ORDER_ITASS_FRHD
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroupAssoc
+	referenced Field:	orderId
+
+
+5: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroup
+	referenced Field:	orderId
+
+
+6: Foreign Key Name:		ORDER_ITASS_TOHD
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+7: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+8: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroupAssoc
+	referenced Field:	orderId
+
+
+9: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroup
+	referenced Field:	orderId
+

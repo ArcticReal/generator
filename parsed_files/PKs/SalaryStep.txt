@@ -1,0 +1,10 @@
+SalaryStep:
+
+1: Primary Key Attribute: salaryStepSeqId
+
+
+2: Primary Key Attribute: payGradeId
+
+
+3: Primary Key Attribute: fromDate
+

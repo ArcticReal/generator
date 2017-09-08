@@ -1,0 +1,4 @@
+TrainingRequest:
+
+1: Primary Key Attribute: trainingRequestId
+

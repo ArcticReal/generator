@@ -1,0 +1,7 @@
+TermTypeAttr:
+
+1: Primary Key Attribute: termTypeId
+
+
+2: Primary Key Attribute: attrName
+

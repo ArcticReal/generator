@@ -1,0 +1,6 @@
+FinAccountAuth:
+
+1: Foreign Key Name:		FINACT_AUTH_FINACT
+	Related Entity:		FinAccount
+	referenced Field:	finAccountId
+

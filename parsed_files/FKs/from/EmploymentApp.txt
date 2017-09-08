@@ -1,0 +1,36 @@
+EmploymentApp:
+
+1: Foreign Key Name:		EMPLMNT_APP_POS
+	Related Entity:		EmplPosition
+	referenced Field:	emplPositionId
+
+
+2: Foreign Key Name:		EMPLMNT_APP_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+3: Foreign Key Name:		EMPLMNT_APP_EAST
+	Related Entity:		EmploymentAppSourceType
+	referenced Field:	employmentAppSourceTypeId
+
+
+4: Foreign Key Name:		EMPLMNT_APP_APTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		EMPLMNT_APP_RBPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		EMPLMNT_APP_APER
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+7: Foreign Key Name:		EMPLMNT_APP_JBRQ
+	Related Entity:		JobRequisition
+	referenced Field:	jobRequisitionId
+

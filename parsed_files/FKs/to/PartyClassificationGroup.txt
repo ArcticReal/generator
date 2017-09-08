@@ -1,0 +1,17 @@
+PartyClassificationGroup:
+
+1	Entity: MarketInterest
+	Foreign Key Name: MARKET_INT_PCGRP
+	related field: partyClassificationGroupId
+
+2	Entity: PartyClassification
+	Foreign Key Name: PARTY_CLASS_GRP
+	related field: partyClassificationGroupId
+
+3	Entity: PartyClassificationGroup
+	Foreign Key Name: PARTY_CLASS_GRPPAR
+	related field: partyClassificationGroupId
+
+4	Entity: SegmentGroupClassification
+	Foreign Key Name: SGMTGRPCLS_PCGP
+	related field: partyClassificationGroupId

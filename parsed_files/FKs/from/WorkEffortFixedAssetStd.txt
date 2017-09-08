@@ -1,0 +1,11 @@
+WorkEffortFixedAssetStd:
+
+1: Foreign Key Name:		WKEFF_FASTD_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WKEFF_FASTD_FAT
+	Related Entity:		FixedAssetType
+	referenced Field:	fixedAssetTypeId
+

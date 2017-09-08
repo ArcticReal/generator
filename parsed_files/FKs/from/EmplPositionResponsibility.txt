@@ -1,0 +1,11 @@
+EmplPositionResponsibility:
+
+1: Foreign Key Name:		EMPL_PSRTY_EMPS
+	Related Entity:		EmplPosition
+	referenced Field:	emplPositionId
+
+
+2: Foreign Key Name:		EMPL_PSRTY_RYTP
+	Related Entity:		ResponsibilityType
+	referenced Field:	responsibilityTypeId
+

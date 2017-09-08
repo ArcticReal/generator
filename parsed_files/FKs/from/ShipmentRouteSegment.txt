@@ -1,0 +1,86 @@
+ShipmentRouteSegment:
+
+1: Foreign Key Name:		SHPMT_RTSEG_SHPMT
+	Related Entity:		Shipment
+	referenced Field:	shipmentId
+
+
+2: Foreign Key Name:		SHPMT_RTSEG_DEL
+	Related Entity:		Delivery
+	referenced Field:	deliveryId
+
+
+3: Foreign Key Name:		SHPMT_RTSEG_CPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		
+	Related Entity:		Person
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		
+	Related Entity:		PartyGroup
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		SHPMT_RTSEG_SHMT
+	Related Entity:		ShipmentMethodType
+	referenced Field:	shipmentMethodTypeId
+
+
+7: Foreign Key Name:		SHPMT_RTSEG_OFAC
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+8: Foreign Key Name:		SHPMT_RTSEG_DFAC
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+9: Foreign Key Name:		
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+10: Foreign Key Name:		
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+11: Foreign Key Name:		SHPMT_RTSEG_OPAD
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+
+
+12: Foreign Key Name:		SHPMT_RTSEG_OTCN
+	Related Entity:		TelecomNumber
+	referenced Field:	contactMechId
+
+
+13: Foreign Key Name:		SHPMT_RTSEG_DPAD
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+
+
+14: Foreign Key Name:		SHPMT_RTSEG_DTCN
+	Related Entity:		TelecomNumber
+	referenced Field:	contactMechId
+
+
+15: Foreign Key Name:		SHPKRTSG_CSSTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+16: Foreign Key Name:		SHPMT_RTSEG_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+17: Foreign Key Name:		SHPKRTSG_BWUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+

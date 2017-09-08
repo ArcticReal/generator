@@ -1,0 +1,7 @@
+MarketingCampaignNote:
+
+1: Primary Key Attribute: marketingCampaignId
+
+
+2: Primary Key Attribute: noteId
+

@@ -1,0 +1,11 @@
+PaymentGroupMember:
+
+1: Foreign Key Name:		PAYGRPMMBR_PG
+	Related Entity:		PaymentGroup
+	referenced Field:	paymentGroupId
+
+
+2: Foreign Key Name:		PAYGRPMMBR_PAYMNT
+	Related Entity:		Payment
+	referenced Field:	paymentId
+

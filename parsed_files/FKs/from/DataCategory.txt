@@ -1,0 +1,11 @@
+DataCategory:
+
+1: Foreign Key Name:		DATA_CAT_PARENT
+	Related Entity:		DataCategory
+	referenced Field:	dataCategoryId
+
+
+2: Foreign Key Name:		
+	Related Entity:		DataCategory
+	referenced Field:	parentCategoryId
+

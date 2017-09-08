@@ -1,0 +1,11 @@
+DataResourceAttribute:
+
+1: Foreign Key Name:		DATA_REC_ATTR
+	Related Entity:		DataResource
+	referenced Field:	dataResourceId
+
+
+2: Foreign Key Name:		
+	Related Entity:		DataResourceTypeAttr
+	referenced Field:	attrName
+

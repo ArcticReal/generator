@@ -1,0 +1,26 @@
+OrderItemShipGrpInvRes:
+
+1: Foreign Key Name:		
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+2: Foreign Key Name:		ORDER_ITIR_OITM
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroup
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroupAssoc
+	referenced Field:	orderId
+
+
+5: Foreign Key Name:		ORDER_ITIR_INVITM
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+

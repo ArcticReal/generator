@@ -1,0 +1,51 @@
+Agreement:
+
+1: Foreign Key Name:		AGRMNT_PRODUCT
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		AGRMNT_FPRTYRLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+7: Foreign Key Name:		AGRMNT_TPRTYRLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+8: Foreign Key Name:		
+	Related Entity:		PartyRelationship
+	referenced Field:	roleTypeIdFrom
+
+
+9: Foreign Key Name:		AGRMNT_TYPE
+	Related Entity:		AgreementType
+	referenced Field:	agreementTypeId
+
+
+10: Foreign Key Name:		
+	Related Entity:		AgreementTypeAttr
+	referenced Field:	agreementTypeId
+

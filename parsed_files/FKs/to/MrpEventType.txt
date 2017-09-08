@@ -1,0 +1,5 @@
+MrpEventType:
+
+1	Entity: MrpEvent
+	Foreign Key Name: MRPEV_TYP
+	related field: mrpEventTypeId

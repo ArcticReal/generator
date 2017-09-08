@@ -1,0 +1,16 @@
+CreditCard:
+
+1: Foreign Key Name:		CREDCARD_PMNTMETH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+2: Foreign Key Name:		CREDCARD_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+3: Foreign Key Name:		CREDCARD_PADDR
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+

@@ -1,0 +1,16 @@
+MarketingCampaign:
+
+1: Foreign Key Name:		MKTGCPN_PRNT
+	Related Entity:		MarketingCampaign
+	referenced Field:	marketingCampaignId
+
+
+2: Foreign Key Name:		MKTGCPN_STS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+3: Foreign Key Name:		MKTGCPN_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+

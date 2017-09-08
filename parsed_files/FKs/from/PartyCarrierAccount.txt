@@ -1,0 +1,11 @@
+PartyCarrierAccount:
+
+1: Foreign Key Name:		PARTY_CRRACT_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PARTY_CRRACT_CPT
+	Related Entity:		Party
+	referenced Field:	partyId
+

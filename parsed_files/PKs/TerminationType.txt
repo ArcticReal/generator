@@ -1,0 +1,4 @@
+TerminationType:
+
+1: Primary Key Attribute: terminationTypeId
+

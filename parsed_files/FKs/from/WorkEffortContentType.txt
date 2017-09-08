@@ -1,0 +1,6 @@
+WorkEffortContentType:
+
+1: Foreign Key Name:		WEFFCTP_TP_PAR
+	Related Entity:		WorkEffortContentType
+	referenced Field:	workEffortContentTypeId
+

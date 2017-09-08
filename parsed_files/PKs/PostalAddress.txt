@@ -1,0 +1,4 @@
+PostalAddress:
+
+1: Primary Key Attribute: contactMechId
+

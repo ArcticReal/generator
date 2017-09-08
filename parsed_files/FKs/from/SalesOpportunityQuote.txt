@@ -1,0 +1,11 @@
+SalesOpportunityQuote:
+
+1: Foreign Key Name:		SOPPQTE_SOPP
+	Related Entity:		SalesOpportunity
+	referenced Field:	salesOpportunityId
+
+
+2: Foreign Key Name:		SOPPQTE_QTE
+	Related Entity:		Quote
+	referenced Field:	quoteId
+

@@ -1,0 +1,5 @@
+ContentAssocPredicate:
+
+1	Entity: ContentAssoc
+	Foreign Key Name: CONTENTASSC_PRED
+	related field: contentAssocPredicateId

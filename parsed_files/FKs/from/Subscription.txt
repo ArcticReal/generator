@@ -1,0 +1,111 @@
+Subscription:
+
+1: Foreign Key Name:		SUBSC_SRESRC
+	Related Entity:		SubscriptionResource
+	referenced Field:	subscriptionResourceId
+
+
+2: Foreign Key Name:		SUBSC_CONT_MECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+3: Foreign Key Name:		SUBSC_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		SUBSC_UTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+5: Foreign Key Name:		SUBSC_CTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+6: Foreign Key Name:		SUBSC_ATU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+7: Foreign Key Name:		SUBSC_MTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+8: Foreign Key Name:		SUBSC_ROLE_TYPE
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+9: Foreign Key Name:		
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+10: Foreign Key Name:		SUBSC_OPARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+11: Foreign Key Name:		SUBSC_OROLE_TYPE
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+12: Foreign Key Name:		
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+13: Foreign Key Name:		
+	Related Entity:		PartyNeed
+	referenced Field:	
+
+
+14: Foreign Key Name:		SUBSC_NEED_TYPE
+	Related Entity:		NeedType
+	referenced Field:	needTypeId
+
+
+15: Foreign Key Name:		
+	Related Entity:		OrderHeader
+	referenced Field:	
+
+
+16: Foreign Key Name:		SUBSC_ORDERITM
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+17: Foreign Key Name:		SUBSC_PRODUCT
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+18: Foreign Key Name:		SUBSC_PROD_CAT
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+
+
+19: Foreign Key Name:		SUBSC_INV_ITM
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+20: Foreign Key Name:		SUBSC_TO_TYPE
+	Related Entity:		SubscriptionType
+	referenced Field:	subscriptionTypeId
+
+
+21: Foreign Key Name:		
+	Related Entity:		SubscriptionTypeAttr
+	referenced Field:	subscriptionTypeId
+
+
+22: Foreign Key Name:		SUBSC_GTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+

@@ -1,0 +1,16 @@
+ProductPromoCode:
+
+1: Foreign Key Name:		PROD_PRCOD_PROMO
+	Related Entity:		ProductPromo
+	referenced Field:	productPromoId
+
+
+2: Foreign Key Name:		PROD_PRCOD_CUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+3: Foreign Key Name:		PROD_PRCOD_LMCUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

@@ -1,0 +1,13 @@
+OrderItemShipGrpInvRes:
+
+1: Primary Key Attribute: orderId
+
+
+2: Primary Key Attribute: shipGroupSeqId
+
+
+3: Primary Key Attribute: orderItemSeqId
+
+
+4: Primary Key Attribute: inventoryItemId
+

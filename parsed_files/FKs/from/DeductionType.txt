@@ -1,0 +1,6 @@
+DeductionType:
+
+1: Foreign Key Name:		DEDUCT_TYP_PAR
+	Related Entity:		DeductionType
+	referenced Field:	deductionTypeId
+

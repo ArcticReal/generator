@@ -1,0 +1,4 @@
+Deduction:
+
+1: Primary Key Attribute: deductionId
+

@@ -1,0 +1,6 @@
+GlAccountGroup:
+
+1: Foreign Key Name:		GLACT_GRP_TP
+	Related Entity:		GlAccountGroupType
+	referenced Field:	glAccountGroupTypeId
+

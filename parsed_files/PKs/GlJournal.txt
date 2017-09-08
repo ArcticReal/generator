@@ -1,0 +1,4 @@
+GlJournal:
+
+1: Primary Key Attribute: glJournalId
+

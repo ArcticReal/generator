@@ -1,0 +1,21 @@
+EmplPosition:
+
+1: Foreign Key Name:		EMPL_POS_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+2: Foreign Key Name:		EMPL_POS_PRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		EMPL_POS_BGTITM
+	Related Entity:		BudgetItem
+	referenced Field:	budgetId
+
+
+4: Foreign Key Name:		EMPL_POS_EPSTP
+	Related Entity:		EmplPositionType
+	referenced Field:	emplPositionTypeId
+

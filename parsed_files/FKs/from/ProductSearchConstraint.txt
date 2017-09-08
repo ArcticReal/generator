@@ -1,0 +1,6 @@
+ProductSearchConstraint:
+
+1: Foreign Key Name:		PROD_SCHRSI_RES
+	Related Entity:		ProductSearchResult
+	referenced Field:	productSearchResultId
+

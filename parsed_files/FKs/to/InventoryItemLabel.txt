@@ -1,0 +1,5 @@
+InventoryItemLabel:
+
+1	Entity: InventoryItemLabelAppl
+	Foreign Key Name: INV_ITLAP_LAB
+	related field: inventoryItemLabelId

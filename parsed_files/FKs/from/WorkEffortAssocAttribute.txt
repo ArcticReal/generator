@@ -1,0 +1,11 @@
+WorkEffortAssocAttribute:
+
+1: Foreign Key Name:		WK_EFFRTASSC_ATTR
+	Related Entity:		WorkEffortAssoc
+	referenced Field:	workEffortIdFrom
+
+
+2: Foreign Key Name:		
+	Related Entity:		WorkEffortAssocTypeAttr
+	referenced Field:	attrName
+

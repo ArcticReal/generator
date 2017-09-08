@@ -1,0 +1,16 @@
+InvoiceTerm:
+
+1: Foreign Key Name:		INVCE_TRM_TRM
+	Related Entity:		TermType
+	referenced Field:	termTypeId
+
+
+2: Foreign Key Name:		INVCE_TRM_INVCE
+	Related Entity:		Invoice
+	referenced Field:	invoiceId
+
+
+3: Foreign Key Name:		
+	Related Entity:		InvoiceItem
+	referenced Field:	invoiceId
+

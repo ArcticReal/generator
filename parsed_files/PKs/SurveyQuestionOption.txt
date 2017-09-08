@@ -1,0 +1,7 @@
+SurveyQuestionOption:
+
+1: Primary Key Attribute: surveyQuestionId
+
+
+2: Primary Key Attribute: surveyOptionSeqId
+

@@ -1,0 +1,4 @@
+ProdCatalogCategoryType:
+
+1: Primary Key Attribute: prodCatalogCategoryTypeId
+

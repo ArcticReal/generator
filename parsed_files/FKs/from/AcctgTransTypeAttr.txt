@@ -1,0 +1,16 @@
+AcctgTransTypeAttr:
+
+1: Foreign Key Name:		ACCTTX_TYPE_ATTR
+	Related Entity:		AcctgTransType
+	referenced Field:	acctgTransTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		AcctgTransAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		AcctgTrans
+	referenced Field:	acctgTransTypeId
+

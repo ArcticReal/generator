@@ -1,0 +1,33 @@
+PaymentMethodType:
+
+1	Entity: ProductStorePaymentSetting
+	Foreign Key Name: PRDS_PS_PMNTTP
+	related field: paymentMethodTypeId
+
+2	Entity: ProductPaymentMethodType
+	Foreign Key Name: PROD_PMT_PMT
+	related field: paymentMethodTypeId
+
+3	Entity: ProductStoreVendorPayment
+	Foreign Key Name: PRDSTRVPM_PMMT
+	related field: paymentMethodTypeId
+
+4	Entity: Payment
+	Foreign Key Name: PAYMENT_PMETH_TP
+	related field: paymentMethodTypeId
+
+5	Entity: PaymentMethod
+	Foreign Key Name: PAYMETH_TYPE
+	related field: paymentMethodTypeId
+
+6	Entity: PaymentMethodTypeGlAccount
+	Foreign Key Name: PAYMENT_MTGA_PMT
+	related field: paymentMethodTypeId
+
+7	Entity: OrderPaymentPreference
+	Foreign Key Name: ORDER_PMPRF_PMTP
+	related field: paymentMethodTypeId
+
+8	Entity: PaymentGatewayResponse
+	Foreign Key Name: PAYGATR_PMTP
+	related field: paymentMethodTypeId

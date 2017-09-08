@@ -1,0 +1,16 @@
+InventoryItemTypeAttr:
+
+1: Foreign Key Name:		INV_ITEM_TYP_ATTR
+	Related Entity:		InventoryItemType
+	referenced Field:	inventoryItemTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		InventoryItemAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemTypeId
+

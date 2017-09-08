@@ -1,0 +1,51 @@
+ShipmentReceipt:
+
+1: Foreign Key Name:		SHP_RCPT_INVITM
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+2: Foreign Key Name:		SHP_RCPT_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+3: Foreign Key Name:		SHP_RCPT_SHPKG
+	Related Entity:		ShipmentPackage
+	referenced Field:	shipmentId
+
+
+4: Foreign Key Name:		
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+5: Foreign Key Name:		SHP_RCPT_ORDITM
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+6: Foreign Key Name:		SHP_RCPT_REJRSN
+	Related Entity:		RejectionReason
+	referenced Field:	rejectionId
+
+
+7: Foreign Key Name:		SHP_RCPT_USERLGN
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+8: Foreign Key Name:		SHP_RCPT_SHIPMT
+	Related Entity:		Shipment
+	referenced Field:	shipmentId
+
+
+9: Foreign Key Name:		SHP_RCPT_SHIPIT
+	Related Entity:		ShipmentItem
+	referenced Field:	shipmentId
+
+
+10: Foreign Key Name:		SHP_RCPT_RETINVITM
+	Related Entity:		ReturnItem
+	referenced Field:	returnId
+

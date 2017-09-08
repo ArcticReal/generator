@@ -1,0 +1,13 @@
+ProductContent:
+
+1: Primary Key Attribute: productId
+
+
+2: Primary Key Attribute: contentId
+
+
+3: Primary Key Attribute: productContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

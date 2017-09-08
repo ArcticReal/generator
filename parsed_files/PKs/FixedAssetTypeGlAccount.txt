@@ -1,0 +1,10 @@
+FixedAssetTypeGlAccount:
+
+1: Primary Key Attribute: fixedAssetTypeId
+
+
+2: Primary Key Attribute: fixedAssetId
+
+
+3: Primary Key Attribute: organizationPartyId
+

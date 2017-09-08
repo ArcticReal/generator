@@ -1,0 +1,7 @@
+ContentPurpose:
+
+1: Primary Key Attribute: contentId
+
+
+2: Primary Key Attribute: contentPurposeTypeId
+

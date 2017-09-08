@@ -1,0 +1,16 @@
+TaxAuthorityAssoc:
+
+1: Foreign Key Name:		TAXAUTHASC_TXA
+	Related Entity:		TaxAuthority
+	referenced Field:	taxAuthGeoId
+
+
+2: Foreign Key Name:		TAXAUTHASC_TOTXA
+	Related Entity:		TaxAuthority
+	referenced Field:	taxAuthGeoId
+
+
+3: Foreign Key Name:		TAXAUTHASC_ASTP
+	Related Entity:		TaxAuthorityAssocType
+	referenced Field:	taxAuthorityAssocTypeId
+

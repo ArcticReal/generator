@@ -1,0 +1,6 @@
+ProductStoreFinActSetting:
+
+1: Foreign Key Name:		PRSTFNAC_FARPMTD
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

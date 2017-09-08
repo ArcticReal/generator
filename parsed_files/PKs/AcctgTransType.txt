@@ -1,0 +1,4 @@
+AcctgTransType:
+
+1: Primary Key Attribute: acctgTransTypeId
+

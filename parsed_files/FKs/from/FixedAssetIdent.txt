@@ -1,0 +1,11 @@
+FixedAssetIdent:
+
+1: Foreign Key Name:		FIXDASTID_FXAST
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+2: Foreign Key Name:		FIXDASTID_IDTYP
+	Related Entity:		FixedAssetIdentType
+	referenced Field:	fixedAssetIdentTypeId
+

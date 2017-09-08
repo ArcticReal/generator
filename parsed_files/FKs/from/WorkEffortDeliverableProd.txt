@@ -1,0 +1,11 @@
+WorkEffortDeliverableProd:
+
+1: Foreign Key Name:		WKEFF_DELPRD_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WKEFF_DELPRD_DEL
+	Related Entity:		Deliverable
+	referenced Field:	deliverableId
+

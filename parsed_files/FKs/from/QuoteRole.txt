@@ -1,0 +1,21 @@
+QuoteRole:
+
+1: Foreign Key Name:		QUOTE_RL_QUOTE
+	Related Entity:		Quote
+	referenced Field:	quoteId
+
+
+2: Foreign Key Name:		QUOTE_RL_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		QUOTE_RL_PROLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

@@ -1,0 +1,6 @@
+SalesOpportunityTrckCode:
+
+1: Foreign Key Name:		SOPPTRKCD_SOPP
+	Related Entity:		SalesOpportunity
+	referenced Field:	salesOpportunityId
+

@@ -1,0 +1,149 @@
+ContactMech:
+
+1	Entity: PartyContactMech
+	Foreign Key Name: PARTY_CMECH_CMECH
+	related field: contactMechId
+
+2	Entity: ContactMechLink
+	Foreign Key Name: CONT_MECH_FCMECH
+	related field: contactMechId
+
+3	Entity: CommunicationEvent
+	Foreign Key Name: COM_EVNT_FCM
+	related field: contactMechId
+
+4	Entity: PartyContactMechPurpose
+	Foreign Key Name: PARTY_CMPRP_CMECH
+	related field: contactMechId
+
+5	Entity: GiftCard
+	Foreign Key Name: GIFTCARD_CMECH
+	related field: contactMechId
+
+6	Entity: ContactListParty
+	Foreign Key Name: CNCT_LSTPTY_PCM
+	related field: contactMechId
+
+7	Entity: OrderContactMech
+	Foreign Key Name: ORDER_CMECH_CM
+	related field: contactMechId
+
+8	Entity: OrderItemShipGroup
+	Foreign Key Name: ORDER_ITSG_CNTM
+	related field: contactMechId
+
+9	Entity: CommunicationEventRole
+	Foreign Key Name: COM_EVRL_CMCH
+	related field: contactMechId
+
+10	Entity: ContactMechLink
+	Foreign Key Name: CONT_MECH_TCMECH
+	related field: contactMechId
+
+11	Entity: CommunicationEvent
+	Foreign Key Name: COM_EVNT_TCM
+	related field: contactMechId
+
+12	Entity: ShipmentContactMech
+	Foreign Key Name: SHPMT_CMECH_CM
+	related field: contactMechId
+
+13	Entity: OrderItemContactMech
+	Foreign Key Name: ORDER_ITCM_CMECH
+	related field: contactMechId
+
+14	Entity: ReturnHeader
+	Foreign Key Name: RTN_FROM_CTM
+	related field: contactMechId
+
+15	Entity: InvoiceContactMech
+	Foreign Key Name: INVOICE_CMECH_CM
+	related field: contactMechId
+
+16	Entity: PostalAddress
+	Foreign Key Name: POST_ADDR_CMECH
+	related field: contactMechId
+
+17	Entity: TelecomNumber
+	Foreign Key Name: TEL_NUM_CMECH
+	related field: contactMechId
+
+18	Entity: WorkEffortEventReminder
+	Foreign Key Name: WE_EVENT_REMIND_CM
+	related field: contactMechId
+
+19	Entity: OrderItemShipGroup
+	Foreign Key Name: ORDER_ITSG_TCNT
+	related field: contactMechId
+
+20	Entity: Subscription
+	Foreign Key Name: SUBSC_CONT_MECH
+	related field: contactMechId
+
+21	Entity: CustRequest
+	Foreign Key Name: CUST_REQ_FULCM
+	related field: contactMechId
+
+22	Entity: CheckAccount
+	Foreign Key Name: CACCT_CMECH
+	related field: contactMechId
+
+23	Entity: PayPalPaymentMethod
+	Foreign Key Name: PAYPAL_CMECH
+	related field: contactMechId
+
+24	Entity: Vendor
+	Foreign Key Name: SERVER_HIT_IDBYIP
+	related field: contactMechId
+
+25	Entity: RespondingParty
+	Foreign Key Name: RESP_PTY_CMECH
+	related field: contactMechId
+
+26	Entity: Vendor
+	Foreign Key Name: SERVER_HIT_REFWEB
+	related field: contactMechId
+
+27	Entity: ContactMechAttribute
+	Foreign Key Name: CONT_MECH_ATTR
+	related field: contactMechId
+
+28	Entity: BillingAccount
+	Foreign Key Name: BILLACCT_CMECH
+	related field: contactMechId
+
+29	Entity: WorkEffortContactMech
+	Foreign Key Name: WKEFF_CMECH_CMECH
+	related field: contactMechId
+
+30	Entity: ReturnContactMech
+	Foreign Key Name: RETURN_CMECH_CM
+	related field: contactMechId
+
+31	Entity: EftAccount
+	Foreign Key Name: EFTACCT_CMECH
+	related field: contactMechId
+
+32	Entity: ContactListCommStatus
+	Foreign Key Name: CNCT_LST_CST_CM
+	related field: contactMechId
+
+33	Entity: ShoppingList
+	Foreign Key Name: SHLIST_CMECH
+	related field: contactMechId
+
+34	Entity: Invoice
+	Foreign Key Name: INVOICE_CMECH
+	related field: contactMechId
+
+35	Entity: CreditCard
+	Foreign Key Name: CREDCARD_CMECH
+	related field: contactMechId
+
+36	Entity: FacilityContactMechPurpose
+	Foreign Key Name: FACIL_CMPRP_CMECH
+	related field: contactMechId
+
+37	Entity: FacilityContactMech
+	Foreign Key Name: FACIL_CMECH_CMECH
+	related field: contactMechId

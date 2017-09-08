@@ -1,0 +1,5 @@
+SegmentGroupType:
+
+1	Entity: SegmentGroup
+	Foreign Key Name: SGMTGRP_TYPE
+	related field: segmentGroupTypeId

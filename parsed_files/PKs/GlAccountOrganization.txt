@@ -1,0 +1,7 @@
+GlAccountOrganization:
+
+1: Primary Key Attribute: glAccountId
+
+
+2: Primary Key Attribute: organizationPartyId
+

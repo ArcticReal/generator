@@ -1,0 +1,10 @@
+FixedAssetGeoPoint:
+
+1: Primary Key Attribute: fixedAssetId
+
+
+2: Primary Key Attribute: geoPointId
+
+
+3: Primary Key Attribute: fromDate
+

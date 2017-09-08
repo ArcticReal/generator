@@ -1,0 +1,31 @@
+ProdCatalogRole:
+
+1: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+3: Foreign Key Name:		
+	Related Entity:		Person
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		
+	Related Entity:		PartyGroup
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		PCATRLE_PTYRLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		PCATRLE_CATALOG
+	Related Entity:		ProdCatalog
+	referenced Field:	prodCatalogId
+

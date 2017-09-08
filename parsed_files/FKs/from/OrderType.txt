@@ -1,0 +1,6 @@
+OrderType:
+
+1: Foreign Key Name:		ORDER_TYPE_PARENT
+	Related Entity:		OrderType
+	referenced Field:	orderTypeId
+

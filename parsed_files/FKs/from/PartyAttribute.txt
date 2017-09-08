@@ -1,0 +1,11 @@
+PartyAttribute:
+
+1: Foreign Key Name:		PARTY_ATTR
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		
+	Related Entity:		PartyTypeAttr
+	referenced Field:	attrName
+

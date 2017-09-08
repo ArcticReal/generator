@@ -1,0 +1,9 @@
+DataCategory:
+
+1	Entity: DataCategory
+	Foreign Key Name: DATA_CAT_PARENT
+	related field: dataCategoryId
+
+2	Entity: DataResource
+	Foreign Key Name: DATA_REC_TO_CAT
+	related field: dataCategoryId

@@ -1,0 +1,4 @@
+SupplierPrefOrder:
+
+1: Primary Key Attribute: supplierPrefOrderId
+

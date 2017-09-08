@@ -1,0 +1,4 @@
+TaxAuthorityRateType:
+
+1: Primary Key Attribute: taxAuthorityRateTypeId
+

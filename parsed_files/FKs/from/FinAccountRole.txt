@@ -1,0 +1,21 @@
+FinAccountRole:
+
+1: Foreign Key Name:		FIN_ACT_RL_FNACT
+	Related Entity:		FinAccount
+	referenced Field:	finAccountId
+
+
+2: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		FIN_ACT_RL_RTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

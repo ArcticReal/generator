@@ -1,0 +1,4 @@
+ProductPriceType:
+
+1: Primary Key Attribute: productPriceTypeId
+

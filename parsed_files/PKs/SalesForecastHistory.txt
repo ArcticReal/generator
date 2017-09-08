@@ -1,0 +1,4 @@
+SalesForecastHistory:
+
+1: Primary Key Attribute: salesForecastHistoryId
+

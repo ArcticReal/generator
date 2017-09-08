@@ -1,0 +1,11 @@
+CustRequestNote:
+
+1: Foreign Key Name:		CRQ_CR
+	Related Entity:		CustRequest
+	referenced Field:	custRequestId
+
+
+2: Foreign Key Name:		CRQ_NOTE
+	Related Entity:		NoteData
+	referenced Field:	noteId
+

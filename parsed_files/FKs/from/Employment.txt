@@ -1,0 +1,36 @@
+Employment:
+
+1: Foreign Key Name:		EMPLMNT_TPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		EMPLMNT_TPTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		EMPLMNT_FPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		EMPLMNT_FPTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		EMPLMNT_TNRN
+	Related Entity:		TerminationReason
+	referenced Field:	terminationReasonId
+
+
+6: Foreign Key Name:		EMPLMNT_TNTP
+	Related Entity:		TerminationType
+	referenced Field:	terminationTypeId
+
+
+7: Foreign Key Name:		EMPLMNT_AGR
+	Related Entity:		Agreement
+	referenced Field:	agreementId
+

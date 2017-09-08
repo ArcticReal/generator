@@ -1,0 +1,5 @@
+ShipmentRouteSegment:
+
+1	Entity: ShipmentPackageRouteSeg
+	Foreign Key Name: SHPKRTSG_RTSG
+	related field: shipmentId

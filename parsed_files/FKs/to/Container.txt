@@ -1,0 +1,17 @@
+Container:
+
+1	Entity: InventoryItem
+	Foreign Key Name: INV_ITEM_CONTAINER
+	related field: containerId
+
+2	Entity: ContainerGeoPoint
+	Foreign Key Name: CONTNRGEOPT_CONTNR
+	related field: containerId
+
+3	Entity: InventoryTransfer
+	Foreign Key Name: INV_XFER_TCNT
+	related field: containerId
+
+4	Entity: InventoryTransfer
+	Foreign Key Name: INV_XFER_CONT
+	related field: containerId

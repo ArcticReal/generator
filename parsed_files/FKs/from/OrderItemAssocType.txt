@@ -1,0 +1,6 @@
+OrderItemAssocType:
+
+1: Foreign Key Name:		ORDER_ITAS_TYPPAR
+	Related Entity:		OrderItemAssocType
+	referenced Field:	orderItemAssocTypeId
+

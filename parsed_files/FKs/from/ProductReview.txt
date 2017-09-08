@@ -1,0 +1,21 @@
+ProductReview:
+
+1: Foreign Key Name:		PROD_REVIEW_PRDSTR
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+2: Foreign Key Name:		PROD_REVIEW_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+3: Foreign Key Name:		PROD_REVIEW_ULH
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+4: Foreign Key Name:		PROD_REVIEW_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

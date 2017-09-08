@@ -1,0 +1,4 @@
+Requirement:
+
+1: Primary Key Attribute: requirementId
+

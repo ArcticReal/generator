@@ -1,0 +1,13 @@
+TrackingCodeType:
+
+1	Entity: TrackingCodeOrder
+	Foreign Key Name: TKNG_CODODR_TYP
+	related field: trackingCodeTypeId
+
+2	Entity: TrackingCodeOrderReturn
+	Foreign Key Name: TKNG_CODODR_RTNTYP
+	related field: trackingCodeTypeId
+
+3	Entity: TrackingCode
+	Foreign Key Name: TKNG_COD_TYP
+	related field: trackingCodeTypeId

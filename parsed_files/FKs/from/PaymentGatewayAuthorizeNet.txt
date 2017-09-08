@@ -1,0 +1,6 @@
+PaymentGatewayAuthorizeNet:
+
+1: Foreign Key Name:		PGAN_PGC
+	Related Entity:		PaymentGatewayConfig
+	referenced Field:	paymentGatewayConfigId
+

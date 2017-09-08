@@ -1,0 +1,16 @@
+ProductPromo:
+
+1: Foreign Key Name:		PROD_PRMO_OPA
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PROD_PRMO_CUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+3: Foreign Key Name:		PROD_PRMO_LMCUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

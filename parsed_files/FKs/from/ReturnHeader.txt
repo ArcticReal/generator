@@ -1,0 +1,61 @@
+ReturnHeader:
+
+1: Foreign Key Name:		RTN_HEAD_TYPE
+	Related Entity:		ReturnHeaderType
+	referenced Field:	returnHeaderTypeId
+
+
+2: Foreign Key Name:		RTN_FROM_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		RTN_TO_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		RTN_TO_BACT
+	Related Entity:		BillingAccount
+	referenced Field:	billingAccountId
+
+
+5: Foreign Key Name:		RTN_TO_FACT
+	Related Entity:		FinAccount
+	referenced Field:	finAccountId
+
+
+6: Foreign Key Name:		RTN_TO_PAYMETH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+7: Foreign Key Name:		RTN_TO_FACILITY
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+8: Foreign Key Name:		RTN_FROM_CTM
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+9: Foreign Key Name:		
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+
+
+10: Foreign Key Name:		RTN_STTS_ITEM
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+11: Foreign Key Name:		RTN_HDR_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+12: Foreign Key Name:		
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

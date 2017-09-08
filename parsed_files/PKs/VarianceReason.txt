@@ -1,0 +1,4 @@
+VarianceReason:
+
+1: Primary Key Attribute: varianceReasonId
+

@@ -1,0 +1,4 @@
+ProductStore:
+
+1: Primary Key Attribute: productStoreId
+

@@ -1,0 +1,51 @@
+CostComponent:
+
+1: Foreign Key Name:		COST_COMP_TYPE
+	Related Entity:		CostComponentType
+	referenced Field:	costComponentTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		CostComponentTypeAttr
+	referenced Field:	costComponentTypeId
+
+
+3: Foreign Key Name:		COST_COMP_PRODUCT
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+4: Foreign Key Name:		COST_COMP_PRODFEAT
+	Related Entity:		ProductFeature
+	referenced Field:	productFeatureId
+
+
+5: Foreign Key Name:		COST_COMP_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		COST_COMP_GEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+7: Foreign Key Name:		COST_COMP_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+8: Foreign Key Name:		COST_COMP_FXADSST
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+9: Foreign Key Name:		COST_COMP_CALC
+	Related Entity:		CostComponentCalc
+	referenced Field:	costComponentCalcId
+
+
+10: Foreign Key Name:		COST_COMP_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+

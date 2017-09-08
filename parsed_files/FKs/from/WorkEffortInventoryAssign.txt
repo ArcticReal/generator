@@ -1,0 +1,16 @@
+WorkEffortInventoryAssign:
+
+1: Foreign Key Name:		WKEFF_INVAS_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WKEFF_INVAS_INVIT
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+3: Foreign Key Name:		WKEFF_INVAS_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

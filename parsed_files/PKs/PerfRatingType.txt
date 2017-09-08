@@ -1,0 +1,4 @@
+PerfRatingType:
+
+1: Primary Key Attribute: perfRatingTypeId
+

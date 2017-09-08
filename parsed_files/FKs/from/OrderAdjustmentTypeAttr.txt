@@ -1,0 +1,16 @@
+OrderAdjustmentTypeAttr:
+
+1: Foreign Key Name:		ORDER_ADJ_TYPATTR
+	Related Entity:		OrderAdjustmentType
+	referenced Field:	orderAdjustmentTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		OrderAdjustmentAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderAdjustment
+	referenced Field:	orderAdjustmentTypeId
+

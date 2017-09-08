@@ -1,0 +1,17 @@
+FinAccountTrans:
+
+1	Entity: AcctgTrans
+	Foreign Key Name: ACCTTX_FNACTTR
+	related field: finAccountTransId
+
+2	Entity: Payment
+	Foreign Key Name: PAYMENT_FACTX
+	related field: finAccountTransId
+
+3	Entity: FinAccountTransAttribute
+	Foreign Key Name: FINACCT_TX_ATTR
+	related field: finAccountTransId
+
+4	Entity: ReturnItemResponse
+	Foreign Key Name: RTN_PAY_FINACTTX
+	related field: finAccountTransId

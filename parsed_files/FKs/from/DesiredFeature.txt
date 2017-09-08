@@ -1,0 +1,11 @@
+DesiredFeature:
+
+1: Foreign Key Name:		DES_FEAT_REQ
+	Related Entity:		Requirement
+	referenced Field:	requirementId
+
+
+2: Foreign Key Name:		DES_FEAT_PFEAT
+	Related Entity:		ProductFeature
+	referenced Field:	productFeatureId
+

@@ -1,0 +1,4 @@
+CustRequestResolution:
+
+1: Primary Key Attribute: custRequestResolutionId
+

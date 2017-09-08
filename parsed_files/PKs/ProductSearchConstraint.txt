@@ -1,0 +1,7 @@
+ProductSearchConstraint:
+
+1: Primary Key Attribute: productSearchResultId
+
+
+2: Primary Key Attribute: constraintSeqId
+

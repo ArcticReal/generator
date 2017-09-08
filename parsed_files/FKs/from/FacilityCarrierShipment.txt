@@ -1,0 +1,21 @@
+FacilityCarrierShipment:
+
+1: Foreign Key Name:		FACILITY_CSH_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		FACILITY_CSH_FAC
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+3: Foreign Key Name:		FACILITY_CSH_STP
+	Related Entity:		ShipmentMethodType
+	referenced Field:	shipmentMethodTypeId
+
+
+4: Foreign Key Name:		FACILITY_CSH_CSM
+	Related Entity:		CarrierShipmentMethod
+	referenced Field:	shipmentMethodTypeId
+

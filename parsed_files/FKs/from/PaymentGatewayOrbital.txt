@@ -1,0 +1,6 @@
+PaymentGatewayOrbital:
+
+1: Foreign Key Name:		PGORB_PGC
+	Related Entity:		PaymentGatewayConfig
+	referenced Field:	paymentGatewayConfigId
+

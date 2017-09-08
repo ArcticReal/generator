@@ -1,0 +1,21 @@
+ProductCategory:
+
+1: Foreign Key Name:		PROD_CTGRY_TYPE
+	Related Entity:		ProductCategoryType
+	referenced Field:	productCategoryTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ProductCategoryTypeAttr
+	referenced Field:	productCategoryTypeId
+
+
+3: Foreign Key Name:		PROD_CTGRY_PARENT
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+
+
+4: Foreign Key Name:		
+	Related Entity:		ProductCategory
+	referenced Field:	primaryParentCategoryId
+

@@ -1,0 +1,10 @@
+QuoteTerm:
+
+1: Primary Key Attribute: termTypeId
+
+
+2: Primary Key Attribute: quoteId
+
+
+3: Primary Key Attribute: quoteItemSeqId
+

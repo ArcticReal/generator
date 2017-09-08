@@ -1,0 +1,10 @@
+UserLoginSecurityGroup:
+
+1: Primary Key Attribute: userLoginId
+
+
+2: Primary Key Attribute: groupId
+
+
+3: Primary Key Attribute: fromDate
+

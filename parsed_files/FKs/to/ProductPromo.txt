@@ -1,0 +1,57 @@
+ProductPromo:
+
+1	Entity: OrderAdjustment
+	Foreign Key Name: ORDER_ADJ_PROMO
+	related field: productPromoId
+
+2	Entity: ProductPromoAction
+	Foreign Key Name: PROD_PRACT_PR
+	related field: productPromoId
+
+3	Entity: ReturnAdjustment
+	Foreign Key Name: RETURN_ADJ_PROMO
+	related field: productPromoId
+
+4	Entity: ProductStorePromoAppl
+	Foreign Key Name: PRDSTRPRMO_PRMO
+	related field: productPromoId
+
+5	Entity: ProductPromoCategory
+	Foreign Key Name: PROD_PRCAT_PROMO
+	related field: productPromoId
+
+6	Entity: ProductPromoCond
+	Foreign Key Name: PROD_PRCOND_PROMO
+	related field: productPromoId
+
+7	Entity: AgreementPromoAppl
+	Foreign Key Name: AGRMNT_PROM_PRO
+	related field: productPromoId
+
+8	Entity: ProductPromoRule
+	Foreign Key Name: PROD_PRRLE_PROMO
+	related field: productPromoId
+
+9	Entity: ProductPromoCode
+	Foreign Key Name: PROD_PRCOD_PROMO
+	related field: productPromoId
+
+10	Entity: ProductPromoUse
+	Foreign Key Name: PROD_PRUSE_PROMO
+	related field: productPromoId
+
+11	Entity: ProductPromoContent
+	Foreign Key Name: PRODPR_CNT_PROD_PR
+	related field: productPromoId
+
+12	Entity: ProductPromoProduct
+	Foreign Key Name: PROD_PRPRD_PROMO
+	related field: productPromoId
+
+13	Entity: MarketingCampaignPromo
+	Foreign Key Name: MKTGCPN_PROMO_PP
+	related field: productPromoId
+
+14	Entity: QuoteAdjustment
+	Foreign Key Name: QUOTE_ADJ_PROMO
+	related field: productPromoId

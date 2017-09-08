@@ -1,0 +1,6 @@
+ProductCalculatedInfo:
+
+1: Foreign Key Name:		PRODCI_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+

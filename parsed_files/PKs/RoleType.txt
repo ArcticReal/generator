@@ -1,0 +1,4 @@
+RoleType:
+
+1: Primary Key Attribute: roleTypeId
+

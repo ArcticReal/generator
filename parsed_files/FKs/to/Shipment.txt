@@ -1,0 +1,37 @@
+Shipment:
+
+1	Entity: ReturnItemShipment
+	Foreign Key Name: RIT_SHPMT_SHPMT
+	related field: shipmentId
+
+2	Entity: ShipmentAttribute
+	Foreign Key Name: SHPMNT_ATTR
+	related field: shipmentId
+
+3	Entity: ShipmentContactMech
+	Foreign Key Name: SHPMT_CMECH
+	related field: shipmentId
+
+4	Entity: ShipmentStatus
+	Foreign Key Name: SHPMNT_STTS_SHMT
+	related field: shipmentId
+
+5	Entity: ShipmentPackage
+	Foreign Key Name: SHPKG_SHPMNT
+	related field: shipmentId
+
+6	Entity: OrderShipment
+	Foreign Key Name: ORDER_SHPMT_SHPMT
+	related field: shipmentId
+
+7	Entity: ShipmentItem
+	Foreign Key Name: SHPMNT_ITM_SHPMT
+	related field: shipmentId
+
+8	Entity: AcctgTrans
+	Foreign Key Name: ACCTTX_SHIPMENT
+	related field: shipmentId
+
+9	Entity: ShipmentRouteSegment
+	Foreign Key Name: SHPMT_RTSEG_SHPMT
+	related field: shipmentId

@@ -1,0 +1,85 @@
+OrderItem:
+
+1	Entity: OrderItemBilling
+	Foreign Key Name: ORDER_ITBLNG_OITM
+	related field: orderId
+
+2	Entity: PicklistItem
+	Foreign Key Name: PCKLST_ITM_ODIT
+	related field: orderId
+
+3	Entity: OrderItemShipGroupAssoc
+	Foreign Key Name: ORDER_ISGA_ORDI
+	related field: orderId
+
+4	Entity: ReturnItem
+	Foreign Key Name: RTN_ITEM_ODRIT
+	related field: orderId
+
+5	Entity: OrderItemRole
+	Foreign Key Name: ORDER_ITRL_OITM
+	related field: orderId
+
+6	Entity: ShipmentReceipt
+	Foreign Key Name: SHP_RCPT_ORDITM
+	related field: orderId
+
+7	Entity: OrderItemContactMech
+	Foreign Key Name: ORDER_ITCM_OITM
+	related field: orderId
+
+8	Entity: WorkOrderItemFulfillment
+	Foreign Key Name: WORDER_ITFMT_OITM
+	related field: orderId
+
+9	Entity: GiftCardFulfillment
+	Foreign Key Name: GC_FILL_ODRI
+	related field: orderId
+
+10	Entity: OrderItemPriceInfo
+	Foreign Key Name: ORDER_OIPI_OITM
+	related field: orderId
+
+11	Entity: ItemIssuance
+	Foreign Key Name: ITEM_ISS_ORITM
+	related field: orderId
+
+12	Entity: FixedAsset
+	Foreign Key Name: FIXEDAST_ORDITM
+	related field: orderId
+
+13	Entity: Subscription
+	Foreign Key Name: SUBSC_ORDERITM
+	related field: orderId
+
+14	Entity: OrderItemAttribute
+	Foreign Key Name: ORDER_ITEM_ATTR
+	related field: orderId
+
+15	Entity: OrderItemGroupOrder
+	Foreign Key Name: OIGO_ORDER_ITEM
+	related field: orderId
+
+16	Entity: ProductOrderItem
+	Foreign Key Name: PROD_OITEM_OITEM
+	related field: orderId
+
+17	Entity: FinAccountTrans
+	Foreign Key Name: FIN_ACT_TX_ODITM
+	related field: orderId
+
+18	Entity: OrderItemShipGrpInvRes
+	Foreign Key Name: ORDER_ITIR_OITM
+	related field: orderId
+
+19	Entity: OrderItemChange
+	Foreign Key Name: ORDER_ITCH_OITM
+	related field: orderId
+
+20	Entity: ProductOrderItem
+	Foreign Key Name: PROD_OITEM_ENOITM
+	related field: orderId
+
+21	Entity: OrderRequirementCommitment
+	Foreign Key Name: ORDREQ_CMT_OITM
+	related field: orderId

@@ -1,0 +1,6 @@
+WorkEffortTransBox:
+
+1: Foreign Key Name:		WKEFF_TXBX_WE
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+

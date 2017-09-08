@@ -1,0 +1,4 @@
+Invoice:
+
+1: Primary Key Attribute: invoiceId
+

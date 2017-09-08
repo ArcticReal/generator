@@ -1,0 +1,51 @@
+InventoryItemDetail:
+
+1: Foreign Key Name:		INV_ITDTL_INVIT
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+2: Foreign Key Name:		INV_ITDTL_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderItemShipGrpInvRes
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		INV_ITDTL_FAMNT
+	Related Entity:		FixedAssetMaint
+	referenced Field:	fixedAssetId
+
+
+5: Foreign Key Name:		INV_ITDTL_ITMIS
+	Related Entity:		ItemIssuance
+	referenced Field:	itemIssuanceId
+
+
+6: Foreign Key Name:		
+	Related Entity:		WorkEffortInventoryAssign
+	referenced Field:	workEffortId
+
+
+7: Foreign Key Name:		
+	Related Entity:		WorkEffortInventoryProduced
+	referenced Field:	workEffortId
+
+
+8: Foreign Key Name:		INV_ITDTL_SHRCT
+	Related Entity:		ShipmentReceipt
+	referenced Field:	receiptId
+
+
+9: Foreign Key Name:		INV_ITDTL_PHINV
+	Related Entity:		PhysicalInventory
+	referenced Field:	physicalInventoryId
+
+
+10: Foreign Key Name:		
+	Related Entity:		InventoryItemVariance
+	referenced Field:	inventoryItemId
+

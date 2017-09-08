@@ -1,0 +1,10 @@
+PaymentGroupMember:
+
+1: Primary Key Attribute: paymentGroupId
+
+
+2: Primary Key Attribute: paymentId
+
+
+3: Primary Key Attribute: fromDate
+

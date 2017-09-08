@@ -1,0 +1,4 @@
+BudgetType:
+
+1: Primary Key Attribute: budgetTypeId
+

@@ -1,0 +1,4 @@
+FileExtension:
+
+1: Primary Key Attribute: fileExtensionId
+

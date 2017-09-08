@@ -1,0 +1,11 @@
+ProductStoreKeywordOvrd:
+
+1: Foreign Key Name:		PRDSTRKWO_PRDS
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+2: Foreign Key Name:		PRDSTRKWO_ENM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

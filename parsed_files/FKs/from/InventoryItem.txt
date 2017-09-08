@@ -1,0 +1,71 @@
+InventoryItem:
+
+1: Foreign Key Name:		INV_ITEM_TYPE
+	Related Entity:		InventoryItemType
+	referenced Field:	inventoryItemTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		InventoryItemTypeAttr
+	referenced Field:	inventoryItemTypeId
+
+
+3: Foreign Key Name:		INV_ITEM_PRODUCT
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+4: Foreign Key Name:		INV_ITEM_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		INV_ITEM_OWNPARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		INV_ITEM_STTSITM
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+7: Foreign Key Name:		INV_ITEM_FACILITY
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+8: Foreign Key Name:		INV_ITEM_CONTAINER
+	Related Entity:		Container
+	referenced Field:	containerId
+
+
+9: Foreign Key Name:		INV_ITEM_LOT
+	Related Entity:		Lot
+	referenced Field:	lotId
+
+
+10: Foreign Key Name:		
+	Related Entity:		ProductFacility
+	referenced Field:	productId
+
+
+11: Foreign Key Name:		
+	Related Entity:		FacilityLocation
+	referenced Field:	facilityId
+
+
+12: Foreign Key Name:		
+	Related Entity:		ProductFacilityLocation
+	referenced Field:	productId
+
+
+13: Foreign Key Name:		INV_ITEM_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+14: Foreign Key Name:		INV_ITEM_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+

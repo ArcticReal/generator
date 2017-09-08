@@ -1,0 +1,13 @@
+MimeType:
+
+1	Entity: CommunicationEvent
+	Foreign Key Name: COM_EVNT_MIMETYPE
+	related field: mimeTypeId
+
+2	Entity: FileExtension
+	Foreign Key Name: FILEEXT_MMTYP
+	related field: mimeTypeId
+
+3	Entity: MimeTypeHtmlTemplate
+	Foreign Key Name: MIMETYPE_TPL_MT
+	related field: mimeTypeId

@@ -1,0 +1,16 @@
+BillingAccountTerm:
+
+1: Foreign Key Name:		BILLACCT_TRM_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+2: Foreign Key Name:		BILLACCT_TRM_TRM
+	Related Entity:		TermType
+	referenced Field:	termTypeId
+
+
+3: Foreign Key Name:		BILLACCT_TRM_BACT
+	Related Entity:		BillingAccount
+	referenced Field:	billingAccountId
+

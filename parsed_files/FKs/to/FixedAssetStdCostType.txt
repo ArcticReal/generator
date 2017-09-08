@@ -1,0 +1,9 @@
+FixedAssetStdCostType:
+
+1	Entity: FixedAssetStdCost
+	Foreign Key Name: FIXASTCO_TYPCOS
+	related field: fixedAssetStdCostTypeId
+
+2	Entity: FixedAssetStdCostType
+	Foreign Key Name: FIXASTCO_TYPPAR
+	related field: fixedAssetStdCostTypeId

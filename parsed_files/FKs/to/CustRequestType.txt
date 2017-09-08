@@ -1,0 +1,21 @@
+CustRequestType:
+
+1	Entity: CustRequestResolution
+	Foreign Key Name: CUST_RQRS_TYPE
+	related field: custRequestTypeId
+
+2	Entity: CustRequest
+	Foreign Key Name: CUST_REQ_TYPE
+	related field: custRequestTypeId
+
+3	Entity: CustRequestTypeAttr
+	Foreign Key Name: CUST_REQ_TYPE_ATTR
+	related field: custRequestTypeId
+
+4	Entity: CustRequestType
+	Foreign Key Name: CUST_REQ_TYPE_PAR
+	related field: custRequestTypeId
+
+5	Entity: CustRequestCategory
+	Foreign Key Name: CUST_RQCT_TYPE
+	related field: custRequestTypeId

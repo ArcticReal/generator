@@ -1,0 +1,6 @@
+GlAccountClass:
+
+1: Foreign Key Name:		GLACTCLS_PAR
+	Related Entity:		GlAccountClass
+	referenced Field:	glAccountClassId
+

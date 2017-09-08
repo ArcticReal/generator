@@ -1,0 +1,11 @@
+ConfigOptionProductOption:
+
+1: Foreign Key Name:		PROD_OPTN_CONF
+	Related Entity:		ProductConfigConfig
+	referenced Field:	configId
+
+
+2: Foreign Key Name:		PROD_OPTN_PROD
+	Related Entity:		ProductConfigProduct
+	referenced Field:	configItemId
+

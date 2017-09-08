@@ -1,0 +1,11 @@
+CustRequestCommEvent:
+
+1: Foreign Key Name:		CUSTREQ_CEV_CRQ
+	Related Entity:		CustRequest
+	referenced Field:	custRequestId
+
+
+2: Foreign Key Name:		CUSTREQ_CEV_CEV
+	Related Entity:		CommunicationEvent
+	referenced Field:	communicationEventId
+

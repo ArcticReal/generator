@@ -1,0 +1,11 @@
+OldPartyTaxInfo:
+
+1: Foreign Key Name:		PARTY_TXI_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PARTY_TXI_GEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+

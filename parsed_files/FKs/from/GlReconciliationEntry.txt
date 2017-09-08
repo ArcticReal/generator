@@ -1,0 +1,16 @@
+GlReconciliationEntry:
+
+1: Foreign Key Name:		GL_RECENT_GLREC
+	Related Entity:		GlReconciliation
+	referenced Field:	glReconciliationId
+
+
+2: Foreign Key Name:		GL_RECENT_ACTTXE
+	Related Entity:		AcctgTransEntry
+	referenced Field:	acctgTransId
+
+
+3: Foreign Key Name:		
+	Related Entity:		AcctgTrans
+	referenced Field:	acctgTransId
+

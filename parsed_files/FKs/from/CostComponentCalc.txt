@@ -1,0 +1,21 @@
+CostComponentCalc:
+
+1: Foreign Key Name:		COST_COM_CGLAT
+	Related Entity:		GlAccountType
+	referenced Field:	glAccountTypeId
+
+
+2: Foreign Key Name:		COST_COM_OGLAT
+	Related Entity:		GlAccountType
+	referenced Field:	glAccountTypeId
+
+
+3: Foreign Key Name:		COST_COM_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+4: Foreign Key Name:		COST_COM_CMET
+	Related Entity:		CustomMethod
+	referenced Field:	customMethodId
+

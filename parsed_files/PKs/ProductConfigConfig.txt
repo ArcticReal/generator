@@ -1,0 +1,13 @@
+ProductConfigConfig:
+
+1: Primary Key Attribute: configId
+
+
+2: Primary Key Attribute: configItemId
+
+
+3: Primary Key Attribute: configOptionId
+
+
+4: Primary Key Attribute: sequenceNum
+

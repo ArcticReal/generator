@@ -1,0 +1,13 @@
+ProductType:
+
+1	Entity: ProductTypeAttr
+	Foreign Key Name: PROD_TYPE_ATTR
+	related field: productTypeId
+
+2	Entity: Product
+	Foreign Key Name: PROD_TYPE
+	related field: productTypeId
+
+3	Entity: ProductType
+	Foreign Key Name: PROD_TYPE_PARENT
+	related field: productTypeId

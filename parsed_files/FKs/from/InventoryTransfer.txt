@@ -1,0 +1,46 @@
+InventoryTransfer:
+
+1: Foreign Key Name:		INV_XFER_ITEM
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+2: Foreign Key Name:		INV_XFER_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+3: Foreign Key Name:		INV_XFER_FAC
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+4: Foreign Key Name:		
+	Related Entity:		FacilityLocation
+	referenced Field:	facilityId
+
+
+5: Foreign Key Name:		INV_XFER_CONT
+	Related Entity:		Container
+	referenced Field:	containerId
+
+
+6: Foreign Key Name:		INV_XFER_TFAC
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+7: Foreign Key Name:		
+	Related Entity:		FacilityLocation
+	referenced Field:	facilityId
+
+
+8: Foreign Key Name:		INV_XFER_TCNT
+	Related Entity:		Container
+	referenced Field:	containerId
+
+
+9: Foreign Key Name:		INV_XFER_ISSU
+	Related Entity:		ItemIssuance
+	referenced Field:	itemIssuanceId
+

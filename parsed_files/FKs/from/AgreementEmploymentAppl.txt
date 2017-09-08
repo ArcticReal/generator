@@ -1,0 +1,16 @@
+AgreementEmploymentAppl:
+
+1: Foreign Key Name:		AGRMNT_EMPL_APPL
+	Related Entity:		Employment
+	referenced Field:	roleTypeIdFrom
+
+
+2: Foreign Key Name:		
+	Related Entity:		Agreement
+	referenced Field:	partyIdFrom
+
+
+3: Foreign Key Name:		AGRMNT_EMPL_AITM
+	Related Entity:		AgreementItem
+	referenced Field:	agreementId
+

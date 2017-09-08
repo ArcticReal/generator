@@ -1,0 +1,5 @@
+SurveyQuestionType:
+
+1	Entity: SurveyQuestion
+	Foreign Key Name: SRVYQST_SRVYQTP
+	related field: surveyQuestionTypeId

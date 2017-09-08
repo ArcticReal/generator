@@ -1,0 +1,5 @@
+SubscriptionActivity:
+
+1	Entity: SubscriptionFulfillmentPiece
+	Foreign Key Name: SUBSC_FP_ACT
+	related field: subscriptionActivityId

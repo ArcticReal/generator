@@ -1,0 +1,9 @@
+AcctgTrans:
+
+1	Entity: AcctgTransEntry
+	Foreign Key Name: ACCTTXENT_ACTX
+	related field: acctgTransId
+
+2	Entity: AcctgTransAttribute
+	Foreign Key Name: ACCTTX_ATTR
+	related field: acctgTransId

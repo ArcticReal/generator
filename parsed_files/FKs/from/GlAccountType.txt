@@ -1,0 +1,6 @@
+GlAccountType:
+
+1: Foreign Key Name:		GLACTTY_PAR
+	Related Entity:		GlAccountType
+	referenced Field:	glAccountTypeId
+

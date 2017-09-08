@@ -1,0 +1,6 @@
+ContentSearchConstraint:
+
+1: Foreign Key Name:		CNT_SCHRSI_RES
+	Related Entity:		ContentSearchResult
+	referenced Field:	contentSearchResultId
+

@@ -1,0 +1,10 @@
+EmplPositionTypeRate:
+
+1: Primary Key Attribute: emplPositionTypeId
+
+
+2: Primary Key Attribute: rateTypeId
+
+
+3: Primary Key Attribute: fromDate
+

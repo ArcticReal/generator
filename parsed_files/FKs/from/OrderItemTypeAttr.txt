@@ -1,0 +1,16 @@
+OrderItemTypeAttr:
+
+1: Foreign Key Name:		ORDER_ITEM_TYPATR
+	Related Entity:		OrderItemType
+	referenced Field:	orderItemTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		OrderItemAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderItemTypeId
+

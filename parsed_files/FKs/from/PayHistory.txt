@@ -1,0 +1,21 @@
+PayHistory:
+
+1: Foreign Key Name:		PAY_HIST_EMPLMNT
+	Related Entity:		Employment
+	referenced Field:	roleTypeIdFrom
+
+
+2: Foreign Key Name:		PAY_HIST_PGRD
+	Related Entity:		PayGrade
+	referenced Field:	payGradeId
+
+
+3: Foreign Key Name:		PAY_HIST_SSTP
+	Related Entity:		SalaryStep
+	referenced Field:	salaryStepSeqId
+
+
+4: Foreign Key Name:		PAY_HIST_PDTP
+	Related Entity:		PeriodType
+	referenced Field:	periodTypeId
+

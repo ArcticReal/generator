@@ -1,0 +1,6 @@
+PaymentGroup:
+
+1: Foreign Key Name:		PAYMNTGP_PGTYPE
+	Related Entity:		PaymentGroupType
+	referenced Field:	paymentGroupTypeId
+

@@ -1,0 +1,10 @@
+SurveyTrigger:
+
+1: Primary Key Attribute: surveyId
+
+
+2: Primary Key Attribute: surveyApplTypeId
+
+
+3: Primary Key Attribute: fromDate
+

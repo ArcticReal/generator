@@ -1,0 +1,13 @@
+FixedAssetMaintOrder:
+
+1: Primary Key Attribute: fixedAssetId
+
+
+2: Primary Key Attribute: maintHistSeqId
+
+
+3: Primary Key Attribute: orderId
+
+
+4: Primary Key Attribute: orderItemSeqId
+

@@ -1,0 +1,10 @@
+WorkEffortReview:
+
+1: Primary Key Attribute: workEffortId
+
+
+2: Primary Key Attribute: userLoginId
+
+
+3: Primary Key Attribute: reviewDate
+

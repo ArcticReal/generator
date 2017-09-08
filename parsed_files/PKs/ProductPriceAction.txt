@@ -1,0 +1,7 @@
+ProductPriceAction:
+
+1: Primary Key Attribute: productPriceRuleId
+
+
+2: Primary Key Attribute: productPriceActionSeqId
+

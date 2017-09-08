@@ -1,0 +1,16 @@
+GlAccountTypeDefault:
+
+1: Foreign Key Name:		GLACCT_TPDF_GLAT
+	Related Entity:		GlAccountType
+	referenced Field:	glAccountTypeId
+
+
+2: Foreign Key Name:		GLACCT_TPDF_OPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		GLACCT_TPDF_GLA
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+

@@ -1,0 +1,13 @@
+ProductPaymentMethodType:
+
+1: Primary Key Attribute: productId
+
+
+2: Primary Key Attribute: paymentMethodTypeId
+
+
+3: Primary Key Attribute: productPricePurposeId
+
+
+4: Primary Key Attribute: fromDate
+

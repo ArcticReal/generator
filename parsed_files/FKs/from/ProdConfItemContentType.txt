@@ -1,0 +1,6 @@
+ProdConfItemContentType:
+
+1: Foreign Key Name:		PCICT_TYP_PARENT
+	Related Entity:		ProdConfItemContentType
+	referenced Field:	confItemContentTypeId
+

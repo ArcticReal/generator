@@ -1,0 +1,26 @@
+ContentApproval:
+
+1: Foreign Key Name:		CNTNTAPPR_CNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ContentRevision
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		CNTNTAPPR_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		CNTNTAPPR_RLTP
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+5: Foreign Key Name:		CNTNTAPPR_APSI
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

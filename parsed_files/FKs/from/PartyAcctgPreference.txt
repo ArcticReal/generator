@@ -1,0 +1,61 @@
+PartyAcctgPreference:
+
+1: Foreign Key Name:		ACTG_PREF_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		ACTGPREF_TAXFORM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+3: Foreign Key Name:		ACTGPREF_COGS
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+4: Foreign Key Name:		ACCTGPREF_CURNCY
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+5: Foreign Key Name:		ACTGPREF_INVCM
+	Related Entity:		CustomMethod
+	referenced Field:	customMethodId
+
+
+6: Foreign Key Name:		ACTGPREF_QTECM
+	Related Entity:		CustomMethod
+	referenced Field:	customMethodId
+
+
+7: Foreign Key Name:		ACTGPREF_ODRCM
+	Related Entity:		CustomMethod
+	referenced Field:	customMethodId
+
+
+8: Foreign Key Name:		ACTGPREF_PAYMTH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+9: Foreign Key Name:		ACTGPREF_GLJRNL
+	Related Entity:		GlJournal
+	referenced Field:	glJournalId
+
+
+10: Foreign Key Name:		ACTGPREF_INVSQ
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+11: Foreign Key Name:		ACTGPREF_QTESQ
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+12: Foreign Key Name:		ACTGPREF_ODRSQ
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

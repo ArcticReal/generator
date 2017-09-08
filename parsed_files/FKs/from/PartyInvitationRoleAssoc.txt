@@ -1,0 +1,11 @@
+PartyInvitationRoleAssoc:
+
+1: Foreign Key Name:		PTYINVROLE_ROLET
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+2: Foreign Key Name:		PTYINVROLE_PTYINV
+	Related Entity:		PartyInvitation
+	referenced Field:	partyInvitationId
+

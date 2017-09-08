@@ -1,0 +1,10 @@
+ShoppingListItemSurvey:
+
+1: Primary Key Attribute: shoppingListId
+
+
+2: Primary Key Attribute: shoppingListItemSeqId
+
+
+3: Primary Key Attribute: surveyResponseId
+

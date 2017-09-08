@@ -1,0 +1,13 @@
+ProdConfItemContent:
+
+1: Primary Key Attribute: configItemId
+
+
+2: Primary Key Attribute: contentId
+
+
+3: Primary Key Attribute: confItemContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

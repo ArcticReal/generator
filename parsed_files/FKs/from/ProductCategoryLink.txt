@@ -1,0 +1,11 @@
+ProductCategoryLink:
+
+1: Foreign Key Name:		PROD_CLNK_CATEGORY
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+
+
+2: Foreign Key Name:		PROD_CLNK_LKTPENM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

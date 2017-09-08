@@ -1,0 +1,16 @@
+WorkEffortContactMech:
+
+1: Foreign Key Name:		WKEFF_CMECH_WKEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WKEFF_CMECH_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+3: Foreign Key Name:		
+	Related Entity:		TelecomNumber
+	referenced Field:	contactMechId
+

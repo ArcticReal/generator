@@ -1,0 +1,6 @@
+QuoteCoefficient:
+
+1: Foreign Key Name:		QUOTE_COEFF
+	Related Entity:		Quote
+	referenced Field:	quoteId
+

@@ -1,0 +1,16 @@
+ProductKeyword:
+
+1: Foreign Key Name:		PROD_KWD_PROD_NEW
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		PROD_KWD_TYPE
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+3: Foreign Key Name:		PROD_KWD_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

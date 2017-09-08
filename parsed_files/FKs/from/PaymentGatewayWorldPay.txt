@@ -1,0 +1,6 @@
+PaymentGatewayWorldPay:
+
+1: Foreign Key Name:		PGWP_PGC
+	Related Entity:		PaymentGatewayConfig
+	referenced Field:	paymentGatewayConfigId
+

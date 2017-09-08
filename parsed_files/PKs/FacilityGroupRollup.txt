@@ -1,0 +1,10 @@
+FacilityGroupRollup:
+
+1: Primary Key Attribute: facilityGroupId
+
+
+2: Primary Key Attribute: parentFacilityGroupId
+
+
+3: Primary Key Attribute: fromDate
+

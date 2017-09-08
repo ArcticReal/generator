@@ -1,0 +1,10 @@
+ContactListParty:
+
+1: Primary Key Attribute: contactListId
+
+
+2: Primary Key Attribute: partyId
+
+
+3: Primary Key Attribute: fromDate
+

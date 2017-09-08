@@ -1,0 +1,17 @@
+FixedAssetMaint:
+
+1	Entity: FixedAssetMeter
+	Foreign Key Name: FXDASTMTR_FAMNT
+	related field: fixedAssetId
+
+2	Entity: ItemIssuance
+	Foreign Key Name: ITEM_ISS_FAMNT
+	related field: fixedAssetId
+
+3	Entity: InventoryItemDetail
+	Foreign Key Name: INV_ITDTL_FAMNT
+	related field: fixedAssetId
+
+4	Entity: FixedAssetMaintMeter
+	Foreign Key Name: FXDASTMNMT_FAMNT
+	related field: fixedAssetId

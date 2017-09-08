@@ -1,0 +1,16 @@
+GiftCard:
+
+1: Foreign Key Name:		GIFTCARD_PMNTMETH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+2: Foreign Key Name:		GIFTCARD_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+3: Foreign Key Name:		GIFTCARD_PADDR
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+

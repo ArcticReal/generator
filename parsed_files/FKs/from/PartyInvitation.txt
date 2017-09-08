@@ -1,0 +1,11 @@
+PartyInvitation:
+
+1: Foreign Key Name:		PTYINV_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PTYINV_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

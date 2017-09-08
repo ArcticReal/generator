@@ -1,0 +1,16 @@
+WorkEffortEventReminder:
+
+1: Foreign Key Name:		WE_EVENT_REMIND_WE
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WE_EVENT_REMIND_CM
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+3: Foreign Key Name:		WE_EVENT_REMIND_PY
+	Related Entity:		Party
+	referenced Field:	partyId
+

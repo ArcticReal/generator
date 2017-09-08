@@ -1,0 +1,4 @@
+InventoryTransfer:
+
+1: Primary Key Attribute: inventoryTransferId
+

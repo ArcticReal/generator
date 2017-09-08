@@ -1,0 +1,5 @@
+ContainerType:
+
+1	Entity: Container
+	Foreign Key Name: CONTAINER_CTTYP
+	related field: containerTypeId

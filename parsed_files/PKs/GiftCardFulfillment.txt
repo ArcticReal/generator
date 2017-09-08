@@ -1,0 +1,4 @@
+GiftCardFulfillment:
+
+1: Primary Key Attribute: fulfillmentId
+

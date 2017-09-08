@@ -1,0 +1,11 @@
+PartyDataSource:
+
+1: Foreign Key Name:		PARTY_DATSRC_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PARTY_DATSRC_DSC
+	Related Entity:		DataSource
+	referenced Field:	dataSourceId
+

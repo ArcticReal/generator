@@ -1,0 +1,76 @@
+InvoiceItem:
+
+1: Foreign Key Name:		INVOICE_ITMITYP
+	Related Entity:		InvoiceItemType
+	referenced Field:	invoiceItemTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		InvoiceItemTypeAttr
+	referenced Field:	invoiceItemTypeId
+
+
+3: Foreign Key Name:		INVCE_ITM_INVCE
+	Related Entity:		Invoice
+	referenced Field:	invoiceId
+
+
+4: Foreign Key Name:		INVCE_ITM_INVITM
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+5: Foreign Key Name:		INVCE_ITM_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+6: Foreign Key Name:		INVCE_ITM_PRDFT
+	Related Entity:		ProductFeature
+	referenced Field:	productFeatureId
+
+
+7: Foreign Key Name:		INVCE_ITM_PINVIT
+	Related Entity:		InvoiceItem
+	referenced Field:	invoiceId
+
+
+8: Foreign Key Name:		INVCE_ITM_CINVIT
+	Related Entity:		InvoiceItem
+	referenced Field:	parentInvoiceId
+
+
+9: Foreign Key Name:		INVCE_ITM_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+10: Foreign Key Name:		INVCE_ITM_ORGLA
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+
+
+11: Foreign Key Name:		INVCE_ITM_TAXPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+12: Foreign Key Name:		INVCE_ITM_TAXGEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+13: Foreign Key Name:		INVOICE_ITM_TARP
+	Related Entity:		TaxAuthorityRateProduct
+	referenced Field:	taxAuthorityRateSeqId
+
+
+14: Foreign Key Name:		INVCE_ITM_OVRPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+15: Foreign Key Name:		INVCE_ITM_SLSOPP
+	Related Entity:		SalesOpportunity
+	referenced Field:	salesOpportunityId
+

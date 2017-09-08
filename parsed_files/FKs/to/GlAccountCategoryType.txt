@@ -1,0 +1,5 @@
+GlAccountCategoryType:
+
+1	Entity: GlAccountCategory
+	Foreign Key Name: GLACT_CAT_TP
+	related field: glAccountCategoryTypeId

@@ -1,0 +1,13 @@
+BudgetType:
+
+1	Entity: Budget
+	Foreign Key Name: BUDGET_BGTTYP
+	related field: budgetTypeId
+
+2	Entity: BudgetType
+	Foreign Key Name: BUDGET_TYPE_PAR
+	related field: budgetTypeId
+
+3	Entity: BudgetTypeAttr
+	Foreign Key Name: BUDGET_TPATR_BT
+	related field: budgetTypeId

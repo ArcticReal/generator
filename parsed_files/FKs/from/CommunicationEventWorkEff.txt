@@ -1,0 +1,11 @@
+CommunicationEventWorkEff:
+
+1: Foreign Key Name:		COMEV_WEFF_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		COMEV_WEFF_CMEV
+	Related Entity:		CommunicationEvent
+	referenced Field:	communicationEventId
+

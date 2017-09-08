@@ -1,0 +1,5 @@
+GlXbrlClass:
+
+1	Entity: GlAccount
+	Foreign Key Name: GLACCT_XBRLCLS
+	related field: glXbrlClassId

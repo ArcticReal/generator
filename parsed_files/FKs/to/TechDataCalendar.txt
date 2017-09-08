@@ -1,0 +1,13 @@
+TechDataCalendar:
+
+1	Entity: TechDataCalendarExcWeek
+	Foreign Key Name: EXC_WEEK_CALENDAR
+	related field: calendarId
+
+2	Entity: FixedAsset
+	Foreign Key Name: FIXEDAST_CALENDAR
+	related field: calendarId
+
+3	Entity: TechDataCalendarExcDay
+	Foreign Key Name: EXC_DAY_CALENDAR
+	related field: calendarId

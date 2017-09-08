@@ -1,0 +1,10 @@
+PerfReview:
+
+1: Primary Key Attribute: employeePartyId
+
+
+2: Primary Key Attribute: employeeRoleTypeId
+
+
+3: Primary Key Attribute: perfReviewId
+

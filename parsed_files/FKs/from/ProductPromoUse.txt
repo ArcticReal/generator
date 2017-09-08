@@ -1,0 +1,21 @@
+ProductPromoUse:
+
+1: Foreign Key Name:		PROD_PRUSE_PROMO
+	Related Entity:		ProductPromo
+	referenced Field:	productPromoId
+
+
+2: Foreign Key Name:		PROD_PRUSE_CODE
+	Related Entity:		ProductPromoCode
+	referenced Field:	productPromoCodeId
+
+
+3: Foreign Key Name:		PROD_PRUSE_ORDR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		PROD_PRUSE_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+

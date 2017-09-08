@@ -1,0 +1,7 @@
+FinAccountTransTypeAttr:
+
+1: Primary Key Attribute: finAccountTransTypeId
+
+
+2: Primary Key Attribute: attrName
+

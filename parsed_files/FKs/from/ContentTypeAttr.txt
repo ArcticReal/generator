@@ -1,0 +1,16 @@
+ContentTypeAttr:
+
+1: Foreign Key Name:		CONTENT_TPAT_TYP
+	Related Entity:		ContentType
+	referenced Field:	contentTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ContentAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		Content
+	referenced Field:	contentTypeId
+

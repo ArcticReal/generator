@@ -1,0 +1,4 @@
+ShipmentReceipt:
+
+1: Primary Key Attribute: receiptId
+

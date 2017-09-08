@@ -1,0 +1,31 @@
+ProductAssoc:
+
+1: Foreign Key Name:		PROD_ASSOC_TYPE
+	Related Entity:		ProductAssocType
+	referenced Field:	productAssocTypeId
+
+
+2: Foreign Key Name:		PROD_ASSOC_MPROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+3: Foreign Key Name:		PROD_ASSOC_APROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+4: Foreign Key Name:		PROD_ASSOC_RTWE
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+5: Foreign Key Name:		PROD_ASSOC_CUSM
+	Related Entity:		CustomMethod
+	referenced Field:	customMethodId
+
+
+6: Foreign Key Name:		PROD_ASSOC_RECINFO
+	Related Entity:		RecurrenceInfo
+	referenced Field:	recurrenceInfoId
+

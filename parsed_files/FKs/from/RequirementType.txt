@@ -1,0 +1,6 @@
+RequirementType:
+
+1: Foreign Key Name:		REQ_TYPE_PARENT
+	Related Entity:		RequirementType
+	referenced Field:	requirementTypeId
+

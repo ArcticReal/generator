@@ -1,0 +1,36 @@
+Party:
+
+1: Foreign Key Name:		PARTY_PTY_TYP
+	Related Entity:		PartyType
+	referenced Field:	partyTypeId
+
+
+2: Foreign Key Name:		PARTY_CUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+3: Foreign Key Name:		PARTY_LMCUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+4: Foreign Key Name:		PARTY_PREF_CRNCY
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+5: Foreign Key Name:		PARTY_STATUSITM
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+6: Foreign Key Name:		
+	Related Entity:		PartyTypeAttr
+	referenced Field:	partyTypeId
+
+
+7: Foreign Key Name:		PARTY_DATSRC
+	Related Entity:		DataSource
+	referenced Field:	dataSourceId
+

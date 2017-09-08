@@ -1,0 +1,7 @@
+DocumentAttribute:
+
+1: Primary Key Attribute: documentId
+
+
+2: Primary Key Attribute: attrName
+

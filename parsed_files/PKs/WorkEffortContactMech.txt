@@ -1,0 +1,10 @@
+WorkEffortContactMech:
+
+1: Primary Key Attribute: workEffortId
+
+
+2: Primary Key Attribute: contactMechId
+
+
+3: Primary Key Attribute: fromDate
+

@@ -1,0 +1,10 @@
+VendorProduct:
+
+1: Primary Key Attribute: productId
+
+
+2: Primary Key Attribute: vendorPartyId
+
+
+3: Primary Key Attribute: productStoreGroupId
+

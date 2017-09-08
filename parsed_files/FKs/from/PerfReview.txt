@@ -1,0 +1,31 @@
+PerfReview:
+
+1: Foreign Key Name:		PERF_REV_EPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PERF_REV_EPTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		PERF_REV_MPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		PERF_REV_MPTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		PERF_REV_PMNT
+	Related Entity:		Payment
+	referenced Field:	paymentId
+
+
+6: Foreign Key Name:		PERF_REV_PSTN
+	Related Entity:		EmplPosition
+	referenced Field:	emplPositionId
+

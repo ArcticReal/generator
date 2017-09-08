@@ -1,0 +1,21 @@
+PartyQual:
+
+1: Foreign Key Name:		PARTY_QUAL_PRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PARTY_QUAL_PQTYP
+	Related Entity:		PartyQualType
+	referenced Field:	partyQualTypeId
+
+
+3: Foreign Key Name:		PARTY_QUAL_STATUS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+4: Foreign Key Name:		PARTY_QUAL_VERIF
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

@@ -1,0 +1,81 @@
+FixedAsset:
+
+1	Entity: AccommodationSpot
+	Foreign Key Name: SPOT_FA
+	related field: fixedAssetId
+
+2	Entity: CostComponent
+	Foreign Key Name: COST_COMP_FXADSST
+	related field: fixedAssetId
+
+3	Entity: Requirement
+	Foreign Key Name: REQ_FIXED_ASSET
+	related field: fixedAssetId
+
+4	Entity: FixedAssetProduct
+	Foreign Key Name: FIXDASTPRD_FA
+	related field: fixedAssetId
+
+5	Entity: AcctgTrans
+	Foreign Key Name: ACCTTX_FASSET
+	related field: fixedAssetId
+
+6	Entity: FixedAssetAttribute
+	Foreign Key Name: FIXEDAST_ATTR
+	related field: fixedAssetId
+
+7	Entity: FixedAssetIdent
+	Foreign Key Name: FIXDASTID_FXAST
+	related field: fixedAssetId
+
+8	Entity: FixedAssetMaint
+	Foreign Key Name: FXDASTMNT_FXAST
+	related field: fixedAssetId
+
+9	Entity: AccommodationMap
+	Foreign Key Name: ACMD_MAP_FA
+	related field: fixedAssetId
+
+10	Entity: FixedAssetMaintOrder
+	Foreign Key Name: FXDASTMNT_ORD_FXAS
+	related field: fixedAssetId
+
+11	Entity: FixedAsset
+	Foreign Key Name: FIXEDAST_PAR
+	related field: fixedAssetId
+
+12	Entity: FixedAssetStdCost
+	Foreign Key Name: FIXASTCO_FIXAST
+	related field: fixedAssetId
+
+13	Entity: Delivery
+	Foreign Key Name: DELIV_FXAS
+	related field: fixedAssetId
+
+14	Entity: FixedAssetDepMethod
+	Foreign Key Name: FIXDAST_DM_FXAST
+	related field: fixedAssetId
+
+15	Entity: FixedAssetGeoPoint
+	Foreign Key Name: FXDASTGEOPT_FXDAST
+	related field: fixedAssetId
+
+16	Entity: GlAccountCategoryType
+	Foreign Key Name: IYIM_FAST
+	related field: fixedAssetId
+
+17	Entity: WorkEffortFixedAssetAssign
+	Foreign Key Name: WKEFF_FXDAA_FXAS
+	related field: fixedAssetId
+
+18	Entity: FixedAssetRegistration
+	Foreign Key Name: FIXDASTREG_FXAST
+	related field: fixedAssetId
+
+19	Entity: PartyFixedAssetAssignment
+	Foreign Key Name: PTY_FASTAS_FA
+	related field: fixedAssetId
+
+20	Entity: WorkEffort
+	Foreign Key Name: WK_EFFRT_FXDASST
+	related field: fixedAssetId

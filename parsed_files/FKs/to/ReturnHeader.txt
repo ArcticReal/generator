@@ -1,0 +1,33 @@
+ReturnHeader:
+
+1	Entity: Shipment
+	Foreign Key Name: SHPMNT_PRTNHDR
+	related field: returnId
+
+2	Entity: ReturnAdjustment
+	Foreign Key Name: RETURN_ADJ_RHEAD
+	related field: returnId
+
+3	Entity: TrackingCodeOrderReturn
+	Foreign Key Name: TKNG_CODODR_RTN
+	related field: returnId
+
+4	Entity: ReturnItem
+	Foreign Key Name: RTN_ITEM_RTN
+	related field: returnId
+
+5	Entity: ReturnStatus
+	Foreign Key Name: RTN_STTS_RTN
+	related field: returnId
+
+6	Entity: ReturnItemBilling
+	Foreign Key Name: RTN_ITBLNG_RHDR
+	related field: returnId
+
+7	Entity: ReturnItemShipment
+	Foreign Key Name: RIT_SHPMT_RHDR
+	related field: returnId
+
+8	Entity: ReturnContactMech
+	Foreign Key Name: RETURN_CMECH_HDR
+	related field: returnId

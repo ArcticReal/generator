@@ -1,0 +1,16 @@
+ShoppingListItemSurvey:
+
+1: Foreign Key Name:		SHLIST_ITSUR_LIST
+	Related Entity:		ShoppingList
+	referenced Field:	shoppingListId
+
+
+2: Foreign Key Name:		SHLIST_ITSUR_ITEM
+	Related Entity:		ShoppingListItem
+	referenced Field:	shoppingListId
+
+
+3: Foreign Key Name:		SHLIST_ITSUR_RESP
+	Related Entity:		SurveyResponse
+	referenced Field:	surveyResponseId
+

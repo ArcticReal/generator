@@ -1,0 +1,4 @@
+GiftCard:
+
+1: Primary Key Attribute: paymentMethodId
+

@@ -1,0 +1,4 @@
+DeliverableType:
+
+1: Primary Key Attribute: deliverableTypeId
+

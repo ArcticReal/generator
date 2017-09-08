@@ -1,0 +1,16 @@
+AccommodationMap:
+
+1: Foreign Key Name:		ACMD_MAP_CLASS
+	Related Entity:		AccommodationClass
+	referenced Field:	accommodationClassId
+
+
+2: Foreign Key Name:		ACMD_MAP_FA
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+3: Foreign Key Name:		ACMD_MAP_TYPE
+	Related Entity:		AccommodationMapType
+	referenced Field:	accommodationMapTypeId
+

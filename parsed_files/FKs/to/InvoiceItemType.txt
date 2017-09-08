@@ -1,0 +1,25 @@
+InvoiceItemType:
+
+1	Entity: InvoiceItem
+	Foreign Key Name: INVOICE_ITMITYP
+	related field: invoiceItemTypeId
+
+2	Entity: InvoiceItemTypeMap
+	Foreign Key Name: INVOICE_ITEM_MAP
+	related field: invoiceItemTypeId
+
+3	Entity: AgreementTerm
+	Foreign Key Name: AGRMNT_TERM_IIT
+	related field: invoiceItemTypeId
+
+4	Entity: InvoiceItemTypeGlAccount
+	Foreign Key Name: INVOICE_ITGA_IIT
+	related field: invoiceItemTypeId
+
+5	Entity: InvoiceItemTypeAttr
+	Foreign Key Name: INVOICE_ITEM_TATR
+	related field: invoiceItemTypeId
+
+6	Entity: InvoiceItemType
+	Foreign Key Name: INVOICE_ITEM_TPAR
+	related field: invoiceItemTypeId

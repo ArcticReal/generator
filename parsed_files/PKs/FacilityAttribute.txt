@@ -1,0 +1,7 @@
+FacilityAttribute:
+
+1: Primary Key Attribute: facilityId
+
+
+2: Primary Key Attribute: attrName
+

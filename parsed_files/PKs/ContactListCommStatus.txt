@@ -1,0 +1,10 @@
+ContactListCommStatus:
+
+1: Primary Key Attribute: contactListId
+
+
+2: Primary Key Attribute: communicationEventId
+
+
+3: Primary Key Attribute: contactMechId
+

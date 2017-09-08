@@ -1,0 +1,21 @@
+ShipmentPackageRouteSeg:
+
+1: Foreign Key Name:		SHPKRTSG_SHPKG
+	Related Entity:		ShipmentPackage
+	referenced Field:	shipmentId
+
+
+2: Foreign Key Name:		
+	Related Entity:		Shipment
+	referenced Field:	shipmentId
+
+
+3: Foreign Key Name:		SHPKRTSG_RTSG
+	Related Entity:		ShipmentRouteSegment
+	referenced Field:	shipmentId
+
+
+4: Foreign Key Name:		SHPKRTSG_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+

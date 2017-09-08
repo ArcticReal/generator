@@ -1,0 +1,7 @@
+WebAnalyticsConfig:
+
+1: Primary Key Attribute: webSiteId
+
+
+2: Primary Key Attribute: webAnalyticsTypeId
+

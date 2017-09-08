@@ -1,0 +1,4 @@
+ProductStoreGroupType:
+
+1: Primary Key Attribute: productStoreGroupTypeId
+

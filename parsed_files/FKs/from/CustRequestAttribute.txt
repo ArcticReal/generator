@@ -1,0 +1,11 @@
+CustRequestAttribute:
+
+1: Foreign Key Name:		CUST_REQ_ATTR
+	Related Entity:		CustRequest
+	referenced Field:	custRequestId
+
+
+2: Foreign Key Name:		
+	Related Entity:		CustRequestTypeAttr
+	referenced Field:	attrName
+

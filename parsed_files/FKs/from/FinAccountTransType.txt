@@ -1,0 +1,6 @@
+FinAccountTransType:
+
+1: Foreign Key Name:		FINACCT_TX_TYPPAR
+	Related Entity:		FinAccountTransType
+	referenced Field:	finAccountTransTypeId
+

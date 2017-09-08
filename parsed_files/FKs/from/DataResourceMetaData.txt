@@ -1,0 +1,16 @@
+DataResourceMetaData:
+
+1: Foreign Key Name:		DATA_MD_DATREC
+	Related Entity:		DataResource
+	referenced Field:	dataResourceId
+
+
+2: Foreign Key Name:		DATA_MD_DMDPRD
+	Related Entity:		MetaDataPredicate
+	referenced Field:	metaDataPredicateId
+
+
+3: Foreign Key Name:		DATA_MD_DTSRC
+	Related Entity:		DataSource
+	referenced Field:	dataSourceId
+

@@ -1,0 +1,4 @@
+ProductAverageCostType:
+
+1: Primary Key Attribute: productAverageCostTypeId
+

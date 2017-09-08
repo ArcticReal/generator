@@ -1,0 +1,7 @@
+InventoryItemTypeAttr:
+
+1: Primary Key Attribute: inventoryItemTypeId
+
+
+2: Primary Key Attribute: attrName
+

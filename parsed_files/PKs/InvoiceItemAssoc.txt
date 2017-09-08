@@ -1,0 +1,19 @@
+InvoiceItemAssoc:
+
+1: Primary Key Attribute: invoiceIdFrom
+
+
+2: Primary Key Attribute: invoiceItemSeqIdFrom
+
+
+3: Primary Key Attribute: invoiceIdTo
+
+
+4: Primary Key Attribute: invoiceItemSeqIdTo
+
+
+5: Primary Key Attribute: invoiceItemAssocTypeId
+
+
+6: Primary Key Attribute: fromDate
+

@@ -1,0 +1,10 @@
+ProductStoreGroupRollup:
+
+1: Primary Key Attribute: productStoreGroupId
+
+
+2: Primary Key Attribute: parentGroupId
+
+
+3: Primary Key Attribute: fromDate
+

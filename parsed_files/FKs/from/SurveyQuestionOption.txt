@@ -1,0 +1,6 @@
+SurveyQuestionOption:
+
+1: Foreign Key Name:		SRVYQSTOP_SRVYQ
+	Related Entity:		SurveyQuestion
+	referenced Field:	surveyQuestionId
+

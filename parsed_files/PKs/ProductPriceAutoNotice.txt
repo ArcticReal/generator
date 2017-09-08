@@ -1,0 +1,4 @@
+ProductPriceAutoNotice:
+
+1: Primary Key Attribute: productPriceNoticeId
+

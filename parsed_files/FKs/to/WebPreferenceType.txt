@@ -1,0 +1,5 @@
+WebPreferenceType:
+
+1	Entity: WebUserPreference
+	Foreign Key Name: WEB_PREF_TYPE
+	related field: webPreferenceTypeId

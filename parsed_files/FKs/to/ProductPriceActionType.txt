@@ -1,0 +1,5 @@
+ProductPriceActionType:
+
+1	Entity: ProductPriceAction
+	Foreign Key Name: PROD_PCACT_TYPE
+	related field: productPriceActionTypeId

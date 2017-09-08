@@ -1,0 +1,11 @@
+ProductPriceAction:
+
+1: Foreign Key Name:		PROD_PCACT_TYPE
+	Related Entity:		ProductPriceActionType
+	referenced Field:	productPriceActionTypeId
+
+
+2: Foreign Key Name:		PROD_PCACT_RL
+	Related Entity:		ProductPriceRule
+	referenced Field:	productPriceRuleId
+

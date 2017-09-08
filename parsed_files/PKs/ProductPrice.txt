@@ -1,0 +1,19 @@
+ProductPrice:
+
+1: Primary Key Attribute: productId
+
+
+2: Primary Key Attribute: productPriceTypeId
+
+
+3: Primary Key Attribute: productPricePurposeId
+
+
+4: Primary Key Attribute: currencyUomId
+
+
+5: Primary Key Attribute: productStoreGroupId
+
+
+6: Primary Key Attribute: fromDate
+

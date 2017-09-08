@@ -1,0 +1,6 @@
+PartyIdentificationType:
+
+1: Foreign Key Name:		PARTY_ID_TYPE_PAR
+	Related Entity:		PartyIdentificationType
+	referenced Field:	partyIdentificationTypeId
+

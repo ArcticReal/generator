@@ -1,0 +1,16 @@
+ProductPromoContent:
+
+1: Foreign Key Name:		PRODPR_CNT_PROD_PR
+	Related Entity:		ProductPromo
+	referenced Field:	productPromoId
+
+
+2: Foreign Key Name:		PRODPR_CNT_CNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		PRODPR_CNT_TYPE
+	Related Entity:		ProductContentType
+	referenced Field:	productContentTypeId
+

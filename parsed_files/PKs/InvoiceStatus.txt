@@ -1,0 +1,10 @@
+InvoiceStatus:
+
+1: Primary Key Attribute: statusId
+
+
+2: Primary Key Attribute: invoiceId
+
+
+3: Primary Key Attribute: statusDate
+

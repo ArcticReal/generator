@@ -1,0 +1,16 @@
+ProductFeatureApplAttr:
+
+1: Foreign Key Name:		PROD_FAPPA_PRODUCT
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		PROD_FAPPA_FEATURE
+	Related Entity:		ProductFeature
+	referenced Field:	productFeatureId
+
+
+3: Foreign Key Name:		PROD_FAPPA_FEATAPP
+	Related Entity:		ProductFeatureAppl
+	referenced Field:	productId
+

@@ -1,0 +1,13 @@
+ContentType:
+
+1	Entity: ContentTypeAttr
+	Foreign Key Name: CONTENT_TPAT_TYP
+	related field: contentTypeId
+
+2	Entity: ContentType
+	Foreign Key Name: CNTNT_TYPE_PARENT
+	related field: contentTypeId
+
+3	Entity: Content
+	Foreign Key Name: CONTENT_TO_TYPE
+	related field: contentTypeId

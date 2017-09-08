@@ -1,0 +1,13 @@
+WorkEffortAssocType:
+
+1	Entity: WorkEffortAssoc
+	Foreign Key Name: WK_EFFRTASSC_TYP
+	related field: workEffortAssocTypeId
+
+2	Entity: WorkEffortAssocType
+	Foreign Key Name: WK_EFFRTASSC_TPAR
+	related field: workEffortAssocTypeId
+
+3	Entity: WorkEffortAssocTypeAttr
+	Foreign Key Name: WK_EFFRTASSC_TATR
+	related field: workEffortAssocTypeId

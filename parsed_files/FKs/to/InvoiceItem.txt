@@ -1,0 +1,41 @@
+InvoiceItem:
+
+1	Entity: ShipmentItemBilling
+	Foreign Key Name: SHPMNT_ITBL_INIM
+	related field: invoiceId
+
+2	Entity: ReturnItemBilling
+	Foreign Key Name: RETURN_ITBLNG_IITM
+	related field: invoiceId
+
+3	Entity: InvoiceItem
+	Foreign Key Name: INVCE_ITM_PINVIT
+	related field: invoiceId
+
+4	Entity: InvoiceItemAttribute
+	Foreign Key Name: INVOICE_IMAT_ITM
+	related field: invoiceId
+
+5	Entity: InvoiceItemAssoc
+	Foreign Key Name: INITMASC_TIITM
+	related field: invoiceId
+
+6	Entity: TimeEntry
+	Foreign Key Name: TIME_ENT_INVIT
+	related field: invoiceId
+
+7	Entity: OrderItemBilling
+	Foreign Key Name: ORDER_ITBLNG_IITM
+	related field: invoiceId
+
+8	Entity: WorkEffortBilling
+	Foreign Key Name: WK_EFFBLNG_INVITM
+	related field: invoiceId
+
+9	Entity: InvoiceItemAssoc
+	Foreign Key Name: INITMASC_FIITM
+	related field: invoiceId
+
+10	Entity: OrderAdjustmentBilling
+	Foreign Key Name: ORDER_ADJBLNG_IITM
+	related field: invoiceId

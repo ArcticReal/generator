@@ -1,0 +1,6 @@
+PaymentGatewayEway:
+
+1: Foreign Key Name:		PGEW_PGC
+	Related Entity:		PaymentGatewayConfig
+	referenced Field:	paymentGatewayConfigId
+

@@ -1,0 +1,10 @@
+PartyStatus:
+
+1: Primary Key Attribute: statusId
+
+
+2: Primary Key Attribute: partyId
+
+
+3: Primary Key Attribute: statusDate
+

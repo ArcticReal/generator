@@ -1,0 +1,6 @@
+ElectronicText:
+
+1: Foreign Key Name:		DATA_REC_TEXT
+	Related Entity:		DataResource
+	referenced Field:	dataResourceId
+

@@ -1,0 +1,21 @@
+BudgetItemType:
+
+1	Entity: GlBudgetXref
+	Foreign Key Name: GL_BDGT_XRF_BIT
+	related field: budgetItemTypeId
+
+2	Entity: BudgetItemType
+	Foreign Key Name: BUDGET_ITM_TYPPAR
+	related field: budgetItemTypeId
+
+3	Entity: BudgetItem
+	Foreign Key Name: BUDGET_ITEM_BTYP
+	related field: budgetItemTypeId
+
+4	Entity: BudgetItemTypeAttr
+	Foreign Key Name: BUDGET_ITMTYPATTR
+	related field: budgetItemTypeId
+
+5	Entity: BudgetScenarioRule
+	Foreign Key Name: BUDGET_SRLE_BITP
+	related field: budgetItemTypeId

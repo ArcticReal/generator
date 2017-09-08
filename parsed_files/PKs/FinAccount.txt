@@ -1,0 +1,4 @@
+FinAccount:
+
+1: Primary Key Attribute: finAccountId
+

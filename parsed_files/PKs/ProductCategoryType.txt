@@ -1,0 +1,4 @@
+ProductCategoryType:
+
+1: Primary Key Attribute: productCategoryTypeId
+

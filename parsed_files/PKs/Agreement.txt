@@ -1,0 +1,4 @@
+Agreement:
+
+1: Primary Key Attribute: agreementId
+

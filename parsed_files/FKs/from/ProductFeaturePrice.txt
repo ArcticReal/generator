@@ -1,0 +1,21 @@
+ProductFeaturePrice:
+
+1: Foreign Key Name:		PROD_F_PRICE_TYPE
+	Related Entity:		ProductPriceType
+	referenced Field:	productPriceTypeId
+
+
+2: Foreign Key Name:		PROD_F_PRICE_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+3: Foreign Key Name:		PROD_F_PRICE_CBUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+4: Foreign Key Name:		PROD_F_PRICE_LMBUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

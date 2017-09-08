@@ -1,0 +1,16 @@
+ReturnItemTypeMap:
+
+1: Foreign Key Name:		
+	Related Entity:		ReturnItemType
+	referenced Field:	returnItemTypeId
+
+
+2: Foreign Key Name:		RETITMMAP_RETTYP
+	Related Entity:		ReturnHeaderType
+	referenced Field:	returnHeaderTypeId
+
+
+3: Foreign Key Name:		
+	Related Entity:		ReturnAdjustmentType
+	referenced Field:	returnAdjustmentTypeId
+

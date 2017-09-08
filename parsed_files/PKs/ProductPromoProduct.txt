@@ -1,0 +1,16 @@
+ProductPromoProduct:
+
+1: Primary Key Attribute: productPromoId
+
+
+2: Primary Key Attribute: productPromoRuleId
+
+
+3: Primary Key Attribute: productPromoActionSeqId
+
+
+4: Primary Key Attribute: productPromoCondSeqId
+
+
+5: Primary Key Attribute: productId
+

@@ -1,0 +1,10 @@
+OrderItemAttribute:
+
+1: Primary Key Attribute: orderId
+
+
+2: Primary Key Attribute: orderItemSeqId
+
+
+3: Primary Key Attribute: attrName
+

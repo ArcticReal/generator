@@ -1,0 +1,31 @@
+SalesForecastHistory:
+
+1: Foreign Key Name:		SALES4CH_SALES4C
+	Related Entity:		SalesForecast
+	referenced Field:	salesForecastId
+
+
+2: Foreign Key Name:		SALES4CH_ORG_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		SALES4CH_INT_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		SALES4CH_TIME_PER
+	Related Entity:		CustomTimePeriod
+	referenced Field:	customTimePeriodId
+
+
+5: Foreign Key Name:		SALES4CH_CUR_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+6: Foreign Key Name:		SALES4CH_MOD_USER
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

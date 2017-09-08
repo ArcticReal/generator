@@ -1,0 +1,16 @@
+ProductPromoCategory:
+
+1: Foreign Key Name:		PROD_PRCAT_PROMO
+	Related Entity:		ProductPromo
+	referenced Field:	productPromoId
+
+
+2: Foreign Key Name:		PROD_PRCAT_PRCAT
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+
+
+3: Foreign Key Name:		PROD_PRCAT_ENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

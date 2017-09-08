@@ -1,0 +1,17 @@
+PaymentType:
+
+1	Entity: PaymentType
+	Foreign Key Name: PAYMENT_TYPE_PAR
+	related field: paymentTypeId
+
+2	Entity: PaymentTypeAttr
+	Foreign Key Name: PAYMETH_TYPE_ATTR
+	related field: paymentTypeId
+
+3	Entity: Payment
+	Foreign Key Name: PAYMENT_PMTYP
+	related field: paymentTypeId
+
+4	Entity: PaymentGlAccountTypeMap
+	Foreign Key Name: PMTGLACCT_PMTTYPE
+	related field: paymentTypeId

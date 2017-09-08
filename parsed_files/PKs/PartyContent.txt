@@ -1,0 +1,13 @@
+PartyContent:
+
+1: Primary Key Attribute: partyId
+
+
+2: Primary Key Attribute: contentId
+
+
+3: Primary Key Attribute: partyContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

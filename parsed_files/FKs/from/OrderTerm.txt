@@ -1,0 +1,21 @@
+OrderTerm:
+
+1: Foreign Key Name:		ORDER_TERM_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+2: Foreign Key Name:		ORDER_TERM_OHDR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		ORDER_TERM_TTYPE
+	Related Entity:		TermType
+	referenced Field:	termTypeId
+

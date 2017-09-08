@@ -1,0 +1,4 @@
+PaymentType:
+
+1: Primary Key Attribute: paymentTypeId
+

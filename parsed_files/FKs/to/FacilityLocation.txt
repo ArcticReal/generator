@@ -1,0 +1,9 @@
+FacilityLocation:
+
+1	Entity: ProductFacilityLocation
+	Foreign Key Name: PROD_FCL_FCL
+	related field: facilityId
+
+2	Entity: FacilityLocationGeoPoint
+	Foreign Key Name: FACLOCGEOPT_FACLOC
+	related field: facilityId

@@ -1,0 +1,21 @@
+ProductStoreVendorShipment:
+
+1: Foreign Key Name:		PRDSTRVSH_PRDS
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+2: Foreign Key Name:		PRDSTRVSH_VPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		PRDSTRVSH_SHMT
+	Related Entity:		ShipmentMethodType
+	referenced Field:	shipmentMethodTypeId
+
+
+4: Foreign Key Name:		PRDSTRVSH_CPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+

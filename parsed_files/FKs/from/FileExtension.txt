@@ -1,0 +1,6 @@
+FileExtension:
+
+1: Foreign Key Name:		FILEEXT_MMTYP
+	Related Entity:		MimeType
+	referenced Field:	mimeTypeId
+

@@ -1,0 +1,13 @@
+OrderType:
+
+1	Entity: OrderHeader
+	Foreign Key Name: ORDER_HDR_TYPE
+	related field: orderTypeId
+
+2	Entity: OrderType
+	Foreign Key Name: ORDER_TYPE_PARENT
+	related field: orderTypeId
+
+3	Entity: OrderTypeAttr
+	Foreign Key Name: ORDER_TPAT_ORTYP
+	related field: orderTypeId

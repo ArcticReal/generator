@@ -1,0 +1,13 @@
+RateType:
+
+1	Entity: TimeEntry
+	Foreign Key Name: TIME_ENT_RTTP
+	related field: rateTypeId
+
+2	Entity: RateAmount
+	Foreign Key Name: RATE_AMOUNT_RT
+	related field: rateTypeId
+
+3	Entity: PartyRate
+	Foreign Key Name: PRTY_RATE_RTTP
+	related field: rateTypeId

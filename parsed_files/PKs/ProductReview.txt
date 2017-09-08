@@ -1,0 +1,4 @@
+ProductReview:
+
+1: Primary Key Attribute: productReviewId
+

@@ -1,0 +1,5 @@
+Delivery:
+
+1	Entity: ShipmentRouteSegment
+	Foreign Key Name: SHPMT_RTSEG_DEL
+	related field: deliveryId

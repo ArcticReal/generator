@@ -1,0 +1,11 @@
+ProductCategoryMember:
+
+1: Foreign Key Name:		PROD_CMBR_PRODUCT
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		PROD_CMBR_CATEGORY
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+

@@ -1,0 +1,16 @@
+AgreementContent:
+
+1: Foreign Key Name:		AG_CNT_PROD
+	Related Entity:		Agreement
+	referenced Field:	agreementId
+
+
+2: Foreign Key Name:		AG_CNT_CNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		AG_CNT_TYPE
+	Related Entity:		AgreementContentType
+	referenced Field:	agreementContentTypeId
+

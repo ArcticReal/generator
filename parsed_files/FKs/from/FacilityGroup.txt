@@ -1,0 +1,11 @@
+FacilityGroup:
+
+1: Foreign Key Name:		FACILITY_GP_TYPE
+	Related Entity:		FacilityGroupType
+	referenced Field:	facilityGroupTypeId
+
+
+2: Foreign Key Name:		FACILITY_GP_PGRP
+	Related Entity:		FacilityGroup
+	referenced Field:	facilityGroupId
+

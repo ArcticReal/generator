@@ -1,0 +1,4 @@
+SalesOpportunityStage:
+
+1: Primary Key Attribute: opportunityStageId
+

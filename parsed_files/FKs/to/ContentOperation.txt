@@ -1,0 +1,5 @@
+ContentOperation:
+
+1	Entity: ContentPurposeOperation
+	Foreign Key Name: CONTENT_PRO_OPER
+	related field: contentOperationId

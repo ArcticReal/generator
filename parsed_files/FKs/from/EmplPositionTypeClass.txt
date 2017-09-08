@@ -1,0 +1,11 @@
+EmplPositionTypeClass:
+
+1: Foreign Key Name:		EMPL_PSTPCS_EPTP
+	Related Entity:		EmplPositionType
+	referenced Field:	emplPositionTypeId
+
+
+2: Foreign Key Name:		EMPL_PSTPCS_EPCTP
+	Related Entity:		EmplPositionClassType
+	referenced Field:	emplPositionClassTypeId
+

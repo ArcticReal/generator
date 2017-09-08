@@ -1,0 +1,5 @@
+ShoppingListItem:
+
+1	Entity: ShoppingListItemSurvey
+	Foreign Key Name: SHLIST_ITSUR_ITEM
+	related field: shoppingListId

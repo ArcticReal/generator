@@ -1,0 +1,13 @@
+SubscriptionResource:
+
+1	Entity: SubscriptionResource
+	Foreign Key Name: SUBSC_RES_PARENT
+	related field: subscriptionResourceId
+
+2	Entity: ProductSubscriptionResource
+	Foreign Key Name: PROD_SBRS_SBRS
+	related field: subscriptionResourceId
+
+3	Entity: Subscription
+	Foreign Key Name: SUBSC_SRESRC
+	related field: subscriptionResourceId

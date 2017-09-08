@@ -1,0 +1,5 @@
+ProductPriceAction:
+
+1	Entity: OrderItemPriceInfo
+	Foreign Key Name: ORDER_OIPI_PRAI
+	related field: productPriceRuleId

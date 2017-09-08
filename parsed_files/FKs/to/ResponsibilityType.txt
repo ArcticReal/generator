@@ -1,0 +1,13 @@
+ResponsibilityType:
+
+1	Entity: ResponsibilityType
+	Foreign Key Name: RESPON_TYPE_PAR
+	related field: responsibilityTypeId
+
+2	Entity: EmplPositionResponsibility
+	Foreign Key Name: EMPL_PSRTY_RYTP
+	related field: responsibilityTypeId
+
+3	Entity: ValidResponsibility
+	Foreign Key Name: VALID_RTY_RYTP
+	related field: responsibilityTypeId

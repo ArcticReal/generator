@@ -1,0 +1,41 @@
+PostalAddress:
+
+1: Foreign Key Name:		POST_ADDR_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+2: Foreign Key Name:		POST_ADDR_CGEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+3: Foreign Key Name:		POST_ADDR_SPGEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+4: Foreign Key Name:		POST_ADDR_CNTG
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+5: Foreign Key Name:		POST_ADDR_MNCP
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+6: Foreign Key Name:		POST_ADDR_CITY
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+7: Foreign Key Name:		POST_ADDR_PCGEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+8: Foreign Key Name:		POST_ADDR_GEOPT
+	Related Entity:		GeoPoint
+	referenced Field:	geoPointId
+

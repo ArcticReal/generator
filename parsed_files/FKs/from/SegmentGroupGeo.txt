@@ -1,0 +1,11 @@
+SegmentGroupGeo:
+
+1: Foreign Key Name:		SGMTGRPGEO_SGGP
+	Related Entity:		SegmentGroup
+	referenced Field:	segmentGroupId
+
+
+2: Foreign Key Name:		SGMTGRPGEO_GEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+

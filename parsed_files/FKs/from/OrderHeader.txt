@@ -1,0 +1,66 @@
+OrderHeader:
+
+1: Foreign Key Name:		ORDER_HDR_TYPE
+	Related Entity:		OrderType
+	referenced Field:	orderTypeId
+
+
+2: Foreign Key Name:		ORDER_HDR_SCENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+3: Foreign Key Name:		ORDER_HDR_OFAC
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+4: Foreign Key Name:		
+	Related Entity:		OrderTypeAttr
+	referenced Field:	orderTypeId
+
+
+5: Foreign Key Name:		ORDER_HDR_BACCT
+	Related Entity:		BillingAccount
+	referenced Field:	billingAccountId
+
+
+6: Foreign Key Name:		ORDER_HDR_PDSTR
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+7: Foreign Key Name:		ORDER_HDR_AOSHLST
+	Related Entity:		ShoppingList
+	referenced Field:	shoppingListId
+
+
+8: Foreign Key Name:		ORDER_HDR_CBUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+9: Foreign Key Name:		ORDER_HDR_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+10: Foreign Key Name:		ORDER_HDR_SYST
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+11: Foreign Key Name:		ORDER_HDR_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+12: Foreign Key Name:		
+	Related Entity:		OrderHeaderNoteView
+	referenced Field:	orderId
+
+
+13: Foreign Key Name:		
+	Related Entity:		OrderItemAndShipGroupAssoc
+	referenced Field:	orderId
+

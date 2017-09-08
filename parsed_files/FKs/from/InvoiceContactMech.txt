@@ -1,0 +1,16 @@
+InvoiceContactMech:
+
+1: Foreign Key Name:		INVOICE_CMECH_HDR
+	Related Entity:		Invoice
+	referenced Field:	invoiceId
+
+
+2: Foreign Key Name:		INVOICE_CMECH_CM
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+3: Foreign Key Name:		INVOICE_CMECH_CMPT
+	Related Entity:		ContactMechPurposeType
+	referenced Field:	contactMechPurposeTypeId
+

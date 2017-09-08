@@ -1,0 +1,9 @@
+DeliverableType:
+
+1	Entity: Deliverable
+	Foreign Key Name: DELIVERABLE_DLTYP
+	related field: deliverableTypeId
+
+2	Entity: QuoteItem
+	Foreign Key Name: QUOTE_ITM_DELT
+	related field: deliverableTypeId

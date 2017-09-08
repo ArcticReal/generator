@@ -1,0 +1,10 @@
+ProductStorePaymentSetting:
+
+1: Primary Key Attribute: productStoreId
+
+
+2: Primary Key Attribute: paymentMethodTypeId
+
+
+3: Primary Key Attribute: paymentServiceTypeEnumId
+

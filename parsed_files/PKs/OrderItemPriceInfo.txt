@@ -1,0 +1,4 @@
+OrderItemPriceInfo:
+
+1: Primary Key Attribute: orderItemPriceInfoId
+

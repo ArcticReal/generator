@@ -1,0 +1,9 @@
+Timesheet:
+
+1	Entity: TimesheetRole
+	Foreign Key Name: TIMESHTRL_TSHT
+	related field: timesheetId
+
+2	Entity: TimeEntry
+	Foreign Key Name: TIME_ENT_TSHT
+	related field: timesheetId

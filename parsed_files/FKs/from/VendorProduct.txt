@@ -1,0 +1,16 @@
+VendorProduct:
+
+1: Foreign Key Name:		VENDPROD_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		VENDPROD_VPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		VENDPROD_PSGRP
+	Related Entity:		ProductStoreGroup
+	referenced Field:	productStoreGroupId
+

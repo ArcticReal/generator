@@ -1,0 +1,16 @@
+PaymentTypeAttr:
+
+1: Foreign Key Name:		PAYMETH_TYPE_ATTR
+	Related Entity:		PaymentType
+	referenced Field:	paymentTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		PaymentAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		Payment
+	referenced Field:	paymentTypeId
+

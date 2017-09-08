@@ -1,0 +1,7 @@
+ShoppingListWorkEffort:
+
+1: Primary Key Attribute: shoppingListId
+
+
+2: Primary Key Attribute: workEffortId
+

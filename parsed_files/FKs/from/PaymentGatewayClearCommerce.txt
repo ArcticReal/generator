@@ -1,0 +1,6 @@
+PaymentGatewayClearCommerce:
+
+1: Foreign Key Name:		PGCC_PGC
+	Related Entity:		PaymentGatewayConfig
+	referenced Field:	paymentGatewayConfigId
+

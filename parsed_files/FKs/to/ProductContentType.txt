@@ -1,0 +1,13 @@
+ProductContentType:
+
+1	Entity: ProductContentType
+	Foreign Key Name: PRDCT_TYP_PARENT
+	related field: productContentTypeId
+
+2	Entity: ProductPromoContent
+	Foreign Key Name: PRODPR_CNT_TYPE
+	related field: productContentTypeId
+
+3	Entity: ProductContent
+	Foreign Key Name: PROD_CNT_TYPE
+	related field: productContentTypeId

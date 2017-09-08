@@ -1,0 +1,5 @@
+Lot:
+
+1	Entity: InventoryItem
+	Foreign Key Name: INV_ITEM_LOT
+	related field: lotId

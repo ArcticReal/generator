@@ -1,0 +1,7 @@
+BudgetRevision:
+
+1: Primary Key Attribute: budgetId
+
+
+2: Primary Key Attribute: revisionSeqId
+

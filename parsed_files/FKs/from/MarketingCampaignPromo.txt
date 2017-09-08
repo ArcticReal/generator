@@ -1,0 +1,11 @@
+MarketingCampaignPromo:
+
+1: Foreign Key Name:		MKTGCPN_PROMO_MC
+	Related Entity:		MarketingCampaign
+	referenced Field:	marketingCampaignId
+
+
+2: Foreign Key Name:		MKTGCPN_PROMO_PP
+	Related Entity:		ProductPromo
+	referenced Field:	productPromoId
+

@@ -1,0 +1,10 @@
+OrderAdjustmentBilling:
+
+1: Primary Key Attribute: orderAdjustmentId
+
+
+2: Primary Key Attribute: invoiceId
+
+
+3: Primary Key Attribute: invoiceItemSeqId
+

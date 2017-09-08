@@ -1,0 +1,26 @@
+ProductStoreGroupRollup:
+
+1: Foreign Key Name:		PSGRP_RLP_CURRENT
+	Related Entity:		ProductStoreGroup
+	referenced Field:	productStoreGroupId
+
+
+2: Foreign Key Name:		PSGRP_RLP_PARENT
+	Related Entity:		ProductStoreGroup
+	referenced Field:	productStoreGroupId
+
+
+3: Foreign Key Name:		
+	Related Entity:		ProductStoreGroupRollup
+	referenced Field:	parentGroupId
+
+
+4: Foreign Key Name:		
+	Related Entity:		ProductStoreGroupRollup
+	referenced Field:	productStoreGroupId
+
+
+5: Foreign Key Name:		
+	Related Entity:		ProductStoreGroupRollup
+	referenced Field:	parentGroupId
+

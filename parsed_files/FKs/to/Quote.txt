@@ -1,0 +1,37 @@
+Quote:
+
+1	Entity: QuoteCoefficient
+	Foreign Key Name: QUOTE_COEFF
+	related field: quoteId
+
+2	Entity: QuoteWorkEffort
+	Foreign Key Name: QUOTE_WE_QUOTE
+	related field: quoteId
+
+3	Entity: QuoteRole
+	Foreign Key Name: QUOTE_RL_QUOTE
+	related field: quoteId
+
+4	Entity: QuoteAttribute
+	Foreign Key Name: QUOTE_ATTR
+	related field: quoteId
+
+5	Entity: QuoteTerm
+	Foreign Key Name: QUOTE_TERM_QTE
+	related field: quoteId
+
+6	Entity: QuoteAdjustment
+	Foreign Key Name: QUOTE_ADJ_OHEAD
+	related field: quoteId
+
+7	Entity: QuoteItem
+	Foreign Key Name: QUOTE_ITM_QTE
+	related field: quoteId
+
+8	Entity: QuoteNote
+	Foreign Key Name: QUOTE_NT_QTE
+	related field: quoteId
+
+9	Entity: SalesOpportunityQuote
+	Foreign Key Name: SOPPQTE_QTE
+	related field: quoteId

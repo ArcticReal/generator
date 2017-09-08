@@ -1,0 +1,36 @@
+SupplierProduct:
+
+1: Foreign Key Name:		SUPPL_PROD_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		SUPPL_PROD_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		SUPPL_PROD_SPORD
+	Related Entity:		SupplierPrefOrder
+	referenced Field:	supplierPrefOrderId
+
+
+4: Foreign Key Name:		SUPPL_PROD_SRTPE
+	Related Entity:		SupplierRatingType
+	referenced Field:	supplierRatingTypeId
+
+
+5: Foreign Key Name:		SUPPL_PROD_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+6: Foreign Key Name:		SUPPL_PROD_QUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+7: Foreign Key Name:		SUPPL_PROD_AGRIT
+	Related Entity:		AgreementItem
+	referenced Field:	agreementId
+

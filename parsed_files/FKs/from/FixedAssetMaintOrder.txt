@@ -1,0 +1,16 @@
+FixedAssetMaintOrder:
+
+1: Foreign Key Name:		FXDASTMNT_ORD_FXAS
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+2: Foreign Key Name:		FXDASTMNT_ORD
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+

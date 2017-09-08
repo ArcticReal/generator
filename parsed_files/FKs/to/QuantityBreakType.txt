@@ -1,0 +1,5 @@
+QuantityBreakType:
+
+1	Entity: QuantityBreak
+	Foreign Key Name: QUANT_BRK_TYPE
+	related field: quantityBreakTypeId

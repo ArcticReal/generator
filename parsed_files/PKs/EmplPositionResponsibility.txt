@@ -1,0 +1,10 @@
+EmplPositionResponsibility:
+
+1: Primary Key Attribute: emplPositionId
+
+
+2: Primary Key Attribute: responsibilityTypeId
+
+
+3: Primary Key Attribute: fromDate
+

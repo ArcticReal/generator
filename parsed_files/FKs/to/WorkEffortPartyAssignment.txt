@@ -1,0 +1,5 @@
+WorkEffortPartyAssignment:
+
+1	Entity: ApplicationSandbox
+	Foreign Key Name: APP_SNDBX_WEPA
+	related field: workEffortId

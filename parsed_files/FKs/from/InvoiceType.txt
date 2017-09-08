@@ -1,0 +1,6 @@
+InvoiceType:
+
+1: Foreign Key Name:		INVOICE_TYPE_PAR
+	Related Entity:		InvoiceType
+	referenced Field:	invoiceTypeId
+

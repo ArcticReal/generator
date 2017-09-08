@@ -1,0 +1,9 @@
+PartyGroup:
+
+1	Entity: PartyInvitationGroupAssoc
+	Foreign Key Name: PTYINVGA_PTYGRP
+	related field: partyId
+
+2	Entity: Affiliate
+	Foreign Key Name: AFFILIATE_PGRP
+	related field: partyId

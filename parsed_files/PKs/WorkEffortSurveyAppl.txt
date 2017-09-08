@@ -1,0 +1,10 @@
+WorkEffortSurveyAppl:
+
+1: Primary Key Attribute: workEffortId
+
+
+2: Primary Key Attribute: surveyId
+
+
+3: Primary Key Attribute: fromDate
+

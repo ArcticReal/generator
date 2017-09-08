@@ -1,0 +1,26 @@
+ReturnItemBilling:
+
+1: Foreign Key Name:		RTN_ITBLNG_RHDR
+	Related Entity:		ReturnHeader
+	referenced Field:	returnId
+
+
+2: Foreign Key Name:		RTN_ITBLNG_RITM
+	Related Entity:		ReturnItem
+	referenced Field:	returnId
+
+
+3: Foreign Key Name:		RITBL_INVOICE
+	Related Entity:		Invoice
+	referenced Field:	invoiceId
+
+
+4: Foreign Key Name:		RETURN_ITBLNG_IITM
+	Related Entity:		InvoiceItem
+	referenced Field:	invoiceId
+
+
+5: Foreign Key Name:		RITBL_SHIPRCPT
+	Related Entity:		ShipmentReceipt
+	referenced Field:	receiptId
+

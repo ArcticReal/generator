@@ -1,0 +1,4 @@
+BillingAccountTerm:
+
+1: Primary Key Attribute: billingAccountTermId
+

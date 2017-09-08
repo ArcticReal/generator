@@ -1,0 +1,21 @@
+ProductConfigOptionIactn:
+
+1: Foreign Key Name:		PROD_OPTIA_ITEM
+	Related Entity:		ProductConfigItem
+	referenced Field:	configItemId
+
+
+2: Foreign Key Name:		PROD_OPTIA_OPTN
+	Related Entity:		ProductConfigOption
+	referenced Field:	configItemId
+
+
+3: Foreign Key Name:		PROD_OPTIA_ITMT
+	Related Entity:		ProductConfigItem
+	referenced Field:	configItemId
+
+
+4: Foreign Key Name:		PROD_OPTIA_OPTT
+	Related Entity:		ProductConfigOption
+	referenced Field:	configItemId
+

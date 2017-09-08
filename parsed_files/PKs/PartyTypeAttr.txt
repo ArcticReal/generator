@@ -1,0 +1,7 @@
+PartyTypeAttr:
+
+1: Primary Key Attribute: partyTypeId
+
+
+2: Primary Key Attribute: attrName
+

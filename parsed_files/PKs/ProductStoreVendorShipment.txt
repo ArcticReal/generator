@@ -1,0 +1,13 @@
+ProductStoreVendorShipment:
+
+1: Primary Key Attribute: productStoreId
+
+
+2: Primary Key Attribute: vendorPartyId
+
+
+3: Primary Key Attribute: shipmentMethodTypeId
+
+
+4: Primary Key Attribute: carrierPartyId
+

@@ -1,0 +1,6 @@
+ProductPromoCodeEmail:
+
+1: Foreign Key Name:		PROD_PRCDE_PCD
+	Related Entity:		ProductPromoCode
+	referenced Field:	productPromoCodeId
+

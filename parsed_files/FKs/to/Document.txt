@@ -1,0 +1,9 @@
+Document:
+
+1	Entity: ShippingDocument
+	Foreign Key Name: SHPNG_DOC_DOC
+	related field: documentId
+
+2	Entity: DocumentAttribute
+	Foreign Key Name: DOCUMENT_ATTR
+	related field: documentId

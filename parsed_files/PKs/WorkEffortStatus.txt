@@ -1,0 +1,10 @@
+WorkEffortStatus:
+
+1: Primary Key Attribute: workEffortId
+
+
+2: Primary Key Attribute: statusId
+
+
+3: Primary Key Attribute: statusDatetime
+

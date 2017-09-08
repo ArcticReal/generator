@@ -1,0 +1,49 @@
+PostalAddress:
+
+1	Entity: ShipmentRouteSegment
+	Foreign Key Name: SHPMT_RTSEG_OPAD
+	related field: contactMechId
+
+2	Entity: EftAccount
+	Foreign Key Name: EFTACCT_PADDR
+	related field: contactMechId
+
+3	Entity: ShipmentRouteSegment
+	Foreign Key Name: SHPMT_RTSEG_DPAD
+	related field: contactMechId
+
+4	Entity: Shipment
+	Foreign Key Name: SHPMNT_OPAD
+	related field: contactMechId
+
+5	Entity: PostalAddressBoundary
+	Foreign Key Name: POST_ADDR_BNDRY
+	related field: contactMechId
+
+6	Entity: CheckAccount
+	Foreign Key Name: CACCT_PADDR
+	related field: contactMechId
+
+7	Entity: PayPalPaymentMethod
+	Foreign Key Name: PAYPAL_PADDR
+	related field: contactMechId
+
+8	Entity: CreditCard
+	Foreign Key Name: CREDCARD_PADDR
+	related field: contactMechId
+
+9	Entity: GiftCard
+	Foreign Key Name: GIFTCARD_PADDR
+	related field: contactMechId
+
+10	Entity: OrderItemShipGroup
+	Foreign Key Name: ORDER_ITSG_PADR
+	related field: contactMechId
+
+11	Entity: BillingAccount
+	Foreign Key Name: BILLACCT_PADDR
+	related field: contactMechId
+
+12	Entity: Shipment
+	Foreign Key Name: SHPMNT_DPAD
+	related field: contactMechId

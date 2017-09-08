@@ -1,0 +1,26 @@
+GlAccount:
+
+1: Foreign Key Name:		GLACCT_TYPE
+	Related Entity:		GlAccountType
+	referenced Field:	glAccountTypeId
+
+
+2: Foreign Key Name:		GLACCT_CLSS
+	Related Entity:		GlAccountClass
+	referenced Field:	glAccountClassId
+
+
+3: Foreign Key Name:		GLACCT_REC
+	Related Entity:		GlResourceType
+	referenced Field:	glResourceTypeId
+
+
+4: Foreign Key Name:		GLACCT_XBRLCLS
+	Related Entity:		GlXbrlClass
+	referenced Field:	glXbrlClassId
+
+
+5: Foreign Key Name:		GLACCT_PAR
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+

@@ -1,0 +1,9 @@
+MetaDataPredicate:
+
+1	Entity: ContentMetaData
+	Foreign Key Name: CONTENTMD_DMDPRD
+	related field: metaDataPredicateId
+
+2	Entity: DataResourceMetaData
+	Foreign Key Name: DATA_MD_DMDPRD
+	related field: metaDataPredicateId

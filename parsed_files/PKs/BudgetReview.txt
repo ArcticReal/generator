@@ -1,0 +1,13 @@
+BudgetReview:
+
+1: Primary Key Attribute: budgetId
+
+
+2: Primary Key Attribute: budgetReviewId
+
+
+3: Primary Key Attribute: partyId
+
+
+4: Primary Key Attribute: budgetReviewResultTypeId
+

@@ -1,0 +1,106 @@
+Product:
+
+1: Foreign Key Name:		PROD_TYPE
+	Related Entity:		ProductType
+	referenced Field:	productTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ProductTypeAttr
+	referenced Field:	productTypeId
+
+
+3: Foreign Key Name:		PROD_PRIMARY_CAT
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+
+
+4: Foreign Key Name:		PROD_FACILITY
+	Related Entity:		Facility
+	referenced Field:	facilityId
+
+
+5: Foreign Key Name:		PROD_MFG_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		PROD_QUANT_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+7: Foreign Key Name:		PROD_AMOUNT_UOMT
+	Related Entity:		UomType
+	referenced Field:	uomTypeId
+
+
+8: Foreign Key Name:		PROD_WEIGHT_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+9: Foreign Key Name:		PROD_HEIGHT_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+10: Foreign Key Name:		PROD_WIDTH_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+11: Foreign Key Name:		PROD_DEPTH_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+12: Foreign Key Name:		PROD_DIAMTR_UOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+13: Foreign Key Name:		PROD_VVMETHOD_ENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+14: Foreign Key Name:		PROD_RATE_ENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+15: Foreign Key Name:		PROD_RQMT_ENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+16: Foreign Key Name:		PROD_ORG_GEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+17: Foreign Key Name:		PROD_CB_USERLOGIN
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+18: Foreign Key Name:		PROD_LMB_USERLOGIN
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+19: Foreign Key Name:		
+	Related Entity:		ProductFeatureAndAppl
+	referenced Field:	productId
+
+
+20: Foreign Key Name:		PROD_SHBX_TYPE
+	Related Entity:		ShipmentBoxType
+	referenced Field:	shipmentBoxTypeId
+
+
+21: Foreign Key Name:		PROD_INV_ITEM_TYPE
+	Related Entity:		InventoryItemType
+	referenced Field:	inventoryItemTypeId
+

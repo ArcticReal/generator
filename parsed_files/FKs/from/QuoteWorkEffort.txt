@@ -1,0 +1,11 @@
+QuoteWorkEffort:
+
+1: Foreign Key Name:		QUOTE_WE_QUOTE
+	Related Entity:		Quote
+	referenced Field:	quoteId
+
+
+2: Foreign Key Name:		QUOTE_WE_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+

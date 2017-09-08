@@ -1,0 +1,11 @@
+MarketingCampaignNote:
+
+1: Foreign Key Name:		MKTGCPN_NOTE_CMPN
+	Related Entity:		MarketingCampaign
+	referenced Field:	marketingCampaignId
+
+
+2: Foreign Key Name:		MKTGCPN_NOTE_NOTE
+	Related Entity:		NoteData
+	referenced Field:	noteId
+

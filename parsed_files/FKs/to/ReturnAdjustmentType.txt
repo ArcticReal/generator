@@ -1,0 +1,9 @@
+ReturnAdjustmentType:
+
+1	Entity: ReturnAdjustment
+	Foreign Key Name: RETURN_ADJ_TYPE
+	related field: returnAdjustmentTypeId
+
+2	Entity: ReturnAdjustmentType
+	Foreign Key Name: RETURN_ADJ_TYPPAR
+	related field: returnAdjustmentTypeId

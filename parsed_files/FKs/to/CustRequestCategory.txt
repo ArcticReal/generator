@@ -1,0 +1,5 @@
+CustRequestCategory:
+
+1	Entity: CustRequest
+	Foreign Key Name: CUST_REQ_CAT
+	related field: custRequestCategoryId

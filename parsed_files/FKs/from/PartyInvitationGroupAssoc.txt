@@ -1,0 +1,16 @@
+PartyInvitationGroupAssoc:
+
+1: Foreign Key Name:		PTYINVGA_PTYGRP
+	Related Entity:		PartyGroup
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PTYINVGA_PTYTO
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		PTYINVGA_PTYINV
+	Related Entity:		PartyInvitation
+	referenced Field:	partyInvitationId
+

@@ -1,0 +1,4 @@
+PaymentGatewaySecurePay:
+
+1: Primary Key Attribute: paymentGatewayConfigId
+

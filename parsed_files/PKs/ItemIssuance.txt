@@ -1,0 +1,4 @@
+ItemIssuance:
+
+1: Primary Key Attribute: itemIssuanceId
+

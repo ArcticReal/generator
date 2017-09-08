@@ -1,0 +1,16 @@
+DataResourceTypeAttr:
+
+1: Foreign Key Name:		DATA_OBTYPE_ATTR
+	Related Entity:		DataResourceType
+	referenced Field:	dataResourceTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		DataResourceAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		DataResource
+	referenced Field:	dataResourceTypeId
+

@@ -1,0 +1,11 @@
+ProductStoreCatalog:
+
+1: Foreign Key Name:		PS_CAT_PRDSTR
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+2: Foreign Key Name:		PS_CAT_CATALOG
+	Related Entity:		ProdCatalog
+	referenced Field:	prodCatalogId
+

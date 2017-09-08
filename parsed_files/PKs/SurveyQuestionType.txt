@@ -1,0 +1,4 @@
+SurveyQuestionType:
+
+1: Primary Key Attribute: surveyQuestionTypeId
+

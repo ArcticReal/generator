@@ -1,0 +1,11 @@
+SecurityGroupPermission:
+
+1: Foreign Key Name:		SEC_GRP_PERM_GRP
+	Related Entity:		SecurityGroup
+	referenced Field:	groupId
+
+
+2: Foreign Key Name:		
+	Related Entity:		SecurityPermission
+	referenced Field:	permissionId
+

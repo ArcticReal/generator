@@ -1,0 +1,21 @@
+InventoryItemType:
+
+1	Entity: InventoryItemType
+	Foreign Key Name: INV_ITEM_TYPPAR
+	related field: inventoryItemTypeId
+
+2	Entity: InventoryItem
+	Foreign Key Name: INV_ITEM_TYPE
+	related field: inventoryItemTypeId
+
+3	Entity: Facility
+	Foreign Key Name: FAC_INVITM_TYPE
+	related field: inventoryItemTypeId
+
+4	Entity: InventoryItemTypeAttr
+	Foreign Key Name: INV_ITEM_TYP_ATTR
+	related field: inventoryItemTypeId
+
+5	Entity: Product
+	Foreign Key Name: PROD_INV_ITEM_TYPE
+	related field: inventoryItemTypeId

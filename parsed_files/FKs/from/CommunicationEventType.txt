@@ -1,0 +1,11 @@
+CommunicationEventType:
+
+1: Foreign Key Name:		COM_EVNT_TYPE_PAR
+	Related Entity:		CommunicationEventType
+	referenced Field:	communicationEventTypeId
+
+
+2: Foreign Key Name:		COM_EVNT_TYPE_CMT
+	Related Entity:		ContactMechType
+	referenced Field:	contactMechTypeId
+

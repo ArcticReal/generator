@@ -1,0 +1,9 @@
+SurveyApplType:
+
+1	Entity: SurveyTrigger
+	Foreign Key Name: SRVYTRG_SRVYAPT
+	related field: surveyApplTypeId
+
+2	Entity: ProductStoreSurveyAppl
+	Foreign Key Name: PRDSTRSVY_SATP
+	related field: surveyApplTypeId

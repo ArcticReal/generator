@@ -1,0 +1,13 @@
+QuantityBreak:
+
+1	Entity: ShipmentCostEstimate
+	Foreign Key Name: SHPMNT_CE_WHT_QB
+	related field: quantityBreakId
+
+2	Entity: ShipmentCostEstimate
+	Foreign Key Name: SHPMNT_CE_PRC_QB
+	related field: quantityBreakId
+
+3	Entity: ShipmentCostEstimate
+	Foreign Key Name: SHPMNT_CE_QNT_QB
+	related field: quantityBreakId

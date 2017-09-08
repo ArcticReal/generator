@@ -1,0 +1,7 @@
+ShipmentStatus:
+
+1: Primary Key Attribute: statusId
+
+
+2: Primary Key Attribute: shipmentId
+

@@ -1,0 +1,13 @@
+OrderAdjustment:
+
+1	Entity: OrderAdjustmentBilling
+	Foreign Key Name: ORDER_ADJBLNG_OA
+	related field: orderAdjustmentId
+
+2	Entity: ReturnAdjustment
+	Foreign Key Name: RETURN_ADJ_ORDADJ
+	related field: orderAdjustmentId
+
+3	Entity: OrderAdjustmentAttribute
+	Foreign Key Name: ORDER_ADJ_ATTR
+	related field: orderAdjustmentId

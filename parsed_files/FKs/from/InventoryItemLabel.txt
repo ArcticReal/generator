@@ -1,0 +1,6 @@
+InventoryItemLabel:
+
+1: Foreign Key Name:		INV_ITLA_TYPE
+	Related Entity:		InventoryItemLabelType
+	referenced Field:	inventoryItemLabelTypeId
+

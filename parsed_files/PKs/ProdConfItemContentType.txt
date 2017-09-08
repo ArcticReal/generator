@@ -1,0 +1,4 @@
+ProdConfItemContentType:
+
+1: Primary Key Attribute: confItemContentTypeId
+

@@ -1,0 +1,6 @@
+CommunicationEventPrpTyp:
+
+1: Foreign Key Name:		COM_EVNT_PRP_TYP
+	Related Entity:		CommunicationEventPrpTyp
+	referenced Field:	communicationEventPrpTypId
+

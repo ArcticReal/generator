@@ -1,0 +1,9 @@
+PaymentContentType:
+
+1	Entity: PaymentContentType
+	Foreign Key Name: PAYCT_TYP_PARENT
+	related field: paymentContentTypeId
+
+2	Entity: PaymentContent
+	Foreign Key Name: PAYMENT_CNT_TYPE
+	related field: paymentContentTypeId

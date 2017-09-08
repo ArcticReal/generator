@@ -1,0 +1,10 @@
+OrderContactMech:
+
+1: Primary Key Attribute: orderId
+
+
+2: Primary Key Attribute: contactMechPurposeTypeId
+
+
+3: Primary Key Attribute: contactMechId
+

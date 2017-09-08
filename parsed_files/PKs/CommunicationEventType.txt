@@ -1,0 +1,4 @@
+CommunicationEventType:
+
+1: Primary Key Attribute: communicationEventTypeId
+

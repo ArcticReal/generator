@@ -1,0 +1,16 @@
+AgreementItem:
+
+1: Foreign Key Name:		AGRMNT_ITEM_AGR
+	Related Entity:		Agreement
+	referenced Field:	agreementId
+
+
+2: Foreign Key Name:		AGRMNT_ITEM_TYPE
+	Related Entity:		AgreementItemType
+	referenced Field:	agreementItemTypeId
+
+
+3: Foreign Key Name:		
+	Related Entity:		AgreementItemTypeAttr
+	referenced Field:	agreementItemTypeId
+

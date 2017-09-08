@@ -1,0 +1,4 @@
+InventoryItem:
+
+1: Primary Key Attribute: inventoryItemId
+

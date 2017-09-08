@@ -1,0 +1,17 @@
+PartyType:
+
+1	Entity: PartyType
+	Foreign Key Name: PARTY_TYPE_PAR
+	related field: partyTypeId
+
+2	Entity: PartyTypeAttr
+	Foreign Key Name: PARTY_TYP_ATTR
+	related field: partyTypeId
+
+3	Entity: PartyNeed
+	Foreign Key Name: PARTY_NEED_PTTP
+	related field: partyTypeId
+
+4	Entity: Party
+	Foreign Key Name: PARTY_PTY_TYP
+	related field: partyTypeId

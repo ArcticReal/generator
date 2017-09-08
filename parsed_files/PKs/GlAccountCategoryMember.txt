@@ -1,0 +1,10 @@
+GlAccountCategoryMember:
+
+1: Primary Key Attribute: glAccountId
+
+
+2: Primary Key Attribute: glAccountCategoryId
+
+
+3: Primary Key Attribute: fromDate
+

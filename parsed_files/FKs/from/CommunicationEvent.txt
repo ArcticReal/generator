@@ -1,0 +1,71 @@
+CommunicationEvent:
+
+1: Foreign Key Name:		COM_EVNT_TYPE
+	Related Entity:		CommunicationEventType
+	referenced Field:	communicationEventTypeId
+
+
+2: Foreign Key Name:		COM_EVNT_TPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		COM_EVNT_TRTYP
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		COM_EVNT_FPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		COM_EVNT_FRTYP
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+7: Foreign Key Name:		
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+8: Foreign Key Name:		COM_EVNT_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+9: Foreign Key Name:		COM_EVNT_CMTP
+	Related Entity:		ContactMechType
+	referenced Field:	contactMechTypeId
+
+
+10: Foreign Key Name:		COM_EVNT_FCM
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+11: Foreign Key Name:		COM_EVNT_TCM
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+12: Foreign Key Name:		COM_EVNT_CLST
+	Related Entity:		ContactList
+	referenced Field:	contactListId
+
+
+13: Foreign Key Name:		COM_EVNT_MIMETYPE
+	Related Entity:		MimeType
+	referenced Field:	mimeTypeId
+
+
+14: Foreign Key Name:		COM_EVNT_RESENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

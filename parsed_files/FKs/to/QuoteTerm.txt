@@ -1,0 +1,5 @@
+QuoteTerm:
+
+1	Entity: QuoteTermAttribute
+	Foreign Key Name: QUOTE_TERM_ATTR
+	related field: termTypeId

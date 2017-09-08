@@ -1,0 +1,7 @@
+SalesOpportunityCompetitor:
+
+1: Primary Key Attribute: salesOpportunityId
+
+
+2: Primary Key Attribute: competitorPartyId
+

@@ -1,0 +1,13 @@
+QuoteType:
+
+1	Entity: Quote
+	Foreign Key Name: QUOTE_QTTYP
+	related field: quoteTypeId
+
+2	Entity: QuoteType
+	Foreign Key Name: QUOTE_TYPE_PAR
+	related field: quoteTypeId
+
+3	Entity: QuoteTypeAttr
+	Foreign Key Name: QUOTE_TPAT_QTYP
+	related field: quoteTypeId

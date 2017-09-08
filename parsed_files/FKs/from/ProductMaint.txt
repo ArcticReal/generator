@@ -1,0 +1,31 @@
+ProductMaint:
+
+1: Foreign Key Name:		PRODMNT_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		PRODMNT_MNTTYP
+	Related Entity:		ProductMaintType
+	referenced Field:	productMaintTypeId
+
+
+3: Foreign Key Name:		PRODMNT_TPLHWE
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+4: Foreign Key Name:		PRODMNT_INTUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+5: Foreign Key Name:		PRODMNT_PDMTTYP
+	Related Entity:		ProductMeterType
+	referenced Field:	productMeterTypeId
+
+
+6: Foreign Key Name:		
+	Related Entity:		ProductMeter
+	referenced Field:	
+

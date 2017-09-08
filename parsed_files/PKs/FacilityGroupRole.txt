@@ -1,0 +1,10 @@
+FacilityGroupRole:
+
+1: Primary Key Attribute: facilityGroupId
+
+
+2: Primary Key Attribute: partyId
+
+
+3: Primary Key Attribute: roleTypeId
+

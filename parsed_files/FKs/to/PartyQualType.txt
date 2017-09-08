@@ -1,0 +1,9 @@
+PartyQualType:
+
+1	Entity: PartyQual
+	Foreign Key Name: PARTY_QUAL_PQTYP
+	related field: partyQualTypeId
+
+2	Entity: PartyQualType
+	Foreign Key Name: PARTY_QUAL_TPAR
+	related field: partyQualTypeId

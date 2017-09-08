@@ -1,0 +1,21 @@
+SkillType:
+
+1	Entity: PartySkill
+	Foreign Key Name: PARTY_SKLL_SKTP
+	related field: skillTypeId
+
+2	Entity: SkillType
+	Foreign Key Name: PARNT_SKILL_TYPE
+	related field: skillTypeId
+
+3	Entity: JobRequisition
+	Foreign Key Name: JOB_REQ_SKTYP
+	related field: skillTypeId
+
+4	Entity: WorkEffortSkillStandard
+	Foreign Key Name: WKEFF_SKLSTD_SKTP
+	related field: skillTypeId
+
+5	Entity: QuoteItem
+	Foreign Key Name: QUOTE_ITM_SKLT
+	related field: skillTypeId

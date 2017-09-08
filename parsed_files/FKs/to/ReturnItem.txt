@@ -1,0 +1,13 @@
+ReturnItem:
+
+1	Entity: ShipmentReceipt
+	Foreign Key Name: SHP_RCPT_RETINVITM
+	related field: returnId
+
+2	Entity: ReturnItemShipment
+	Foreign Key Name: RIT_SHPMT_RITM
+	related field: returnId
+
+3	Entity: ReturnItemBilling
+	Foreign Key Name: RTN_ITBLNG_RITM
+	related field: returnId

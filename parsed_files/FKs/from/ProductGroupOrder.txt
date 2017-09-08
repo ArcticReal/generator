@@ -1,0 +1,16 @@
+ProductGroupOrder:
+
+1: Foreign Key Name:		PROD_GROUP_ORDER
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+2: Foreign Key Name:		GROUP_ORDER_STATUS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+3: Foreign Key Name:		GROUP_ORDER_JOB
+	Related Entity:		JobSandbox
+	referenced Field:	jobId
+

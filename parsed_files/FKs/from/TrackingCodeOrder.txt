@@ -1,0 +1,16 @@
+TrackingCodeOrder:
+
+1: Foreign Key Name:		TKNG_CODODR_ODR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+2: Foreign Key Name:		TKNG_CODODR_TKCD
+	Related Entity:		TrackingCode
+	referenced Field:	trackingCodeId
+
+
+3: Foreign Key Name:		TKNG_CODODR_TYP
+	Related Entity:		TrackingCodeType
+	referenced Field:	trackingCodeTypeId
+

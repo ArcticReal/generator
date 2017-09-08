@@ -1,0 +1,10 @@
+GlBudgetXref:
+
+1: Primary Key Attribute: glAccountId
+
+
+2: Primary Key Attribute: budgetItemTypeId
+
+
+3: Primary Key Attribute: fromDate
+

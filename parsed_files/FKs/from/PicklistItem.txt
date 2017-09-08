@@ -1,0 +1,46 @@
+PicklistItem:
+
+1: Foreign Key Name:		PCKLST_ITM_BIN
+	Related Entity:		PicklistBin
+	referenced Field:	picklistBinId
+
+
+2: Foreign Key Name:		PCKLST_ITM_OISG
+	Related Entity:		OrderItemShipGroup
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		PCKLST_ITM_ODIT
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+5: Foreign Key Name:		PICKLST_ITM_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+6: Foreign Key Name:		PCKLST_ITM_INV
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+7: Foreign Key Name:		
+	Related Entity:		InventoryItemAndLocation
+	referenced Field:	inventoryItemId
+
+
+8: Foreign Key Name:		
+	Related Entity:		OrderItemShipGrpInvRes
+	referenced Field:	
+
+
+9: Foreign Key Name:		
+	Related Entity:		ItemIssuance
+	referenced Field:	orderId
+

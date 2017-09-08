@@ -1,0 +1,11 @@
+EmplPositionReportingStruct:
+
+1: Foreign Key Name:		EMPL_PSRPS_EMPSR
+	Related Entity:		EmplPosition
+	referenced Field:	emplPositionId
+
+
+2: Foreign Key Name:		EMPL_PSRPS_EMPSM
+	Related Entity:		EmplPosition
+	referenced Field:	emplPositionId
+

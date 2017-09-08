@@ -1,0 +1,5 @@
+BudgetRevision:
+
+1	Entity: BudgetRevisionImpact
+	Foreign Key Name: BUDGET_RNIMP_REV
+	related field: budgetId

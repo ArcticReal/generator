@@ -1,0 +1,17 @@
+CustRequestItem:
+
+1	Entity: CustRequestItemNote
+	Foreign Key Name: CUST_REQ_ITNT
+	related field: custRequestId
+
+2	Entity: CustRequestItemWorkEffort
+	Foreign Key Name: WORK_REQFL_CSTRQ
+	related field: custRequestId
+
+3	Entity: QuoteItem
+	Foreign Key Name: QUOTE_ITM_CSRITM
+	related field: custRequestId
+
+4	Entity: RequirementCustRequest
+	Foreign Key Name: REQ_CSREQ_CRITM
+	related field: custRequestId

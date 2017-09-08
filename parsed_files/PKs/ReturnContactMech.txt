@@ -1,0 +1,10 @@
+ReturnContactMech:
+
+1: Primary Key Attribute: returnId
+
+
+2: Primary Key Attribute: contactMechPurposeTypeId
+
+
+3: Primary Key Attribute: contactMechId
+

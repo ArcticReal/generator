@@ -1,0 +1,16 @@
+ProductAverageCost:
+
+1: Primary Key Attribute: productAverageCostTypeId
+
+
+2: Primary Key Attribute: organizationPartyId
+
+
+3: Primary Key Attribute: productId
+
+
+4: Primary Key Attribute: facilityId
+
+
+5: Primary Key Attribute: fromDate
+

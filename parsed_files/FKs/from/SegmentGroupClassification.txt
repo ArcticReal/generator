@@ -1,0 +1,11 @@
+SegmentGroupClassification:
+
+1: Foreign Key Name:		SGMTGRPCLS_SGGP
+	Related Entity:		SegmentGroup
+	referenced Field:	segmentGroupId
+
+
+2: Foreign Key Name:		SGMTGRPCLS_PCGP
+	Related Entity:		PartyClassificationGroup
+	referenced Field:	partyClassificationGroupId
+

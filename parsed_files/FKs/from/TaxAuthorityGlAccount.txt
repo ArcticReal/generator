@@ -1,0 +1,16 @@
+TaxAuthorityGlAccount:
+
+1: Foreign Key Name:		TAXAUTHGLA_TXA
+	Related Entity:		TaxAuthority
+	referenced Field:	taxAuthGeoId
+
+
+2: Foreign Key Name:		TAXAUTHGLA_OPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		TAXAUTHGLA_GLA
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+

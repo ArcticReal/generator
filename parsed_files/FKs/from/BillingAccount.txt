@@ -1,0 +1,16 @@
+BillingAccount:
+
+1: Foreign Key Name:		BILLACCT_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+2: Foreign Key Name:		BILLACCT_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+3: Foreign Key Name:		BILLACCT_PADDR
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+

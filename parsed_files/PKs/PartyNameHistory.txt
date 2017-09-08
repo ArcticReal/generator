@@ -1,0 +1,7 @@
+PartyNameHistory:
+
+1: Primary Key Attribute: partyId
+
+
+2: Primary Key Attribute: changeDate
+

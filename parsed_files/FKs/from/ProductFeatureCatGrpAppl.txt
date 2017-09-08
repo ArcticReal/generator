@@ -1,0 +1,11 @@
+ProductFeatureCatGrpAppl:
+
+1: Foreign Key Name:		PROD_FCGAPL_CAT
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+
+
+2: Foreign Key Name:		PROD_FCGAPL_FGRP
+	Related Entity:		ProductFeatureGroup
+	referenced Field:	productFeatureGroupId
+

@@ -1,0 +1,33 @@
+ContactMechType:
+
+1	Entity: CommunicationEventType
+	Foreign Key Name: COM_EVNT_TYPE_CMT
+	related field: contactMechTypeId
+
+2	Entity: ContactMech
+	Foreign Key Name: CONT_MECH_TYPE
+	related field: contactMechTypeId
+
+3	Entity: CommunicationEvent
+	Foreign Key Name: COM_EVNT_CMTP
+	related field: contactMechTypeId
+
+4	Entity: ContactMechTypePurpose
+	Foreign Key Name: CONT_MECH_TP_TYPE
+	related field: contactMechTypeId
+
+5	Entity: ContactList
+	Foreign Key Name: CNCT_LST_CMCHTP
+	related field: contactMechTypeId
+
+6	Entity: ContactMechType
+	Foreign Key Name: CONT_MECH_TYP_PAR
+	related field: contactMechTypeId
+
+7	Entity: ValidContactMechRole
+	Foreign Key Name: VAL_CMRLE_CMTYPE
+	related field: contactMechTypeId
+
+8	Entity: ContactMechTypeAttr
+	Foreign Key Name: CONT_MECH_TYP_ATR
+	related field: contactMechTypeId

@@ -1,0 +1,16 @@
+EmplPositionTypeRate:
+
+1: Foreign Key Name:		EMPL_PTPRT_EPTP
+	Related Entity:		EmplPositionType
+	referenced Field:	emplPositionTypeId
+
+
+2: Foreign Key Name:		EMPL_PTPRT_SSTP
+	Related Entity:		SalaryStep
+	referenced Field:	salaryStepSeqId
+
+
+3: Foreign Key Name:		EMPL_PTPRT_RTTYP
+	Related Entity:		RateType
+	referenced Field:	rateTypeId
+

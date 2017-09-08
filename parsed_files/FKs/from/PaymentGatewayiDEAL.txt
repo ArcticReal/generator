@@ -1,0 +1,6 @@
+PaymentGatewayiDEAL:
+
+1: Foreign Key Name:		PGID_PGC
+	Related Entity:		PaymentGatewayConfig
+	referenced Field:	paymentGatewayConfigId
+

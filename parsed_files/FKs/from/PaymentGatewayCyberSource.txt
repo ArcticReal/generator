@@ -1,0 +1,6 @@
+PaymentGatewayCyberSource:
+
+1: Foreign Key Name:		PGCS_PGC
+	Related Entity:		PaymentGatewayConfig
+	referenced Field:	paymentGatewayConfigId
+

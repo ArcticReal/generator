@@ -1,0 +1,21 @@
+OrderItemPriceInfo:
+
+1: Foreign Key Name:		
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+2: Foreign Key Name:		ORDER_OIPI_OITM
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		ProductPriceRule
+	referenced Field:	productPriceRuleId
+
+
+4: Foreign Key Name:		ORDER_OIPI_PRAI
+	Related Entity:		ProductPriceAction
+	referenced Field:	productPriceRuleId
+

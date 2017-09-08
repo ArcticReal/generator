@@ -1,0 +1,4 @@
+FixedAsset:
+
+1: Primary Key Attribute: fixedAssetId
+

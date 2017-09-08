@@ -1,0 +1,11 @@
+ContactMech:
+
+1: Foreign Key Name:		CONT_MECH_TYPE
+	Related Entity:		ContactMechType
+	referenced Field:	contactMechTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ContactMechTypeAttr
+	referenced Field:	contactMechTypeId
+

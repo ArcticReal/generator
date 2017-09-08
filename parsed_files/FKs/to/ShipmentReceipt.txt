@@ -1,0 +1,21 @@
+ShipmentReceipt:
+
+1	Entity: OrderItemBilling
+	Foreign Key Name: ORDER_ITBL_SHIPRCP
+	related field: receiptId
+
+2	Entity: AcctgTrans
+	Foreign Key Name: ACCTTX_SHIPRCPT
+	related field: receiptId
+
+3	Entity: InventoryItemDetail
+	Foreign Key Name: INV_ITDTL_SHRCT
+	related field: receiptId
+
+4	Entity: ReturnItemBilling
+	Foreign Key Name: RITBL_SHIPRCPT
+	related field: receiptId
+
+5	Entity: ShipmentReceiptRole
+	Foreign Key Name: SHP_RCPTRL_RCPT
+	related field: receiptId

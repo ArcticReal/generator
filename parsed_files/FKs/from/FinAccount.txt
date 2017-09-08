@@ -1,0 +1,36 @@
+FinAccount:
+
+1: Foreign Key Name:		FINACCT_TYPE
+	Related Entity:		FinAccountType
+	referenced Field:	finAccountTypeId
+
+
+2: Foreign Key Name:		FINACCT_CURUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+3: Foreign Key Name:		FINACCT_ORGPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		FINACCT_OWNPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		FINACCT_GLAC
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+
+
+6: Foreign Key Name:		FINACCT_PAYMETH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+7: Foreign Key Name:		
+	Related Entity:		FinAccountTypeAttr
+	referenced Field:	finAccountTypeId
+

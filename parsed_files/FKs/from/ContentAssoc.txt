@@ -1,0 +1,36 @@
+ContentAssoc:
+
+1: Foreign Key Name:		CONTENTASSC_FROM
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+2: Foreign Key Name:		CONTENTASSC_TO
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		CONTENTASSC_TYP
+	Related Entity:		ContentAssocType
+	referenced Field:	contentAssocTypeId
+
+
+4: Foreign Key Name:		CONTENTASSC_CBUSR
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+5: Foreign Key Name:		CONTENTASSC_LMBUR
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+6: Foreign Key Name:		CONTENTASSC_PRED
+	Related Entity:		ContentAssocPredicate
+	referenced Field:	contentAssocPredicateId
+
+
+7: Foreign Key Name:		CONTENTASSC_DTSRC
+	Related Entity:		DataSource
+	referenced Field:	dataSourceId
+

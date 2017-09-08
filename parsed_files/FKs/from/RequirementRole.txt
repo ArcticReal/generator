@@ -1,0 +1,16 @@
+RequirementRole:
+
+1: Foreign Key Name:		REQ_ROLE_REQ
+	Related Entity:		Requirement
+	referenced Field:	requirementId
+
+
+2: Foreign Key Name:		REQ_ROLE_PRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		REQ_ROLE_PROLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

@@ -1,0 +1,7 @@
+InvoiceTermAttribute:
+
+1: Primary Key Attribute: invoiceTermId
+
+
+2: Primary Key Attribute: attrName
+

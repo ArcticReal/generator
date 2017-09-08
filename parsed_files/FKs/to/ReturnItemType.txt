@@ -1,0 +1,9 @@
+ReturnItemType:
+
+1	Entity: ReturnItem
+	Foreign Key Name: RTN_ITEM_TYPE
+	related field: returnItemTypeId
+
+2	Entity: ReturnItemType
+	Foreign Key Name: RETURN_ITEM_TYPPAR
+	related field: returnItemTypeId

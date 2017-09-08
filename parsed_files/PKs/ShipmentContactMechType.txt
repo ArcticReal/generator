@@ -1,0 +1,4 @@
+ShipmentContactMechType:
+
+1: Primary Key Attribute: shipmentContactMechTypeId
+

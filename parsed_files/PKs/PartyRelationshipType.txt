@@ -1,0 +1,4 @@
+PartyRelationshipType:
+
+1: Primary Key Attribute: partyRelationshipTypeId
+

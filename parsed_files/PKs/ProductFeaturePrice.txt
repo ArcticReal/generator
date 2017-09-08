@@ -1,0 +1,13 @@
+ProductFeaturePrice:
+
+1: Primary Key Attribute: productFeatureId
+
+
+2: Primary Key Attribute: productPriceTypeId
+
+
+3: Primary Key Attribute: currencyUomId
+
+
+4: Primary Key Attribute: fromDate
+

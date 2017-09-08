@@ -1,0 +1,6 @@
+FixedAssetType:
+
+1: Foreign Key Name:		FIXEDAST_TYPPAR
+	Related Entity:		FixedAssetType
+	referenced Field:	fixedAssetTypeId
+

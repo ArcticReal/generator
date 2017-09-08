@@ -1,0 +1,11 @@
+WorkEffortNote:
+
+1: Foreign Key Name:		WKEFF_NTE_WEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WKEFF_NTE_NOTE
+	Related Entity:		NoteData
+	referenced Field:	noteId
+

@@ -1,0 +1,16 @@
+BudgetItem:
+
+1: Foreign Key Name:		BDGTITM_TO_BDGT
+	Related Entity:		Budget
+	referenced Field:	budgetId
+
+
+2: Foreign Key Name:		BUDGET_ITEM_BTYP
+	Related Entity:		BudgetItemType
+	referenced Field:	budgetItemTypeId
+
+
+3: Foreign Key Name:		
+	Related Entity:		BudgetItemTypeAttr
+	referenced Field:	budgetItemTypeId
+

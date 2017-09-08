@@ -1,0 +1,10 @@
+ProductSubscriptionResource:
+
+1: Primary Key Attribute: productId
+
+
+2: Primary Key Attribute: subscriptionResourceId
+
+
+3: Primary Key Attribute: fromDate
+

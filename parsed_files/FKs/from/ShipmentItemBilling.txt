@@ -1,0 +1,21 @@
+ShipmentItemBilling:
+
+1: Foreign Key Name:		
+	Related Entity:		Shipment
+	referenced Field:	shipmentId
+
+
+2: Foreign Key Name:		SHPMNT_ITBL_SPIM
+	Related Entity:		ShipmentItem
+	referenced Field:	shipmentId
+
+
+3: Foreign Key Name:		
+	Related Entity:		Invoice
+	referenced Field:	invoiceId
+
+
+4: Foreign Key Name:		SHPMNT_ITBL_INIM
+	Related Entity:		InvoiceItem
+	referenced Field:	invoiceId
+

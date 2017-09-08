@@ -1,0 +1,9 @@
+PartyIdentificationType:
+
+1	Entity: PartyIdentification
+	Foreign Key Name: PARTY_ID_TYPE
+	related field: partyIdentificationTypeId
+
+2	Entity: PartyIdentificationType
+	Foreign Key Name: PARTY_ID_TYPE_PAR
+	related field: partyIdentificationTypeId

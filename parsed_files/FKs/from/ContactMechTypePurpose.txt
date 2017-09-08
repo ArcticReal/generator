@@ -1,0 +1,11 @@
+ContactMechTypePurpose:
+
+1: Foreign Key Name:		CONT_MECH_TP_TYPE
+	Related Entity:		ContactMechType
+	referenced Field:	contactMechTypeId
+
+
+2: Foreign Key Name:		CONT_MECH_TP_PRPTP
+	Related Entity:		ContactMechPurposeType
+	referenced Field:	contactMechPurposeTypeId
+

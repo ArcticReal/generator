@@ -1,0 +1,36 @@
+FixedAssetMaint:
+
+1: Foreign Key Name:		FXDASTMNT_FXAST
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+2: Foreign Key Name:		FXDASTMNT_PMNTP
+	Related Entity:		ProductMaintType
+	referenced Field:	productMaintTypeId
+
+
+3: Foreign Key Name:		FXDASTMNT_SCHWE
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+4: Foreign Key Name:		FXDASTMNT_INTUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+5: Foreign Key Name:		FXDASTMNT_PDMTTYP
+	Related Entity:		ProductMeterType
+	referenced Field:	productMeterTypeId
+
+
+6: Foreign Key Name:		FXDASTMNT_PURORD
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+7: Foreign Key Name:		FXDASTMNT_SI
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

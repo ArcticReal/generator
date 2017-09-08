@@ -1,0 +1,5 @@
+ContactListType:
+
+1	Entity: ContactList
+	Foreign Key Name: CNCT_LST_TYP
+	related field: contactListTypeId

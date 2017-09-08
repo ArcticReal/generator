@@ -1,0 +1,11 @@
+Deduction:
+
+1: Foreign Key Name:		DEDCTN_DEDTYP
+	Related Entity:		DeductionType
+	referenced Field:	deductionTypeId
+
+
+2: Foreign Key Name:		DEDCTN_PMNT
+	Related Entity:		Payment
+	referenced Field:	paymentId
+

@@ -1,0 +1,5 @@
+GlAccountGroup:
+
+1	Entity: GlAccountGroupMember
+	Foreign Key Name: GLACT_GPMBR_GP
+	related field: glAccountGroupId

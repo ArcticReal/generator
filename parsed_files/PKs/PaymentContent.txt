@@ -1,0 +1,13 @@
+PaymentContent:
+
+1: Primary Key Attribute: contentId
+
+
+2: Primary Key Attribute: paymentId
+
+
+3: Primary Key Attribute: paymentContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

@@ -1,0 +1,5 @@
+AgreementTerm:
+
+1	Entity: AgreementTermAttribute
+	Foreign Key Name: AGRMNT_TERM_ATTR
+	related field: agreementTermId

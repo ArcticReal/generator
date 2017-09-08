@@ -1,0 +1,6 @@
+TelecomNumber:
+
+1: Foreign Key Name:		TEL_NUM_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+

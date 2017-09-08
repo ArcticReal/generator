@@ -1,0 +1,21 @@
+TimesheetRole:
+
+1: Foreign Key Name:		TIMESHTRL_TSHT
+	Related Entity:		Timesheet
+	referenced Field:	timesheetId
+
+
+2: Foreign Key Name:		TIMESHTRL_PRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		TIMESHTRL_PTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

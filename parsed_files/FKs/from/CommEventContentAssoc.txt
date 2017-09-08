@@ -1,0 +1,16 @@
+CommEventContentAssoc:
+
+1: Foreign Key Name:		COMMEV_CA_FROM
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+2: Foreign Key Name:		COMMEV_CA_COMMEV
+	Related Entity:		CommunicationEvent
+	referenced Field:	communicationEventId
+
+
+3: Foreign Key Name:		COMMEV_CA_TYP
+	Related Entity:		CommContentAssocType
+	referenced Field:	commContentAssocTypeId
+

@@ -1,0 +1,7 @@
+WorkEffortKeyword:
+
+1: Primary Key Attribute: workEffortId
+
+
+2: Primary Key Attribute: keyword
+

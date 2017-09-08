@@ -1,0 +1,6 @@
+ShipmentGatewayFedex:
+
+1: Foreign Key Name:		SGFED_SGC
+	Related Entity:		ShipmentGatewayConfig
+	referenced Field:	shipmentGatewayConfigId
+

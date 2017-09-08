@@ -1,0 +1,4 @@
+PriorityType:
+
+1: Primary Key Attribute: priorityTypeId
+

@@ -1,0 +1,13 @@
+WebSiteContent:
+
+1: Primary Key Attribute: webSiteId
+
+
+2: Primary Key Attribute: contentId
+
+
+3: Primary Key Attribute: webSiteContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

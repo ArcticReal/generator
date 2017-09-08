@@ -1,0 +1,29 @@
+ShipmentMethodType:
+
+1	Entity: ProductStoreShipmentMeth
+	Foreign Key Name: 
+	related field: shipmentMethodTypeId
+
+2	Entity: ProductStoreVendorShipment
+	Foreign Key Name: PRDSTRVSH_SHMT
+	related field: shipmentMethodTypeId
+
+3	Entity: ShipmentRouteSegment
+	Foreign Key Name: SHPMT_RTSEG_SHMT
+	related field: shipmentMethodTypeId
+
+4	Entity: CarrierShipmentMethod
+	Foreign Key Name: CARR_SHMETH_TYPE
+	related field: shipmentMethodTypeId
+
+5	Entity: FacilityCarrierShipment
+	Foreign Key Name: FACILITY_CSH_STP
+	related field: shipmentMethodTypeId
+
+6	Entity: OrderItemShipGroup
+	Foreign Key Name: ORDER_ITSG_SHMTP
+	related field: shipmentMethodTypeId
+
+7	Entity: Picklist
+	Foreign Key Name: PICKLST_SMTP
+	related field: shipmentMethodTypeId

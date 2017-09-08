@@ -1,0 +1,4 @@
+FacilityGroup:
+
+1: Primary Key Attribute: facilityGroupId
+

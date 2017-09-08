@@ -1,0 +1,26 @@
+InvoiceItemAssoc:
+
+1: Foreign Key Name:		INITMASCTYP_IIASC
+	Related Entity:		InvoiceItemAssocType
+	referenced Field:	invoiceItemAssocTypeId
+
+
+2: Foreign Key Name:		INITMASC_FIITM
+	Related Entity:		InvoiceItem
+	referenced Field:	invoiceId
+
+
+3: Foreign Key Name:		INITMASC_TIITM
+	Related Entity:		InvoiceItem
+	referenced Field:	invoiceId
+
+
+4: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+

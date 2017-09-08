@@ -1,0 +1,5 @@
+ProductStoreShipmentMeth:
+
+1	Entity: ShipmentCostEstimate
+	Foreign Key Name: SHPMNT_PS_SH_METH
+	related field: productStoreShipMethId

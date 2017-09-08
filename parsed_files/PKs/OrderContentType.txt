@@ -1,0 +1,4 @@
+OrderContentType:
+
+1: Primary Key Attribute: orderContentTypeId
+

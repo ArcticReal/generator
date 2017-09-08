@@ -1,0 +1,6 @@
+PaymentMethodType:
+
+1: Foreign Key Name:		PAYMENT_MTP_DGLAC
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+

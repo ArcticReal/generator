@@ -1,0 +1,10 @@
+ShipmentItemFeature:
+
+1: Primary Key Attribute: shipmentId
+
+
+2: Primary Key Attribute: shipmentItemSeqId
+
+
+3: Primary Key Attribute: productFeatureId
+

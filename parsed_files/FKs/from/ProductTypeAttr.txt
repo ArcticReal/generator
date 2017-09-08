@@ -1,0 +1,16 @@
+ProductTypeAttr:
+
+1: Foreign Key Name:		PROD_TYPE_ATTR
+	Related Entity:		ProductType
+	referenced Field:	productTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ProductAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		Product
+	referenced Field:	productTypeId
+

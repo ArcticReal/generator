@@ -1,0 +1,13 @@
+ProductFeatureCategory:
+
+1	Entity: ProductFeatureCategory
+	Foreign Key Name: PROD_FEAT_CAT_PAR
+	related field: productFeatureCategoryId
+
+2	Entity: ProductFeature
+	Foreign Key Name: PROD_FEAT_CATEGORY
+	related field: productFeatureCategoryId
+
+3	Entity: ProductFeatureCategoryAppl
+	Foreign Key Name: PROD_FCAPPL_FCAT
+	related field: productFeatureCategoryId

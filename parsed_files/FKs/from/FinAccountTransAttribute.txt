@@ -1,0 +1,11 @@
+FinAccountTransAttribute:
+
+1: Foreign Key Name:		FINACCT_TX_ATTR
+	Related Entity:		FinAccountTrans
+	referenced Field:	finAccountTransId
+
+
+2: Foreign Key Name:		
+	Related Entity:		FinAccountTransTypeAttr
+	referenced Field:	attrName
+

@@ -1,0 +1,31 @@
+WebSiteRole:
+
+1: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+3: Foreign Key Name:		
+	Related Entity:		Person
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		
+	Related Entity:		PartyGroup
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		WSRLE_PTYRLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		WSRLE_WSITE
+	Related Entity:		WebSite
+	referenced Field:	webSiteId
+

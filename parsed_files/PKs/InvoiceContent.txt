@@ -1,0 +1,13 @@
+InvoiceContent:
+
+1: Primary Key Attribute: contentId
+
+
+2: Primary Key Attribute: invoiceId
+
+
+3: Primary Key Attribute: invoiceContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

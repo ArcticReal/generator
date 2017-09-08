@@ -1,0 +1,4 @@
+ProductPriceChange:
+
+1: Primary Key Attribute: productPriceChangeId
+

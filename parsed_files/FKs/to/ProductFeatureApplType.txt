@@ -1,0 +1,9 @@
+ProductFeatureApplType:
+
+1	Entity: ProductFeatureAppl
+	Foreign Key Name: PROD_FAPPL_TYPE
+	related field: productFeatureApplTypeId
+
+2	Entity: ProductFeatureApplType
+	Foreign Key Name: PROD_FAPPL_TYPPAR
+	related field: productFeatureApplTypeId

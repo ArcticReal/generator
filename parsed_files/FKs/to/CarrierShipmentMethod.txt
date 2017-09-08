@@ -1,0 +1,17 @@
+CarrierShipmentMethod:
+
+1	Entity: FacilityCarrierShipment
+	Foreign Key Name: FACILITY_CSH_CSM
+	related field: shipmentMethodTypeId
+
+2	Entity: ShoppingList
+	Foreign Key Name: SHLIST_CSSM
+	related field: shipmentMethodTypeId
+
+3	Entity: ShipmentCostEstimate
+	Foreign Key Name: SHPMNT_CE_CSHMTH
+	related field: shipmentMethodTypeId
+
+4	Entity: OrderItemShipGroup
+	Foreign Key Name: ORDER_ITSG_CSHM
+	related field: shipmentMethodTypeId

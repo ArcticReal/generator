@@ -1,0 +1,4 @@
+DataCategory:
+
+1: Primary Key Attribute: dataCategoryId
+

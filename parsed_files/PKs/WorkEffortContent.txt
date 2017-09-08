@@ -1,0 +1,13 @@
+WorkEffortContent:
+
+1: Primary Key Attribute: workEffortId
+
+
+2: Primary Key Attribute: contentId
+
+
+3: Primary Key Attribute: workEffortContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

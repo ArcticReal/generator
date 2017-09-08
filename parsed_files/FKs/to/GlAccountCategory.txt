@@ -1,0 +1,5 @@
+GlAccountCategory:
+
+1	Entity: GlAccountCategoryMember
+	Foreign Key Name: GLACT_CATMBR_CAT
+	related field: glAccountCategoryId

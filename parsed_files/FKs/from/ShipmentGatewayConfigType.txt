@@ -1,0 +1,11 @@
+ShipmentGatewayConfigType:
+
+1: Foreign Key Name:		SGCT_PAR
+	Related Entity:		ShipmentGatewayConfigType
+	referenced Field:	shipmentGatewayConfTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ShipmentGatewayConfigType
+	referenced Field:	parentTypeId
+

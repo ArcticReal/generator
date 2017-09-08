@@ -1,0 +1,10 @@
+TrackingCodeVisit:
+
+1: Primary Key Attribute: trackingCodeId
+
+
+2: Primary Key Attribute: visitId
+
+
+3: Primary Key Attribute: fromDate
+

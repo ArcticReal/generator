@@ -1,0 +1,16 @@
+JobRequisition:
+
+1: Foreign Key Name:		JOB_REQ_SKTYP
+	Related Entity:		SkillType
+	referenced Field:	skillTypeId
+
+
+2: Foreign Key Name:		JOB_REQ_ENUMEXM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+3: Foreign Key Name:		JOB_REQ_ENUMJBP
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

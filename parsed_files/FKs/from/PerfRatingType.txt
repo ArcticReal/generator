@@ -1,0 +1,6 @@
+PerfRatingType:
+
+1: Foreign Key Name:		PERF_RATNG_TYP
+	Related Entity:		PerfRatingType
+	referenced Field:	perfRatingTypeId
+

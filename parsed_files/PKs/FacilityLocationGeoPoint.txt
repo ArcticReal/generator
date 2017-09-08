@@ -1,0 +1,13 @@
+FacilityLocationGeoPoint:
+
+1: Primary Key Attribute: facilityId
+
+
+2: Primary Key Attribute: locationSeqId
+
+
+3: Primary Key Attribute: geoPointId
+
+
+4: Primary Key Attribute: fromDate
+

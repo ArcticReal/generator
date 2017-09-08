@@ -1,0 +1,6 @@
+InvoiceContentType:
+
+1: Foreign Key Name:		INVCT_TYP_PARENT
+	Related Entity:		InvoiceContentType
+	referenced Field:	invoiceContentTypeId
+

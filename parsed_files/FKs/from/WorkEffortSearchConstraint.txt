@@ -1,0 +1,6 @@
+WorkEffortSearchConstraint:
+
+1: Foreign Key Name:		WEFF_SCHRSI_RES
+	Related Entity:		WorkEffortSearchResult
+	referenced Field:	workEffortSearchResultId
+

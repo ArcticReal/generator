@@ -1,0 +1,149 @@
+Facility:
+
+1	Entity: AgreementFacilityAppl
+	Foreign Key Name: AGRMNT_FACLT_PRD
+	related field: facilityId
+
+2	Entity: MrpEvent
+	Foreign Key Name: MRPEV_FAC
+	related field: facilityId
+
+3	Entity: ProdCatalogInvFacility
+	Foreign Key Name: PROD_CIF_FACILITY
+	related field: facilityId
+
+4	Entity: ShipmentRouteSegment
+	Foreign Key Name: SHPMT_RTSEG_OFAC
+	related field: facilityId
+
+5	Entity: Picklist
+	Foreign Key Name: PICKLST_FLTY
+	related field: facilityId
+
+6	Entity: InventoryTransfer
+	Foreign Key Name: INV_XFER_FAC
+	related field: facilityId
+
+7	Entity: ProductStore
+	Foreign Key Name: PROD_STR_FACILITY
+	related field: facilityId
+
+8	Entity: ProductStoreFacility
+	Foreign Key Name: PRDSTRFAC_FAC
+	related field: facilityId
+
+9	Entity: FacilityContactMech
+	Foreign Key Name: FACIL_CMECH_FACIL
+	related field: facilityId
+
+10	Entity: OrderItemShipGroup
+	Foreign Key Name: ORDER_ITSG_FAC
+	related field: facilityId
+
+11	Entity: Shipment
+	Foreign Key Name: SHPMNT_DFAC
+	related field: facilityId
+
+12	Entity: FacilityCarrierShipment
+	Foreign Key Name: FACILITY_CSH_FAC
+	related field: facilityId
+
+13	Entity: Container
+	Foreign Key Name: CONTAINER_FACILITY
+	related field: facilityId
+
+14	Entity: FacilityLocation
+	Foreign Key Name: FACILITY_LOC_FAC
+	related field: facilityId
+
+15	Entity: FacilityGroupMember
+	Foreign Key Name: FACILITY_MEM_FAC
+	related field: facilityId
+
+16	Entity: WorkEffort
+	Foreign Key Name: WK_EFFRT_FACILITY
+	related field: facilityId
+
+17	Entity: Facility
+	Foreign Key Name: FACILITY_PARENT
+	related field: facilityId
+
+18	Entity: InventoryItem
+	Foreign Key Name: INV_ITEM_FACILITY
+	related field: facilityId
+
+19	Entity: Requirement
+	Foreign Key Name: REQ_FACILITY
+	related field: facilityId
+
+20	Entity: OrderHeader
+	Foreign Key Name: ORDER_HDR_OFAC
+	related field: facilityId
+
+21	Entity: ProductAverageCost
+	Foreign Key Name: AVG_COST_FACI
+	related field: facilityId
+
+22	Entity: InventoryTransfer
+	Foreign Key Name: INV_XFER_TFAC
+	related field: facilityId
+
+23	Entity: ReturnHeader
+	Foreign Key Name: RTN_TO_FACILITY
+	related field: facilityId
+
+24	Entity: ProductFacility
+	Foreign Key Name: PROD_FAC_FAC
+	related field: facilityId
+
+25	Entity: Product
+	Foreign Key Name: PROD_FACILITY
+	related field: facilityId
+
+26	Entity: Delivery
+	Foreign Key Name: DELIV_OFAC
+	related field: facilityId
+
+27	Entity: FacilityAttribute
+	Foreign Key Name: FACILITY_ATTR
+	related field: facilityId
+
+28	Entity: ReorderGuideline
+	Foreign Key Name: REORDER_GD_FAC
+	related field: facilityId
+
+29	Entity: FacilityParty
+	Foreign Key Name: FACILITY_RLE_FACI
+	related field: facilityId
+
+30	Entity: FacilityContactMechPurpose
+	Foreign Key Name: FACIL_CMPRP_FACIL
+	related field: facilityId
+
+31	Entity: Delivery
+	Foreign Key Name: DELIV_DFAC
+	related field: facilityId
+
+32	Entity: ShipmentRouteSegment
+	Foreign Key Name: SHPMT_RTSEG_DFAC
+	related field: facilityId
+
+33	Entity: FacilityContent
+	Foreign Key Name: FAC_CNT_FAC
+	related field: facilityId
+
+34	Entity: WorkEffortPartyAssignment
+	Foreign Key Name: WKEFF_PA_FACILITY
+	related field: facilityId
+
+35	Entity: OrderSummaryEntry
+	Foreign Key Name: ORDER_SMENT_FAC
+	related field: facilityId
+
+36	Entity: Shipment
+	Foreign Key Name: SHPMNT_OFAC
+	related field: facilityId
+
+37	Entity: FixedAsset
+	Foreign Key Name: FIXEDAST_FAC
+	related field: facilityId

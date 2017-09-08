@@ -1,0 +1,6 @@
+WorkEffortIcalData:
+
+1: Foreign Key Name:		WKEFF_ICAL_DATA
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+

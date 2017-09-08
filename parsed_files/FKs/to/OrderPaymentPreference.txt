@@ -1,0 +1,13 @@
+OrderPaymentPreference:
+
+1	Entity: Payment
+	Foreign Key Name: PAYMENT_ORDPMPRF
+	related field: orderPaymentPreferenceId
+
+2	Entity: ReturnItemResponse
+	Foreign Key Name: RTN_PAY_ORDPAYPF
+	related field: orderPaymentPreferenceId
+
+3	Entity: PaymentGatewayResponse
+	Foreign Key Name: PAYGATR_ORDPMPRF
+	related field: orderPaymentPreferenceId

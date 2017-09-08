@@ -1,0 +1,4 @@
+BenefitType:
+
+1: Primary Key Attribute: benefitTypeId
+

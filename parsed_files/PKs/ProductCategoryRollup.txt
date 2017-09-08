@@ -1,0 +1,10 @@
+ProductCategoryRollup:
+
+1: Primary Key Attribute: productCategoryId
+
+
+2: Primary Key Attribute: parentProductCategoryId
+
+
+3: Primary Key Attribute: fromDate
+

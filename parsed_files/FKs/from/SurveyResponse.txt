@@ -1,0 +1,26 @@
+SurveyResponse:
+
+1: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		SRVYRSP_SRVY
+	Related Entity:		Survey
+	referenced Field:	surveyId
+
+
+5: Foreign Key Name:		SRVYRSP_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

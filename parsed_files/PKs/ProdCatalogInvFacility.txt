@@ -1,0 +1,10 @@
+ProdCatalogInvFacility:
+
+1: Primary Key Attribute: prodCatalogId
+
+
+2: Primary Key Attribute: facilityId
+
+
+3: Primary Key Attribute: fromDate
+

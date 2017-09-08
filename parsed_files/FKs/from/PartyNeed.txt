@@ -1,0 +1,41 @@
+PartyNeed:
+
+1: Foreign Key Name:		PARTY_NEED_NDTP
+	Related Entity:		NeedType
+	referenced Field:	needTypeId
+
+
+2: Foreign Key Name:		PARTY_NEED_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		PARTY_NEED_RTYP
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		PARTY_NEED_PTTP
+	Related Entity:		PartyType
+	referenced Field:	partyTypeId
+
+
+6: Foreign Key Name:		PARTY_NEED_CMEV
+	Related Entity:		CommunicationEvent
+	referenced Field:	communicationEventId
+
+
+7: Foreign Key Name:		PARTY_NEED_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+8: Foreign Key Name:		PARTY_NEED_PCAT
+	Related Entity:		ProductCategory
+	referenced Field:	productCategoryId
+

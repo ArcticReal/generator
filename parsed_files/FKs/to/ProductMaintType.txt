@@ -1,0 +1,13 @@
+ProductMaintType:
+
+1	Entity: ProductMaint
+	Foreign Key Name: PRODMNT_MNTTYP
+	related field: productMaintTypeId
+
+2	Entity: ProductMaintType
+	Foreign Key Name: PRODMNT_TYPE_PAR
+	related field: productMaintTypeId
+
+3	Entity: FixedAssetMaint
+	Foreign Key Name: FXDASTMNT_PMNTP
+	related field: productMaintTypeId

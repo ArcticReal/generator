@@ -1,0 +1,6 @@
+MimeTypeHtmlTemplate:
+
+1: Foreign Key Name:		MIMETYPE_TPL_MT
+	Related Entity:		MimeType
+	referenced Field:	mimeTypeId
+

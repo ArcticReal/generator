@@ -1,0 +1,10 @@
+InvoiceContactMech:
+
+1: Primary Key Attribute: invoiceId
+
+
+2: Primary Key Attribute: contactMechPurposeTypeId
+
+
+3: Primary Key Attribute: contactMechId
+

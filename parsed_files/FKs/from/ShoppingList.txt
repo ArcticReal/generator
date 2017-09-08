@@ -1,0 +1,61 @@
+ShoppingList:
+
+1: Foreign Key Name:		SHLIST_PARENT
+	Related Entity:		ShoppingList
+	referenced Field:	shoppingListId
+
+
+2: Foreign Key Name:		
+	Related Entity:		ShoppingList
+	referenced Field:	parentShoppingListId
+
+
+3: Foreign Key Name:		SHLIST_TYPE
+	Related Entity:		ShoppingListType
+	referenced Field:	shoppingListTypeId
+
+
+4: Foreign Key Name:		SHLIST_PRDS
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+5: Foreign Key Name:		SHLIST_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+6: Foreign Key Name:		SHLIST_PSSM
+	Related Entity:		ProductStoreShipmentMeth
+	referenced Field:	productStoreId
+
+
+7: Foreign Key Name:		SHLIST_CSSM
+	Related Entity:		CarrierShipmentMethod
+	referenced Field:	shipmentMethodTypeId
+
+
+8: Foreign Key Name:		SHLIST_CMECH
+	Related Entity:		ContactMech
+	referenced Field:	contactMechId
+
+
+9: Foreign Key Name:		
+	Related Entity:		PostalAddress
+	referenced Field:	contactMechId
+
+
+10: Foreign Key Name:		SHLIST_PYMETH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+11: Foreign Key Name:		SHLIST_RECINFO
+	Related Entity:		RecurrenceInfo
+	referenced Field:	recurrenceInfoId
+
+
+12: Foreign Key Name:		SHLIST_PRMCD
+	Related Entity:		ProductPromoCode
+	referenced Field:	productPromoCodeId
+

@@ -1,0 +1,91 @@
+Content:
+
+1: Foreign Key Name:		CONTENT_TO_TYPE
+	Related Entity:		ContentType
+	referenced Field:	contentTypeId
+
+
+2: Foreign Key Name:		CONTENT_TO_DATA
+	Related Entity:		DataResource
+	referenced Field:	dataResourceId
+
+
+3: Foreign Key Name:		CONTENT_TO_TMPDATA
+	Related Entity:		DataResource
+	referenced Field:	dataResourceId
+
+
+4: Foreign Key Name:		CONTENT_STATUS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+5: Foreign Key Name:		CONTENT_PRIVENM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+
+
+6: Foreign Key Name:		CONTENT_CUSTMET
+	Related Entity:		CustomMethod
+	referenced Field:	customMethodId
+
+
+7: Foreign Key Name:		
+	Related Entity:		MimeType
+	referenced Field:	mimeTypeId
+
+
+8: Foreign Key Name:		CONTENT_CHST
+	Related Entity:		CharacterSet
+	referenced Field:	characterSetId
+
+
+9: Foreign Key Name:		
+	Related Entity:		ContentTypeAttr
+	referenced Field:	contentTypeId
+
+
+10: Foreign Key Name:		CONTENT_CB_ULGN
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+11: Foreign Key Name:		CONTENT_LMB_ULGN
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+12: Foreign Key Name:		
+	Related Entity:		ProductFeatureDataResource
+	referenced Field:	dataResourceId
+
+
+13: Foreign Key Name:		CONTENT_DTSRC
+	Related Entity:		DataSource
+	referenced Field:	dataSourceId
+
+
+14: Foreign Key Name:		CONTENT_DCNTNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+15: Foreign Key Name:		CONTENT_PCNTNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+16: Foreign Key Name:		CONTENT_IOFCNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+17: Foreign Key Name:		
+	Related Entity:		ContentAssocDataResourceViewFrom
+	referenced Field:	contentIdStart
+
+
+18: Foreign Key Name:		
+	Related Entity:		ContentAssocDataResourceViewTo
+	referenced Field:	contentIdStart
+

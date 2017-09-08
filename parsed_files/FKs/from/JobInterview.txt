@@ -1,0 +1,26 @@
+JobInterview:
+
+1: Foreign Key Name:		JOB_INTW_IEPR
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		JOB_INTW_IRPR
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		JOB_INTW_INTYP
+	Related Entity:		JobInterviewType
+	referenced Field:	jobInterviewTypeId
+
+
+4: Foreign Key Name:		JOB_INTW_JBREQ
+	Related Entity:		JobRequisition
+	referenced Field:	jobRequisitionId
+
+
+5: Foreign Key Name:		JOB_INTW_ENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

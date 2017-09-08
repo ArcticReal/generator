@@ -1,0 +1,4 @@
+ProductPromoCode:
+
+1: Primary Key Attribute: productPromoCodeId
+

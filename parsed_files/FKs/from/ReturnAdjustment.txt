@@ -1,0 +1,71 @@
+ReturnAdjustment:
+
+1: Foreign Key Name:		RETURN_ADJ_TYPE
+	Related Entity:		ReturnAdjustmentType
+	referenced Field:	returnAdjustmentTypeId
+
+
+2: Foreign Key Name:		RETURN_ADJ_RHEAD
+	Related Entity:		ReturnHeader
+	referenced Field:	returnId
+
+
+3: Foreign Key Name:		RETURN_ADJ_USERL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+4: Foreign Key Name:		
+	Related Entity:		ReturnItem
+	referenced Field:	returnId
+
+
+5: Foreign Key Name:		RETURN_ADJ_PROMO
+	Related Entity:		ProductPromo
+	referenced Field:	productPromoId
+
+
+6: Foreign Key Name:		
+	Related Entity:		ProductPromoRule
+	referenced Field:	productPromoId
+
+
+7: Foreign Key Name:		
+	Related Entity:		ProductPromoAction
+	referenced Field:	productPromoId
+
+
+8: Foreign Key Name:		RETURN_ADJ_PRGEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+9: Foreign Key Name:		RETURN_ADJ_SCGEO
+	Related Entity:		Geo
+	referenced Field:	geoId
+
+
+10: Foreign Key Name:		RETURN_ADJ_TXA
+	Related Entity:		TaxAuthority
+	referenced Field:	taxAuthGeoId
+
+
+11: Foreign Key Name:		RETURN_ADJ_OGLA
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+
+
+12: Foreign Key Name:		RET_ADJ_RTN_TYPE
+	Related Entity:		ReturnType
+	referenced Field:	returnTypeId
+
+
+13: Foreign Key Name:		RETURN_ADJ_ORDADJ
+	Related Entity:		OrderAdjustment
+	referenced Field:	orderAdjustmentId
+
+
+14: Foreign Key Name:		RETURN_ADJ_TARP
+	Related Entity:		TaxAuthorityRateProduct
+	referenced Field:	taxAuthorityRateSeqId
+

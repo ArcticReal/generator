@@ -1,0 +1,10 @@
+PersonTraining:
+
+1: Primary Key Attribute: partyId
+
+
+2: Primary Key Attribute: trainingClassTypeId
+
+
+3: Primary Key Attribute: fromDate
+

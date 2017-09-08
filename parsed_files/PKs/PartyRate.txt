@@ -1,0 +1,10 @@
+PartyRate:
+
+1: Primary Key Attribute: partyId
+
+
+2: Primary Key Attribute: rateTypeId
+
+
+3: Primary Key Attribute: fromDate
+

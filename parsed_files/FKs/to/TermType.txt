@@ -1,0 +1,29 @@
+TermType:
+
+1	Entity: InvoiceTerm
+	Foreign Key Name: INVCE_TRM_TRM
+	related field: termTypeId
+
+2	Entity: TermTypeAttr
+	Foreign Key Name: TERM_TYPATR_TTYP
+	related field: termTypeId
+
+3	Entity: AgreementTerm
+	Foreign Key Name: AGRMNT_TERM_TTYP
+	related field: termTypeId
+
+4	Entity: OrderTerm
+	Foreign Key Name: ORDER_TERM_TTYPE
+	related field: termTypeId
+
+5	Entity: QuoteTerm
+	Foreign Key Name: QUOTE_TERM_TTYPE
+	related field: termTypeId
+
+6	Entity: TermType
+	Foreign Key Name: TERM_TYPE_PAR
+	related field: termTypeId
+
+7	Entity: BillingAccountTerm
+	Foreign Key Name: BILLACCT_TRM_TRM
+	related field: termTypeId

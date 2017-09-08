@@ -1,0 +1,5 @@
+AccommodationMapType:
+
+1	Entity: AccommodationMap
+	Foreign Key Name: ACMD_MAP_TYPE
+	related field: accommodationMapTypeId

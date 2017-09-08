@@ -1,0 +1,6 @@
+WebSitePublishPoint:
+
+1: Foreign Key Name:		WBSTPP_CONTENT
+	Related Entity:		Content
+	referenced Field:	contentId
+

@@ -1,0 +1,16 @@
+PaymentBudgetAllocation:
+
+1: Foreign Key Name:		PAYMENT_BA_BDGT
+	Related Entity:		Budget
+	referenced Field:	budgetId
+
+
+2: Foreign Key Name:		
+	Related Entity:		BudgetItem
+	referenced Field:	budgetId
+
+
+3: Foreign Key Name:		PAYMENT_BA_PMT
+	Related Entity:		Payment
+	referenced Field:	paymentId
+

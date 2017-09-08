@@ -1,0 +1,16 @@
+ContentRole:
+
+1: Foreign Key Name:		CNTNT_RL_CNTNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+2: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		CNTNT_RL_PTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

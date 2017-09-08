@@ -1,0 +1,9 @@
+CharacterSet:
+
+1	Entity: Content
+	Foreign Key Name: CONTENT_CHST
+	related field: characterSetId
+
+2	Entity: DataResource
+	Foreign Key Name: DATA_REC_CHST
+	related field: characterSetId

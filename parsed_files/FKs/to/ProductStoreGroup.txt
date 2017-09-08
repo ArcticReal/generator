@@ -1,0 +1,33 @@
+ProductStoreGroup:
+
+1	Entity: ProductStore
+	Foreign Key Name: PROD_STR_PRSTRGP
+	related field: productStoreGroupId
+
+2	Entity: ProductStoreGroupRole
+	Foreign Key Name: PSGRP_RLE_PSGP
+	related field: productStoreGroupId
+
+3	Entity: ProductStoreGroupMember
+	Foreign Key Name: PRDSTR_MEM_PSGRP
+	related field: productStoreGroupId
+
+4	Entity: VendorProduct
+	Foreign Key Name: VENDPROD_PSGRP
+	related field: productStoreGroupId
+
+5	Entity: ProductStoreGroupRollup
+	Foreign Key Name: PSGRP_RLP_PARENT
+	related field: productStoreGroupId
+
+6	Entity: ProductPrice
+	Foreign Key Name: PROD_PRICE_PSTG
+	related field: productStoreGroupId
+
+7	Entity: ProductStoreGroupRollup
+	Foreign Key Name: PSGRP_RLP_CURRENT
+	related field: productStoreGroupId
+
+8	Entity: ProductStoreGroup
+	Foreign Key Name: PRDSTR_GP_PGRP
+	related field: productStoreGroupId

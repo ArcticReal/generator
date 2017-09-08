@@ -1,0 +1,41 @@
+GlAccountType:
+
+1	Entity: GlAccountType
+	Foreign Key Name: GLACTTY_PAR
+	related field: glAccountTypeId
+
+2	Entity: ProductCategoryGlAccount
+	Foreign Key Name: PRD_CT_GLACT_TYPE
+	related field: glAccountTypeId
+
+3	Entity: GlAccountTypeDefault
+	Foreign Key Name: GLACCT_TPDF_GLAT
+	related field: glAccountTypeId
+
+4	Entity: ProductGlAccount
+	Foreign Key Name: PROD_GLACT_TYPE
+	related field: glAccountTypeId
+
+5	Entity: AcctgTransEntry
+	Foreign Key Name: ACCTTXENT_GLACTT
+	related field: glAccountTypeId
+
+6	Entity: GlAccount
+	Foreign Key Name: GLACCT_TYPE
+	related field: glAccountTypeId
+
+7	Entity: PartyGlAccount
+	Foreign Key Name: PRTYGLACCT_GLAT
+	related field: glAccountTypeId
+
+8	Entity: CostComponentCalc
+	Foreign Key Name: COST_COM_OGLAT
+	related field: glAccountTypeId
+
+9	Entity: PaymentGlAccountTypeMap
+	Foreign Key Name: PMTGLACCT_GLACCT
+	related field: glAccountTypeId
+
+10	Entity: CostComponentCalc
+	Foreign Key Name: COST_COM_CGLAT
+	related field: glAccountTypeId

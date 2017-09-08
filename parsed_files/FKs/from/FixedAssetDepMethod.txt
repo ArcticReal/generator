@@ -1,0 +1,11 @@
+FixedAssetDepMethod:
+
+1: Foreign Key Name:		FIXDAST_DM_CMET
+	Related Entity:		CustomMethod
+	referenced Field:	customMethodId
+
+
+2: Foreign Key Name:		FIXDAST_DM_FXAST
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+

@@ -1,0 +1,7 @@
+AgreementItem:
+
+1: Primary Key Attribute: agreementId
+
+
+2: Primary Key Attribute: agreementItemSeqId
+

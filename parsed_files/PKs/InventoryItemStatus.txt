@@ -1,0 +1,10 @@
+InventoryItemStatus:
+
+1: Primary Key Attribute: inventoryItemId
+
+
+2: Primary Key Attribute: statusId
+
+
+3: Primary Key Attribute: statusDatetime
+

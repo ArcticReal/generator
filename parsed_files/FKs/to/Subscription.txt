@@ -1,0 +1,13 @@
+Subscription:
+
+1	Entity: SubscriptionFulfillmentPiece
+	Foreign Key Name: SUBSC_FP
+	related field: subscriptionId
+
+2	Entity: SubscriptionAttribute
+	Foreign Key Name: SUBSC_ATTR
+	related field: subscriptionId
+
+3	Entity: SubscriptionCommEvent
+	Foreign Key Name: SUBSC_SUBSC
+	related field: subscriptionId

@@ -1,0 +1,49 @@
+PaymentGatewayConfig:
+
+1	Entity: PaymentGatewaySecurePay
+	Foreign Key Name: PGSCP_PGC
+	related field: paymentGatewayConfigId
+
+2	Entity: PaymentGatewayiDEAL
+	Foreign Key Name: PGID_PGC
+	related field: paymentGatewayConfigId
+
+3	Entity: PaymentGatewayEway
+	Foreign Key Name: PGEW_PGC
+	related field: paymentGatewayConfigId
+
+4	Entity: PaymentGatewaySagePay
+	Foreign Key Name: PGSP_PGC
+	related field: paymentGatewayConfigId
+
+5	Entity: PaymentGatewayCyberSource
+	Foreign Key Name: PGCS_PGC
+	related field: paymentGatewayConfigId
+
+6	Entity: PaymentGatewayPayflowPro
+	Foreign Key Name: PGPF_PGC
+	related field: paymentGatewayConfigId
+
+7	Entity: PaymentGatewayOrbital
+	Foreign Key Name: PGORB_PGC
+	related field: paymentGatewayConfigId
+
+8	Entity: PaymentGatewayWorldPay
+	Foreign Key Name: PGWP_PGC
+	related field: paymentGatewayConfigId
+
+9	Entity: PaymentGatewayClearCommerce
+	Foreign Key Name: PGCC_PGC
+	related field: paymentGatewayConfigId
+
+10	Entity: PaymentGatewayAuthorizeNet
+	Foreign Key Name: PGAN_PGC
+	related field: paymentGatewayConfigId
+
+11	Entity: ProductStorePaymentSetting
+	Foreign Key Name: PRDS_PS_PGC
+	related field: paymentGatewayConfigId
+
+12	Entity: PaymentGatewayPayPal
+	Foreign Key Name: PGPP_PGC
+	related field: paymentGatewayConfigId

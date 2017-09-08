@@ -1,0 +1,16 @@
+GlAccountHistory:
+
+1: Foreign Key Name:		GLACCT_HST_GLA
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+
+
+2: Foreign Key Name:		GLACCT_HST_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		GLACCT_HST_CTP
+	Related Entity:		CustomTimePeriod
+	referenced Field:	customTimePeriodId
+

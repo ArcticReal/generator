@@ -1,0 +1,7 @@
+ContactMechLink:
+
+1: Primary Key Attribute: contactMechIdFrom
+
+
+2: Primary Key Attribute: contactMechIdTo
+

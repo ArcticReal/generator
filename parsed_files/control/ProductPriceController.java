@@ -1,0 +1,284 @@
+package com.skytala.eCommerce.control;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.google.common.base.Splitter;
+import com.skytala.eCommerce.command.AddProductPrice;
+import com.skytala.eCommerce.command.DeleteProductPrice;
+import com.skytala.eCommerce.command.UpdateProductPrice;
+import com.skytala.eCommerce.entity.ProductPrice;
+import com.skytala.eCommerce.entity.ProductPriceMapper;
+import com.skytala.eCommerce.event.ProductPriceAdded;
+import com.skytala.eCommerce.event.ProductPriceDeleted;
+import com.skytala.eCommerce.event.ProductPriceFound;
+import com.skytala.eCommerce.event.ProductPriceUpdated;
+import com.skytala.eCommerce.query.FindProductPricesBy;
+
+@RestController
+@RequestMapping("/api/productPrice")
+public class ProductPriceController {
+
+	private static int requestTicketId = 0;
+	private static Map<Integer, Boolean> commandReturnVal = new HashMap<>();
+	private static Map<Integer, List<ProductPrice>> queryReturnVal = new HashMap<>();
+	private static Map<String, RequestMethod> validRequests = new HashMap<>();
+
+	public ProductPriceController() {
+
+		validRequests.put("find", RequestMethod.GET);
+		validRequests.put("add", RequestMethod.POST);
+		validRequests.put("update", RequestMethod.PUT);
+		validRequests.put("removeById", RequestMethod.DELETE);
+
+	}
+
+	/**
+	 * 
+	 * @param allRequestParams
+	 *            all params by which you want to find a ProductPrice
+	 * @return a List with the ProductPrices
+	 */
+	@RequestMapping(method = RequestMethod.GET, value = "/find")
+	public List<ProductPrice> findProductPricesBy(@RequestParam Map<String, String> allRequestParams) {
+
+		FindProductPricesBy query = new FindProductPricesBy(allRequestParams);
+
+		int usedTicketId;
+
+		synchronized (ProductPriceController.class) {
+			usedTicketId = requestTicketId;
+			requestTicketId++;
+		}
+		Broker.instance().subscribe(ProductPriceFound.class,
+				event -> sendProductPricesFoundMessage(((ProductPriceFound) event).getProductPrices(), usedTicketId));
+
+		query.execute();
+
+		while (!queryReturnVal.containsKey(usedTicketId)) {
+
+		}
+		return queryReturnVal.remove(usedTicketId);
+
+	}
+
+	public void sendProductPricesFoundMessage(List<ProductPrice> productPrices, int usedTicketId) {
+		queryReturnVal.put(usedTicketId, productPrices);
+	}
+
+	/**
+	 * 
+	 * this method will only be called by Springs DispatcherServlet
+	 * 
+	 * @param request
+	 *            HttpServletRequest
+	 * @return true on success; false on fail
+	 */
+	@RequestMapping(method = RequestMethod.POST, value = "/add", consumes = "application/x-www-form-urlencoded")
+	public boolean createProductPrice(HttpServletRequest request) {
+
+		ProductPrice productPriceToBeAdded = new ProductPrice();
+		try {
+			productPriceToBeAdded = ProductPriceMapper.map(request);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			return false;
+		}
+
+		return this.createProductPrice(productPriceToBeAdded);
+
+	}
+
+	/**
+	 * creates a new ProductPrice entry in the ofbiz database
+	 * 
+	 * @param productPriceToBeAdded
+	 *            the ProductPrice thats to be added
+	 * @return true on success; false on fail
+	 */
+	public boolean createProductPrice(ProductPrice productPriceToBeAdded) {
+
+		AddProductPrice com = new AddProductPrice(productPriceToBeAdded);
+		int usedTicketId;
+
+		synchronized (ProductPriceController.class) {
+
+			usedTicketId = requestTicketId;
+			requestTicketId++;
+		}
+		Broker.instance().subscribe(ProductPriceAdded.class,
+				event -> sendProductPriceChangedMessage(((ProductPriceAdded) event).isSuccess(), usedTicketId));
+
+		try {
+			Scheduler.instance().schedule(com).executeNext();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			return false;
+		}
+		while (!commandReturnVal.containsKey(usedTicketId)) {
+		}
+
+		return commandReturnVal.remove(usedTicketId);
+
+	}
+
+	/**
+	 * this method will only be called by Springs DispatcherServlet
+	 * 
+	 * @param request HttpServletRequest object
+	 * @return true on success, false on fail
+	 */
+	@RequestMapping(method = RequestMethod.PUT, value = "/update", consumes = "application/x-www-form-urlencoded")
+	public boolean updateProductPrice(HttpServletRequest request) {
+
+		BufferedReader br;
+		String data = null;
+		Map<String, String> dataMap = null;
+
+		try {
+			br = new BufferedReader(new InputStreamReader(request.getInputStream()));
+			if (br != null) {
+				data = java.net.URLDecoder.decode(br.readLine(), "UTF-8");
+			}
+		} catch (IOException e1) {
+			e1.printStackTrace();
+			return false;
+		}
+
+		dataMap = Splitter.on('&').trimResults().withKeyValueSeparator(Splitter.on('=').limit(2).trimResults())
+				.split(data);
+
+		ProductPrice productPriceToBeUpdated = new ProductPrice();
+
+		try {
+			productPriceToBeUpdated = ProductPriceMapper.mapstrstr(dataMap);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+
+		return updateProductPrice(productPriceToBeUpdated);
+
+	}
+
+	/**
+	 * Updates the ProductPrice with the specific Id
+	 * 
+	 * @param productPriceToBeUpdated the ProductPrice thats to be updated
+	 * @return true on success, false on fail
+	 */
+	public boolean updateProductPrice(ProductPrice productPriceToBeUpdated) {
+
+		UpdateProductPrice com = new UpdateProductPrice(productPriceToBeUpdated);
+
+		int usedTicketId;
+
+		synchronized (ProductPriceController.class) {
+
+			usedTicketId = requestTicketId;
+			requestTicketId++;
+		}
+		Broker.instance().subscribe(ProductPriceUpdated.class,
+				event -> sendProductPriceChangedMessage(((ProductPriceUpdated) event).isSuccess(), usedTicketId));
+
+		try {
+			Scheduler.instance().schedule(com).executeNext();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			return false;
+		}
+		while (!commandReturnVal.containsKey(usedTicketId)) {
+		}
+
+		return commandReturnVal.remove(usedTicketId);
+	}
+
+	/**
+	 * removes a ProductPrice from the database
+	 * 
+	 * @param productPriceId:
+	 *            the id of the ProductPrice thats to be removed
+	 * 
+	 * @return true on success; false on fail
+	 * 
+	 */
+	@RequestMapping(method = RequestMethod.DELETE, value = "/removeById")
+	public boolean deleteproductPriceById(@RequestParam(value = "productPriceId") String productPriceId) {
+
+		DeleteProductPrice com = new DeleteProductPrice(productPriceId);
+
+		int usedTicketId;
+
+		synchronized (ProductPriceController.class) {
+
+			usedTicketId = requestTicketId;
+			requestTicketId++;
+		}
+		Broker.instance().subscribe(ProductPriceDeleted.class,
+				event -> sendProductPriceChangedMessage(((ProductPriceDeleted) event).isSuccess(), usedTicketId));
+
+		try {
+			Scheduler.instance().schedule(com).executeNext();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+			return false;
+		}
+		while (!commandReturnVal.containsKey(usedTicketId)) {
+		}
+
+		return commandReturnVal.remove(usedTicketId);
+	}
+
+	public void sendProductPriceChangedMessage(boolean success, int usedTicketId) {
+		commandReturnVal.put(usedTicketId, success);
+	}
+
+	@RequestMapping(value = (" * "))
+	public String returnErrorPage(HttpServletRequest request) {
+
+		String usedUri = request.getRequestURI();
+		String[] splittedString = usedUri.split("/");
+
+		String usedRequest = splittedString[splittedString.length - 1];
+
+		if (validRequests.containsKey(usedRequest)) {
+			return "Error: request method " + request.getMethod() + " not allowed for \"" + usedUri + "\"!\n"
+					+ "Please use " + validRequests.get(usedRequest) + "!";
+
+		}
+
+		String returnVal = "Error 404: Page not found! Valid pages are: \"eCommerce/api/productPrice/\" plus one of the following: "
+				+ "";
+
+		Set<String> keySet = validRequests.keySet();
+		Iterator<String> it = keySet.iterator();
+
+		while (it.hasNext()) {
+			returnVal += "\"" + it.next() + "\"";
+			if (it.hasNext())
+				returnVal += ", ";
+		}
+
+		returnVal += "!";
+
+		return returnVal;
+
+	}
+}

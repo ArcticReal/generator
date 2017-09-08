@@ -1,0 +1,11 @@
+InvoiceItemType:
+
+1: Foreign Key Name:		INVOICE_ITEM_TPAR
+	Related Entity:		InvoiceItemType
+	referenced Field:	invoiceItemTypeId
+
+
+2: Foreign Key Name:		INVOICE_ITM_DGLAC
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+

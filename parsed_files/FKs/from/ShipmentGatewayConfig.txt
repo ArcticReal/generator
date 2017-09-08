@@ -1,0 +1,6 @@
+ShipmentGatewayConfig:
+
+1: Foreign Key Name:		SGC_SGCT
+	Related Entity:		ShipmentGatewayConfigType
+	referenced Field:	shipmentGatewayConfTypeId
+

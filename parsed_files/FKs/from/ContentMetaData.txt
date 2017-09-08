@@ -1,0 +1,16 @@
+ContentMetaData:
+
+1: Foreign Key Name:		CONTENTMD_CNTNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+2: Foreign Key Name:		CONTENTMD_DMDPRD
+	Related Entity:		MetaDataPredicate
+	referenced Field:	metaDataPredicateId
+
+
+3: Foreign Key Name:		CONTENTMD_DTSRC
+	Related Entity:		DataSource
+	referenced Field:	dataSourceId
+

@@ -1,0 +1,10 @@
+PerformanceNote:
+
+1: Primary Key Attribute: partyId
+
+
+2: Primary Key Attribute: roleTypeId
+
+
+3: Primary Key Attribute: fromDate
+

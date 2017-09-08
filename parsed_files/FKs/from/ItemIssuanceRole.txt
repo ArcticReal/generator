@@ -1,0 +1,16 @@
+ItemIssuanceRole:
+
+1: Foreign Key Name:		ITEM_ISSRL_ITMIS
+	Related Entity:		ItemIssuance
+	referenced Field:	itemIssuanceId
+
+
+2: Foreign Key Name:		ITEM_ISSRL_PTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		ITEM_ISSRL_PTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

@@ -1,0 +1,7 @@
+TaxAuthority:
+
+1: Primary Key Attribute: taxAuthGeoId
+
+
+2: Primary Key Attribute: taxAuthPartyId
+

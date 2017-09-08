@@ -1,0 +1,6 @@
+EmplLeaveType:
+
+1: Foreign Key Name:		EMPL_LEAVE_TPAR
+	Related Entity:		EmplLeaveType
+	referenced Field:	leaveTypeId
+

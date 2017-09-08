@@ -1,0 +1,10 @@
+ProductStoreCatalog:
+
+1: Primary Key Attribute: productStoreId
+
+
+2: Primary Key Attribute: prodCatalogId
+
+
+3: Primary Key Attribute: fromDate
+

@@ -1,0 +1,10 @@
+GlAccountHistory:
+
+1: Primary Key Attribute: glAccountId
+
+
+2: Primary Key Attribute: organizationPartyId
+
+
+3: Primary Key Attribute: customTimePeriodId
+

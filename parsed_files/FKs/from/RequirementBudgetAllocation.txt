@@ -1,0 +1,16 @@
+RequirementBudgetAllocation:
+
+1: Foreign Key Name:		
+	Related Entity:		Budget
+	referenced Field:	budgetId
+
+
+2: Foreign Key Name:		REQ_BDGTAL_BITM
+	Related Entity:		BudgetItem
+	referenced Field:	budgetId
+
+
+3: Foreign Key Name:		REQ_BDGTAL_REQ
+	Related Entity:		Requirement
+	referenced Field:	requirementId
+

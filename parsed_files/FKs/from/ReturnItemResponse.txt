@@ -1,0 +1,26 @@
+ReturnItemResponse:
+
+1: Foreign Key Name:		RTN_PAY_ORDPAYPF
+	Related Entity:		OrderPaymentPreference
+	referenced Field:	orderPaymentPreferenceId
+
+
+2: Foreign Key Name:		RTN_RESP_NEWORD
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		RTN_PAY_PAYMENT
+	Related Entity:		Payment
+	referenced Field:	paymentId
+
+
+4: Foreign Key Name:		RTN_PAY_BACT
+	Related Entity:		BillingAccount
+	referenced Field:	billingAccountId
+
+
+5: Foreign Key Name:		RTN_PAY_FINACTTX
+	Related Entity:		FinAccountTrans
+	referenced Field:	finAccountTransId
+

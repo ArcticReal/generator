@@ -1,0 +1,10 @@
+TimesheetRole:
+
+1: Primary Key Attribute: timesheetId
+
+
+2: Primary Key Attribute: partyId
+
+
+3: Primary Key Attribute: roleTypeId
+

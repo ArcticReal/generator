@@ -1,0 +1,16 @@
+ProductFeatureIactn:
+
+1: Foreign Key Name:		PROD_FICTN_TYPE
+	Related Entity:		ProductFeatureIactnType
+	referenced Field:	productFeatureIactnTypeId
+
+
+2: Foreign Key Name:		PROD_FICTN_MFEAT
+	Related Entity:		ProductFeature
+	referenced Field:	productFeatureId
+
+
+3: Foreign Key Name:		PROD_FICTN_AFEAT
+	Related Entity:		ProductFeature
+	referenced Field:	productFeatureId
+

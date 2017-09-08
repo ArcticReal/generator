@@ -1,0 +1,7 @@
+ShipmentItem:
+
+1: Primary Key Attribute: shipmentId
+
+
+2: Primary Key Attribute: shipmentItemSeqId
+

@@ -1,0 +1,4 @@
+EmplPositionType:
+
+1: Primary Key Attribute: emplPositionTypeId
+

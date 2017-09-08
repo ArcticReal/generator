@@ -1,0 +1,13 @@
+MrpEvent:
+
+1: Primary Key Attribute: mrpId
+
+
+2: Primary Key Attribute: productId
+
+
+3: Primary Key Attribute: eventDate
+
+
+4: Primary Key Attribute: mrpEventTypeId
+

@@ -1,0 +1,10 @@
+WorkEffortTransBox:
+
+1: Primary Key Attribute: processWorkEffortId
+
+
+2: Primary Key Attribute: toActivityId
+
+
+3: Primary Key Attribute: transitionId
+

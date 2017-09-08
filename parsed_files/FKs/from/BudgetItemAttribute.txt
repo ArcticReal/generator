@@ -1,0 +1,11 @@
+BudgetItemAttribute:
+
+1: Foreign Key Name:		BUDGET_ITEM_ATTR
+	Related Entity:		BudgetItem
+	referenced Field:	budgetId
+
+
+2: Foreign Key Name:		
+	Related Entity:		BudgetItemTypeAttr
+	referenced Field:	attrName
+

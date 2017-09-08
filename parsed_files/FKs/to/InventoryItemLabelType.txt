@@ -1,0 +1,13 @@
+InventoryItemLabelType:
+
+1	Entity: InventoryItemLabelAppl
+	Foreign Key Name: INV_ITLAP_TYPE
+	related field: inventoryItemLabelTypeId
+
+2	Entity: InventoryItemLabel
+	Foreign Key Name: INV_ITLA_TYPE
+	related field: inventoryItemLabelTypeId
+
+3	Entity: InventoryItemLabelType
+	Foreign Key Name: INV_ITLT_TYPPAR
+	related field: inventoryItemLabelTypeId

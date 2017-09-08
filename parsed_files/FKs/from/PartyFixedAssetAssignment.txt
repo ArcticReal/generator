@@ -1,0 +1,26 @@
+PartyFixedAssetAssignment:
+
+1: Foreign Key Name:		
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+3: Foreign Key Name:		PTY_FASTAS_PTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		PTY_FASTAS_FA
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+5: Foreign Key Name:		PTY_FASTAS_SI
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+

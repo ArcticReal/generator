@@ -1,0 +1,4 @@
+GlAccount:
+
+1: Primary Key Attribute: glAccountId
+

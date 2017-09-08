@@ -1,0 +1,11 @@
+BillingAccountTermAttr:
+
+1: Foreign Key Name:		BILLACCT_TRM_ATTR
+	Related Entity:		BillingAccountTerm
+	referenced Field:	billingAccountTermId
+
+
+2: Foreign Key Name:		
+	Related Entity:		TermTypeAttr
+	referenced Field:	attrName
+

@@ -1,0 +1,16 @@
+WorkEffortContent:
+
+1: Foreign Key Name:		WKEFF_CNT_WKEFF
+	Related Entity:		WorkEffort
+	referenced Field:	workEffortId
+
+
+2: Foreign Key Name:		WKEFF_CNT_CNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		WKEFF_CNT_WCTP
+	Related Entity:		WorkEffortContentType
+	referenced Field:	workEffortContentTypeId
+

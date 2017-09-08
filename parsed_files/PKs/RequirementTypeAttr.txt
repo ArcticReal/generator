@@ -1,0 +1,7 @@
+RequirementTypeAttr:
+
+1: Primary Key Attribute: requirementTypeId
+
+
+2: Primary Key Attribute: attrName
+

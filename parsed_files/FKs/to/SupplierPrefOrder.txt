@@ -1,0 +1,5 @@
+SupplierPrefOrder:
+
+1	Entity: SupplierProduct
+	Foreign Key Name: SUPPL_PROD_SPORD
+	related field: supplierPrefOrderId

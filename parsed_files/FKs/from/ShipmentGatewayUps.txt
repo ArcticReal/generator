@@ -1,0 +1,6 @@
+ShipmentGatewayUps:
+
+1: Foreign Key Name:		SGUPS_SGC
+	Related Entity:		ShipmentGatewayConfig
+	referenced Field:	shipmentGatewayConfigId
+

@@ -1,0 +1,16 @@
+ContentRevisionItem:
+
+1: Foreign Key Name:		CNTNTREVIT_CNTREV
+	Related Entity:		ContentRevision
+	referenced Field:	contentId
+
+
+2: Foreign Key Name:		CNTNTREVIT_OLDDR
+	Related Entity:		DataResource
+	referenced Field:	dataResourceId
+
+
+3: Foreign Key Name:		CNTNTREVIT_NEWDR
+	Related Entity:		DataResource
+	referenced Field:	dataResourceId
+

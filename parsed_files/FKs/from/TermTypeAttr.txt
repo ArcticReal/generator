@@ -1,0 +1,46 @@
+TermTypeAttr:
+
+1: Foreign Key Name:		TERM_TYPATR_TTYP
+	Related Entity:		TermType
+	referenced Field:	termTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		AgreementTermAttribute
+	referenced Field:	attrName
+
+
+3: Foreign Key Name:		
+	Related Entity:		AgreementTerm
+	referenced Field:	termTypeId
+
+
+4: Foreign Key Name:		
+	Related Entity:		OrderTermAttribute
+	referenced Field:	attrName
+
+
+5: Foreign Key Name:		
+	Related Entity:		OrderTerm
+	referenced Field:	termTypeId
+
+
+6: Foreign Key Name:		
+	Related Entity:		QuoteTermAttribute
+	referenced Field:	attrName
+
+
+7: Foreign Key Name:		
+	Related Entity:		QuoteTerm
+	referenced Field:	termTypeId
+
+
+8: Foreign Key Name:		
+	Related Entity:		InvoiceTermAttribute
+	referenced Field:	attrName
+
+
+9: Foreign Key Name:		
+	Related Entity:		InvoiceTerm
+	referenced Field:	termTypeId
+

@@ -1,0 +1,7 @@
+InventoryItemVariance:
+
+1: Primary Key Attribute: inventoryItemId
+
+
+2: Primary Key Attribute: physicalInventoryId
+

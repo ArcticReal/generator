@@ -1,0 +1,25 @@
+ShipmentItem:
+
+1	Entity: ItemIssuance
+	Foreign Key Name: ITEM_ISS_SHITM
+	related field: shipmentId
+
+2	Entity: ShipmentItemFeature
+	Foreign Key Name: SHPMNT_ITFT_SPIM
+	related field: shipmentId
+
+3	Entity: ReturnItemShipment
+	Foreign Key Name: RIT_SHPMT_SHPITM
+	related field: shipmentId
+
+4	Entity: ShipmentPackageContent
+	Foreign Key Name: PCK_CNTNT_SHITM
+	related field: shipmentId
+
+5	Entity: ShipmentItemBilling
+	Foreign Key Name: SHPMNT_ITBL_SPIM
+	related field: shipmentId
+
+6	Entity: ShippingDocument
+	Foreign Key Name: SHPNG_DOC_SMITM
+	related field: shipmentId

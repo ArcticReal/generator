@@ -1,0 +1,13 @@
+ShipmentType:
+
+1	Entity: Shipment
+	Foreign Key Name: SHPMNT_TYPE
+	related field: shipmentTypeId
+
+2	Entity: ShipmentTypeAttr
+	Foreign Key Name: SHPMNT_TYPATR
+	related field: shipmentTypeId
+
+3	Entity: ShipmentType
+	Foreign Key Name: SHPMNT_TYPPAR
+	related field: shipmentTypeId

@@ -1,0 +1,10 @@
+ProductStoreGroupMember:
+
+1: Primary Key Attribute: productStoreId
+
+
+2: Primary Key Attribute: productStoreGroupId
+
+
+3: Primary Key Attribute: fromDate
+

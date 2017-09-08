@@ -1,0 +1,11 @@
+CostComponentAttribute:
+
+1: Foreign Key Name:		COST_COMP_ATTR
+	Related Entity:		CostComponent
+	referenced Field:	costComponentId
+
+
+2: Foreign Key Name:		
+	Related Entity:		CostComponentTypeAttr
+	referenced Field:	attrName
+

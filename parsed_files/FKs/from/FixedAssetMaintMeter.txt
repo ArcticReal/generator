@@ -1,0 +1,11 @@
+FixedAssetMaintMeter:
+
+1: Foreign Key Name:		FXDASTMNMT_FAMNT
+	Related Entity:		FixedAssetMaint
+	referenced Field:	fixedAssetId
+
+
+2: Foreign Key Name:		FXDASTMNMT_PMTYP
+	Related Entity:		ProductMeterType
+	referenced Field:	productMeterTypeId
+

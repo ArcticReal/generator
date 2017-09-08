@@ -1,0 +1,6 @@
+OrderContentType:
+
+1: Foreign Key Name:		ORDCT_TYP_PARENT
+	Related Entity:		OrderContentType
+	referenced Field:	orderContentTypeId
+

@@ -1,0 +1,11 @@
+MarketingCampaignPrice:
+
+1: Foreign Key Name:		MKTGCPN_PRICE_MC
+	Related Entity:		MarketingCampaign
+	referenced Field:	marketingCampaignId
+
+
+2: Foreign Key Name:		MKTGCPN_PRICE_PP
+	Related Entity:		ProductPriceRule
+	referenced Field:	productPriceRuleId
+

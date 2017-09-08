@@ -1,0 +1,11 @@
+FixedAssetRegistration:
+
+1: Foreign Key Name:		FIXDASTREG_FXAST
+	Related Entity:		FixedAsset
+	referenced Field:	fixedAssetId
+
+
+2: Foreign Key Name:		FIXDASTREG_GVAPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+

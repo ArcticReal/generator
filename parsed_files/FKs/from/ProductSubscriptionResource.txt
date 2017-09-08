@@ -1,0 +1,46 @@
+ProductSubscriptionResource:
+
+1: Foreign Key Name:		WEB_SITE_PRDS
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+
+
+2: Foreign Key Name:		PROD_SBRS_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+3: Foreign Key Name:		PROD_SBRS_SBRS
+	Related Entity:		SubscriptionResource
+	referenced Field:	subscriptionResourceId
+
+
+4: Foreign Key Name:		PROD_SBRS_URT
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+5: Foreign Key Name:		PROD_SBRS_UTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+6: Foreign Key Name:		PROD_SBRS_CTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+7: Foreign Key Name:		PROD_SBRS_ATU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+8: Foreign Key Name:		PROD_SBRS_MTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+9: Foreign Key Name:		PROD_SBRS_GTU
+	Related Entity:		Uom
+	referenced Field:	uomId
+

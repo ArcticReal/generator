@@ -1,0 +1,5 @@
+ContentAssocType:
+
+1	Entity: ContentAssoc
+	Foreign Key Name: CONTENTASSC_TYP
+	related field: contentAssocTypeId

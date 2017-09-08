@@ -1,0 +1,16 @@
+UserLoginSecurityGroup:
+
+1: Foreign Key Name:		USER_SECGRP_USER
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+2: Foreign Key Name:		USER_SECGRP_GRP
+	Related Entity:		SecurityGroup
+	referenced Field:	groupId
+
+
+3: Foreign Key Name:		
+	Related Entity:		SecurityGroupPermission
+	referenced Field:	groupId
+

@@ -1,0 +1,13 @@
+ProductPriceRule:
+
+1	Entity: ProductPriceAction
+	Foreign Key Name: PROD_PCACT_RL
+	related field: productPriceRuleId
+
+2	Entity: ProductPriceCond
+	Foreign Key Name: PROD_PCCOND_RULE
+	related field: productPriceRuleId
+
+3	Entity: MarketingCampaignPrice
+	Foreign Key Name: MKTGCPN_PRICE_PP
+	related field: productPriceRuleId

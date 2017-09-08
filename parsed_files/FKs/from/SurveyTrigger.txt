@@ -1,0 +1,11 @@
+SurveyTrigger:
+
+1: Foreign Key Name:		SRVYTRG_SRVY
+	Related Entity:		Survey
+	referenced Field:	surveyId
+
+
+2: Foreign Key Name:		SRVYTRG_SRVYAPT
+	Related Entity:		SurveyApplType
+	referenced Field:	surveyApplTypeId
+

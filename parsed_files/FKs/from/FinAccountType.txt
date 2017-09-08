@@ -1,0 +1,11 @@
+FinAccountType:
+
+1: Foreign Key Name:		FINACCT_TYPE_PAR
+	Related Entity:		FinAccountType
+	referenced Field:	finAccountTypeId
+
+
+2: Foreign Key Name:		FINACCT_TYPE_RENUM
+	Related Entity:		Enumeration
+	referenced Field:	enumId
+

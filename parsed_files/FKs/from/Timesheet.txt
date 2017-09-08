@@ -1,0 +1,21 @@
+Timesheet:
+
+1: Foreign Key Name:		TIMESHEET_PRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		TIMESHEET_CPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		TIMESHEET_STS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+4: Foreign Key Name:		TIMESHEET_AB_UL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

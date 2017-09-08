@@ -1,0 +1,7 @@
+CommunicationEventPurpose:
+
+1: Primary Key Attribute: communicationEventPrpTypId
+
+
+2: Primary Key Attribute: communicationEventId
+

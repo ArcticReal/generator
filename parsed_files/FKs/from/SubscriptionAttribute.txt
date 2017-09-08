@@ -1,0 +1,11 @@
+SubscriptionAttribute:
+
+1: Foreign Key Name:		SUBSC_ATTR
+	Related Entity:		Subscription
+	referenced Field:	subscriptionId
+
+
+2: Foreign Key Name:		
+	Related Entity:		SubscriptionTypeAttr
+	referenced Field:	attrName
+

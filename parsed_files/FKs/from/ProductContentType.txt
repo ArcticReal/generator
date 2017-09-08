@@ -1,0 +1,6 @@
+ProductContentType:
+
+1: Foreign Key Name:		PRDCT_TYP_PARENT
+	Related Entity:		ProductContentType
+	referenced Field:	productContentTypeId
+

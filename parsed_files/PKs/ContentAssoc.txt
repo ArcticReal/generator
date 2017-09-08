@@ -1,0 +1,13 @@
+ContentAssoc:
+
+1: Primary Key Attribute: contentId
+
+
+2: Primary Key Attribute: contentIdTo
+
+
+3: Primary Key Attribute: contentAssocTypeId
+
+
+4: Primary Key Attribute: fromDate
+

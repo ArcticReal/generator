@@ -1,0 +1,16 @@
+SubscriptionResource:
+
+1: Foreign Key Name:		SUBSC_RES_PARENT
+	Related Entity:		SubscriptionResource
+	referenced Field:	subscriptionResourceId
+
+
+2: Foreign Key Name:		SUBSC_RES_CNTNT
+	Related Entity:		Content
+	referenced Field:	contentId
+
+
+3: Foreign Key Name:		SUBSC_RES_WBSITE
+	Related Entity:		WebSite
+	referenced Field:	webSiteId
+

@@ -1,0 +1,7 @@
+ReturnItem:
+
+1: Primary Key Attribute: returnId
+
+
+2: Primary Key Attribute: returnItemSeqId
+

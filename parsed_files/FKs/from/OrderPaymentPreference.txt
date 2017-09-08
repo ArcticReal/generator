@@ -1,0 +1,61 @@
+OrderPaymentPreference:
+
+1: Foreign Key Name:		ORDER_PMPRF_OHDR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+2: Foreign Key Name:		
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderItemShipGroup
+	referenced Field:	orderId
+
+
+4: Foreign Key Name:		ORDER_PMPRF_PPRP
+	Related Entity:		ProductPricePurpose
+	referenced Field:	productPricePurposeId
+
+
+5: Foreign Key Name:		ORDER_PMPRF_PMTP
+	Related Entity:		PaymentMethodType
+	referenced Field:	paymentMethodTypeId
+
+
+6: Foreign Key Name:		ORDER_PMPRF_PMETH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+7: Foreign Key Name:		ORDER_PMPRF_FINACT
+	Related Entity:		FinAccount
+	referenced Field:	finAccountId
+
+
+8: Foreign Key Name:		ORDER_PMPRF_STTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+9: Foreign Key Name:		ORDER_PMPRF_USRL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+10: Foreign Key Name:		
+	Related Entity:		CreditCard
+	referenced Field:	paymentMethodId
+
+
+11: Foreign Key Name:		
+	Related Entity:		EftAccount
+	referenced Field:	paymentMethodId
+
+
+12: Foreign Key Name:		
+	Related Entity:		GiftCard
+	referenced Field:	paymentMethodId
+

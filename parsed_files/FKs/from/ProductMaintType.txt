@@ -1,0 +1,6 @@
+ProductMaintType:
+
+1: Foreign Key Name:		PRODMNT_TYPE_PAR
+	Related Entity:		ProductMaintType
+	referenced Field:	productMaintTypeId
+

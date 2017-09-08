@@ -1,0 +1,11 @@
+ValidResponsibility:
+
+1: Foreign Key Name:		VALID_RTY_EPSTP
+	Related Entity:		EmplPositionType
+	referenced Field:	emplPositionTypeId
+
+
+2: Foreign Key Name:		VALID_RTY_RYTP
+	Related Entity:		ResponsibilityType
+	referenced Field:	responsibilityTypeId
+

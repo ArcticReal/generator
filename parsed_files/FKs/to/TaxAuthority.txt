@@ -1,0 +1,41 @@
+TaxAuthority:
+
+1	Entity: TaxAuthorityGlAccount
+	Foreign Key Name: TAXAUTHGLA_TXA
+	related field: taxAuthGeoId
+
+2	Entity: TaxAuthorityCategory
+	Foreign Key Name: TAXAUTHCAT_TXA
+	related field: taxAuthGeoId
+
+3	Entity: OrderAdjustment
+	Foreign Key Name: ORDER_ADJ_TXA
+	related field: taxAuthGeoId
+
+4	Entity: ReturnAdjustment
+	Foreign Key Name: RETURN_ADJ_TXA
+	related field: taxAuthGeoId
+
+5	Entity: TaxAuthorityAssoc
+	Foreign Key Name: TAXAUTHASC_TXA
+	related field: taxAuthGeoId
+
+6	Entity: TaxAuthorityRateProduct
+	Foreign Key Name: TAXAUTHRTEP_TXA
+	related field: taxAuthGeoId
+
+7	Entity: PartyTaxAuthInfo
+	Foreign Key Name: PARTY_TXAI_TXA
+	related field: taxAuthGeoId
+
+8	Entity: ProductStore
+	Foreign Key Name: PROD_STR_VATTXA
+	related field: taxAuthGeoId
+
+9	Entity: TaxAuthorityAssoc
+	Foreign Key Name: TAXAUTHASC_TOTXA
+	related field: taxAuthGeoId
+
+10	Entity: QuoteAdjustment
+	Foreign Key Name: QUOTE_ADJ_TXA
+	related field: taxAuthGeoId

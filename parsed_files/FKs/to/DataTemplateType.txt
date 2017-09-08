@@ -1,0 +1,5 @@
+DataTemplateType:
+
+1	Entity: DataResource
+	Foreign Key Name: DATA_REC_TO_TTP
+	related field: dataTemplateTypeId

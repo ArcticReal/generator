@@ -1,0 +1,31 @@
+PartyBenefit:
+
+1: Foreign Key Name:		PTY_BNFT_TPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PTY_BNFT_TPTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		PTY_BNFT_FPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+4: Foreign Key Name:		PTY_BNFT_FPTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		PTY_BNFT_BNFTTP
+	Related Entity:		BenefitType
+	referenced Field:	benefitTypeId
+
+
+6: Foreign Key Name:		PTY_BNFT_PRDTYP
+	Related Entity:		PeriodType
+	referenced Field:	periodTypeId
+

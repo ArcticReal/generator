@@ -1,0 +1,4 @@
+UnemploymentClaim:
+
+1: Primary Key Attribute: unemploymentClaimId
+

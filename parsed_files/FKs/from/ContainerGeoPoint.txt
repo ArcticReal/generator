@@ -1,0 +1,11 @@
+ContainerGeoPoint:
+
+1: Foreign Key Name:		CONTNRGEOPT_CONTNR
+	Related Entity:		Container
+	referenced Field:	containerId
+
+
+2: Foreign Key Name:		CONTNRGEOPT_GEOPT
+	Related Entity:		GeoPoint
+	referenced Field:	geoPointId
+

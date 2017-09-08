@@ -1,0 +1,5 @@
+ContactListParty:
+
+1	Entity: ContactListPartyStatus
+	Foreign Key Name: CTLSTPTST_CLP
+	related field: contactListId

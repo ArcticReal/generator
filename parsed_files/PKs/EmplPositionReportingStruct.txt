@@ -1,0 +1,10 @@
+EmplPositionReportingStruct:
+
+1: Primary Key Attribute: emplPositionIdReportingTo
+
+
+2: Primary Key Attribute: emplPositionIdManagedBy
+
+
+3: Primary Key Attribute: fromDate
+

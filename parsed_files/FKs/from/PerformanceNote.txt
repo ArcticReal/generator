@@ -1,0 +1,11 @@
+PerformanceNote:
+
+1: Foreign Key Name:		PERF_NOTE_PRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PERF_NOTE_PRLE
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+

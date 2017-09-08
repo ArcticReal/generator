@@ -1,0 +1,4 @@
+InventoryItemLabelType:
+
+1: Primary Key Attribute: inventoryItemLabelTypeId
+

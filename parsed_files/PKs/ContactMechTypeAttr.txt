@@ -1,0 +1,7 @@
+ContactMechTypeAttr:
+
+1: Primary Key Attribute: contactMechTypeId
+
+
+2: Primary Key Attribute: attrName
+

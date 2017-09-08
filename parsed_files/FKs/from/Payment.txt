@@ -1,0 +1,91 @@
+Payment:
+
+1: Foreign Key Name:		PAYMENT_PMTYP
+	Related Entity:		PaymentType
+	referenced Field:	paymentTypeId
+
+
+2: Foreign Key Name:		
+	Related Entity:		PaymentTypeAttr
+	referenced Field:	paymentTypeId
+
+
+3: Foreign Key Name:		PAYMENT_PMETH_TP
+	Related Entity:		PaymentMethodType
+	referenced Field:	paymentMethodTypeId
+
+
+4: Foreign Key Name:		PAYMENT_PMETH
+	Related Entity:		PaymentMethod
+	referenced Field:	paymentMethodId
+
+
+5: Foreign Key Name:		PAYMENT_CUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+6: Foreign Key Name:		PAYMENT_ACUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+7: Foreign Key Name:		
+	Related Entity:		CreditCard
+	referenced Field:	paymentMethodId
+
+
+8: Foreign Key Name:		
+	Related Entity:		EftAccount
+	referenced Field:	paymentMethodId
+
+
+9: Foreign Key Name:		
+	Related Entity:		GiftCard
+	referenced Field:	paymentMethodId
+
+
+10: Foreign Key Name:		PAYMENT_ORDPMPRF
+	Related Entity:		OrderPaymentPreference
+	referenced Field:	orderPaymentPreferenceId
+
+
+11: Foreign Key Name:		PAYMENT_PAYGATR
+	Related Entity:		PaymentGatewayResponse
+	referenced Field:	paymentGatewayResponseId
+
+
+12: Foreign Key Name:		PAYMENT_FPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+13: Foreign Key Name:		PAYMENT_TPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+14: Foreign Key Name:		PAYMENT_TRTP
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+15: Foreign Key Name:		
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+16: Foreign Key Name:		PAYMENT_STTSITM
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+17: Foreign Key Name:		PAYMENT_FACTX
+	Related Entity:		FinAccountTrans
+	referenced Field:	finAccountTransId
+
+
+18: Foreign Key Name:		PAYMENT_ORGLA
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+

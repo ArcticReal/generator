@@ -1,0 +1,66 @@
+AcctgTransEntry:
+
+1: Foreign Key Name:		ACCTTXENT_ATET
+	Related Entity:		AcctgTransEntryType
+	referenced Field:	acctgTransEntryTypeId
+
+
+2: Foreign Key Name:		ACCTTXENT_CURNCY
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+3: Foreign Key Name:		ACCTTXENT_OCURNCY
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+4: Foreign Key Name:		ACCTTXENT_ACTX
+	Related Entity:		AcctgTrans
+	referenced Field:	acctgTransId
+
+
+5: Foreign Key Name:		ACCTTXENT_INVITEM
+	Related Entity:		InventoryItem
+	referenced Field:	inventoryItemId
+
+
+6: Foreign Key Name:		ACCTTXENT_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+7: Foreign Key Name:		ACCTTXENT_RLTYP
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+8: Foreign Key Name:		
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+9: Foreign Key Name:		ACCTTXENT_GLACTT
+	Related Entity:		GlAccountType
+	referenced Field:	glAccountTypeId
+
+
+10: Foreign Key Name:		ACCTTXENT_GLACT
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+
+
+11: Foreign Key Name:		ACCTTXENT_GLACOG
+	Related Entity:		GlAccountOrganization
+	referenced Field:	glAccountId
+
+
+12: Foreign Key Name:		ACCTTXENT_RCSTS
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+13: Foreign Key Name:		ACCTTXENT_STLEN
+	Related Entity:		SettlementTerm
+	referenced Field:	settlementTermId
+

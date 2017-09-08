@@ -1,0 +1,41 @@
+CommunicationEvent:
+
+1	Entity: SubscriptionCommEvent
+	Foreign Key Name: SUBSC_COM_EVENT
+	related field: communicationEventId
+
+2	Entity: PartyNeed
+	Foreign Key Name: PARTY_NEED_CMEV
+	related field: communicationEventId
+
+3	Entity: CommunicationEventWorkEff
+	Foreign Key Name: COMEV_WEFF_CMEV
+	related field: communicationEventId
+
+4	Entity: ContactListCommStatus
+	Foreign Key Name: CNCT_LST_CST_CE
+	related field: communicationEventId
+
+5	Entity: CommEventContentAssoc
+	Foreign Key Name: COMMEV_CA_COMMEV
+	related field: communicationEventId
+
+6	Entity: CommunicationEventPurpose
+	Foreign Key Name: COM_EVNT_PRP_EVNT
+	related field: communicationEventId
+
+7	Entity: CommunicationEventOrder
+	Foreign Key Name: COMEV_ORDER_CMEV
+	related field: communicationEventId
+
+8	Entity: CustRequestCommEvent
+	Foreign Key Name: CUSTREQ_CEV_CEV
+	related field: communicationEventId
+
+9	Entity: CommunicationEventProduct
+	Foreign Key Name: COMEV_PROD_CMEV
+	related field: communicationEventId
+
+10	Entity: CommunicationEventRole
+	Foreign Key Name: COM_EVRL_CMEV
+	related field: communicationEventId

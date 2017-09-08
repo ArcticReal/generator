@@ -1,0 +1,5 @@
+ProductStoreGroupType:
+
+1	Entity: ProductStoreGroup
+	Foreign Key Name: PRDSTR_GP_TYPE
+	related field: productStoreGroupTypeId

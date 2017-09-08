@@ -1,0 +1,4 @@
+PartyIdentificationType:
+
+1: Primary Key Attribute: partyIdentificationTypeId
+

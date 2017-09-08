@@ -1,0 +1,7 @@
+ProductFeatureIactn:
+
+1: Primary Key Attribute: productFeatureId
+
+
+2: Primary Key Attribute: productFeatureIdTo
+

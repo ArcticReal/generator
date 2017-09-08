@@ -1,0 +1,56 @@
+ReturnItem:
+
+1: Foreign Key Name:		RTN_ITEM_RTN
+	Related Entity:		ReturnHeader
+	referenced Field:	returnId
+
+
+2: Foreign Key Name:		RTN_ITEM_REASON
+	Related Entity:		ReturnReason
+	referenced Field:	returnReasonId
+
+
+3: Foreign Key Name:		RTN_TYPE
+	Related Entity:		ReturnType
+	referenced Field:	returnTypeId
+
+
+4: Foreign Key Name:		RTN_ITEM_TYPE
+	Related Entity:		ReturnItemType
+	referenced Field:	returnItemTypeId
+
+
+5: Foreign Key Name:		RTN_ITEM_RESP
+	Related Entity:		ReturnItemResponse
+	referenced Field:	returnItemResponseId
+
+
+6: Foreign Key Name:		RTN_ITEM_ODR
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+
+
+7: Foreign Key Name:		RTN_ITEM_ODRIT
+	Related Entity:		OrderItem
+	referenced Field:	orderId
+
+
+8: Foreign Key Name:		RTN_ITEM_STTSIT
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+9: Foreign Key Name:		RTN_ITEM_ITSTT
+	Related Entity:		StatusItem
+	referenced Field:	statusId
+
+
+10: Foreign Key Name:		RTN_ITEM_PROD
+	Related Entity:		Product
+	referenced Field:	productId
+
+
+11: Foreign Key Name:		RTN_ITEM_OISGIR
+	Related Entity:		OrderItemShipGrpInvRes
+	referenced Field:	orderId
+

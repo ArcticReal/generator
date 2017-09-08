@@ -1,0 +1,41 @@
+Invoice:
+
+1	Entity: InvoiceTerm
+	Foreign Key Name: INVCE_TRM_INVCE
+	related field: invoiceId
+
+2	Entity: PaymentApplication
+	Foreign Key Name: PAYMENT_APP_INV
+	related field: invoiceId
+
+3	Entity: InvoiceRole
+	Foreign Key Name: INVCE_RLE_INVCE
+	related field: invoiceId
+
+4	Entity: InvoiceContent
+	Foreign Key Name: INV_CNT_PROD
+	related field: invoiceId
+
+5	Entity: AcctgTrans
+	Foreign Key Name: ACCTTX_INVOICE
+	related field: invoiceId
+
+6	Entity: InvoiceContactMech
+	Foreign Key Name: INVOICE_CMECH_HDR
+	related field: invoiceId
+
+7	Entity: InvoiceStatus
+	Foreign Key Name: INVCE_STS_INVCE
+	related field: invoiceId
+
+8	Entity: InvoiceAttribute
+	Foreign Key Name: INVOICE_ATTR
+	related field: invoiceId
+
+9	Entity: InvoiceItem
+	Foreign Key Name: INVCE_ITM_INVCE
+	related field: invoiceId
+
+10	Entity: InvoiceNote
+	Foreign Key Name: INVOICE_NOTE_INV
+	related field: invoiceId

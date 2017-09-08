@@ -1,0 +1,5 @@
+AccommodationSpot:
+
+1	Entity: WorkEffort
+	Foreign Key Name: WK_EFFRT_ACC_SPOT
+	related field: accommodationSpotId

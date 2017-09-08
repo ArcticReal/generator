@@ -1,0 +1,9 @@
+PartyClassificationType:
+
+1	Entity: PartyClassificationGroup
+	Foreign Key Name: PARTY_CLSGRP_TYPE
+	related field: partyClassificationTypeId
+
+2	Entity: PartyClassificationType
+	Foreign Key Name: PARTY_CLASS_TYPPAR
+	related field: partyClassificationTypeId

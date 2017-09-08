@@ -1,0 +1,16 @@
+AgreementPromoAppl:
+
+1: Foreign Key Name:		AGRMNT_PROM_PRO
+	Related Entity:		ProductPromo
+	referenced Field:	productPromoId
+
+
+2: Foreign Key Name:		
+	Related Entity:		Agreement
+	referenced Field:	agreementId
+
+
+3: Foreign Key Name:		AGRMNT_PROM_AITM
+	Related Entity:		AgreementItem
+	referenced Field:	agreementId
+

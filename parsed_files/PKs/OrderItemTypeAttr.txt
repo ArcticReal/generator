@@ -1,0 +1,7 @@
+OrderItemTypeAttr:
+
+1: Primary Key Attribute: orderItemTypeId
+
+
+2: Primary Key Attribute: attrName
+

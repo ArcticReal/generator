@@ -1,0 +1,31 @@
+PartyGlAccount:
+
+1: Foreign Key Name:		PRTYGLACCT_ORGPRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PRTYGLACCT_PRTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+3: Foreign Key Name:		
+	Related Entity:		RoleType
+	referenced Field:	roleTypeId
+
+
+4: Foreign Key Name:		PRTYGLACCT_PTRL
+	Related Entity:		PartyRole
+	referenced Field:	partyId
+
+
+5: Foreign Key Name:		PRTYGLACCT_GLAT
+	Related Entity:		GlAccountType
+	referenced Field:	glAccountTypeId
+
+
+6: Foreign Key Name:		PRTYGLACCT_GLACCT
+	Related Entity:		GlAccount
+	referenced Field:	glAccountId
+

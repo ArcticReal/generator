@@ -1,0 +1,29 @@
+ContactMechPurposeType:
+
+1	Entity: ContactMechTypePurpose
+	Foreign Key Name: CONT_MECH_TP_PRPTP
+	related field: contactMechPurposeTypeId
+
+2	Entity: FacilityContactMechPurpose
+	Foreign Key Name: FACIL_CMPRP_TYPE
+	related field: contactMechPurposeTypeId
+
+3	Entity: InvoiceContactMech
+	Foreign Key Name: INVOICE_CMECH_CMPT
+	related field: contactMechPurposeTypeId
+
+4	Entity: OrderContactMech
+	Foreign Key Name: ORDER_CMECH_CMPT
+	related field: contactMechPurposeTypeId
+
+5	Entity: OrderItemContactMech
+	Foreign Key Name: ORDER_ITCM_CMPT
+	related field: contactMechPurposeTypeId
+
+6	Entity: PartyContactMechPurpose
+	Foreign Key Name: PARTY_CMPRP_TYPE
+	related field: contactMechPurposeTypeId
+
+7	Entity: ReturnContactMech
+	Foreign Key Name: RETURN_CMECH_CMPT
+	related field: contactMechPurposeTypeId

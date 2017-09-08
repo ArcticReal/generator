@@ -1,0 +1,4 @@
+OrderType:
+
+1: Primary Key Attribute: orderTypeId
+

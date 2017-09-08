@@ -1,0 +1,6 @@
+UserLoginHistory:
+
+1: Foreign Key Name:		USER_LH_USER
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+

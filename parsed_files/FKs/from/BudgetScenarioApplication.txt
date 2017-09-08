@@ -1,0 +1,16 @@
+BudgetScenarioApplication:
+
+1: Foreign Key Name:		BUDGET_SAPL_BSCN
+	Related Entity:		BudgetScenario
+	referenced Field:	budgetScenarioId
+
+
+2: Foreign Key Name:		BUDGET_SAPL_BDGT
+	Related Entity:		Budget
+	referenced Field:	budgetId
+
+
+3: Foreign Key Name:		BUDGET_SAPL_BITM
+	Related Entity:		BudgetItem
+	referenced Field:	budgetId
+

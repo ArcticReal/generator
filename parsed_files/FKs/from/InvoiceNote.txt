@@ -1,0 +1,11 @@
+InvoiceNote:
+
+1: Foreign Key Name:		INVOICE_NOTE_INV
+	Related Entity:		Invoice
+	referenced Field:	invoiceId
+
+
+2: Foreign Key Name:		INVOICE_NOTE_NOTE
+	Related Entity:		NoteData
+	referenced Field:	noteId
+

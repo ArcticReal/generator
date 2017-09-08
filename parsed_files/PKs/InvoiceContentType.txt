@@ -1,0 +1,4 @@
+InvoiceContentType:
+
+1: Primary Key Attribute: invoiceContentTypeId
+

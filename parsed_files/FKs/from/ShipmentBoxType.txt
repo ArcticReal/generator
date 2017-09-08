@@ -1,0 +1,11 @@
+ShipmentBoxType:
+
+1: Foreign Key Name:		SHMT_BXTP_DUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+
+
+2: Foreign Key Name:		SHMT_BXTP_WUOM
+	Related Entity:		Uom
+	referenced Field:	uomId
+

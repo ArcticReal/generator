@@ -1,0 +1,13 @@
+ProductFeatureApplAttr:
+
+1: Primary Key Attribute: productId
+
+
+2: Primary Key Attribute: productFeatureId
+
+
+3: Primary Key Attribute: fromDate
+
+
+4: Primary Key Attribute: attrName
+

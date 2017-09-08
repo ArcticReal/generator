@@ -1,0 +1,13 @@
+ProductPromoContent:
+
+1: Primary Key Attribute: productPromoId
+
+
+2: Primary Key Attribute: contentId
+
+
+3: Primary Key Attribute: productPromoContentTypeId
+
+
+4: Primary Key Attribute: fromDate
+

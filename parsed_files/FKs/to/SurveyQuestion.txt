@@ -1,0 +1,13 @@
+SurveyQuestion:
+
+1	Entity: SurveyResponseAnswer
+	Foreign Key Name: SRVYRSPA_SVQU
+	related field: surveyQuestionId
+
+2	Entity: SurveyQuestionAppl
+	Foreign Key Name: SRVYQSTAPL_SRVYQ
+	related field: surveyQuestionId
+
+3	Entity: SurveyQuestionOption
+	Foreign Key Name: SRVYQSTOP_SRVYQ
+	related field: surveyQuestionId

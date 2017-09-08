@@ -1,0 +1,10 @@
+ProductStoreKeywordOvrd:
+
+1: Primary Key Attribute: productStoreId
+
+
+2: Primary Key Attribute: keyword
+
+
+3: Primary Key Attribute: fromDate
+

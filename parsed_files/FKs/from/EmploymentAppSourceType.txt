@@ -1,0 +1,6 @@
+EmploymentAppSourceType:
+
+1: Foreign Key Name:		EMPL_APP_SRC_TYP
+	Related Entity:		EmploymentAppSourceType
+	referenced Field:	employmentAppSourceTypeId
+

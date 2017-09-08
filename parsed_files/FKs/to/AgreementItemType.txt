@@ -1,0 +1,13 @@
+AgreementItemType:
+
+1	Entity: AgreementItemType
+	Foreign Key Name: AGRMNT_TYPEPAR
+	related field: agreementItemTypeId
+
+2	Entity: AgreementItem
+	Foreign Key Name: AGRMNT_ITEM_TYPE
+	related field: agreementItemTypeId
+
+3	Entity: AgreementItemTypeAttr
+	Foreign Key Name: AGRMNT_ITEM_TYPATR
+	related field: agreementItemTypeId

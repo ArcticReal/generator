@@ -1,0 +1,13 @@
+TaxAuthorityRateProduct:
+
+1	Entity: ReturnAdjustment
+	Foreign Key Name: RETURN_ADJ_TARP
+	related field: taxAuthorityRateSeqId
+
+2	Entity: OrderAdjustment
+	Foreign Key Name: ORDER_ADJ_TARP
+	related field: taxAuthorityRateSeqId
+
+3	Entity: InvoiceItem
+	Foreign Key Name: INVOICE_ITM_TARP
+	related field: taxAuthorityRateSeqId

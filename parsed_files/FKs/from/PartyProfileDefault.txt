@@ -1,0 +1,11 @@
+PartyProfileDefault:
+
+1: Foreign Key Name:		PARTY_PROF_PARTY
+	Related Entity:		Party
+	referenced Field:	partyId
+
+
+2: Foreign Key Name:		PARTY_PROF_PSTORE
+	Related Entity:		ProductStore
+	referenced Field:	productStoreId
+

@@ -1,0 +1,31 @@
+ContactList:
+
+1: Foreign Key Name:		CNCT_LST_MKCMPN
+	Related Entity:		MarketingCampaign
+	referenced Field:	marketingCampaignId
+
+
+2: Foreign Key Name:		CNCT_LST_TYP
+	Related Entity:		ContactListType
+	referenced Field:	contactListTypeId
+
+
+3: Foreign Key Name:		CNCT_LST_CMCHTP
+	Related Entity:		ContactMechType
+	referenced Field:	contactMechTypeId
+
+
+4: Foreign Key Name:		CNCT_LST_CBUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+5: Foreign Key Name:		CNCT_LST_LMUL
+	Related Entity:		UserLogin
+	referenced Field:	userLoginId
+
+
+6: Foreign Key Name:		CNCT_LST_OPTY
+	Related Entity:		Party
+	referenced Field:	partyId
+

@@ -1,0 +1,149 @@
+OrderHeader:
+
+1	Entity: ProductPromoUse
+	Foreign Key Name: PROD_PRUSE_ORDR
+	related field: orderId
+
+2	Entity: OrderItem
+	Foreign Key Name: ORDER_ITEM_HDR
+	related field: orderId
+
+3	Entity: TrackingCodeOrder
+	Foreign Key Name: TKNG_CODODR_ODR
+	related field: orderId
+
+4	Entity: GiftCardFulfillment
+	Foreign Key Name: GC_FILL_ODRH
+	related field: orderId
+
+5	Entity: FixedAssetMaint
+	Foreign Key Name: FXDASTMNT_PURORD
+	related field: orderId
+
+6	Entity: OrderStatus
+	Foreign Key Name: ORDER_STTS_OHDR
+	related field: orderId
+
+7	Entity: ReturnItem
+	Foreign Key Name: RTN_ITEM_ODR
+	related field: orderId
+
+8	Entity: OrderItemShipGroup
+	Foreign Key Name: ORDER_ITSG_ORDH
+	related field: orderId
+
+9	Entity: TrackingCodeOrderReturn
+	Foreign Key Name: TKNG_CODODR_ODRTN
+	related field: orderId
+
+10	Entity: OrderItemGroup
+	Foreign Key Name: ORDERITMGRP_HDR
+	related field: orderId
+
+11	Entity: OrderContent
+	Foreign Key Name: ORD_CNT_PROD
+	related field: orderId
+
+12	Entity: OrderPaymentPreference
+	Foreign Key Name: ORDER_PMPRF_OHDR
+	related field: orderId
+
+13	Entity: OrderTerm
+	Foreign Key Name: ORDER_TERM_OHDR
+	related field: orderId
+
+14	Entity: OrderItemRole
+	Foreign Key Name: ORDER_ITRL_OHDR
+	related field: orderId
+
+15	Entity: OrderRequirementCommitment
+	Foreign Key Name: ORDREQ_CMT_ORD
+	related field: orderId
+
+16	Entity: OrderContactMech
+	Foreign Key Name: ORDER_CMECH_HDR
+	related field: orderId
+
+17	Entity: OrderDeliverySchedule
+	Foreign Key Name: ORDER_DELSCH_OHDR
+	related field: orderId
+
+18	Entity: OrderAdjustment
+	Foreign Key Name: ORDER_ADJ_OHEAD
+	related field: orderId
+
+19	Entity: ProductOrderItem
+	Foreign Key Name: PROD_OITEM_OHDR
+	related field: orderId
+
+20	Entity: OrderHeaderWorkEffort
+	Foreign Key Name: ORDERHDWE_OH
+	related field: orderId
+
+21	Entity: OrderItemAssoc
+	Foreign Key Name: ORDER_ITASS_TOHD
+	related field: orderId
+
+22	Entity: OrderItemShipGroupAssoc
+	Foreign Key Name: ORDER_ISGA_ORDH
+	related field: orderId
+
+23	Entity: OrderRole
+	Foreign Key Name: ORDER_ROLE_OHDR
+	related field: orderId
+
+24	Entity: OrderProductPromoCode
+	Foreign Key Name: ORDER_PPCD_ORD
+	related field: orderId
+
+25	Entity: Shipment
+	Foreign Key Name: SHPMNT_PODR
+	related field: orderId
+
+26	Entity: ProductOrderItem
+	Foreign Key Name: PROD_OITEM_ENOHDR
+	related field: orderId
+
+27	Entity: OrderShipment
+	Foreign Key Name: ORDER_SHPMT_OHDR
+	related field: orderId
+
+28	Entity: OrderItemBilling
+	Foreign Key Name: ORDER_ITBLNG_OHDR
+	related field: orderId
+
+29	Entity: OrderItemAssoc
+	Foreign Key Name: ORDER_ITASS_FRHD
+	related field: orderId
+
+30	Entity: OrderAttribute
+	Foreign Key Name: ORDER_ATTR_HDR
+	related field: orderId
+
+31	Entity: OrderNotification
+	Foreign Key Name: ORD_NOTIFY_ORDHDR
+	related field: orderId
+
+32	Entity: WorkOrderItemFulfillment
+	Foreign Key Name: WORDER_ITFMT_OHDR
+	related field: orderId
+
+33	Entity: OrderHeaderNote
+	Foreign Key Name: ORDER_HDRNT_HDR
+	related field: orderId
+
+34	Entity: ReturnItemResponse
+	Foreign Key Name: RTN_RESP_NEWORD
+	related field: orderId
+
+35	Entity: FixedAssetMaintOrder
+	Foreign Key Name: FXDASTMNT_ORD
+	related field: orderId
+
+36	Entity: CommunicationEventOrder
+	Foreign Key Name: COMEV_ORDER_ORDER
+	related field: orderId
+
+37	Entity: FixedAsset
+	Foreign Key Name: FIXEDAST_ORDHDR
+	related field: orderId

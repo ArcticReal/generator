@@ -1,0 +1,9 @@
+Deliverable:
+
+1	Entity: WorkEffortDeliverableProd
+	Foreign Key Name: WKEFF_DELPRD_DEL
+	related field: deliverableId
+
+2	Entity: Requirement
+	Foreign Key Name: REQ_DELIVERABLE
+	related field: deliverableId

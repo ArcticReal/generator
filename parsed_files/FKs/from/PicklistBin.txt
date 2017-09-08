@@ -1,0 +1,16 @@
+PicklistBin:
+
+1: Foreign Key Name:		PCKLST_BIN_PKLT
+	Related Entity:		Picklist
+	referenced Field:	picklistId
+
+
+2: Foreign Key Name:		PCKLST_BIN_OISG
+	Related Entity:		OrderItemShipGroup
+	referenced Field:	orderId
+
+
+3: Foreign Key Name:		
+	Related Entity:		OrderHeader
+	referenced Field:	orderId
+

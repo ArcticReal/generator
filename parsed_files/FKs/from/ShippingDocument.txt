@@ -1,0 +1,16 @@
+ShippingDocument:
+
+1: Foreign Key Name:		SHPNG_DOC_DOC
+	Related Entity:		Document
+	referenced Field:	documentId
+
+
+2: Foreign Key Name:		SHPNG_DOC_SMITM
+	Related Entity:		ShipmentItem
+	referenced Field:	shipmentId
+
+
+3: Foreign Key Name:		SHPNG_DOC_SHPKG
+	Related Entity:		ShipmentPackage
+	referenced Field:	shipmentId
+
