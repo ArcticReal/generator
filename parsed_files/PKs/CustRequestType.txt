@@ -1,4 +1,0 @@
-CustRequestType:
-
-1: Primary Key Attribute: custRequestTypeId
-

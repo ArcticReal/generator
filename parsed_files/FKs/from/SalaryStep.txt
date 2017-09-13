@@ -1,6 +1,0 @@
-SalaryStep:
-
-1: Foreign Key Name:		SLRY_STP_PGRD_NEW
-	Related Entity:		PayGrade
-	referenced Field:	payGradeId
-

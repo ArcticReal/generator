@@ -1,7 +1,0 @@
-BudgetScenarioRule:
-
-1: Primary Key Attribute: budgetScenarioId
-
-
-2: Primary Key Attribute: budgetItemTypeId
-

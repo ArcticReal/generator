@@ -1,5 +1,0 @@
-PerfReview:
-
-1	Entity: PerfReviewItem
-	Foreign Key Name: PERF_RVITM_PFRV
-	related field: employeePartyId

@@ -1,4 +1,0 @@
-ReturnItemResponse:
-
-1: Primary Key Attribute: returnItemResponseId
-

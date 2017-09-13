@@ -1,6 +1,0 @@
-SkillType:
-
-1: Foreign Key Name:		PARNT_SKILL_TYPE
-	Related Entity:		SkillType
-	referenced Field:	skillTypeId
-

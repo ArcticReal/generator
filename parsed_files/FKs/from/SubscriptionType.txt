@@ -1,6 +1,0 @@
-SubscriptionType:
-
-1: Foreign Key Name:		SUBSC_TYPE_PARENT
-	Related Entity:		SubscriptionType
-	referenced Field:	subscriptionTypeId
-

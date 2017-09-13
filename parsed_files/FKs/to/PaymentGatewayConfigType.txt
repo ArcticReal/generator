@@ -1,9 +1,0 @@
-PaymentGatewayConfigType:
-
-1	Entity: PaymentGatewayConfigType
-	Foreign Key Name: PGCT_PAR
-	related field: paymentGatewayConfigTypeId
-
-2	Entity: PaymentGatewayConfig
-	Foreign Key Name: PGC_PGCT
-	related field: paymentGatewayConfigTypeId

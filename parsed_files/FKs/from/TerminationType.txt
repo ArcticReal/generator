@@ -1,6 +1,0 @@
-TerminationType:
-
-1: Foreign Key Name:		TERM_TYP_PAR
-	Related Entity:		TerminationType
-	referenced Field:	terminationTypeId
-

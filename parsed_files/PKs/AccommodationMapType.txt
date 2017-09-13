@@ -1,4 +1,0 @@
-AccommodationMapType:
-
-1: Primary Key Attribute: accommodationMapTypeId
-

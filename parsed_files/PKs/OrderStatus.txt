@@ -1,4 +1,0 @@
-OrderStatus:
-
-1: Primary Key Attribute: orderStatusId
-

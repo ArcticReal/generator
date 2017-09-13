@@ -1,4 +1,0 @@
-SurveyQuestionCategory:
-
-1: Primary Key Attribute: surveyQuestionCategoryId
-

@@ -1,4 +1,0 @@
-SubscriptionType:
-
-1: Primary Key Attribute: subscriptionTypeId
-

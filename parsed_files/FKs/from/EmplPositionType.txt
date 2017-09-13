@@ -1,6 +1,0 @@
-EmplPositionType:
-
-1: Foreign Key Name:		EMPL_POSI_TYP_PAR
-	Related Entity:		EmplPositionType
-	referenced Field:	emplPositionTypeId
-

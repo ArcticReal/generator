@@ -1,9 +1,0 @@
-GlAccountClass:
-
-1	Entity: GlAccountClass
-	Foreign Key Name: GLACTCLS_PAR
-	related field: glAccountClassId
-
-2	Entity: GlAccount
-	Foreign Key Name: GLACCT_CLSS
-	related field: glAccountClassId

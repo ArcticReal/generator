@@ -1,6 +1,0 @@
-AgreementContentType:
-
-1: Foreign Key Name:		AGCT_TYP_PARENT
-	Related Entity:		AgreementContentType
-	referenced Field:	agreementContentTypeId
-

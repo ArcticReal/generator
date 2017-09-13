@@ -1,5 +1,0 @@
-WorkEffortAssoc:
-
-1	Entity: WorkEffortAssocAttribute
-	Foreign Key Name: WK_EFFRTASSC_ATTR
-	related field: workEffortIdFrom

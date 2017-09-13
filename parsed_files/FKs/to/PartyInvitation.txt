@@ -1,9 +1,0 @@
-PartyInvitation:
-
-1	Entity: PartyInvitationGroupAssoc
-	Foreign Key Name: PTYINVGA_PTYINV
-	related field: partyInvitationId
-
-2	Entity: PartyInvitationRoleAssoc
-	Foreign Key Name: PTYINVROLE_PTYINV
-	related field: partyInvitationId

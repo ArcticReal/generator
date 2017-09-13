@@ -1,4 +1,0 @@
-WebSitePublishPoint:
-
-1: Primary Key Attribute: contentId
-

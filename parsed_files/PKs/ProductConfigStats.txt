@@ -1,7 +1,0 @@
-ProductConfigStats:
-
-1: Primary Key Attribute: configId
-
-
-2: Primary Key Attribute: productId
-

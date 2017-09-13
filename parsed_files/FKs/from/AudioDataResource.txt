@@ -1,6 +1,0 @@
-AudioDataResource:
-
-1: Foreign Key Name:		DATA_REC_AUDIO
-	Related Entity:		DataResource
-	referenced Field:	dataResourceId
-

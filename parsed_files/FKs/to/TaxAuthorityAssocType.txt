@@ -1,5 +1,0 @@
-TaxAuthorityAssocType:
-
-1	Entity: TaxAuthorityAssoc
-	Foreign Key Name: TAXAUTHASC_ASTP
-	related field: taxAuthorityAssocTypeId

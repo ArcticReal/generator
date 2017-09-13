@@ -1,7 +1,0 @@
-OrderBlacklist:
-
-1: Primary Key Attribute: blacklistString
-
-
-2: Primary Key Attribute: orderBlacklistTypeId
-

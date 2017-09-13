@@ -1,4 +1,0 @@
-CreditCard:
-
-1: Primary Key Attribute: paymentMethodId
-

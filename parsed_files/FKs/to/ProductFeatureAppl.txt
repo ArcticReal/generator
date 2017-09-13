@@ -1,5 +1,0 @@
-ProductFeatureAppl:
-
-1	Entity: ProductFeatureApplAttr
-	Foreign Key Name: PROD_FAPPA_FEATAPP
-	related field: productId

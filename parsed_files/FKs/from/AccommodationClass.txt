@@ -1,6 +1,0 @@
-AccommodationClass:
-
-1: Foreign Key Name:		ACCOMM_CLASS_PAR
-	Related Entity:		AccommodationClass
-	referenced Field:	accommodationClassId
-

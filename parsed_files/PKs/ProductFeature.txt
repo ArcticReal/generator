@@ -1,4 +1,0 @@
-ProductFeature:
-
-1: Primary Key Attribute: productFeatureId
-

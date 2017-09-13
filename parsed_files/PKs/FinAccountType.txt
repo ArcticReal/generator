@@ -1,4 +1,0 @@
-FinAccountType:
-
-1: Primary Key Attribute: finAccountTypeId
-

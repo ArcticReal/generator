@@ -1,4 +1,0 @@
-ShippingDocument:
-
-1: Primary Key Attribute: documentId
-

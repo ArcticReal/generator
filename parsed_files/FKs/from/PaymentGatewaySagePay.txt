@@ -1,6 +1,0 @@
-PaymentGatewaySagePay:
-
-1: Foreign Key Name:		PGSP_PGC
-	Related Entity:		PaymentGatewayConfig
-	referenced Field:	paymentGatewayConfigId
-

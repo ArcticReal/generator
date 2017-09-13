@@ -1,6 +1,0 @@
-ProductFeatureType:
-
-1: Foreign Key Name:		PROD_FEAT_TYPPAR
-	Related Entity:		ProductFeatureType
-	referenced Field:	productFeatureTypeId
-

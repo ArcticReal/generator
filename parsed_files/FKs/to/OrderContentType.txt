@@ -1,9 +1,0 @@
-OrderContentType:
-
-1	Entity: OrderContentType
-	Foreign Key Name: ORDCT_TYP_PARENT
-	related field: orderContentTypeId
-
-2	Entity: OrderContent
-	Foreign Key Name: ORD_CNT_TYPE
-	related field: orderContentTypeId

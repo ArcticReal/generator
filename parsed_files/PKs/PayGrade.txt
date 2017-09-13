@@ -1,4 +1,0 @@
-PayGrade:
-
-1: Primary Key Attribute: payGradeId
-

@@ -1,7 +1,0 @@
-SegmentGroupClassification:
-
-1: Primary Key Attribute: segmentGroupId
-
-
-2: Primary Key Attribute: partyClassificationGroupId
-

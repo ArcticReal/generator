@@ -1,7 +1,0 @@
-FixedAssetDepMethod:
-
-1: Primary Key Attribute: depreciationCustomMethodId
-
-
-2: Primary Key Attribute: fixedAssetId
-

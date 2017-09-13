@@ -1,4 +1,0 @@
-ContactListType:
-
-1: Primary Key Attribute: contactListTypeId
-

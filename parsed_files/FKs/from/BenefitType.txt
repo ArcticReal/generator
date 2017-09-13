@@ -1,6 +1,0 @@
-BenefitType:
-
-1: Foreign Key Name:		BEN_TYPE_PAR
-	Related Entity:		BenefitType
-	referenced Field:	benefitTypeId
-

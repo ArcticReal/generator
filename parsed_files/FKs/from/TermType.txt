@@ -1,6 +1,0 @@
-TermType:
-
-1: Foreign Key Name:		TERM_TYPE_PAR
-	Related Entity:		TermType
-	referenced Field:	termTypeId
-

@@ -1,6 +1,0 @@
-SurveyMultiResp:
-
-1: Foreign Key Name:		SRVYMRSP_SRVY
-	Related Entity:		Survey
-	referenced Field:	surveyId
-

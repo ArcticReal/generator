@@ -1,6 +1,0 @@
-ProdCatalogCategoryType:
-
-1: Foreign Key Name:		PROD_PCCT_TYPEPAR
-	Related Entity:		ProdCatalogCategoryType
-	referenced Field:	prodCatalogCategoryTypeId
-

@@ -1,7 +1,0 @@
-ProductPromoCodeParty:
-
-1: Primary Key Attribute: productPromoCodeId
-
-
-2: Primary Key Attribute: partyId
-

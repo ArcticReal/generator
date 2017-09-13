@@ -1,9 +1,0 @@
-ProdCatalogCategoryType:
-
-1	Entity: ProdCatalogCategory
-	Foreign Key Name: PROD_CC_TYPE
-	related field: prodCatalogCategoryTypeId
-
-2	Entity: ProdCatalogCategoryType
-	Foreign Key Name: PROD_PCCT_TYPEPAR
-	related field: prodCatalogCategoryTypeId

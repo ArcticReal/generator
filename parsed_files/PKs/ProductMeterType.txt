@@ -1,4 +1,0 @@
-ProductMeterType:
-
-1: Primary Key Attribute: productMeterTypeId
-

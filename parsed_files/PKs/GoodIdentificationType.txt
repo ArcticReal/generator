@@ -1,4 +1,0 @@
-GoodIdentificationType:
-
-1: Primary Key Attribute: goodIdentificationTypeId
-

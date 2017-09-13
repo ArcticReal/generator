@@ -1,6 +1,0 @@
-AgreementType:
-
-1: Foreign Key Name:		AGRMNT_TYPE_PAR
-	Related Entity:		AgreementType
-	referenced Field:	agreementTypeId
-

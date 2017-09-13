@@ -1,6 +1,0 @@
-ImageDataResource:
-
-1: Foreign Key Name:		DATA_REC_IMAGE
-	Related Entity:		DataResource
-	referenced Field:	dataResourceId
-

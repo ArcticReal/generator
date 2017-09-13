@@ -1,7 +1,0 @@
-InvoiceItemTypeAttr:
-
-1: Primary Key Attribute: invoiceItemTypeId
-
-
-2: Primary Key Attribute: attrName
-

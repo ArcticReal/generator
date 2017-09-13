@@ -1,7 +1,0 @@
-SubscriptionFulfillmentPiece:
-
-1: Primary Key Attribute: subscriptionActivityId
-
-
-2: Primary Key Attribute: subscriptionId
-

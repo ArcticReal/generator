@@ -1,7 +1,0 @@
-CostComponentAttribute:
-
-1: Primary Key Attribute: costComponentId
-
-
-2: Primary Key Attribute: attrName
-

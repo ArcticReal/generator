@@ -1,4 +1,0 @@
-ProductFeatureApplType:
-
-1: Primary Key Attribute: productFeatureApplTypeId
-

@@ -1,4 +1,0 @@
-TechDataCalendar:
-
-1: Primary Key Attribute: calendarId
-

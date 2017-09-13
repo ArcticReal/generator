@@ -1,4 +1,0 @@
-JobRequisition:
-
-1: Primary Key Attribute: jobRequisitionId
-

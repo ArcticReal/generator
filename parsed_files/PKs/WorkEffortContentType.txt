@@ -1,4 +1,0 @@
-WorkEffortContentType:
-
-1: Primary Key Attribute: workEffortContentTypeId
-

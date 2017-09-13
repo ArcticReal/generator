@@ -1,4 +1,0 @@
-FinAccountAuth:
-
-1: Primary Key Attribute: finAccountAuthId
-

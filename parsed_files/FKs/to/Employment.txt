@@ -1,9 +1,0 @@
-Employment:
-
-1	Entity: AgreementEmploymentAppl
-	Foreign Key Name: AGRMNT_EMPL_APPL
-	related field: roleTypeIdFrom
-
-2	Entity: PayHistory
-	Foreign Key Name: PAY_HIST_EMPLMNT
-	related field: roleTypeIdFrom

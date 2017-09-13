@@ -1,9 +1,0 @@
-ReturnType:
-
-1	Entity: ReturnItem
-	Foreign Key Name: RTN_TYPE
-	related field: returnTypeId
-
-2	Entity: ReturnAdjustment
-	Foreign Key Name: RET_ADJ_RTN_TYPE
-	related field: returnTypeId

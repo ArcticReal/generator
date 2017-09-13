@@ -1,7 +1,0 @@
-BudgetScenarioApplication:
-
-1: Primary Key Attribute: budgetScenarioApplicId
-
-
-2: Primary Key Attribute: budgetScenarioId
-

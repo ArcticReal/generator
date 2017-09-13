@@ -1,4 +1,0 @@
-PartyType:
-
-1: Primary Key Attribute: partyTypeId
-

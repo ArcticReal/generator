@@ -1,4 +1,0 @@
-CommContentAssocType:
-
-1: Primary Key Attribute: commContentAssocTypeId
-

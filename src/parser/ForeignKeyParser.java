@@ -27,8 +27,6 @@ public class ForeignKeyParser {
 
 	public void writePrimaryKeys() throws IOException {
 
-		Parser parser = new Parser();
-		parser.readFromXmls();
 		String path = writeTo + "/PKs/";
 		File f = new File(path);
 

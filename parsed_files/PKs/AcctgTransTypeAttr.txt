@@ -1,7 +1,0 @@
-AcctgTransTypeAttr:
-
-1: Primary Key Attribute: acctgTransTypeId
-
-
-2: Primary Key Attribute: attrName
-

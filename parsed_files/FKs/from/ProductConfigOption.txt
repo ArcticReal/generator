@@ -1,6 +1,0 @@
-ProductConfigOption:
-
-1: Foreign Key Name:		PROD_OPTN_ITEM
-	Related Entity:		ProductConfigItem
-	referenced Field:	configItemId
-

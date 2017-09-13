@@ -32,7 +32,6 @@ public class Parser {
 	}
 
 	public void parseAll() throws IOException {
-		readFromXmls();
 		List<String> entityNames = readConfig().get("ENTITY_NAME");
 
 		

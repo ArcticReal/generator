@@ -1,5 +1,0 @@
-ContentRevision:
-
-1	Entity: ContentRevisionItem
-	Foreign Key Name: CNTNTREVIT_CNTREV
-	related field: contentId

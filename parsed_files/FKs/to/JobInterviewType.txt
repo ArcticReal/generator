@@ -1,5 +1,0 @@
-JobInterviewType:
-
-1	Entity: JobInterview
-	Foreign Key Name: JOB_INTW_INTYP
-	related field: jobInterviewTypeId

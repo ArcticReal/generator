@@ -1,7 +1,0 @@
-ProductCategoryAttribute:
-
-1: Primary Key Attribute: productCategoryId
-
-
-2: Primary Key Attribute: attrName
-

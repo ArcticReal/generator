@@ -1,9 +1,0 @@
-OrderItemAssocType:
-
-1	Entity: OrderItemAssoc
-	Foreign Key Name: ORDER_ITASS_TYPE
-	related field: orderItemAssocTypeId
-
-2	Entity: OrderItemAssocType
-	Foreign Key Name: ORDER_ITAS_TYPPAR
-	related field: orderItemAssocTypeId

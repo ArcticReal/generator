@@ -1,6 +1,0 @@
-PerfReviewItemType:
-
-1: Foreign Key Name:		PERF_REV_ITM_TYP
-	Related Entity:		PerfReviewItemType
-	referenced Field:	perfReviewItemTypeId
-

@@ -1,4 +1,0 @@
-UserLogin:
-
-1: Primary Key Attribute: userLoginId
-

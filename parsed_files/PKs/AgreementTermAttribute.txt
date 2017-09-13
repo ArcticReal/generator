@@ -1,7 +1,0 @@
-AgreementTermAttribute:
-
-1: Primary Key Attribute: agreementTermId
-
-
-2: Primary Key Attribute: attrName
-

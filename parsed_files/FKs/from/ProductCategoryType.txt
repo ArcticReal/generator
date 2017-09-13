@@ -1,6 +1,0 @@
-ProductCategoryType:
-
-1: Foreign Key Name:		PROD_CTGRY_TYPEPAR
-	Related Entity:		ProductCategoryType
-	referenced Field:	productCategoryTypeId
-

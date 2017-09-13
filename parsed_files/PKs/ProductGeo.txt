@@ -1,7 +1,0 @@
-ProductGeo:
-
-1: Primary Key Attribute: productId
-
-
-2: Primary Key Attribute: geoId
-

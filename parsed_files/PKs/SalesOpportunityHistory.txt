@@ -1,4 +1,0 @@
-SalesOpportunityHistory:
-
-1: Primary Key Attribute: salesOpportunityHistoryId
-

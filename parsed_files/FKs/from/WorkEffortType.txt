@@ -1,6 +1,0 @@
-WorkEffortType:
-
-1: Foreign Key Name:		WK_EFFRT_TYPE_PAR
-	Related Entity:		WorkEffortType
-	referenced Field:	workEffortTypeId
-

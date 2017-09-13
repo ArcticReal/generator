@@ -1,6 +1,0 @@
-AgreementTermAttribute:
-
-1: Foreign Key Name:		AGRMNT_TERM_ATTR
-	Related Entity:		AgreementTerm
-	referenced Field:	agreementTermId
-

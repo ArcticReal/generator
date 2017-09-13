@@ -1,6 +1,0 @@
-EmplLeaveReasonType:
-
-1: Foreign Key Name:		EMPL_REASON_TPAR
-	Related Entity:		EmplLeaveReasonType
-	referenced Field:	emplLeaveReasonTypeId
-

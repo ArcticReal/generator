@@ -1,7 +1,0 @@
-AddressMatchMap:
-
-1: Primary Key Attribute: mapKey
-
-
-2: Primary Key Attribute: mapValue
-

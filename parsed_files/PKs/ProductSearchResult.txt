@@ -1,4 +1,0 @@
-ProductSearchResult:
-
-1: Primary Key Attribute: productSearchResultId
-

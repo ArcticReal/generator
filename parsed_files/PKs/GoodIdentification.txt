@@ -1,7 +1,0 @@
-GoodIdentification:
-
-1: Primary Key Attribute: goodIdentificationTypeId
-
-
-2: Primary Key Attribute: productId
-

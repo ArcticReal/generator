@@ -1,5 +1,0 @@
-ShoppingListType:
-
-1	Entity: ShoppingList
-	Foreign Key Name: SHLIST_TYPE
-	related field: shoppingListTypeId

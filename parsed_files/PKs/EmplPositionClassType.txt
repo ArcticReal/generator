@@ -1,4 +1,0 @@
-EmplPositionClassType:
-
-1: Primary Key Attribute: emplPositionClassTypeId
-

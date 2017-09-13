@@ -1,6 +1,0 @@
-AcctgTransType:
-
-1: Foreign Key Name:		ACCTTX_TYPE_PAR
-	Related Entity:		AcctgTransType
-	referenced Field:	acctgTransTypeId
-

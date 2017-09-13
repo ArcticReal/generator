@@ -1,6 +1,0 @@
-CostComponentType:
-
-1: Foreign Key Name:		COST_COMP_TYPE_PAR
-	Related Entity:		CostComponentType
-	referenced Field:	costComponentTypeId
-

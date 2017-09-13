@@ -1,6 +1,0 @@
-ReturnItemType:
-
-1: Foreign Key Name:		RETURN_ITEM_TYPPAR
-	Related Entity:		ReturnItemType
-	referenced Field:	returnItemTypeId
-

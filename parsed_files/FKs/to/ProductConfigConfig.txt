@@ -1,5 +1,0 @@
-ProductConfigConfig:
-
-1	Entity: ConfigOptionProductOption
-	Foreign Key Name: PROD_OPTN_CONF
-	related field: configId

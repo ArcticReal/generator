@@ -1,7 +1,0 @@
-OrderProductPromoCode:
-
-1: Primary Key Attribute: orderId
-
-
-2: Primary Key Attribute: productPromoCodeId
-

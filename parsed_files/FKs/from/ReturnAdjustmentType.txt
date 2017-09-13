@@ -1,6 +1,0 @@
-ReturnAdjustmentType:
-
-1: Foreign Key Name:		RETURN_ADJ_TYPPAR
-	Related Entity:		ReturnAdjustmentType
-	referenced Field:	returnAdjustmentTypeId
-

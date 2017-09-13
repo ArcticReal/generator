@@ -1,9 +1,0 @@
-GlJournal:
-
-1	Entity: AcctgTrans
-	Foreign Key Name: ACCTTX_GLJRNL
-	related field: glJournalId
-
-2	Entity: PartyAcctgPreference
-	Foreign Key Name: ACTGPREF_GLJRNL
-	related field: glJournalId

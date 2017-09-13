@@ -1,4 +1,0 @@
-ProductStoreShipmentMeth:
-
-1: Primary Key Attribute: productStoreShipMethId
-

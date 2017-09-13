@@ -1,7 +1,0 @@
-CustRequestWorkEffort:
-
-1: Primary Key Attribute: custRequestId
-
-
-2: Primary Key Attribute: workEffortId
-

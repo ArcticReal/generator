@@ -1,6 +1,0 @@
-CustRequestResolution:
-
-1: Foreign Key Name:		CUST_RQRS_TYPE
-	Related Entity:		CustRequestType
-	referenced Field:	custRequestTypeId
-

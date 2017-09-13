@@ -1,7 +1,0 @@
-TarpittedLoginView:
-
-1: Primary Key Attribute: viewNameId
-
-
-2: Primary Key Attribute: userLoginId
-

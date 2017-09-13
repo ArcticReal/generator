@@ -1,9 +1,0 @@
-ProductPriceType:
-
-1	Entity: ProductFeaturePrice
-	Foreign Key Name: PROD_F_PRICE_TYPE
-	related field: productPriceTypeId
-
-2	Entity: ProductPrice
-	Foreign Key Name: PROD_PRICE_TYPE
-	related field: productPriceTypeId

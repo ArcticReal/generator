@@ -1,9 +1,0 @@
-NeedType:
-
-1	Entity: PartyNeed
-	Foreign Key Name: PARTY_NEED_NDTP
-	related field: needTypeId
-
-2	Entity: Subscription
-	Foreign Key Name: SUBSC_NEED_TYPE
-	related field: needTypeId

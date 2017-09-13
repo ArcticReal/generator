@@ -1,4 +1,0 @@
-GlAccountCategoryType:
-
-1: Primary Key Attribute: glAccountCategoryTypeId
-

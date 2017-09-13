@@ -1,6 +1,0 @@
-VideoDataResource:
-
-1: Foreign Key Name:		DATA_REC_VIDEO
-	Related Entity:		DataResource
-	referenced Field:	dataResourceId
-

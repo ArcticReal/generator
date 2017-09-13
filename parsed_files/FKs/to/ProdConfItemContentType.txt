@@ -1,9 +1,0 @@
-ProdConfItemContentType:
-
-1	Entity: ProdConfItemContent
-	Foreign Key Name: CIMT_CNT_TYPE
-	related field: confItemContentTypeId
-
-2	Entity: ProdConfItemContentType
-	Foreign Key Name: PCICT_TYP_PARENT
-	related field: confItemContentTypeId

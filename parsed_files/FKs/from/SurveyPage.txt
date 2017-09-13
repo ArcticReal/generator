@@ -1,6 +1,0 @@
-SurveyPage:
-
-1: Foreign Key Name:		SRVYPAGE_SRVY
-	Related Entity:		Survey
-	referenced Field:	surveyId
-

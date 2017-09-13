@@ -1,6 +1,0 @@
-GlAccountCategory:
-
-1: Foreign Key Name:		GLACT_CAT_TP
-	Related Entity:		GlAccountCategoryType
-	referenced Field:	glAccountCategoryTypeId
-

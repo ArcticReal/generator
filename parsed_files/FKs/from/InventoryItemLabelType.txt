@@ -1,6 +1,0 @@
-InventoryItemLabelType:
-
-1: Foreign Key Name:		INV_ITLT_TYPPAR
-	Related Entity:		InventoryItemLabelType
-	referenced Field:	inventoryItemLabelTypeId
-

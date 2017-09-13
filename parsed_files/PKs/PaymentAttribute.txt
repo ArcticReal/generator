@@ -1,7 +1,0 @@
-PaymentAttribute:
-
-1: Primary Key Attribute: paymentId
-
-
-2: Primary Key Attribute: attrName
-

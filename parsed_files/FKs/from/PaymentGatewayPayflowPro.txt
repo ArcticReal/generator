@@ -1,6 +1,0 @@
-PaymentGatewayPayflowPro:
-
-1: Foreign Key Name:		PGPF_PGC
-	Related Entity:		PaymentGatewayConfig
-	referenced Field:	paymentGatewayConfigId
-

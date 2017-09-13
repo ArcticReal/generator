@@ -1,6 +1,0 @@
-ContactListPartyStatus:
-
-1: Foreign Key Name:		CTLSTPTST_CLP
-	Related Entity:		ContactListParty
-	referenced Field:	contactListId
-

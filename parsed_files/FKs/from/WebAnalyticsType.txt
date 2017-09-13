@@ -1,6 +1,0 @@
-WebAnalyticsType:
-
-1: Foreign Key Name:		WANA_TYP_PARENT
-	Related Entity:		WebAnalyticsType
-	referenced Field:	webAnalyticsTypeId
-

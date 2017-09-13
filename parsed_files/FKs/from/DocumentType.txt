@@ -1,6 +1,0 @@
-DocumentType:
-
-1: Foreign Key Name:		DOC_TYPE_PARENT
-	Related Entity:		DocumentType
-	referenced Field:	documentTypeId
-

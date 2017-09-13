@@ -1,4 +1,0 @@
-DeductionType:
-
-1: Primary Key Attribute: deductionTypeId
-

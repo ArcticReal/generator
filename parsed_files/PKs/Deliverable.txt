@@ -1,4 +1,0 @@
-Deliverable:
-
-1: Primary Key Attribute: deliverableId
-

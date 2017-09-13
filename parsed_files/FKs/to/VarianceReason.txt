@@ -1,9 +1,0 @@
-VarianceReason:
-
-1	Entity: VarianceReasonGlAccount
-	Foreign Key Name: VRGL_VREAS
-	related field: varianceReasonId
-
-2	Entity: InventoryItemVariance
-	Foreign Key Name: INV_ITEM_VAR_RSN
-	related field: varianceReasonId

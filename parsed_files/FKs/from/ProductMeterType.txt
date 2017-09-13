@@ -1,6 +1,0 @@
-ProductMeterType:
-
-1: Foreign Key Name:		PRODMTRTP_DUOM
-	Related Entity:		Uom
-	referenced Field:	uomId
-

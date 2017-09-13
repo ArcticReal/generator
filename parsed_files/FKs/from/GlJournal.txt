@@ -1,6 +1,0 @@
-GlJournal:
-
-1: Foreign Key Name:		GLJOURN_PARTY
-	Related Entity:		Party
-	referenced Field:	partyId
-

@@ -1,4 +1,0 @@
-ProductFeatureIactnType:
-
-1: Primary Key Attribute: productFeatureIactnTypeId
-

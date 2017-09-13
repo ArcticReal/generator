@@ -1,4 +1,0 @@
-PartyQualType:
-
-1: Primary Key Attribute: partyQualTypeId
-

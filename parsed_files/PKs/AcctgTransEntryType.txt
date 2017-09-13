@@ -1,4 +1,0 @@
-AcctgTransEntryType:
-
-1: Primary Key Attribute: acctgTransEntryTypeId
-

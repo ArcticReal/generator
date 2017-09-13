@@ -1,6 +1,0 @@
-ContentType:
-
-1: Foreign Key Name:		CNTNT_TYPE_PARENT
-	Related Entity:		ContentType
-	referenced Field:	contentTypeId
-

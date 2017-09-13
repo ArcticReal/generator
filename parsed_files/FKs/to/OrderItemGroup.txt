@@ -1,9 +1,0 @@
-OrderItemGroup:
-
-1	Entity: OrderItem
-	Foreign Key Name: ORDER_ITEM_ITGRP
-	related field: orderId
-
-2	Entity: OrderItemGroup
-	Foreign Key Name: ORDERITMGRP_PGRP
-	related field: orderId

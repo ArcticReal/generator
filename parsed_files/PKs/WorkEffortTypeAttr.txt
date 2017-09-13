@@ -1,7 +1,0 @@
-WorkEffortTypeAttr:
-
-1: Primary Key Attribute: workEffortTypeId
-
-
-2: Primary Key Attribute: attrName
-

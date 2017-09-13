@@ -1,5 +1,0 @@
-AcctgTransEntry:
-
-1	Entity: GlReconciliationEntry
-	Foreign Key Name: GL_RECENT_ACTTXE
-	related field: acctgTransId

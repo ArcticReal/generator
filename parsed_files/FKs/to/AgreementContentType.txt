@@ -1,9 +1,0 @@
-AgreementContentType:
-
-1	Entity: AgreementContent
-	Foreign Key Name: AG_CNT_TYPE
-	related field: agreementContentTypeId
-
-2	Entity: AgreementContentType
-	Foreign Key Name: AGCT_TYP_PARENT
-	related field: agreementContentTypeId

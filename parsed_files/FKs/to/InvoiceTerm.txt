@@ -1,5 +1,0 @@
-InvoiceTerm:
-
-1	Entity: InvoiceTermAttribute
-	Foreign Key Name: INVOICE_TRM_ATTR
-	related field: invoiceTermId

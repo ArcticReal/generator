@@ -1,7 +1,0 @@
-ProductConfigOption:
-
-1: Primary Key Attribute: configItemId
-
-
-2: Primary Key Attribute: configOptionId
-

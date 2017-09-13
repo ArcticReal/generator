@@ -1,4 +1,0 @@
-WorkEffortAssocType:
-
-1: Primary Key Attribute: workEffortAssocTypeId
-

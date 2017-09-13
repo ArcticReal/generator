@@ -1,6 +1,0 @@
-ProductPromoRule:
-
-1: Foreign Key Name:		PROD_PRRLE_PROMO
-	Related Entity:		ProductPromo
-	referenced Field:	productPromoId
-

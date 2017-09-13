@@ -1,4 +1,0 @@
-SettlementTerm:
-
-1: Primary Key Attribute: settlementTermId
-

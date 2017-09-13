@@ -1,6 +1,0 @@
-RoleType:
-
-1: Foreign Key Name:		ROLE_TYPE_PAR
-	Related Entity:		RoleType
-	referenced Field:	roleTypeId
-

@@ -1,4 +1,0 @@
-WebAnalyticsType:
-
-1: Primary Key Attribute: webAnalyticsTypeId
-

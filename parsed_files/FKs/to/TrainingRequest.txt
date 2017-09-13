@@ -1,5 +1,0 @@
-TrainingRequest:
-
-1	Entity: PersonTraining
-	Foreign Key Name: PERS_TRNG_TRNRQ
-	related field: trainingRequestId

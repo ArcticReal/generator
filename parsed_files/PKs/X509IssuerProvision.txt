@@ -1,4 +1,0 @@
-X509IssuerProvision:
-
-1: Primary Key Attribute: certProvisionId
-

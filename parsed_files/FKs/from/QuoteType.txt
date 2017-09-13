@@ -1,6 +1,0 @@
-QuoteType:
-
-1: Foreign Key Name:		QUOTE_TYPE_PAR
-	Related Entity:		QuoteType
-	referenced Field:	quoteTypeId
-

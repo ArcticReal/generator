@@ -1,4 +1,0 @@
-PaymentGatewayResponse:
-
-1: Primary Key Attribute: paymentGatewayResponseId
-

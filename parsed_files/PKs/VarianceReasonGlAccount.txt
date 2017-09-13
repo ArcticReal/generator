@@ -1,7 +1,0 @@
-VarianceReasonGlAccount:
-
-1: Primary Key Attribute: varianceReasonId
-
-
-2: Primary Key Attribute: organizationPartyId
-

@@ -1,7 +1,0 @@
-QuoteTypeAttr:
-
-1: Primary Key Attribute: quoteTypeId
-
-
-2: Primary Key Attribute: attrName
-

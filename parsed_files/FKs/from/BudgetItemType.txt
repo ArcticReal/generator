@@ -1,6 +1,0 @@
-BudgetItemType:
-
-1: Foreign Key Name:		BUDGET_ITM_TYPPAR
-	Related Entity:		BudgetItemType
-	referenced Field:	budgetItemTypeId
-

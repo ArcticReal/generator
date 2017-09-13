@@ -1,5 +1,0 @@
-QuoteItem:
-
-1	Entity: OrderItem
-	Foreign Key Name: ORDER_ITEM_QUIT
-	related field: quoteId

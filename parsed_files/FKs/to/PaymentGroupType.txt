@@ -1,9 +1,0 @@
-PaymentGroupType:
-
-1	Entity: PaymentGroupType
-	Foreign Key Name: PAYMNTGP_TYP_PAR
-	related field: paymentGroupTypeId
-
-2	Entity: PaymentGroup
-	Foreign Key Name: PAYMNTGP_PGTYPE
-	related field: paymentGroupTypeId

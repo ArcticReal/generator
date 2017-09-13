@@ -1,4 +1,0 @@
-ShipmentMethodType:
-
-1: Primary Key Attribute: shipmentMethodTypeId
-

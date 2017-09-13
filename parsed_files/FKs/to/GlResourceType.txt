@@ -1,5 +1,0 @@
-GlResourceType:
-
-1	Entity: GlAccount
-	Foreign Key Name: GLACCT_REC
-	related field: glResourceTypeId

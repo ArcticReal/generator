@@ -1,9 +1,0 @@
-WebSiteContentType:
-
-1	Entity: WebSiteContentType
-	Foreign Key Name: WSCT_TYPE_PARENT
-	related field: webSiteContentTypeId
-
-2	Entity: WebSiteContent
-	Foreign Key Name: WSCTNT_WSCTTYPE
-	related field: webSiteContentTypeId

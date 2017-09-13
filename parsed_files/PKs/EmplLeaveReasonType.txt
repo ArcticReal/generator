@@ -1,4 +1,0 @@
-EmplLeaveReasonType:
-
-1: Primary Key Attribute: emplLeaveReasonTypeId
-

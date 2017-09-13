@@ -1,9 +1,0 @@
-CommunicationEventPrpTyp:
-
-1	Entity: CommunicationEventPurpose
-	Foreign Key Name: COM_EVNT_PRP_TYPE
-	related field: communicationEventPrpTypId
-
-2	Entity: CommunicationEventPrpTyp
-	Foreign Key Name: COM_EVNT_PRP_TYP
-	related field: communicationEventPrpTypId

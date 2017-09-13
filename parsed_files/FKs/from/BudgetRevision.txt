@@ -1,6 +1,0 @@
-BudgetRevision:
-
-1: Foreign Key Name:		BUDGET_RVSN_BDGT
-	Related Entity:		Budget
-	referenced Field:	budgetId
-

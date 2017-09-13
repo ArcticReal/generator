@@ -1,7 +1,0 @@
-AcctgTransEntry:
-
-1: Primary Key Attribute: acctgTransId
-
-
-2: Primary Key Attribute: acctgTransEntrySeqId
-

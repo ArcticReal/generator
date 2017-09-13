@@ -1,6 +1,0 @@
-ShipmentGatewayUsps:
-
-1: Foreign Key Name:		SGUSPS_SGC
-	Related Entity:		ShipmentGatewayConfig
-	referenced Field:	shipmentGatewayConfigId
-

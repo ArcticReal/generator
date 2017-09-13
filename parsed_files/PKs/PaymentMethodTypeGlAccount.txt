@@ -1,7 +1,0 @@
-PaymentMethodTypeGlAccount:
-
-1: Primary Key Attribute: paymentMethodTypeId
-
-
-2: Primary Key Attribute: organizationPartyId
-

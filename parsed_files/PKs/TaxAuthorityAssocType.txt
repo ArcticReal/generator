@@ -1,4 +1,0 @@
-TaxAuthorityAssocType:
-
-1: Primary Key Attribute: taxAuthorityAssocTypeId
-

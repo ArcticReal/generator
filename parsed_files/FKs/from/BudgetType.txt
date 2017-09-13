@@ -1,6 +1,0 @@
-BudgetType:
-
-1: Foreign Key Name:		BUDGET_TYPE_PAR
-	Related Entity:		BudgetType
-	referenced Field:	budgetTypeId
-

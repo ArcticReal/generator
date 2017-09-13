@@ -1,4 +1,0 @@
-EmplLeaveType:
-
-1: Primary Key Attribute: leaveTypeId
-

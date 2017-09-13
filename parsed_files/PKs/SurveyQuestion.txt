@@ -1,4 +1,0 @@
-SurveyQuestion:
-
-1: Primary Key Attribute: surveyQuestionId
-

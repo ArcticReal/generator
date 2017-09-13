@@ -1,9 +1,0 @@
-ProductPromoRule:
-
-1	Entity: ProductPromoAction
-	Foreign Key Name: PROD_PRACT_RL
-	related field: productPromoId
-
-2	Entity: ProductPromoCond
-	Foreign Key Name: PROD_PRCOND_RULE
-	related field: productPromoId

@@ -1,4 +1,0 @@
-GlAccountGroup:
-
-1: Primary Key Attribute: glAccountGroupId
-

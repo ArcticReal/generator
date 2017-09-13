@@ -1,9 +1,0 @@
-BenefitType:
-
-1	Entity: BenefitType
-	Foreign Key Name: BEN_TYPE_PAR
-	related field: benefitTypeId
-
-2	Entity: PartyBenefit
-	Foreign Key Name: PTY_BNFT_BNFTTP
-	related field: benefitTypeId

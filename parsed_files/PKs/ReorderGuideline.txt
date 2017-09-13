@@ -1,4 +1,0 @@
-ReorderGuideline:
-
-1: Primary Key Attribute: reorderGuidelineId
-

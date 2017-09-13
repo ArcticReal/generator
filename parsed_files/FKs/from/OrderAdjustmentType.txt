@@ -1,6 +1,0 @@
-OrderAdjustmentType:
-
-1: Foreign Key Name:		ORDER_ADJ_TYPPAR
-	Related Entity:		OrderAdjustmentType
-	referenced Field:	orderAdjustmentTypeId
-

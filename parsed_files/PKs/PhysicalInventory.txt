@@ -1,4 +1,0 @@
-PhysicalInventory:
-
-1: Primary Key Attribute: physicalInventoryId
-

@@ -1,4 +1,0 @@
-CharacterSet:
-
-1: Primary Key Attribute: characterSetId
-

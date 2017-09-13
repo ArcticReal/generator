@@ -1,4 +1,0 @@
-DataTemplateType:
-
-1: Primary Key Attribute: dataTemplateTypeId
-

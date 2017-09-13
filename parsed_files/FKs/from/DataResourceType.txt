@@ -1,6 +1,0 @@
-DataResourceType:
-
-1: Foreign Key Name:		DATA_OBTYPE_PARENT
-	Related Entity:		DataResourceType
-	referenced Field:	dataResourceTypeId
-

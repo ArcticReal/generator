@@ -1,7 +1,0 @@
-AgreementItemTypeAttr:
-
-1: Primary Key Attribute: agreementItemTypeId
-
-
-2: Primary Key Attribute: attrName
-

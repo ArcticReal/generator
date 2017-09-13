@@ -1,4 +1,0 @@
-PartyClassificationType:
-
-1: Primary Key Attribute: partyClassificationTypeId
-

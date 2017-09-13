@@ -1,4 +1,0 @@
-JobInterviewType:
-
-1: Primary Key Attribute: jobInterviewTypeId
-

@@ -1,7 +1,0 @@
-ProductPromoRule:
-
-1: Primary Key Attribute: productPromoId
-
-
-2: Primary Key Attribute: productPromoRuleId
-

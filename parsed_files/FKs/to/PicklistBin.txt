@@ -1,9 +1,0 @@
-PicklistBin:
-
-1	Entity: PicklistItem
-	Foreign Key Name: PCKLST_ITM_BIN
-	related field: picklistBinId
-
-2	Entity: Shipment
-	Foreign Key Name: SHPMNT_PKLSTBIN
-	related field: picklistBinId

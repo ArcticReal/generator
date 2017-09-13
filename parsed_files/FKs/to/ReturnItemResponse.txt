@@ -1,5 +1,0 @@
-ReturnItemResponse:
-
-1	Entity: ReturnItem
-	Foreign Key Name: RTN_ITEM_RESP
-	related field: returnItemResponseId

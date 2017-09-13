@@ -1,4 +1,0 @@
-SecurityGroup:
-
-1: Primary Key Attribute: groupId
-

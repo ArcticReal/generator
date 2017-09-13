@@ -1,5 +1,0 @@
-BudgetReviewResultType:
-
-1	Entity: BudgetReview
-	Foreign Key Name: BUDGET_RVW_RTYPE
-	related field: budgetReviewResultTypeId

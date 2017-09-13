@@ -1,6 +1,0 @@
-ProductType:
-
-1: Foreign Key Name:		PROD_TYPE_PARENT
-	Related Entity:		ProductType
-	referenced Field:	productTypeId
-

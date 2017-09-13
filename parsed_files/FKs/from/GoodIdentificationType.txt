@@ -1,6 +1,0 @@
-GoodIdentificationType:
-
-1: Foreign Key Name:		GOOD_ID_TYPE_PAR
-	Related Entity:		GoodIdentificationType
-	referenced Field:	goodIdentificationTypeId
-

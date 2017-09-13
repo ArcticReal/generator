@@ -1,4 +1,0 @@
-ShoppingListType:
-
-1: Primary Key Attribute: shoppingListTypeId
-

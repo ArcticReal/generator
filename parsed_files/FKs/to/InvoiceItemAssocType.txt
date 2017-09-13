@@ -1,9 +1,0 @@
-InvoiceItemAssocType:
-
-1	Entity: InvoiceItemAssocType
-	Foreign Key Name: INITMASCTYP_PRNT
-	related field: invoiceItemAssocTypeId
-
-2	Entity: InvoiceItemAssoc
-	Foreign Key Name: INITMASCTYP_IIASC
-	related field: invoiceItemAssocTypeId

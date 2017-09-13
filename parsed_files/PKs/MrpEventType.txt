@@ -1,4 +1,0 @@
-MrpEventType:
-
-1: Primary Key Attribute: mrpEventTypeId
-

@@ -1,4 +1,0 @@
-MimeTypeHtmlTemplate:
-
-1: Primary Key Attribute: mimeTypeId
-

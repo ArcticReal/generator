@@ -1,5 +1,0 @@
-RejectionReason:
-
-1	Entity: ShipmentReceipt
-	Foreign Key Name: SHP_RCPT_REJRSN
-	related field: rejectionId

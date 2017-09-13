@@ -1,5 +1,0 @@
-GlFiscalType:
-
-1	Entity: AcctgTrans
-	Foreign Key Name: ACCTTX_GLFST
-	related field: glFiscalTypeId

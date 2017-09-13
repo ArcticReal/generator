@@ -1,5 +1,0 @@
-OrderTerm:
-
-1	Entity: OrderTermAttribute
-	Foreign Key Name: ORDER_TATTR_OTRM
-	related field: termTypeId

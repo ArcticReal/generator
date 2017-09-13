@@ -1,6 +1,0 @@
-PartyQualType:
-
-1: Foreign Key Name:		PARTY_QUAL_TPAR
-	Related Entity:		PartyQualType
-	referenced Field:	partyQualTypeId
-

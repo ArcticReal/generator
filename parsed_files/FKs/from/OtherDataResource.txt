@@ -1,6 +1,0 @@
-OtherDataResource:
-
-1: Foreign Key Name:		DATA_REC_OTHER
-	Related Entity:		DataResource
-	referenced Field:	dataResourceId
-

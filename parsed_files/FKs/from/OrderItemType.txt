@@ -1,6 +1,0 @@
-OrderItemType:
-
-1: Foreign Key Name:		ORDER_ITEM_TYPPAR
-	Related Entity:		OrderItemType
-	referenced Field:	orderItemTypeId
-

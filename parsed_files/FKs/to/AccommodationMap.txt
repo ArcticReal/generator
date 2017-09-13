@@ -1,5 +1,0 @@
-AccommodationMap:
-
-1	Entity: WorkEffort
-	Foreign Key Name: WK_EFFRT_ACC_MAP
-	related field: accommodationMapId

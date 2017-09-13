@@ -1,6 +1,0 @@
-TrainingClassType:
-
-1: Foreign Key Name:		TRAIN_TYPE_PAR
-	Related Entity:		TrainingClassType
-	referenced Field:	trainingClassTypeId
-

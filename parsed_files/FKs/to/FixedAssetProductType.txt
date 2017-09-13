@@ -1,5 +1,0 @@
-FixedAssetProductType:
-
-1	Entity: FixedAssetProduct
-	Foreign Key Name: FIXDASTPRD_FAPT
-	related field: fixedAssetProductTypeId

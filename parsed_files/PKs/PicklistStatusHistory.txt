@@ -1,7 +1,0 @@
-PicklistStatusHistory:
-
-1: Primary Key Attribute: picklistId
-
-
-2: Primary Key Attribute: changeDate
-

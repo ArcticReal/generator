@@ -1,4 +1,0 @@
-OrderItemChange:
-
-1: Primary Key Attribute: orderItemChangeId
-

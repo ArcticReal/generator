@@ -1,9 +1,0 @@
-InvoiceContentType:
-
-1	Entity: InvoiceContent
-	Foreign Key Name: INV_CNT_TYPE
-	related field: invoiceContentTypeId
-
-2	Entity: InvoiceContentType
-	Foreign Key Name: INVCT_TYP_PARENT
-	related field: invoiceContentTypeId

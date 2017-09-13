@@ -1,9 +1,0 @@
-ProductCategoryContentType:
-
-1	Entity: ProductCategoryContentType
-	Foreign Key Name: PRDCATCNT_TYP_PAR
-	related field: prodCatContentTypeId
-
-2	Entity: ProductCategoryContent
-	Foreign Key Name: PRDCAT_CNT_TYPE
-	related field: prodCatContentTypeId

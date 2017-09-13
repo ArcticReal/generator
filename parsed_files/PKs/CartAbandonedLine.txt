@@ -1,7 +1,0 @@
-CartAbandonedLine:
-
-1: Primary Key Attribute: visitId
-
-
-2: Primary Key Attribute: cartAbandonedLineSeqId
-

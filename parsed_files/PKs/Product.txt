@@ -1,4 +1,0 @@
-Product:
-
-1: Primary Key Attribute: productId
-

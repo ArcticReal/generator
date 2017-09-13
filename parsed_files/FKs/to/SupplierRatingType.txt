@@ -1,5 +1,0 @@
-SupplierRatingType:
-
-1	Entity: SupplierProduct
-	Foreign Key Name: SUPPL_PROD_SRTPE
-	related field: supplierRatingTypeId

@@ -1,4 +1,0 @@
-ProductPromo:
-
-1: Primary Key Attribute: productPromoId
-

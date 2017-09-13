@@ -1,7 +1,0 @@
-SubscriptionTypeAttr:
-
-1: Primary Key Attribute: subscriptionTypeId
-
-
-2: Primary Key Attribute: attrName
-

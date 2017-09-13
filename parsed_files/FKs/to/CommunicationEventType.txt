@@ -1,9 +1,0 @@
-CommunicationEventType:
-
-1	Entity: CommunicationEvent
-	Foreign Key Name: COM_EVNT_TYPE
-	related field: communicationEventTypeId
-
-2	Entity: CommunicationEventType
-	Foreign Key Name: COM_EVNT_TYPE_PAR
-	related field: communicationEventTypeId

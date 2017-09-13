@@ -1,6 +1,0 @@
-PaymentGatewaySecurePay:
-
-1: Foreign Key Name:		PGSCP_PGC
-	Related Entity:		PaymentGatewayConfig
-	referenced Field:	paymentGatewayConfigId
-

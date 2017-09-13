@@ -1,5 +1,0 @@
-FixedAssetIdentType:
-
-1	Entity: FixedAssetIdent
-	Foreign Key Name: FIXDASTID_IDTYP
-	related field: fixedAssetIdentTypeId

@@ -1,6 +1,0 @@
-PartyContentType:
-
-1: Foreign Key Name:		PARTYCNT_TP_PAR
-	Related Entity:		PartyContentType
-	referenced Field:	partyContentTypeId
-

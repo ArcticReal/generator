@@ -1,7 +1,0 @@
-FinAccountTransAttribute:
-
-1: Primary Key Attribute: finAccountTransId
-
-
-2: Primary Key Attribute: attrName
-

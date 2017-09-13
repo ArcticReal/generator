@@ -1,4 +1,0 @@
-SurveyApplType:
-
-1: Primary Key Attribute: surveyApplTypeId
-

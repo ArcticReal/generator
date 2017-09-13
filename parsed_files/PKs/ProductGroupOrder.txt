@@ -1,4 +1,0 @@
-ProductGroupOrder:
-
-1: Primary Key Attribute: groupOrderId
-

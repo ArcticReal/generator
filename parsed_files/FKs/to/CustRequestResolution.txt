@@ -1,5 +1,0 @@
-CustRequestResolution:
-
-1	Entity: CustRequestItem
-	Foreign Key Name: CUST_REQITM_RES
-	related field: custRequestResolutionId

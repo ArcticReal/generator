@@ -1,6 +1,0 @@
-PartyClassificationType:
-
-1: Foreign Key Name:		PARTY_CLASS_TYPPAR
-	Related Entity:		PartyClassificationType
-	referenced Field:	partyClassificationTypeId
-

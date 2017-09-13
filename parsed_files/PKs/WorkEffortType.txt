@@ -1,4 +1,0 @@
-WorkEffortType:
-
-1: Primary Key Attribute: workEffortTypeId
-

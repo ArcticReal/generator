@@ -1,4 +1,0 @@
-MarketingCampaign:
-
-1: Primary Key Attribute: marketingCampaignId
-

@@ -1,7 +1,0 @@
-OrderTypeAttr:
-
-1: Primary Key Attribute: orderTypeId
-
-
-2: Primary Key Attribute: attrName
-

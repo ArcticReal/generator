@@ -1,7 +1,0 @@
-CustRequestTypeAttr:
-
-1: Primary Key Attribute: custRequestTypeId
-
-
-2: Primary Key Attribute: attrName
-

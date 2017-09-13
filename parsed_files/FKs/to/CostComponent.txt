@@ -1,5 +1,0 @@
-CostComponent:
-
-1	Entity: CostComponentAttribute
-	Foreign Key Name: COST_COMP_ATTR
-	related field: costComponentId

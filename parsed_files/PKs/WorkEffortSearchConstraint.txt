@@ -1,7 +1,0 @@
-WorkEffortSearchConstraint:
-
-1: Primary Key Attribute: workEffortSearchResultId
-
-
-2: Primary Key Attribute: constraintSeqId
-

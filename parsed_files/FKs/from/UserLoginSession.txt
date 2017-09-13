@@ -1,6 +1,0 @@
-UserLoginSession:
-
-1: Foreign Key Name:		USER_SESSION_USER
-	Related Entity:		UserLogin
-	referenced Field:	userLoginId
-

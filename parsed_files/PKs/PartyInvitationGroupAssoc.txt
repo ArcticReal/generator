@@ -1,7 +1,0 @@
-PartyInvitationGroupAssoc:
-
-1: Primary Key Attribute: partyInvitationId
-
-
-2: Primary Key Attribute: partyIdTo
-

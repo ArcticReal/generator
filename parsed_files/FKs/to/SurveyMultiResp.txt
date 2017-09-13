@@ -1,5 +1,0 @@
-SurveyMultiResp:
-
-1	Entity: SurveyMultiRespColumn
-	Foreign Key Name: SRVYMRSPCL_SMRESP
-	related field: surveyId

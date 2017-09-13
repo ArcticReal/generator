@@ -1,4 +1,0 @@
-PaymentGatewayCyberSource:
-
-1: Primary Key Attribute: paymentGatewayConfigId
-

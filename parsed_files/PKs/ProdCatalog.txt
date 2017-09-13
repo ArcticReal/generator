@@ -1,4 +1,0 @@
-ProdCatalog:
-
-1: Primary Key Attribute: prodCatalogId
-

@@ -1,4 +1,0 @@
-ContainerType:
-
-1: Primary Key Attribute: containerTypeId
-

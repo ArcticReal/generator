@@ -1,4 +1,0 @@
-Facility:
-
-1: Primary Key Attribute: facilityId
-

@@ -1,6 +1,0 @@
-ShipmentType:
-
-1: Foreign Key Name:		SHPMNT_TYPPAR
-	Related Entity:		ShipmentType
-	referenced Field:	shipmentTypeId
-

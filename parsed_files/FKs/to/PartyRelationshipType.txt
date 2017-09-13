@@ -1,9 +1,0 @@
-PartyRelationshipType:
-
-1	Entity: PartyRelationshipType
-	Foreign Key Name: PARTY_RELTYP_PAR
-	related field: partyRelationshipTypeId
-
-2	Entity: PartyRelationship
-	Foreign Key Name: PARTY_REL_TYPE
-	related field: partyRelationshipTypeId

@@ -1,6 +1,0 @@
-ProductFeatureCategory:
-
-1: Foreign Key Name:		PROD_FEAT_CAT_PAR
-	Related Entity:		ProductFeatureCategory
-	referenced Field:	productFeatureCategoryId
-

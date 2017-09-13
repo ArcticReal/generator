@@ -1,5 +1,0 @@
-ShipmentContactMechType:
-
-1	Entity: ShipmentContactMech
-	Foreign Key Name: SHPMT_CMECH_TYPE
-	related field: shipmentContactMechTypeId

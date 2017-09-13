@@ -1,4 +1,0 @@
-WebPreferenceType:
-
-1: Primary Key Attribute: webPreferenceTypeId
-

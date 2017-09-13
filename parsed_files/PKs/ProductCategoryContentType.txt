@@ -1,4 +1,0 @@
-ProductCategoryContentType:
-
-1: Primary Key Attribute: prodCatContentTypeId
-

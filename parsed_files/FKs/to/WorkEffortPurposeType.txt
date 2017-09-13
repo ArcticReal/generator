@@ -1,9 +1,0 @@
-WorkEffortPurposeType:
-
-1	Entity: WorkEffort
-	Foreign Key Name: WK_EFFRT_PRPTYP
-	related field: workEffortPurposeTypeId
-
-2	Entity: WorkEffortPurposeType
-	Foreign Key Name: WK_EFFRT_PTYPE_PAR
-	related field: workEffortPurposeTypeId

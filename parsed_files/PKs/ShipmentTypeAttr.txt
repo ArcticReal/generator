@@ -1,7 +1,0 @@
-ShipmentTypeAttr:
-
-1: Primary Key Attribute: shipmentTypeId
-
-
-2: Primary Key Attribute: attrName
-

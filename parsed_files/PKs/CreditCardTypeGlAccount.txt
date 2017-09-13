@@ -1,7 +1,0 @@
-CreditCardTypeGlAccount:
-
-1: Primary Key Attribute: cardType
-
-
-2: Primary Key Attribute: organizationPartyId
-

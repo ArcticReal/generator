@@ -1,7 +1,0 @@
-SubscriptionCommEvent:
-
-1: Primary Key Attribute: subscriptionId
-
-
-2: Primary Key Attribute: communicationEventId
-

@@ -1,9 +1,0 @@
-BudgetScenario:
-
-1	Entity: BudgetScenarioApplication
-	Foreign Key Name: BUDGET_SAPL_BSCN
-	related field: budgetScenarioId
-
-2	Entity: BudgetScenarioRule
-	Foreign Key Name: BUDGET_SRLE_BSCN
-	related field: budgetScenarioId

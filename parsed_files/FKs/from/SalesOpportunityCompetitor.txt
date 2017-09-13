@@ -1,6 +1,0 @@
-SalesOpportunityCompetitor:
-
-1: Foreign Key Name:		SOPPCOMP_SOPP
-	Related Entity:		SalesOpportunity
-	referenced Field:	salesOpportunityId
-

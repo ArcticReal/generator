@@ -1,5 +1,0 @@
-CommContentAssocType:
-
-1	Entity: CommEventContentAssoc
-	Foreign Key Name: COMMEV_CA_TYP
-	related field: commContentAssocTypeId

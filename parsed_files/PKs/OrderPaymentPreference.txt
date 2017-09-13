@@ -1,4 +1,0 @@
-OrderPaymentPreference:
-
-1: Primary Key Attribute: orderPaymentPreferenceId
-

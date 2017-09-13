@@ -1,4 +1,0 @@
-ProductStoreGroup:
-
-1: Primary Key Attribute: productStoreGroupId
-

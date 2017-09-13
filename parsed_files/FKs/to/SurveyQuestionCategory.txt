@@ -1,9 +1,0 @@
-SurveyQuestionCategory:
-
-1	Entity: SurveyQuestion
-	Foreign Key Name: SRVYQST_SRVYQTCT
-	related field: surveyQuestionCategoryId
-
-2	Entity: SurveyQuestionCategory
-	Foreign Key Name: SRVYQSTCT_PAR
-	related field: surveyQuestionCategoryId

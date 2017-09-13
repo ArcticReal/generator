@@ -1,4 +1,0 @@
-SurveyResponse:
-
-1: Primary Key Attribute: surveyResponseId
-

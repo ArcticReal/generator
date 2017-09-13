@@ -1,4 +1,0 @@
-TermType:
-
-1: Primary Key Attribute: termTypeId
-

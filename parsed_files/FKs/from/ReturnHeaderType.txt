@@ -1,6 +1,0 @@
-ReturnHeaderType:
-
-1: Foreign Key Name:		RTHEAD_TYPE_PARENT
-	Related Entity:		ReturnHeaderType
-	referenced Field:	returnHeaderTypeId
-

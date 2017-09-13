@@ -1,6 +1,0 @@
-TechDataCalendarExcDay:
-
-1: Foreign Key Name:		EXC_DAY_CALENDAR
-	Related Entity:		TechDataCalendar
-	referenced Field:	calendarId
-

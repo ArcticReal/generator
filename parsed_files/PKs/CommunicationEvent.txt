@@ -1,4 +1,0 @@
-CommunicationEvent:
-
-1: Primary Key Attribute: communicationEventId
-

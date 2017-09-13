@@ -1,6 +1,0 @@
-ProductAverageCostType:
-
-1: Foreign Key Name:		AVGCOST_TYPE_PAR
-	Related Entity:		ProductAverageCostType
-	referenced Field:	productAverageCostTypeId
-

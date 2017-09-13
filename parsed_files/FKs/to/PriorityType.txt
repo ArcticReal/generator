@@ -1,5 +1,0 @@
-PriorityType:
-
-1	Entity: PartyRelationship
-	Foreign Key Name: PARTY_REL_PRTYP
-	related field: priorityTypeId

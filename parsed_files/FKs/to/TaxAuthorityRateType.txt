@@ -1,5 +1,0 @@
-TaxAuthorityRateType:
-
-1	Entity: TaxAuthorityRateProduct
-	Foreign Key Name: TAXAUTHRTEP_RTTP
-	related field: taxAuthorityRateTypeId

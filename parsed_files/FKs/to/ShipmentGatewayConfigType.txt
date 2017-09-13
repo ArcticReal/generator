@@ -1,9 +1,0 @@
-ShipmentGatewayConfigType:
-
-1	Entity: ShipmentGatewayConfigType
-	Foreign Key Name: SGCT_PAR
-	related field: shipmentGatewayConfTypeId
-
-2	Entity: ShipmentGatewayConfig
-	Foreign Key Name: SGC_SGCT
-	related field: shipmentGatewayConfTypeId

@@ -1,6 +1,0 @@
-PaymentType:
-
-1: Foreign Key Name:		PAYMENT_TYPE_PAR
-	Related Entity:		PaymentType
-	referenced Field:	paymentTypeId
-

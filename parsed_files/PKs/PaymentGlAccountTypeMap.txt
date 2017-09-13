@@ -1,7 +1,0 @@
-PaymentGlAccountTypeMap:
-
-1: Primary Key Attribute: paymentTypeId
-
-
-2: Primary Key Attribute: organizationPartyId
-

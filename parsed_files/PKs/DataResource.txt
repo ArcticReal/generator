@@ -1,4 +1,0 @@
-DataResource:
-
-1: Primary Key Attribute: dataResourceId
-

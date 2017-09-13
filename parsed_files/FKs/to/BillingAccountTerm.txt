@@ -1,5 +1,0 @@
-BillingAccountTerm:
-
-1	Entity: BillingAccountTermAttr
-	Foreign Key Name: BILLACCT_TRM_ATTR
-	related field: billingAccountTermId

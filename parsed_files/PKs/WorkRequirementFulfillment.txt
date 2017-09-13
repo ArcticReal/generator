@@ -1,7 +1,0 @@
-WorkRequirementFulfillment:
-
-1: Primary Key Attribute: requirementId
-
-
-2: Primary Key Attribute: workEffortId
-

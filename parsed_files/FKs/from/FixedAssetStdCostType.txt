@@ -1,6 +1,0 @@
-FixedAssetStdCostType:
-
-1: Foreign Key Name:		FIXASTCO_TYPPAR
-	Related Entity:		FixedAssetStdCostType
-	referenced Field:	fixedAssetStdCostTypeId
-

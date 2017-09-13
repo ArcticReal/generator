@@ -1,5 +1,0 @@
-FacilityGroupType:
-
-1	Entity: FacilityGroup
-	Foreign Key Name: FACILITY_GP_TYPE
-	related field: facilityGroupTypeId

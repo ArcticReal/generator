@@ -1,4 +1,0 @@
-QuoteType:
-
-1: Primary Key Attribute: quoteTypeId
-

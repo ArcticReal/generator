@@ -1,4 +1,0 @@
-QuoteAdjustment:
-
-1: Primary Key Attribute: quoteAdjustmentId
-

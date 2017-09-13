@@ -1,5 +1,0 @@
-ProductStoreSurveyAppl:
-
-1	Entity: WorkEffortSurveyAppl
-	Foreign Key Name: WKEF_SURVAPL_PSSA
-	related field: productStoreSurveyId

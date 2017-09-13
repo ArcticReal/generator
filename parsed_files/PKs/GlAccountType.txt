@@ -1,4 +1,0 @@
-GlAccountType:
-
-1: Primary Key Attribute: glAccountTypeId
-

@@ -1,4 +1,0 @@
-ContentAssocPredicate:
-
-1: Primary Key Attribute: contentAssocPredicateId
-

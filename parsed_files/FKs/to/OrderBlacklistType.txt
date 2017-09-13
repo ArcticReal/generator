@@ -1,5 +1,0 @@
-OrderBlacklistType:
-
-1	Entity: OrderBlacklist
-	Foreign Key Name: ORDER_BKL_TYPE
-	related field: orderBlacklistTypeId

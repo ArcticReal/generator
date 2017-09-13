@@ -1,5 +1,0 @@
-GlAccountOrganization:
-
-1	Entity: AcctgTransEntry
-	Foreign Key Name: ACCTTXENT_GLACOG
-	related field: glAccountId

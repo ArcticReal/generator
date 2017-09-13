@@ -1,6 +1,0 @@
-ResponsibilityType:
-
-1: Foreign Key Name:		RESPON_TYPE_PAR
-	Related Entity:		ResponsibilityType
-	referenced Field:	responsibilityTypeId
-

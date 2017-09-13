@@ -1,7 +1,0 @@
-FinAccountTypeGlAccount:
-
-1: Primary Key Attribute: finAccountTypeId
-
-
-2: Primary Key Attribute: organizationPartyId
-

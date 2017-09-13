@@ -1,4 +1,0 @@
-ProductConfigItem:
-
-1: Primary Key Attribute: configItemId
-

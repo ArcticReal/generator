@@ -1,4 +1,0 @@
-GlReconciliation:
-
-1: Primary Key Attribute: glReconciliationId
-

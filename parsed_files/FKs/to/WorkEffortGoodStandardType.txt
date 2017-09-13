@@ -1,9 +1,0 @@
-WorkEffortGoodStandardType:
-
-1	Entity: WorkEffortGoodStandardType
-	Foreign Key Name: WKEFF_GDSTD_TPAR
-	related field: workEffortGoodStdTypeId
-
-2	Entity: WorkEffortGoodStandard
-	Foreign Key Name: WKEFF_GDSTD_TYPE
-	related field: workEffortGoodStdTypeId

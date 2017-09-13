@@ -1,5 +1,0 @@
-ContentSearchResult:
-
-1	Entity: ContentSearchConstraint
-	Foreign Key Name: CNT_SCHRSI_RES
-	related field: contentSearchResultId
