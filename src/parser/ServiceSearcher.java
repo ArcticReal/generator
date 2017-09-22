@@ -34,7 +34,7 @@ public class ServiceSearcher {
 			f = new File(path);
 			
 			if(f.exists()) {
-				Files.copy(Paths.get(path), Paths.get(pathCopyTo + path.split("/work/ofbiz")[1].replaceAll("/", "_").substring(15)), StandardCopyOption.REPLACE_EXISTING);
+				Files.copy(Paths.get(path), Paths.get(pathCopyTo + path.split("/work/ofbiz")[1].replaceAll("/", "_")), StandardCopyOption.REPLACE_EXISTING);
 			}
 			
 		}

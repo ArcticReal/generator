@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class AttributeTypeParser {
 
 	private final String pathToXmls = "/home/work/workspace/ControllingParser/xmls/";
-	private final String writeTo = "/home/work/workspace/ControllingParser/parsed_files/";
+	private final String writeTo = System.getProperty("user.dir")+ "/parsed_files/";
 	private final Charset ENCODING = StandardCharsets.UTF_8;
 
 	private List<String> attrTypes = new LinkedList<>();

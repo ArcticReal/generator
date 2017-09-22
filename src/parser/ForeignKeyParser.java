@@ -15,8 +15,8 @@ import java.util.Scanner;
 
 public class ForeignKeyParser {
 
-	private final String pathToXmls = "/home/work/workspace/ControllingParser/xmls/";
-	private final String writeTo = "/home/work/workspace/ControllingParser/parsed_files/";
+	String pathToXmls = "/home/work/workspace/ControllingParser/xmls/";
+	private final String writeTo = System.getProperty("user.dir")+ "/parsed_files/";
 	private final Charset ENCODING = StandardCharsets.UTF_8;
 
 	public void doIt() throws IOException {
