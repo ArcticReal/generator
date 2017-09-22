@@ -1,3 +1,4 @@
 /bin/
 /parsed_files/*
 /service_xmls/*
+parse.conf
