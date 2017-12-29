@@ -1,0 +1,98 @@
+ofbiz_applications_accounting_servicedef_services_verisign.xml
+Servicename: "payflowCCProcessor"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "processAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "customerIpAddress"  type:"String"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "creditCard"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "cardSecurityCode"  type:"String"  optional:"true"
+
+
+Servicename: "payflowCCCapture"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "captureAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "payflowCCVoid"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "releaseAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "payflowCCRefund"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "refundAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "payflowSetExpressCheckout"
+Attr: "cart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+
+
+Servicename: "payflowGetExpressCheckout"
+Attr: "cart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+
+
+Servicename: "payflowDoExpressCheckout"
+Attr: "orderPaymentPreference"  type:"GenericValue"  optional:"false"
+
+
+Servicename: "payflowPayPalProcessor"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "processAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "customerIpAddress"  type:"String"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "payPalPaymentMethod"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "payflowPayPalCapture"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "captureAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "payflowPayPalVoid"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "releaseAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "payflowPayPalRefund"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "refundAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+

@@ -1,0 +1,156 @@
+ofbiz_applications_content_servicedef_services_website.xml
+Servicename: "createWebSite"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "siteName"  type:"String"  optional:"false"
+Attr: "httpHost"  type:"String"  optional:"true"
+Attr: "httpPort"  type:"String"  optional:"true"
+Attr: "httpsHost"  type:"String"  optional:"true"
+Attr: "httpsPort"  type:"String"  optional:"true"
+Attr: "enableHttps"  type:"String"  optional:"true"
+Attr: "standardContentPrefix"  type:"String"  optional:"true"
+Attr: "secureContentPrefix"  type:"String"  optional:"true"
+Attr: "cookieDomain"  type:"String"  optional:"true"
+Attr: "visualThemeSetId"  type:"String"  optional:"true"
+
+
+Servicename: "updateWebSite"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "siteName"  type:"String"  optional:"true"
+Attr: "httpHost"  type:"String"  optional:"true"
+Attr: "httpPort"  type:"String"  optional:"true"
+Attr: "httpsHost"  type:"String"  optional:"true"
+Attr: "httpsPort"  type:"String"  optional:"true"
+Attr: "enableHttps"  type:"String"  optional:"true"
+Attr: "standardContentPrefix"  type:"String"  optional:"true"
+Attr: "secureContentPrefix"  type:"String"  optional:"true"
+Attr: "cookieDomain"  type:"String"  optional:"true"
+Attr: "visualThemeSetId"  type:"String"  optional:"true"
+
+
+Servicename: "createWebSiteContent"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "webSiteContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateWebSiteContent"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "webSiteContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeWebSiteContent"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "webSiteContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createWebSiteContentType"
+Attr: "webSiteContentTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+
+
+Servicename: "updateWebSiteContentType"
+Attr: "webSiteContentTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+
+
+Servicename: "removeWebSiteContentType"
+Attr: "webSiteContentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createWebSitePathAlias"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "pathAlias"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "aliasTo"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+
+
+Servicename: "updateWebSitePathAlias"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "pathAlias"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "aliasTo"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+
+
+Servicename: "removeWebSitePathAlias"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "pathAlias"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "getWebSitePathAlias"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "pathAlias"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "webSiteRoleInterface"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "addWebSiteRole"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"false"
+
+
+Servicename: "createWebSiteRole"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"false"
+
+
+Servicename: "updateWebSiteRole"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"false"
+
+
+Servicename: "removeWebSiteRole"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "autoCreateWebSiteContent"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "webSiteContentTypeId"  type:"List"  optional:"false"
+
+
+Servicename: "generateMissingSeoUrlForWebsite"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "prodCatalogId"  type:"String"  optional:"false"
+Attr: "typeGenerate"  type:"List"  optional:"false"
+
+

@@ -1,0 +1,252 @@
+ofbiz_framework_service_servicedef_services.xml
+Servicename: "purgeOldJobs"
+
+
+Servicename: "cancelScheduledJob"
+Attr: "jobId"  type:"String"  optional:"false"
+
+
+Servicename: "cancelJobRetries"
+Attr: "jobId"  type:"String"  optional:"false"
+
+
+Servicename: "resetScheduledJob"
+Attr: "jobId"  type:"String"  optional:"false"
+
+
+Servicename: "permissionInterface"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "authenticationInterface"
+Attr: "login.username"  type:"String"  optional:"false"
+Attr: "login.password"  type:"String"  optional:"false"
+Attr: "visitId"  type:"String"  optional:"true"
+Attr: "isServiceAuth"  type:"Boolean"  optional:"true"
+
+
+Servicename: "serviceStreamInterface"
+Attr: "inputStream"  type:"java.io.InputStream"  optional:"false"
+Attr: "outputStream"  type:"java.io.OutputStream"  optional:"false"
+
+
+Servicename: "serviceEcaConditionInterface"
+Attr: "serviceContext"  type:"Map"  optional:"false"
+Attr: "serviceName"  type:"String"  optional:"false"
+
+
+Servicename: "serviceMcaConditionInterface"
+Attr: "messageWrapper"  type:"org.apache.ofbiz.service.mail.MimeMessageWrapper"  optional:"false"
+
+
+Servicename: "mailProcessInterface"
+Attr: "messageWrapper"  type:"org.apache.ofbiz.service.mail.MimeMessageWrapper"  optional:"false"
+
+
+Servicename: "effectiveDateEcaCondition"
+Attr: "serviceContext"  type:"Map"  optional:"false"
+Attr: "serviceName"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "thruDate"  type:"java.sql.Timestamp"  optional:"true"
+
+
+Servicename: "createJobManagerLock"
+Attr: "instanceId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateJobManagerLock"
+Attr: "instanceId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "createCatalinaSession"
+Attr: "sessionId"  type:"String"  optional:"true"
+Attr: "sessionSize"  type:"Long"  optional:"true"
+Attr: "sessionInfo"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "isValid"  type:"String"  optional:"true"
+Attr: "maxIdle"  type:"Long"  optional:"true"
+Attr: "lastAccessed"  type:"Long"  optional:"true"
+
+
+Servicename: "updateCatalinaSession"
+Attr: "sessionId"  type:"String"  optional:"false"
+Attr: "sessionSize"  type:"Long"  optional:"true"
+Attr: "sessionInfo"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "isValid"  type:"String"  optional:"true"
+Attr: "maxIdle"  type:"Long"  optional:"true"
+Attr: "lastAccessed"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteCatalinaSession"
+Attr: "sessionId"  type:"String"  optional:"false"
+Attr: "sessionSize"  type:"Long"  optional:"true"
+Attr: "sessionInfo"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "isValid"  type:"String"  optional:"true"
+Attr: "maxIdle"  type:"Long"  optional:"true"
+Attr: "lastAccessed"  type:"Long"  optional:"true"
+
+
+Servicename: "createStandardLanguage"
+Attr: "standardLanguageId"  type:"String"  optional:"true"
+Attr: "langCode3t"  type:"String"  optional:"true"
+Attr: "langCode3b"  type:"String"  optional:"true"
+Attr: "langCode2"  type:"String"  optional:"true"
+Attr: "langName"  type:"String"  optional:"true"
+Attr: "langFamily"  type:"String"  optional:"true"
+Attr: "langCharset"  type:"String"  optional:"true"
+
+
+Servicename: "updateStandardLanguage"
+Attr: "standardLanguageId"  type:"String"  optional:"false"
+Attr: "langCode3t"  type:"String"  optional:"true"
+Attr: "langCode3b"  type:"String"  optional:"true"
+Attr: "langCode2"  type:"String"  optional:"true"
+Attr: "langName"  type:"String"  optional:"true"
+Attr: "langFamily"  type:"String"  optional:"true"
+Attr: "langCharset"  type:"String"  optional:"true"
+
+
+Servicename: "deleteStandardLanguage"
+Attr: "standardLanguageId"  type:"String"  optional:"false"
+
+
+Servicename: "createStatusItem"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "statusTypeId"  type:"String"  optional:"true"
+Attr: "statusCode"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateStatusItem"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusTypeId"  type:"String"  optional:"true"
+Attr: "statusCode"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteStatusItem"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "createStatusType"
+Attr: "statusTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateStatusType"
+Attr: "statusTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteStatusType"
+Attr: "statusTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSequenceValueItem"
+Attr: "seqName"  type:"String"  optional:"true"
+Attr: "seqId"  type:"Long"  optional:"true"
+
+
+Servicename: "updateSequenceValueItem"
+Attr: "seqName"  type:"String"  optional:"false"
+Attr: "seqId"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteSequenceValueItem"
+Attr: "seqName"  type:"String"  optional:"false"
+
+
+Servicename: "createJobSandbox"
+Attr: "jobId"  type:"String"  optional:"true"
+Attr: "jobName"  type:"String"  optional:"true"
+Attr: "runTime"  type:"Timestamp"  optional:"true"
+Attr: "poolId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "parentJobId"  type:"String"  optional:"true"
+Attr: "previousJobId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "loaderName"  type:"String"  optional:"true"
+Attr: "maxRetry"  type:"Long"  optional:"true"
+Attr: "currentRetryCount"  type:"Long"  optional:"true"
+Attr: "authUserLoginId"  type:"String"  optional:"true"
+Attr: "runAsUser"  type:"String"  optional:"true"
+Attr: "runtimeDataId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+Attr: "tempExprId"  type:"String"  optional:"true"
+Attr: "currentRecurrenceCount"  type:"Long"  optional:"true"
+Attr: "maxRecurrenceCount"  type:"Long"  optional:"true"
+Attr: "runByInstanceId"  type:"String"  optional:"true"
+Attr: "startDateTime"  type:"Timestamp"  optional:"true"
+Attr: "finishDateTime"  type:"Timestamp"  optional:"true"
+Attr: "cancelDateTime"  type:"Timestamp"  optional:"true"
+Attr: "jobResult"  type:"Long"  optional:"true"
+
+
+Servicename: "updateJobSandbox"
+Attr: "jobId"  type:"String"  optional:"false"
+Attr: "jobName"  type:"String"  optional:"true"
+Attr: "runTime"  type:"Timestamp"  optional:"true"
+Attr: "poolId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "parentJobId"  type:"String"  optional:"true"
+Attr: "previousJobId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "loaderName"  type:"String"  optional:"true"
+Attr: "maxRetry"  type:"Long"  optional:"true"
+Attr: "currentRetryCount"  type:"Long"  optional:"true"
+Attr: "authUserLoginId"  type:"String"  optional:"true"
+Attr: "runAsUser"  type:"String"  optional:"true"
+Attr: "runtimeDataId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+Attr: "tempExprId"  type:"String"  optional:"true"
+Attr: "currentRecurrenceCount"  type:"Long"  optional:"true"
+Attr: "maxRecurrenceCount"  type:"Long"  optional:"true"
+Attr: "runByInstanceId"  type:"String"  optional:"true"
+Attr: "startDateTime"  type:"Timestamp"  optional:"true"
+Attr: "finishDateTime"  type:"Timestamp"  optional:"true"
+Attr: "cancelDateTime"  type:"Timestamp"  optional:"true"
+Attr: "jobResult"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteJobSandbox"
+Attr: "jobId"  type:"String"  optional:"false"
+
+
+Servicename: "createRuntimeData"
+Attr: "runtimeDataId"  type:"String"  optional:"true"
+Attr: "runtimeInfo"  type:"String"  optional:"true"
+
+
+Servicename: "updateRuntimeData"
+Attr: "runtimeDataId"  type:"String"  optional:"false"
+Attr: "runtimeInfo"  type:"String"  optional:"true"
+
+
+Servicename: "deleteRuntimeData"
+Attr: "runtimeDataId"  type:"String"  optional:"false"
+
+

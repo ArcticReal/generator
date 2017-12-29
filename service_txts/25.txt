@@ -1,0 +1,183 @@
+ofbiz_applications_accounting_servicedef_services_valuelink.xml
+Servicename: "valueLinkProcessor"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "processAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "customerIpAddress"  type:"String"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "giftCard"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "valueLinkRelease"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "releaseAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "valueLinkRefund"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "refundAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "valueLinkGcPurchase"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "productContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "valueLinkGcReload"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "productContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "createVLKeys"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "kekOnly"  type:"Boolean"  optional:"true"
+Attr: "kekTest"  type:"String"  optional:"true"
+
+
+Servicename: "testKekEncryption"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "kekTest"  type:"String"  optional:"false"
+Attr: "mode"  type:"Integer"  optional:"false"
+
+
+Servicename: "assignWorkingKey"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "desHexString"  type:"String"  optional:"true"
+
+
+Servicename: "activateGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "vlPromoCode"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "voidActivateGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"true"
+Attr: "pin"  type:"String"  optional:"true"
+
+
+Servicename: "redeemGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "voidRedeemGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "reloadGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "voidReloadGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "balanceInquireGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "transactionHistoryGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "refundGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "voidRefundGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "linkPhysicalGiftCard"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "virtualCard"  type:"String"  optional:"false"
+Attr: "virtualPin"  type:"String"  optional:"false"
+Attr: "physicalCard"  type:"String"  optional:"false"
+Attr: "physicalPin"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "disableGiftCardPin"
+Attr: "paymentConfig"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pin"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "vlTimeOutReversal"
+
+

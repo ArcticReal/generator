@@ -1,0 +1,309 @@
+ofbiz_applications_content_servicedef_services_survey.xml
+Servicename: "createSurvey"
+Attr: "surveyName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "submitCaption"  type:"String"  optional:"true"
+Attr: "responseService"  type:"String"  optional:"true"
+Attr: "isAnonymous"  type:"String"  optional:"true"
+Attr: "allowMultiple"  type:"String"  optional:"true"
+Attr: "allowUpdate"  type:"String"  optional:"true"
+Attr: "acroFormContentId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSurvey"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "submitCaption"  type:"String"  optional:"true"
+Attr: "responseService"  type:"String"  optional:"true"
+Attr: "isAnonymous"  type:"String"  optional:"true"
+Attr: "allowMultiple"  type:"String"  optional:"true"
+Attr: "allowUpdate"  type:"String"  optional:"true"
+Attr: "acroFormContentId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSurvey"
+Attr: "surveyId"  type:"String"  optional:"false"
+
+
+Servicename: "cloneSurvey"
+Attr: "surveyId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyMultiResp"
+Attr: "multiRespTitle"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSurveyMultiResp"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyMultiRespId"  type:"String"  optional:"false"
+Attr: "multiRespTitle"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSurveyMultiResp"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyMultiRespId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyMultiRespColumn"
+Attr: "columnTitle"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyMultiRespId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSurveyMultiRespColumn"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyMultiRespId"  type:"String"  optional:"false"
+Attr: "surveyMultiRespColId"  type:"String"  optional:"false"
+Attr: "columnTitle"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteSurveyMultiRespColumn"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyMultiRespId"  type:"String"  optional:"false"
+Attr: "surveyMultiRespColId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyPage"
+Attr: "pageName"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSurveyPage"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyPageSeqId"  type:"String"  optional:"false"
+Attr: "pageName"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteSurveyPage"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyPageSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyApplType"
+Attr: "surveyApplTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateSurveyApplType"
+Attr: "surveyApplTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSurveyApplType"
+Attr: "surveyApplTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyQuestion"
+Attr: "surveyQuestionCategoryId"  type:"String"  optional:"true"
+Attr: "surveyQuestionTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "question"  type:"String"  optional:"true"
+Attr: "hint"  type:"String"  optional:"true"
+Attr: "enumTypeId"  type:"String"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "formatString"  type:"Long"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSurveyQuestion"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+Attr: "surveyQuestionCategoryId"  type:"String"  optional:"true"
+Attr: "surveyQuestionTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "question"  type:"String"  optional:"true"
+Attr: "hint"  type:"String"  optional:"true"
+Attr: "enumTypeId"  type:"String"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "formatString"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteSurveyQuestion"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyQuestionOption"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "amountBase"  type:"BigDecimal"  optional:"true"
+Attr: "amountBaseUomId"  type:"String"  optional:"true"
+Attr: "weightFactor"  type:"BigDecimal"  optional:"true"
+Attr: "duration"  type:"Long"  optional:"true"
+Attr: "durationUomId"  type:"String"  optional:"true"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSurveyQuestionOption"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+Attr: "surveyOptionSeqId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "amountBase"  type:"BigDecimal"  optional:"true"
+Attr: "amountBaseUomId"  type:"String"  optional:"true"
+Attr: "weightFactor"  type:"BigDecimal"  optional:"true"
+Attr: "duration"  type:"Long"  optional:"true"
+Attr: "durationUomId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSurveyQuestionOption"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+Attr: "surveyOptionSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyQuestionAppl"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "surveyPageSeqId"  type:"String"  optional:"true"
+Attr: "surveyMultiRespId"  type:"String"  optional:"true"
+Attr: "surveyMultiRespColId"  type:"String"  optional:"true"
+Attr: "requiredField"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "externalFieldRef"  type:"String"  optional:"true"
+Attr: "withSurveyQuestionId"  type:"String"  optional:"true"
+Attr: "withSurveyOptionSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSurveyQuestionAppl"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "surveyPageSeqId"  type:"String"  optional:"true"
+Attr: "surveyMultiRespId"  type:"String"  optional:"true"
+Attr: "surveyMultiRespColId"  type:"String"  optional:"true"
+Attr: "requiredField"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "externalFieldRef"  type:"String"  optional:"true"
+Attr: "withSurveyQuestionId"  type:"String"  optional:"true"
+Attr: "withSurveyOptionSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSurveyQuestionAppl"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyQuestionId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createSurveyQuestionCategory"
+Attr: "parentCategoryId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateSurveyQuestionCategory"
+Attr: "surveyQuestionCategoryId"  type:"String"  optional:"false"
+Attr: "parentCategoryId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSurveyQuestionCategory"
+Attr: "surveyQuestionCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyQuestionType"
+Attr: "surveyQuestionTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateSurveyQuestionType"
+Attr: "surveyQuestionTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSurveyQuestionType"
+Attr: "surveyQuestionTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSurveyTrigger"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyApplTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateSurveyTrigger"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyApplTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteSurveyTrigger"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "surveyApplTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createSurveyResponse"
+Attr: "surveyId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "responseDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "referenceId"  type:"String"  optional:"true"
+Attr: "generalFeedback"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "answers"  type:"Map"  optional:"false"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "productStoreSurveyId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+
+
+Servicename: "surveyResponseProcessInterface"
+Attr: "surveyResponseId"  type:"String"  optional:"false"
+
+
+Servicename: "buildSurveyFromPdf"
+Attr: "pdfFileNameIn"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "inputByteBuffer"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "surveyName"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+
+
+Servicename: "buildSurveyResponseFromPdf"
+Attr: "pdfFileNameIn"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "inputByteBuffer"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+
+
+Servicename: "getAcroFieldsFromPdf"
+Attr: "pdfFileNameIn"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "inputByteBuffer"  type:"java.nio.ByteBuffer"  optional:"true"
+
+
+Servicename: "setAcroFieldsFromSurveyResponse"
+Attr: "pdfFileNameIn"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "inputByteBuffer"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"false"
+
+
+Servicename: "setAcroFields"
+Attr: "pdfFileNameIn"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "inputByteBuffer"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "acroFieldMap"  type:"Map"  optional:"false"
+
+
+Servicename: "buildPdfFromSurveyResponse"
+Attr: "surveyResponseId"  type:"String"  optional:"false"
+
+
+Servicename: "buildSurveyQuestionsAndAnswers"
+Attr: "surveyResponseId"  type:"String"  optional:"false"
+
+

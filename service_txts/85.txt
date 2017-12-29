@@ -1,0 +1,14 @@
+ofbiz_applications_product_servicedef_services_shipment_fedex.xml
+Servicename: "fedexSubscriptionRequest"
+Attr: "contactPartyName"  type:"String"  optional:"false"
+Attr: "companyPartyId"  type:"String"  optional:"false"
+Attr: "replaceMeterNumber"  type:"Boolean"  optional:"false"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "configProps"  type:"String"  optional:"false"
+
+
+Servicename: "fedexShipRequest"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+

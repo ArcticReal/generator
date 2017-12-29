@@ -1,0 +1,182 @@
+ofbiz_applications_product_servicedef_services_cost.xml
+Servicename: "createCostComponent"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "costComponentCalcId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "cost"  type:"BigDecimal"  optional:"true"
+Attr: "costUomId"  type:"String"  optional:"true"
+
+
+Servicename: "updateCostComponent"
+Attr: "costComponentId"  type:"String"  optional:"false"
+Attr: "costComponentTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "costComponentCalcId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "cost"  type:"BigDecimal"  optional:"true"
+Attr: "costUomId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCostComponent"
+Attr: "costComponentId"  type:"String"  optional:"false"
+
+
+Servicename: "recreateCostComponent"
+Attr: "costComponentTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "costComponentCalcId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "cost"  type:"BigDecimal"  optional:"true"
+Attr: "costUomId"  type:"String"  optional:"true"
+
+
+Servicename: "cancelCostComponents"
+Attr: "costComponentId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "costUomId"  type:"String"  optional:"true"
+Attr: "costComponentTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "createProductCostComponentCalc"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "costComponentCalcId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateProductCostComponentCalc"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "costComponentCalcId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteProductCostComponentCalc"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "getProductCost"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "costComponentTypePrefix"  type:"String"  optional:"false"
+
+
+Servicename: "getTaskCost"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "routingId"  type:"String"  optional:"true"
+
+
+Servicename: "calculateProductCosts"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "costComponentTypePrefix"  type:"String"  optional:"false"
+
+
+Servicename: "calculateAllProductsCosts"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "costComponentTypePrefix"  type:"String"  optional:"false"
+
+
+Servicename: "calculateProductAverageCost"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "productCostCalcInterface"
+Attr: "productCostComponentCalc"  type:"GenericValue"  optional:"false"
+Attr: "costComponentCalc"  type:"GenericValue"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "costComponentTypePrefix"  type:"String"  optional:"false"
+Attr: "baseCost"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "productCostPercentageFormula"
+Attr: "productCostComponentCalc"  type:"GenericValue"  optional:"false"
+Attr: "costComponentCalc"  type:"GenericValue"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "costComponentTypePrefix"  type:"String"  optional:"false"
+Attr: "baseCost"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "createCostComponentAttribute"
+Attr: "costComponentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateCostComponentAttribute"
+Attr: "costComponentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCostComponentAttribute"
+Attr: "costComponentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createCostComponentType"
+Attr: "costComponentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCostComponentType"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCostComponentType"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createCostComponentTypeAttr"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCostComponentTypeAttr"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCostComponentTypeAttr"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+

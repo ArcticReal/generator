@@ -1,0 +1,100 @@
+ofbiz_applications_accounting_servicedef_services_admin.xml
+Servicename: "createPartyAcctgPreference"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fiscalYearStartMonth"  type:"Long"  optional:"true"
+Attr: "fiscalYearStartDay"  type:"Long"  optional:"true"
+Attr: "taxFormId"  type:"String"  optional:"true"
+Attr: "cogsMethodId"  type:"String"  optional:"true"
+Attr: "baseCurrencyUomId"  type:"String"  optional:"true"
+Attr: "invoiceSeqCustMethId"  type:"String"  optional:"true"
+Attr: "invoiceIdPrefix"  type:"String"  optional:"true"
+Attr: "lastInvoiceNumber"  type:"Long"  optional:"true"
+Attr: "lastInvoiceRestartDate"  type:"Timestamp"  optional:"true"
+Attr: "useInvoiceIdForReturns"  type:"String"  optional:"true"
+Attr: "quoteSeqCustMethId"  type:"String"  optional:"true"
+Attr: "quoteIdPrefix"  type:"String"  optional:"true"
+Attr: "lastQuoteNumber"  type:"Long"  optional:"true"
+Attr: "orderSeqCustMethId"  type:"String"  optional:"true"
+Attr: "orderIdPrefix"  type:"String"  optional:"true"
+Attr: "lastOrderNumber"  type:"Long"  optional:"true"
+Attr: "refundPaymentMethodId"  type:"String"  optional:"true"
+Attr: "errorGlJournalId"  type:"String"  optional:"true"
+Attr: "oldInvoiceSequenceEnumId"  type:"String"  optional:"true"
+Attr: "oldOrderSequenceEnumId"  type:"String"  optional:"true"
+Attr: "oldQuoteSequenceEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyAcctgPreference"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "refundPaymentMethodId"  type:"String"  optional:"true"
+Attr: "errorGlJournalId"  type:"String"  optional:"true"
+
+
+Servicename: "getPartyAccountingPreferences"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "setAcctgCompany"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFXConversion"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomIdTo"  type:"String"  optional:"false"
+Attr: "conversionFactor"  type:"BigDecimal"  optional:"false"
+Attr: "purposeEnumId"  type:"String"  optional:"true"
+Attr: "asOfTimestamp"  type:"Timestamp"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createGlAccountTypeDefault"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "removeGlAccountTypeDefault"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "addInvoiceItemTypeGlAssignment"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "removeInvoiceItemTypeGlAssignment"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "addPaymentTypeGlAssignment"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "removePaymentTypeGlAssignment"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "addPaymentMethodTypeGlAssignment"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "removePaymentMethodTypeGlAssignment"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "getFXConversion"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomIdTo"  type:"String"  optional:"false"
+Attr: "asOfTimestamp"  type:"Timestamp"  optional:"true"
+
+

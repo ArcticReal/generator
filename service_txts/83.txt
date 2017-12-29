@@ -1,0 +1,201 @@
+ofbiz_applications_product_servicedef_services_shipmentgateway.xml
+Servicename: "createShipmentGatewayDhl"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "headVersion"  type:"String"  optional:"true"
+Attr: "headAction"  type:"Long"  optional:"true"
+Attr: "accessUserId"  type:"Long"  optional:"true"
+Attr: "accessPassword"  type:"Long"  optional:"true"
+Attr: "accessAccountNbr"  type:"Long"  optional:"true"
+Attr: "accessShippingKey"  type:"Long"  optional:"true"
+Attr: "labelImageFormat"  type:"String"  optional:"true"
+Attr: "rateEstimateTemplate"  type:"Long"  optional:"true"
+
+
+Servicename: "updateShipmentGatewayDhl"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "headVersion"  type:"String"  optional:"true"
+Attr: "headAction"  type:"Long"  optional:"true"
+Attr: "accessUserId"  type:"Long"  optional:"true"
+Attr: "accessPassword"  type:"Long"  optional:"true"
+Attr: "accessAccountNbr"  type:"Long"  optional:"true"
+Attr: "accessShippingKey"  type:"Long"  optional:"true"
+Attr: "labelImageFormat"  type:"String"  optional:"true"
+Attr: "rateEstimateTemplate"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteShipmentGatewayDhl"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+
+
+Servicename: "createShipmentGatewayFedex"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectSoapUrl"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "accessAccountNbr"  type:"Long"  optional:"true"
+Attr: "accessMeterNumber"  type:"Long"  optional:"true"
+Attr: "accessUserKey"  type:"Long"  optional:"true"
+Attr: "accessUserPwd"  type:"Long"  optional:"true"
+Attr: "labelImageType"  type:"String"  optional:"true"
+Attr: "defaultDropoffType"  type:"Long"  optional:"true"
+Attr: "defaultPackagingType"  type:"Long"  optional:"true"
+Attr: "templateShipment"  type:"Long"  optional:"true"
+Attr: "templateSubscription"  type:"Long"  optional:"true"
+Attr: "rateEstimateTemplate"  type:"Long"  optional:"true"
+
+
+Servicename: "updateShipmentGatewayFedex"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectSoapUrl"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "accessAccountNbr"  type:"Long"  optional:"true"
+Attr: "accessMeterNumber"  type:"Long"  optional:"true"
+Attr: "accessUserKey"  type:"Long"  optional:"true"
+Attr: "accessUserPwd"  type:"Long"  optional:"true"
+Attr: "labelImageType"  type:"String"  optional:"true"
+Attr: "defaultDropoffType"  type:"Long"  optional:"true"
+Attr: "defaultPackagingType"  type:"Long"  optional:"true"
+Attr: "templateShipment"  type:"Long"  optional:"true"
+Attr: "templateSubscription"  type:"Long"  optional:"true"
+Attr: "rateEstimateTemplate"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteShipmentGatewayFedex"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+
+
+Servicename: "createShipmentGatewayUps"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "shipperNumber"  type:"Long"  optional:"true"
+Attr: "billShipperAccountNumber"  type:"Long"  optional:"true"
+Attr: "accessLicenseNumber"  type:"Long"  optional:"true"
+Attr: "accessUserId"  type:"Long"  optional:"true"
+Attr: "accessPassword"  type:"Long"  optional:"true"
+Attr: "saveCertInfo"  type:"String"  optional:"true"
+Attr: "saveCertPath"  type:"Long"  optional:"true"
+Attr: "shipperPickupType"  type:"String"  optional:"true"
+Attr: "customerClassification"  type:"String"  optional:"true"
+Attr: "maxEstimateWeight"  type:"BigDecimal"  optional:"true"
+Attr: "minEstimateWeight"  type:"BigDecimal"  optional:"true"
+Attr: "codAllowCod"  type:"Long"  optional:"true"
+Attr: "codSurchargeAmount"  type:"BigDecimal"  optional:"true"
+Attr: "codSurchargeCurrencyUomId"  type:"String"  optional:"true"
+Attr: "codSurchargeApplyToPackage"  type:"String"  optional:"true"
+Attr: "codFundsCode"  type:"String"  optional:"true"
+Attr: "defaultReturnLabelMemo"  type:"Long"  optional:"true"
+Attr: "defaultReturnLabelSubject"  type:"Long"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+
+
+Servicename: "updateShipmentGatewayUps"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "shipperNumber"  type:"Long"  optional:"true"
+Attr: "billShipperAccountNumber"  type:"Long"  optional:"true"
+Attr: "accessLicenseNumber"  type:"Long"  optional:"true"
+Attr: "accessUserId"  type:"Long"  optional:"true"
+Attr: "accessPassword"  type:"Long"  optional:"true"
+Attr: "saveCertInfo"  type:"String"  optional:"true"
+Attr: "saveCertPath"  type:"Long"  optional:"true"
+Attr: "shipperPickupType"  type:"String"  optional:"true"
+Attr: "customerClassification"  type:"String"  optional:"true"
+Attr: "maxEstimateWeight"  type:"BigDecimal"  optional:"true"
+Attr: "minEstimateWeight"  type:"BigDecimal"  optional:"true"
+Attr: "codAllowCod"  type:"Long"  optional:"true"
+Attr: "codSurchargeAmount"  type:"BigDecimal"  optional:"true"
+Attr: "codSurchargeCurrencyUomId"  type:"String"  optional:"true"
+Attr: "codSurchargeApplyToPackage"  type:"String"  optional:"true"
+Attr: "codFundsCode"  type:"String"  optional:"true"
+Attr: "defaultReturnLabelMemo"  type:"Long"  optional:"true"
+Attr: "defaultReturnLabelSubject"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteShipmentGatewayUps"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+
+
+Servicename: "createShipmentGatewayUsps"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectUrlLabels"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "accessUserId"  type:"Long"  optional:"true"
+Attr: "accessPassword"  type:"Long"  optional:"true"
+Attr: "maxEstimateWeight"  type:"Long"  optional:"true"
+Attr: "test"  type:"String"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+
+
+Servicename: "updateShipmentGatewayUsps"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "connectUrl"  type:"Long"  optional:"true"
+Attr: "connectUrlLabels"  type:"Long"  optional:"true"
+Attr: "connectTimeout"  type:"Long"  optional:"true"
+Attr: "accessUserId"  type:"Long"  optional:"true"
+Attr: "accessPassword"  type:"Long"  optional:"true"
+Attr: "maxEstimateWeight"  type:"Long"  optional:"true"
+Attr: "test"  type:"String"  optional:"true"
+
+
+Servicename: "deleteShipmentGatewayUsps"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+
+
+Servicename: "createShipmentGatewayConfig"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "shipmentGatewayConfTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateShipmentGatewayConfig"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "shipmentGatewayConfTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteShipmentGatewayConfig"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+
+
+Servicename: "createShipmentGatewayConfigType"
+Attr: "shipmentGatewayConfTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateShipmentGatewayConfigType"
+Attr: "shipmentGatewayConfTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteShipmentGatewayConfigType"
+Attr: "shipmentGatewayConfTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createShipmentType"
+Attr: "shipmentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateShipmentType"
+Attr: "shipmentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteShipmentType"
+Attr: "shipmentTypeId"  type:"String"  optional:"false"
+
+

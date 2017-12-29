@@ -1,0 +1,202 @@
+ofbiz_applications_marketing_servicedef_services_opportunity.xml
+Servicename: "createSalesForecast"
+Attr: "parentSalesForecastId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "internalPartyId"  type:"String"  optional:"true"
+Attr: "customTimePeriodId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "quotaAmount"  type:"BigDecimal"  optional:"true"
+Attr: "forecastAmount"  type:"BigDecimal"  optional:"true"
+Attr: "bestCaseAmount"  type:"BigDecimal"  optional:"true"
+Attr: "closedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "percentOfQuotaForecast"  type:"BigDecimal"  optional:"true"
+Attr: "percentOfQuotaClosed"  type:"BigDecimal"  optional:"true"
+Attr: "pipelineAmount"  type:"BigDecimal"  optional:"true"
+Attr: "createdByUserLoginId"  type:"String"  optional:"true"
+Attr: "modifiedByUserLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSalesForecast"
+Attr: "salesForecastId"  type:"String"  optional:"false"
+Attr: "parentSalesForecastId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "internalPartyId"  type:"String"  optional:"true"
+Attr: "customTimePeriodId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "quotaAmount"  type:"BigDecimal"  optional:"true"
+Attr: "forecastAmount"  type:"BigDecimal"  optional:"true"
+Attr: "bestCaseAmount"  type:"BigDecimal"  optional:"true"
+Attr: "closedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "percentOfQuotaForecast"  type:"BigDecimal"  optional:"true"
+Attr: "percentOfQuotaClosed"  type:"BigDecimal"  optional:"true"
+Attr: "pipelineAmount"  type:"BigDecimal"  optional:"true"
+Attr: "createdByUserLoginId"  type:"String"  optional:"true"
+Attr: "modifiedByUserLoginId"  type:"String"  optional:"true"
+Attr: "changeNote"  type:"String"  optional:"true"
+
+
+Servicename: "createSalesForecastDetail"
+Attr: "salesForecastId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "quantityUomId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productCategoryId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSalesForecastDetail"
+Attr: "salesForecastId"  type:"String"  optional:"false"
+Attr: "salesForecastDetailId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "quantityUomId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productCategoryId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSalesForecastDetail"
+Attr: "salesForecastId"  type:"String"  optional:"false"
+Attr: "salesForecastDetailId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOpportunity"
+Attr: "salesOpportunityId"  type:"String"  optional:"true"
+Attr: "opportunityName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "nextStep"  type:"String"  optional:"true"
+Attr: "nextStepDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "estimatedProbability"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "marketingCampaignId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "estimatedCloseDate"  type:"Timestamp"  optional:"true"
+Attr: "opportunityStageId"  type:"String"  optional:"true"
+Attr: "typeEnumId"  type:"String"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "accountPartyId"  type:"String"  optional:"true"
+Attr: "leadPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSalesOpportunity"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "opportunityName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "nextStep"  type:"String"  optional:"true"
+Attr: "nextStepDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "estimatedProbability"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "marketingCampaignId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "estimatedCloseDate"  type:"Timestamp"  optional:"true"
+Attr: "opportunityStageId"  type:"String"  optional:"true"
+Attr: "typeEnumId"  type:"String"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "accountPartyId"  type:"String"  optional:"true"
+Attr: "leadPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "createSalesOpportunityRole"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOpportunityAccountRole"
+Attr: "accountPartyId"  type:"String"  optional:"false"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOpportunityLeadRole"
+Attr: "leadPartyId"  type:"String"  optional:"false"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+
+
+Servicename: "findPartyInSalesOpportunityRole"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "salesOpportunityId"  type:"String"  optional:"true"
+
+
+Servicename: "createSalesOpportunityCompetitor"
+Attr: "positionEnumId"  type:"String"  optional:"true"
+Attr: "strengths"  type:"String"  optional:"true"
+Attr: "weaknesses"  type:"String"  optional:"true"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "competitorPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSalesOpportunityCompetitor"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "competitorPartyId"  type:"String"  optional:"false"
+Attr: "positionEnumId"  type:"String"  optional:"true"
+Attr: "strengths"  type:"String"  optional:"true"
+Attr: "weaknesses"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSalesOpportunityCompetitor"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "competitorPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteSalesOpportunityRole"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOpportunityStage"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "defaultProbability"  type:"BigDecimal"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "opportunityStageId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSalesOpportunityStage"
+Attr: "opportunityStageId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "defaultProbability"  type:"BigDecimal"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteSalesOpportunityStage"
+Attr: "opportunityStageId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOpportunityTrckCode"
+Attr: "receivedDate"  type:"Timestamp"  optional:"true"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "trackingCodeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSalesOpportunityTrckCode"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "trackingCodeId"  type:"String"  optional:"false"
+Attr: "receivedDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteSalesOpportunityTrckCode"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "trackingCodeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOpportunityWorkEffort"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteSalesOpportunityWorkEffort"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOpportunityQuote"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "quoteId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteSalesOpportunityQuote"
+Attr: "salesOpportunityId"  type:"String"  optional:"false"
+Attr: "quoteId"  type:"String"  optional:"false"
+
+

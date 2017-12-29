@@ -1,0 +1,837 @@
+ofbiz_framework_common_servicedef_services.xml
+Servicename: "commonGenericPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "commonGetAllCrudPermissions"
+Attr: "primaryPermission"  type:"String"  optional:"false"
+Attr: "altPermission"  type:"String"  optional:"true"
+
+
+Servicename: "echoService"
+
+
+Servicename: "returnErrorService"
+
+
+Servicename: "forceGarbageCollection"
+
+
+Servicename: "createNote"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "noteName"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"false"
+
+
+Servicename: "updateNote"
+Attr: "noteId"  type:"String"  optional:"false"
+Attr: "noteName"  type:"String"  optional:"true"
+Attr: "noteInfo"  type:"String"  optional:"true"
+Attr: "noteDateTime"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "adjustDebugLevels"
+Attr: "fatal"  type:"String"  optional:"true"
+Attr: "error"  type:"String"  optional:"true"
+Attr: "warning"  type:"String"  optional:"true"
+Attr: "important"  type:"String"  optional:"true"
+Attr: "info"  type:"String"  optional:"true"
+Attr: "timing"  type:"String"  optional:"true"
+Attr: "verbose"  type:"String"  optional:"true"
+
+
+Servicename: "displayXaDebugInfo"
+
+
+Servicename: "createEnumeration"
+Attr: "enumTypeId"  type:"String"  optional:"false"
+Attr: "enumCode"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateEnumeration"
+Attr: "enumId"  type:"String"  optional:"false"
+Attr: "enumTypeId"  type:"String"  optional:"false"
+Attr: "enumCode"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteEnumeration"
+Attr: "enumId"  type:"String"  optional:"false"
+
+
+Servicename: "interfaceDataSource"
+Attr: "dataSourceId"  type:"String"  optional:"false"
+Attr: "dataSourceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createDataSource"
+Attr: "dataSourceId"  type:"String"  optional:"false"
+Attr: "dataSourceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateDataSource"
+Attr: "dataSourceId"  type:"String"  optional:"false"
+Attr: "dataSourceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteDataSource"
+Attr: "dataSourceId"  type:"String"  optional:"false"
+
+
+Servicename: "interfaceDataSourceType"
+Attr: "dataSourceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createDataSourceType"
+Attr: "dataSourceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateDataSourceType"
+Attr: "dataSourceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteDataSourceType"
+Attr: "dataSourceTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createCustomTimePeriod"
+Attr: "parentPeriodId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"false"
+Attr: "periodNum"  type:"Long"  optional:"true"
+Attr: "periodName"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+Attr: "isClosed"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "updateCustomTimePeriod"
+Attr: "customTimePeriodId"  type:"String"  optional:"false"
+Attr: "parentPeriodId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "periodNum"  type:"Long"  optional:"true"
+Attr: "periodName"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "isClosed"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustomTimePeriod"
+Attr: "customTimePeriodId"  type:"String"  optional:"false"
+
+
+Servicename: "getStatusItems"
+Attr: "statusTypeIds"  type:"List"  optional:"false"
+
+
+Servicename: "getStatusValidChangeToDetails"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "prepareFind"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "inputFields"  type:"java.util.Map"  optional:"false"
+Attr: "orderBy"  type:"String"  optional:"true"
+Attr: "noConditionFind"  type:"String"  optional:"true"
+Attr: "filterByDate"  type:"String"  optional:"true"
+Attr: "filterByDateValue"  type:"Timestamp"  optional:"true"
+Attr: "fromDateName"  type:"String"  optional:"true"
+Attr: "thruDateName"  type:"String"  optional:"true"
+
+
+Servicename: "executeFind"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "fieldList"  type:"java.util.List"  optional:"true"
+Attr: "orderByList"  type:"java.util.List"  optional:"true"
+Attr: "maxRows"  type:"Integer"  optional:"true"
+Attr: "entityConditionList"  type:"org.apache.ofbiz.entity.condition.EntityConditionList"  optional:"true"
+Attr: "noConditionFind"  type:"String"  optional:"true"
+Attr: "distinct"  type:"String"  optional:"true"
+
+
+Servicename: "performFind"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "inputFields"  type:"java.util.Map"  optional:"false"
+Attr: "fieldList"  type:"java.util.List"  optional:"true"
+Attr: "orderBy"  type:"String"  optional:"true"
+Attr: "noConditionFind"  type:"String"  optional:"true"
+Attr: "distinct"  type:"String"  optional:"true"
+Attr: "filterByDate"  type:"String"  optional:"true"
+Attr: "filterByDateValue"  type:"Timestamp"  optional:"true"
+Attr: "fromDateName"  type:"String"  optional:"true"
+Attr: "thruDateName"  type:"String"  optional:"true"
+Attr: "viewIndex"  type:"Integer"  optional:"true"
+Attr: "viewSize"  type:"Integer"  optional:"true"
+
+
+Servicename: "performFindList"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "inputFields"  type:"java.util.Map"  optional:"false"
+Attr: "orderBy"  type:"String"  optional:"true"
+Attr: "noConditionFind"  type:"String"  optional:"true"
+Attr: "filterByDate"  type:"String"  optional:"true"
+Attr: "filterByDateValue"  type:"Timestamp"  optional:"true"
+Attr: "viewIndex"  type:"Integer"  optional:"true"
+Attr: "viewSize"  type:"Integer"  optional:"true"
+
+
+Servicename: "performFindItem"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "inputFields"  type:"java.util.Map"  optional:"false"
+Attr: "orderBy"  type:"String"  optional:"true"
+Attr: "filterByDate"  type:"String"  optional:"true"
+Attr: "filterByDateValue"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createKeywordThesaurus"
+Attr: "enteredKeyword"  type:"String"  optional:"false"
+Attr: "alternateKeyword"  type:"String"  optional:"false"
+Attr: "relationshipEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "updateKeywordThesaurus"
+Attr: "enteredKeyword"  type:"String"  optional:"false"
+Attr: "alternateKeyword"  type:"String"  optional:"false"
+Attr: "relationshipEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteKeywordThesaurus"
+Attr: "enteredKeyword"  type:"String"  optional:"false"
+Attr: "alternateKeyword"  type:"String"  optional:"true"
+
+
+Servicename: "createUomConversionDated"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "conversionFactor"  type:"BigDecimal"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "decimalScale"  type:"Long"  optional:"true"
+Attr: "roundingMode"  type:"String"  optional:"true"
+Attr: "purposeEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "convertUom"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomIdTo"  type:"String"  optional:"false"
+Attr: "asOfDate"  type:"Timestamp"  optional:"true"
+Attr: "originalValue"  type:"BigDecimal"  optional:"false"
+Attr: "conversionParameters"  type:"Map"  optional:"true"
+Attr: "purposeEnumId"  type:"String"  optional:"true"
+Attr: "defaultDecimalScale"  type:"Long"  optional:"true"
+Attr: "defaultRoundingMode"  type:"String"  optional:"true"
+
+
+Servicename: "convertUomCustom"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomIdTo"  type:"String"  optional:"false"
+Attr: "originalValue"  type:"BigDecimal"  optional:"false"
+Attr: "uomConversion"  type:"Map"  optional:"false"
+Attr: "conversionParameters"  type:"Map"  optional:"true"
+
+
+Servicename: "checkUomConversion"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomIdTo"  type:"String"  optional:"false"
+
+
+Servicename: "checkUomConversionDated"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "getFileUploadProgressStatus"
+Attr: "uploadProgressListener"  type:"org.apache.ofbiz.webapp.event.FileUploadProgressListener"  optional:"true"
+
+
+Servicename: "ftpInterface"
+Attr: "hostname"  type:"String"  optional:"false"
+Attr: "username"  type:"String"  optional:"false"
+Attr: "password"  type:"String"  optional:"false"
+Attr: "localFilename"  type:"String"  optional:"false"
+Attr: "remoteFilename"  type:"String"  optional:"false"
+Attr: "binaryTransfer"  type:"Boolean"  optional:"true"
+Attr: "passiveMode"  type:"Boolean"  optional:"true"
+Attr: "defaultTimeout"  type:"Integer"  optional:"true"
+
+
+Servicename: "ftpPutFile"
+Attr: "hostname"  type:"String"  optional:"false"
+Attr: "username"  type:"String"  optional:"false"
+Attr: "password"  type:"String"  optional:"false"
+Attr: "localFilename"  type:"String"  optional:"false"
+Attr: "remoteFilename"  type:"String"  optional:"false"
+Attr: "binaryTransfer"  type:"Boolean"  optional:"true"
+Attr: "passiveMode"  type:"Boolean"  optional:"true"
+Attr: "defaultTimeout"  type:"Integer"  optional:"true"
+Attr: "siteCommands"  type:"List"  optional:"true"
+
+
+Servicename: "ftpGetFile"
+Attr: "hostname"  type:"String"  optional:"false"
+Attr: "username"  type:"String"  optional:"false"
+Attr: "password"  type:"String"  optional:"false"
+Attr: "localFilename"  type:"String"  optional:"false"
+Attr: "remoteFilename"  type:"String"  optional:"false"
+Attr: "binaryTransfer"  type:"Boolean"  optional:"true"
+Attr: "passiveMode"  type:"Boolean"  optional:"true"
+Attr: "defaultTimeout"  type:"Integer"  optional:"true"
+
+
+Servicename: "userLogin"
+Attr: "login.username"  type:"String"  optional:"false"
+Attr: "login.password"  type:"String"  optional:"false"
+Attr: "visitId"  type:"String"  optional:"true"
+Attr: "isServiceAuth"  type:"Boolean"  optional:"true"
+
+
+Servicename: "createUserLogin"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "enabled"  type:"String"  optional:"true"
+Attr: "currentPassword"  type:"String"  optional:"false"
+Attr: "currentPasswordVerify"  type:"String"  optional:"false"
+Attr: "passwordHint"  type:"String"  optional:"true"
+Attr: "requirePasswordChange"  type:"String"  optional:"true"
+Attr: "externalAuthId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "securityQuestion"  type:"String"  optional:"true"
+Attr: "securityAnswer"  type:"String"  optional:"true"
+
+
+Servicename: "updateUserLoginId"
+Attr: "userLoginId"  type:"String"  optional:"false"
+
+
+Servicename: "updatePassword"
+Attr: "userLoginId"  type:"String"  optional:"true"
+Attr: "currentPassword"  type:"String"  optional:"true"
+Attr: "newPassword"  type:"String"  optional:"true"
+Attr: "newPasswordVerify"  type:"String"  optional:"true"
+Attr: "passwordHint"  type:"String"  optional:"true"
+
+
+Servicename: "updateUserLoginSecurity"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "enabled"  type:"String"  optional:"false"
+Attr: "disabledDateTime"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "successiveFailedLogins"  type:"Long"  optional:"true"
+Attr: "externalAuthId"  type:"String"  optional:"true"
+Attr: "userLdapDn"  type:"String"  optional:"true"
+Attr: "requirePasswordChange"  type:"String"  optional:"true"
+Attr: "disabledBy"  type:"String"  optional:"true"
+
+
+Servicename: "genericBasePermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "rssFeedInterface"
+Attr: "feedType"  type:"String"  optional:"false"
+Attr: "mainLink"  type:"String"  optional:"false"
+Attr: "entryLink"  type:"String"  optional:"false"
+
+
+Servicename: "copyUserPrefGroup"
+Attr: "fromUserLoginId"  type:"String"  optional:"false"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"false"
+Attr: "userPrefLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "getUserPreference"
+Attr: "userPrefTypeId"  type:"String"  optional:"false"
+Attr: "userPrefLoginId"  type:"String"  optional:"true"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "getUserPreferenceGroup"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"false"
+Attr: "userPrefLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "setUserPreference"
+Attr: "userPrefTypeId"  type:"String"  optional:"false"
+Attr: "userPrefValue"  type:"String"  optional:"false"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"true"
+Attr: "userPrefLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "removeUserPreference"
+Attr: "userPrefTypeId"  type:"String"  optional:"false"
+Attr: "userPrefLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "setUserPreferenceGroup"
+Attr: "userPrefMap"  type:"Map"  optional:"false"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"false"
+Attr: "userPrefLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "preferenceGetSetPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+Attr: "userPrefLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "preferenceCopyPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "getVisualThemeResources"
+Attr: "visualThemeId"  type:"String"  optional:"true"
+Attr: "themeResources"  type:"Map"  optional:"true"
+
+
+Servicename: "createVisualTheme"
+Attr: "visualThemeId"  type:"String"  optional:"false"
+Attr: "visualThemeSetId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateVisualTheme"
+Attr: "visualThemeId"  type:"String"  optional:"false"
+Attr: "visualThemeSetId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteVisualTheme"
+Attr: "visualThemeId"  type:"String"  optional:"false"
+
+
+Servicename: "createVisualThemeResource"
+Attr: "visualThemeId"  type:"String"  optional:"false"
+Attr: "resourceTypeEnumId"  type:"String"  optional:"false"
+Attr: "resourceValue"  type:"Long"  optional:"true"
+
+
+Servicename: "updateVisualThemeResource"
+Attr: "visualThemeId"  type:"String"  optional:"false"
+Attr: "resourceTypeEnumId"  type:"String"  optional:"false"
+Attr: "sequenceId"  type:"String"  optional:"false"
+Attr: "resourceValue"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteVisualThemeResource"
+Attr: "visualThemeId"  type:"String"  optional:"false"
+Attr: "resourceTypeEnumId"  type:"String"  optional:"false"
+Attr: "sequenceId"  type:"String"  optional:"false"
+
+
+Servicename: "visualThemePermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "tempExprPermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "createTemporalExpression"
+Attr: "tempExprId"  type:"String"  optional:"true"
+Attr: "tempExprTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "date1"  type:"Timestamp"  optional:"true"
+Attr: "date2"  type:"Timestamp"  optional:"true"
+Attr: "integer1"  type:"Long"  optional:"true"
+Attr: "integer2"  type:"Long"  optional:"true"
+Attr: "string1"  type:"String"  optional:"true"
+Attr: "string2"  type:"String"  optional:"true"
+
+
+Servicename: "updateTemporalExpression"
+Attr: "tempExprId"  type:"String"  optional:"false"
+Attr: "tempExprTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "date1"  type:"Timestamp"  optional:"true"
+Attr: "date2"  type:"Timestamp"  optional:"true"
+Attr: "integer1"  type:"Long"  optional:"true"
+Attr: "integer2"  type:"Long"  optional:"true"
+Attr: "string1"  type:"String"  optional:"true"
+Attr: "string2"  type:"String"  optional:"true"
+
+
+Servicename: "createTemporalExpressionAssoc"
+Attr: "fromTempExprId"  type:"String"  optional:"false"
+Attr: "toTempExprId"  type:"String"  optional:"false"
+Attr: "exprAssocType"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTemporalExpressionAssoc"
+Attr: "fromTempExprId"  type:"String"  optional:"false"
+Attr: "toTempExprId"  type:"String"  optional:"false"
+
+
+Servicename: "createPortalPagePortlet"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPortletId"  type:"String"  optional:"false"
+Attr: "columnSeqId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "updatePortalPagePortlet"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPortletId"  type:"String"  optional:"false"
+Attr: "portletSeqId"  type:"String"  optional:"false"
+Attr: "columnSeqId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "deletePortalPagePortlet"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPortletId"  type:"String"  optional:"false"
+Attr: "portletSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "movePortletToPortalPage"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPortletId"  type:"String"  optional:"false"
+Attr: "portletSeqId"  type:"String"  optional:"false"
+Attr: "newPortalPageId"  type:"String"  optional:"false"
+
+
+Servicename: "createPortalPage"
+Attr: "portalPageId"  type:"String"  optional:"true"
+Attr: "portalPageName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "helpContentId"  type:"String"  optional:"true"
+Attr: "ownerUserLoginId"  type:"String"  optional:"true"
+Attr: "originalPortalPageId"  type:"String"  optional:"true"
+Attr: "parentPortalPageId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "securityGroupId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePortalPage"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPageName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "helpContentId"  type:"String"  optional:"true"
+Attr: "ownerUserLoginId"  type:"String"  optional:"true"
+Attr: "originalPortalPageId"  type:"String"  optional:"true"
+Attr: "parentPortalPageId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "securityGroupId"  type:"String"  optional:"true"
+
+
+Servicename: "deletePortalPage"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPageName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "helpContentId"  type:"String"  optional:"true"
+Attr: "ownerUserLoginId"  type:"String"  optional:"true"
+Attr: "originalPortalPageId"  type:"String"  optional:"true"
+Attr: "parentPortalPageId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "securityGroupId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePortalPageSeq"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPageName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "helpContentId"  type:"String"  optional:"true"
+Attr: "ownerUserLoginId"  type:"String"  optional:"true"
+Attr: "originalPortalPageId"  type:"String"  optional:"true"
+Attr: "parentPortalPageId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "securityGroupId"  type:"String"  optional:"true"
+Attr: "mode"  type:"String"  optional:"false"
+
+
+Servicename: "addPortalPageColumn"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "columnSeqId"  type:"String"  optional:"true"
+Attr: "columnWidthPixels"  type:"Long"  optional:"true"
+Attr: "columnWidthPercentage"  type:"Long"  optional:"true"
+
+
+Servicename: "updatePortalPageColumn"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "columnSeqId"  type:"String"  optional:"false"
+Attr: "columnWidthPixels"  type:"Long"  optional:"true"
+Attr: "columnWidthPercentage"  type:"Long"  optional:"true"
+
+
+Servicename: "deletePortalPageColumn"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "columnSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "updatePortletSeqDragDrop"
+Attr: "o_portalPageId"  type:"String"  optional:"false"
+Attr: "o_portalPortletId"  type:"String"  optional:"false"
+Attr: "o_portletSeqId"  type:"String"  optional:"false"
+Attr: "d_portalPageId"  type:"String"  optional:"true"
+Attr: "d_portalPortletId"  type:"String"  optional:"true"
+Attr: "d_portletSeqId"  type:"String"  optional:"true"
+Attr: "destinationColumn"  type:"String"  optional:"true"
+Attr: "mode"  type:"String"  optional:"false"
+
+
+Servicename: "createPortletAttribute"
+Attr: "portalPageId"  type:"String"  optional:"false"
+Attr: "portalPortletId"  type:"String"  optional:"false"
+Attr: "portletSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+Attr: "attrType"  type:"Long"  optional:"true"
+
+
+Servicename: "getPortletAttributes"
+Attr: "portalPageId"  type:"String"  optional:"true"
+Attr: "ownerUserLoginId"  type:"String"  optional:"true"
+Attr: "portalPortletId"  type:"String"  optional:"false"
+Attr: "portletSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "createGeo"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "geoTypeId"  type:"String"  optional:"false"
+Attr: "geoName"  type:"String"  optional:"false"
+Attr: "geoCode"  type:"String"  optional:"true"
+Attr: "geoSecCode"  type:"String"  optional:"true"
+Attr: "abbreviation"  type:"String"  optional:"true"
+Attr: "wellKnownText"  type:"String"  optional:"true"
+
+
+Servicename: "updateGeo"
+Attr: "geoId"  type:"String"  optional:"false"
+Attr: "geoTypeId"  type:"String"  optional:"true"
+Attr: "geoName"  type:"String"  optional:"true"
+Attr: "geoCode"  type:"String"  optional:"true"
+Attr: "geoSecCode"  type:"String"  optional:"true"
+Attr: "abbreviation"  type:"String"  optional:"true"
+Attr: "wellKnownText"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGeo"
+Attr: "geoId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteGeoAssoc"
+Attr: "geoId"  type:"String"  optional:"false"
+Attr: "geoIdTo"  type:"String"  optional:"false"
+
+
+Servicename: "linkGeos"
+Attr: "geoIds"  type:"List"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"false"
+Attr: "geoAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "getRelatedGeos"
+Attr: "geoId"  type:"String"  optional:"false"
+Attr: "geoAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "getCountryList"
+
+
+Servicename: "getAssociatedStateList"
+Attr: "countryGeoId"  type:"String"  optional:"false"
+Attr: "listOrderBy"  type:"String"  optional:"true"
+
+
+Servicename: "createGeoPoint"
+Attr: "geoPointTypeEnumId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"false"
+Attr: "latitude"  type:"String"  optional:"false"
+Attr: "longitude"  type:"String"  optional:"false"
+Attr: "elevation"  type:"BigDecimal"  optional:"true"
+Attr: "elevationUomId"  type:"String"  optional:"true"
+Attr: "information"  type:"String"  optional:"true"
+
+
+Servicename: "updateGeoPoint"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "geoPointTypeEnumId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"false"
+Attr: "latitude"  type:"String"  optional:"false"
+Attr: "longitude"  type:"String"  optional:"false"
+Attr: "elevation"  type:"BigDecimal"  optional:"true"
+Attr: "elevationUomId"  type:"String"  optional:"true"
+Attr: "information"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGeoPoint"
+Attr: "geoPointId"  type:"String"  optional:"false"
+
+
+Servicename: "getServerTimestamp"
+
+
+Servicename: "getServerTimeZone"
+
+
+Servicename: "getServerTimestampAsLong"
+
+
+Servicename: "createJsLanguageFileMapping"
+Attr: "encoding"  type:"String"  optional:"true"
+
+
+Servicename: "getAllMetrics"
+
+
+Servicename: "resetMetric"
+Attr: "name"  type:"String"  optional:"false"
+
+
+Servicename: "createGeoAssocType"
+Attr: "geoAssocTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateGeoAssocType"
+Attr: "geoAssocTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGeoAssocType"
+Attr: "geoAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGeoType"
+Attr: "geoTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateGeoType"
+Attr: "geoTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGeoType"
+Attr: "geoTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPeriodType"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "periodLength"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePeriodType"
+Attr: "periodTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "periodLength"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "deletePeriodType"
+Attr: "periodTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createUserPrefGroupType"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateUserPrefGroupType"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteUserPrefGroupType"
+Attr: "userPrefGroupTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createUomType"
+Attr: "uomTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateUomType"
+Attr: "uomTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteUomType"
+Attr: "uomTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createUomGroup"
+Attr: "uomGroupId"  type:"String"  optional:"false"
+Attr: "uomId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteUomGroup"
+Attr: "uomGroupId"  type:"String"  optional:"false"
+Attr: "uomId"  type:"String"  optional:"false"
+
+
+Servicename: "createStatusValidChange"
+Attr: "conditionExpression"  type:"String"  optional:"true"
+Attr: "transitionName"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusIdTo"  type:"String"  optional:"false"
+
+
+Servicename: "updateStatusValidChange"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusIdTo"  type:"String"  optional:"false"
+Attr: "conditionExpression"  type:"String"  optional:"true"
+Attr: "transitionName"  type:"String"  optional:"true"
+
+
+Servicename: "deleteStatusValidChange"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusIdTo"  type:"String"  optional:"false"
+
+
+Servicename: "createUom"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "uomTypeId"  type:"String"  optional:"true"
+Attr: "abbreviation"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateUom"
+Attr: "uomId"  type:"String"  optional:"false"
+Attr: "uomTypeId"  type:"String"  optional:"true"
+Attr: "abbreviation"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteUom"
+Attr: "uomId"  type:"String"  optional:"false"
+
+

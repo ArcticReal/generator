@@ -1,0 +1,13 @@
+ofbiz_applications_accounting_servicedef_services_upgrade.xml
+Servicename: "migrateStatusToGlReconciliation"
+
+
+Servicename: "migrateStatusToFinAccountTrans"
+
+
+Servicename: "migrateFixedAssetMaintMeter"
+
+
+Servicename: "migrateAgreementWorkEffortAppl"
+
+

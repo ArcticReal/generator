@@ -1,0 +1,21 @@
+ofbiz_applications_order_servicedef_services_reservations.xml
+Servicename: "createAccommodationSpot"
+Attr: "accommodationSpotId"  type:"String"  optional:"true"
+Attr: "accommodationClassId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "numberOfSpaces"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAccommodationSpot"
+Attr: "accommodationSpotId"  type:"String"  optional:"false"
+Attr: "accommodationClassId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "numberOfSpaces"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAccommodationSpot"
+Attr: "accommodationSpotId"  type:"String"  optional:"false"
+
+

@@ -1,0 +1,93 @@
+ofbiz_applications_product_servicedef_services_maint.xml
+Servicename: "copyCategoryProductMembers"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "productCategoryIdTo"  type:"String"  optional:"false"
+Attr: "validDate"  type:"Timestamp"  optional:"true"
+Attr: "recurse"  type:"String"  optional:"true"
+
+
+Servicename: "expireAllCategoryProductMembers"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeExpiredCategoryProductMembers"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "validDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "discVirtualsWithDiscVariants"
+
+
+Servicename: "removeCategoryMembersOfDiscProducts"
+
+
+Servicename: "removeDuplicateOpenEndedCategoryMembers"
+
+
+Servicename: "makeStandAloneFromSingleVariantVirtuals"
+
+
+Servicename: "mergeVirtualWithSingleVariant"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "removeOld"  type:"Boolean"  optional:"false"
+Attr: "test"  type:"Boolean"  optional:"true"
+
+
+Servicename: "setAllProductImageNames"
+Attr: "pattern"  type:"String"  optional:"true"
+
+
+Servicename: "clearAllVirtualProductImageNames"
+
+
+Servicename: "attachProductFeaturesToCategory"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "doSubCategories"  type:"String"  optional:"true"
+
+
+Servicename: "checkImageUrlForAllCategories"
+Attr: "topCategory"  type:"String"  optional:"true"
+Attr: "excludeEmpty"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getAllCategories"
+Attr: "topCategory"  type:"String"  optional:"true"
+
+
+Servicename: "getRelatedCategories"
+Attr: "parentProductCategoryId"  type:"String"  optional:"false"
+Attr: "categories"  type:"java.util.List"  optional:"true"
+
+
+Servicename: "getCategoryTrail"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "checkImageUrlForCategoryAndProduct"
+Attr: "categoryId"  type:"String"  optional:"false"
+
+
+Servicename: "checkImageUrlForCategory"
+Attr: "categoryId"  type:"String"  optional:"false"
+
+
+Servicename: "checkImageUrlForProduct"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "checkImageUrl"
+Attr: "imageUrl"  type:"String"  optional:"false"
+
+
+Servicename: "purgeOldStoreAutoPromos"
+Attr: "productStoreId"  type:"String"  optional:"true"
+
+
+Servicename: "updateOldInventoryToDetailAll"
+
+
+Servicename: "updateOldInventoryToDetailSingle"
+Attr: "inventoryItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+

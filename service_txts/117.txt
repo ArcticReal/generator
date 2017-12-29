@@ -1,0 +1,24 @@
+ofbiz_plugins_skytalaPlugin_servicedef_services.xml
+Servicename: "createSkytalaPlugin"
+
+
+Servicename: "testservicedie2te"
+Attr: "Id"  type:"String"  optional:"true"
+Attr: "name"  type:"String"  optional:"true"
+
+
+Servicename: "getallproducts"
+Attr: "ID"  type:"String"  optional:"true"
+Attr: "Name"  type:"String"  optional:"true"
+
+
+Servicename: "simpletest"
+Attr: "eingabe"  type:"String"  optional:"true"
+
+
+Servicename: "simplesoap"
+Attr: "defaultValue"  type:"Double"  optional:"false"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "createOfbizDemoByJavaService"

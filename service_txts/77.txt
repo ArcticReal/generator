@@ -1,0 +1,8 @@
+ofbiz_applications_product_servicedef_services_perm.xml
+Servicename: "facilityPermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+

@@ -1,0 +1,58 @@
+ofbiz_applications_accounting_servicedef_services_cybersource.xml
+Servicename: "cyberSourceCCAuth"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "processAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "customerIpAddress"  type:"String"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "creditCard"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "cardSecurityCode"  type:"String"  optional:"true"
+
+
+Servicename: "cyberSourceCCCapture"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "captureAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "cyberSourceCCRelease"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "releaseAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "cyberSourceCCRefund"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "refundAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "cyberSourceCCCredit"
+Attr: "referenceCode"  type:"String"  optional:"false"
+Attr: "creditAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"true"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "creditCard"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "cardSecurityCode"  type:"String"  optional:"true"
+
+

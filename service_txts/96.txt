@@ -1,0 +1,126 @@
+ofbiz_applications_workeffort_servicedef_services_timesheet.xml
+Servicename: "createTimesheet"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "clientPartyId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "approvedByUserLoginId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updateTimesheetToInProcess"
+Attr: "timesheetId"  type:"String"  optional:"false"
+
+
+Servicename: "updateTimesheet"
+Attr: "timesheetId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "clientPartyId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "approvedByUserLoginId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTimesheet"
+Attr: "timesheetId"  type:"String"  optional:"false"
+
+
+Servicename: "createTimesheets"
+Attr: "partyIdList"  type:"List"  optional:"true"
+Attr: "clientPartyId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "createTimesheetForThisWeek"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "clientPartyId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "approvedByUserLoginId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "requiredDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "addTimesheetToInvoice"
+Attr: "timesheetId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "addTimesheetToNewInvoice"
+Attr: "timesheetId"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "addWorkEffortTimeToInvoice"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "combineInvoiceItem"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "addWorkEffortTimeToNewInvoice"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "combineInvoiceItem"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createTimesheetRole"
+Attr: "timesheetId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteTimesheetRole"
+Attr: "timesheetId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTimeEntry"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "rateTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "timesheetId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "hours"  type:"BigDecimal"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updateTimeEntry"
+Attr: "timeEntryId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "rateTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "timesheetId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "hours"  type:"BigDecimal"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTimeEntry"
+Attr: "timeEntryId"  type:"String"  optional:"false"
+
+
+Servicename: "unlinkInvoiceFromTimeEntry"
+Attr: "timeEntryId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "getTimeEntryRate"
+Attr: "timeEntryId"  type:"String"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+
+

@@ -1,0 +1,1381 @@
+ofbiz_applications_order_servicedef_services.xml
+Servicename: "orderNotificationInterface"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "screenUri"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sendTo"  type:"String"  optional:"true"
+Attr: "sendCc"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"true"
+Attr: "temporaryAnonymousUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "sendOrderConfirmation"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "screenUri"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sendTo"  type:"String"  optional:"true"
+Attr: "sendCc"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"true"
+Attr: "temporaryAnonymousUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "sendOrderChangeNotification"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "screenUri"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sendTo"  type:"String"  optional:"true"
+Attr: "sendCc"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"true"
+Attr: "temporaryAnonymousUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "sendOrderCompleteNotification"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "screenUri"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sendTo"  type:"String"  optional:"true"
+Attr: "sendCc"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"true"
+Attr: "temporaryAnonymousUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "sendOrderBackorderNotification"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "screenUri"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sendTo"  type:"String"  optional:"true"
+Attr: "sendCc"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"true"
+Attr: "temporaryAnonymousUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "sendOrderPayRetryNotification"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "screenUri"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sendTo"  type:"String"  optional:"true"
+Attr: "sendCc"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"true"
+Attr: "temporaryAnonymousUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "sendProcessNotification"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "adminEmailList"  type:"String"  optional:"false"
+Attr: "assignedPartyId"  type:"String"  optional:"true"
+Attr: "assignedRoleTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "createOrderNotificationLog"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "emailType"  type:"String"  optional:"false"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "storeOrder"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "placingCustomerPartyId"  type:"String"  optional:"true"
+Attr: "billToCustomerPartyId"  type:"String"  optional:"true"
+Attr: "shipToCustomerPartyId"  type:"String"  optional:"true"
+Attr: "endUserCustomerPartyId"  type:"String"  optional:"true"
+Attr: "billFromVendorPartyId"  type:"String"  optional:"true"
+Attr: "shipFromVendorPartyId"  type:"String"  optional:"true"
+Attr: "supplierAgentPartyId"  type:"String"  optional:"true"
+Attr: "orderName"  type:"String"  optional:"true"
+Attr: "visitId"  type:"String"  optional:"true"
+Attr: "affiliateId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "originFacilityId"  type:"String"  optional:"true"
+Attr: "transactionId"  type:"String"  optional:"true"
+Attr: "terminalId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "autoOrderShoppingListId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+Attr: "internalCode"  type:"String"  optional:"true"
+Attr: "distributorId"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+Attr: "salesChannelEnumId"  type:"String"  optional:"true"
+Attr: "orderItemGroups"  type:"List"  optional:"true"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "orderTerms"  type:"List"  optional:"true"
+Attr: "workEfforts"  type:"List"  optional:"true"
+Attr: "orderAdjustments"  type:"List"  optional:"false"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "shippingAmount"  type:"BigDecimal"  optional:"true"
+Attr: "firstAttemptOrderId"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"false"
+Attr: "grandTotal"  type:"BigDecimal"  optional:"true"
+Attr: "taxAmount"  type:"BigDecimal"  optional:"true"
+Attr: "orderDate"  type:"Timestamp"  optional:"true"
+Attr: "orderItemShipGroupInfo"  type:"List"  optional:"true"
+Attr: "orderItemAttributes"  type:"List"  optional:"true"
+Attr: "orderAttributes"  type:"List"  optional:"true"
+Attr: "orderPaymentInfo"  type:"List"  optional:"true"
+Attr: "orderContactMechs"  type:"List"  optional:"true"
+Attr: "orderItemContactMechs"  type:"List"  optional:"true"
+Attr: "orderItemPriceInfos"  type:"List"  optional:"true"
+Attr: "orderProductPromoUses"  type:"List"  optional:"true"
+Attr: "orderProductPromoCodes"  type:"Set"  optional:"true"
+Attr: "orderItemSurveyResponses"  type:"List"  optional:"true"
+Attr: "trackingCodeOrders"  type:"List"  optional:"true"
+Attr: "orderAdditionalPartyRoleMap"  type:"Map"  optional:"true"
+Attr: "orderItemAssociations"  type:"List"  optional:"true"
+Attr: "orderInternalNotes"  type:"List"  optional:"true"
+Attr: "orderNotes"  type:"List"  optional:"true"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "originOrderId"  type:"String"  optional:"true"
+
+
+Servicename: "callProcessOrderPayments"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "manualHold"  type:"Boolean"  optional:"true"
+
+
+Servicename: "createOrderFromShoppingCart"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+
+
+Servicename: "createSimpleNonProductSalesOrder"
+Attr: "paymentMethodId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "itemMap"  type:"Map"  optional:"false"
+
+
+Servicename: "createOrderItemBilling"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "itemIssuanceId"  type:"String"  optional:"true"
+Attr: "shipmentReceiptId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "orderAdjustmentPermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "createOrderAdjustment"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "recurringAmount"  type:"BigDecimal"  optional:"true"
+Attr: "amountAlreadyIncluded"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "isManual"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "originalAdjustmentId"  type:"String"  optional:"true"
+Attr: "oldAmountPerQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "oldPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateOrderAdjustment"
+Attr: "orderAdjustmentId"  type:"String"  optional:"false"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "recurringAmount"  type:"BigDecimal"  optional:"true"
+Attr: "amountAlreadyIncluded"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "isManual"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "originalAdjustmentId"  type:"String"  optional:"true"
+Attr: "oldAmountPerQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "oldPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteOrderAdjustment"
+Attr: "orderAdjustmentId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "productPromoCodeId"  type:"String"  optional:"true"
+
+
+Servicename: "createOrderAdjustmentBilling"
+Attr: "orderAdjustmentId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createPaymentFromPreference"
+Attr: "orderPaymentPreferenceId"  type:"String"  optional:"false"
+Attr: "paymentFromId"  type:"String"  optional:"true"
+Attr: "paymentRefNum"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "eventDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateTrackingNumber"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "trackingNumber"  type:"String"  optional:"false"
+
+
+Servicename: "resetGrandTotal"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "setEmptyGrandTotals"
+Attr: "forceAll"  type:"Boolean"  optional:"true"
+
+
+Servicename: "recalcShippingTotal"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "recalcTaxTotal"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "changeOrderStatus"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "setItemStatus"  type:"String"  optional:"true"
+Attr: "changeReason"  type:"String"  optional:"true"
+
+
+Servicename: "changeOrderItemStatus"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "fromStatusId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusDateTime"  type:"Timestamp"  optional:"true"
+Attr: "changeReason"  type:"String"  optional:"true"
+
+
+Servicename: "cancelOrderItem"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "itemReasonMap"  type:"Map"  optional:"true"
+Attr: "itemCommentMap"  type:"Map"  optional:"true"
+Attr: "itemQtyMap"  type:"Map"  optional:"true"
+
+
+Servicename: "cancelOrderItemNoActions"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateOrderItems"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"String"  optional:"true"
+Attr: "calcTax"  type:"Boolean"  optional:"true"
+Attr: "itemDescriptionMap"  type:"Map"  optional:"true"
+Attr: "itemQtyMap"  type:"Map"  optional:"false"
+Attr: "itemPriceMap"  type:"Map"  optional:"false"
+Attr: "overridePriceMap"  type:"Map"  optional:"false"
+Attr: "itemReasonMap"  type:"Map"  optional:"true"
+Attr: "itemCommentMap"  type:"Map"  optional:"true"
+Attr: "itemAttributesMap"  type:"Map"  optional:"true"
+Attr: "itemShipDateMap"  type:"Map"  optional:"true"
+Attr: "itemDeliveryDateMap"  type:"Map"  optional:"true"
+
+
+Servicename: "loadCartForUpdate"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "userLogin"  type:"String"  optional:"false"
+
+
+Servicename: "saveUpdatedCartToOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "calcTax"  type:"Boolean"  optional:"true"
+Attr: "deleteItems"  type:"Boolean"  optional:"true"
+Attr: "changeMap"  type:"Map"  optional:"false"
+
+
+Servicename: "appendOrderItem"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "basePrice"  type:"BigDecimal"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "overridePrice"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "orderItemTypeId"  type:"String"  optional:"true"
+Attr: "changeComments"  type:"String"  optional:"true"
+Attr: "itemDesiredDeliveryDate"  type:"Timestamp"  optional:"true"
+Attr: "itemAttributesMap"  type:"Map"  optional:"true"
+Attr: "calcTax"  type:"Boolean"  optional:"true"
+
+
+Servicename: "recreateOrderAdjustments"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "processOrderPayments"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "updateOrderPaymentPreference"
+Attr: "orderPaymentPreferenceId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "productPricePurposeId"  type:"String"  optional:"true"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "securityCode"  type:"String"  optional:"true"
+Attr: "track2"  type:"String"  optional:"true"
+Attr: "presentFlag"  type:"String"  optional:"true"
+Attr: "swipedFlag"  type:"String"  optional:"true"
+Attr: "overflowFlag"  type:"String"  optional:"true"
+Attr: "maxAmount"  type:"BigDecimal"  optional:"true"
+Attr: "processAttempt"  type:"Long"  optional:"true"
+Attr: "billingPostalCode"  type:"String"  optional:"true"
+Attr: "manualAuthCode"  type:"String"  optional:"true"
+Attr: "manualRefNum"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "needsNsfRetry"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "checkOutPaymentId"  type:"String"  optional:"true"
+
+
+Servicename: "checkOrderItemStatus"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "updateOrderStatusFromReceipt"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "autoCancelOrderItems"
+
+
+Servicename: "setAllowOrderSplit"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "getOrderItemShipGroupEstimatedShipDate"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "addOrderRole"
+Attr: "removeOld"  type:"Boolean"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "removeOrderRole"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderPaymentPreference"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "productPricePurposeId"  type:"String"  optional:"true"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "securityCode"  type:"String"  optional:"true"
+Attr: "track2"  type:"String"  optional:"true"
+Attr: "presentFlag"  type:"String"  optional:"true"
+Attr: "swipedFlag"  type:"String"  optional:"true"
+Attr: "overflowFlag"  type:"String"  optional:"true"
+Attr: "maxAmount"  type:"BigDecimal"  optional:"true"
+Attr: "processAttempt"  type:"Long"  optional:"true"
+Attr: "billingPostalCode"  type:"String"  optional:"true"
+Attr: "manualAuthCode"  type:"String"  optional:"true"
+Attr: "manualRefNum"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "needsNsfRetry"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "createOrderNote"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "note"  type:"String"  optional:"false"
+Attr: "internalNote"  type:"String"  optional:"false"
+Attr: "noteName"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderNote"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "noteId"  type:"String"  optional:"false"
+Attr: "internalNote"  type:"String"  optional:"false"
+
+
+Servicename: "checkDigitalItemFulfillment"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "fulfillDigitalItems"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItems"  type:"java.util.List"  optional:"false"
+
+
+Servicename: "itemFulfillmentInterface"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "productContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "invoiceServiceItems"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "getOrderedSummaryInformation"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "monthsToInclude"  type:"Integer"  optional:"true"
+
+
+Servicename: "getOrderHeaderInformation"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "getOrderShippingAmount"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "getOrderStatus"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderDeliverySchedule"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "estimatedReadyDate"  type:"Timestamp"  optional:"true"
+Attr: "cartons"  type:"Long"  optional:"true"
+Attr: "skidsPallets"  type:"Long"  optional:"true"
+Attr: "unitsPieces"  type:"BigDecimal"  optional:"true"
+Attr: "totalCubicSize"  type:"BigDecimal"  optional:"true"
+Attr: "totalCubicUomId"  type:"String"  optional:"true"
+Attr: "totalWeight"  type:"BigDecimal"  optional:"true"
+Attr: "totalWeightUomId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderDeliverySchedule"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "estimatedReadyDate"  type:"Timestamp"  optional:"true"
+Attr: "cartons"  type:"Long"  optional:"true"
+Attr: "skidsPallets"  type:"Long"  optional:"true"
+Attr: "unitsPieces"  type:"BigDecimal"  optional:"true"
+Attr: "totalCubicSize"  type:"BigDecimal"  optional:"true"
+Attr: "totalCubicUomId"  type:"String"  optional:"true"
+Attr: "totalWeight"  type:"BigDecimal"  optional:"true"
+Attr: "totalWeightUomId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "sendOrderDeliveryScheduleNotification"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "checkSupplierRelatedOrderPermission"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "checkAction"  type:"String"  optional:"true"
+Attr: "callingMethodName"  type:"String"  optional:"true"
+
+
+Servicename: "updateShoppingListQuantitiesFromOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "shoppingCartRemoteTest"
+Attr: "cart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+
+
+Servicename: "shoppingCartTest"
+
+
+Servicename: "createOrderShipment"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentItemSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateOrderShipment"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentItemSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteOrderShipment"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "massOrderChangeInterface"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massPickOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massChangeOrderApproved"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massProcessOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massHoldOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massCancelOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massCancelRemainingPurchaseOrderItems"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massRejectOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massQuickShipOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+
+
+Servicename: "massPrintOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+Attr: "screenLocation"  type:"String"  optional:"false"
+Attr: "printerName"  type:"String"  optional:"true"
+
+
+Servicename: "massCreateFileForOrders"
+Attr: "orderIdList"  type:"List"  optional:"false"
+Attr: "screenLocation"  type:"String"  optional:"false"
+
+
+Servicename: "getNextOrderId"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "placingCustomerPartyId"  type:"String"  optional:"true"
+Attr: "billToCustomerPartyId"  type:"String"  optional:"true"
+Attr: "shipToCustomerPartyId"  type:"String"  optional:"true"
+Attr: "endUserCustomerPartyId"  type:"String"  optional:"true"
+Attr: "billFromVendorPartyId"  type:"String"  optional:"true"
+Attr: "shipFromVendorPartyId"  type:"String"  optional:"true"
+Attr: "supplierAgentPartyId"  type:"String"  optional:"true"
+Attr: "orderName"  type:"String"  optional:"true"
+Attr: "visitId"  type:"String"  optional:"true"
+Attr: "affiliateId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "originFacilityId"  type:"String"  optional:"true"
+Attr: "transactionId"  type:"String"  optional:"true"
+Attr: "terminalId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "autoOrderShoppingListId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+Attr: "internalCode"  type:"String"  optional:"true"
+Attr: "distributorId"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+Attr: "salesChannelEnumId"  type:"String"  optional:"true"
+Attr: "orderItemGroups"  type:"List"  optional:"true"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "orderTerms"  type:"List"  optional:"true"
+Attr: "workEfforts"  type:"List"  optional:"true"
+Attr: "orderAdjustments"  type:"List"  optional:"false"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "shippingAmount"  type:"BigDecimal"  optional:"true"
+Attr: "firstAttemptOrderId"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"false"
+Attr: "grandTotal"  type:"BigDecimal"  optional:"true"
+Attr: "taxAmount"  type:"BigDecimal"  optional:"true"
+Attr: "orderDate"  type:"Timestamp"  optional:"true"
+Attr: "orderItemShipGroupInfo"  type:"List"  optional:"true"
+Attr: "orderItemAttributes"  type:"List"  optional:"true"
+Attr: "orderAttributes"  type:"List"  optional:"true"
+Attr: "orderPaymentInfo"  type:"List"  optional:"true"
+Attr: "orderContactMechs"  type:"List"  optional:"true"
+Attr: "orderItemContactMechs"  type:"List"  optional:"true"
+Attr: "orderItemPriceInfos"  type:"List"  optional:"true"
+Attr: "orderProductPromoUses"  type:"List"  optional:"true"
+Attr: "orderProductPromoCodes"  type:"Set"  optional:"true"
+Attr: "orderItemSurveyResponses"  type:"List"  optional:"true"
+Attr: "trackingCodeOrders"  type:"List"  optional:"true"
+Attr: "orderAdditionalPartyRoleMap"  type:"Map"  optional:"true"
+Attr: "orderItemAssociations"  type:"List"  optional:"true"
+Attr: "orderInternalNotes"  type:"List"  optional:"true"
+Attr: "orderNotes"  type:"List"  optional:"true"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "originOrderId"  type:"String"  optional:"true"
+
+
+Servicename: "orderSequence_enforced"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "placingCustomerPartyId"  type:"String"  optional:"true"
+Attr: "billToCustomerPartyId"  type:"String"  optional:"true"
+Attr: "shipToCustomerPartyId"  type:"String"  optional:"true"
+Attr: "endUserCustomerPartyId"  type:"String"  optional:"true"
+Attr: "billFromVendorPartyId"  type:"String"  optional:"true"
+Attr: "shipFromVendorPartyId"  type:"String"  optional:"true"
+Attr: "supplierAgentPartyId"  type:"String"  optional:"true"
+Attr: "orderName"  type:"String"  optional:"true"
+Attr: "visitId"  type:"String"  optional:"true"
+Attr: "affiliateId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "originFacilityId"  type:"String"  optional:"true"
+Attr: "transactionId"  type:"String"  optional:"true"
+Attr: "terminalId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "autoOrderShoppingListId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+Attr: "internalCode"  type:"String"  optional:"true"
+Attr: "distributorId"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+Attr: "salesChannelEnumId"  type:"String"  optional:"true"
+Attr: "orderItemGroups"  type:"List"  optional:"true"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "orderTerms"  type:"List"  optional:"true"
+Attr: "workEfforts"  type:"List"  optional:"true"
+Attr: "orderAdjustments"  type:"List"  optional:"false"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "shippingAmount"  type:"BigDecimal"  optional:"true"
+Attr: "firstAttemptOrderId"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"false"
+Attr: "grandTotal"  type:"BigDecimal"  optional:"true"
+Attr: "taxAmount"  type:"BigDecimal"  optional:"true"
+Attr: "orderDate"  type:"Timestamp"  optional:"true"
+Attr: "orderItemShipGroupInfo"  type:"List"  optional:"true"
+Attr: "orderItemAttributes"  type:"List"  optional:"true"
+Attr: "orderAttributes"  type:"List"  optional:"true"
+Attr: "orderPaymentInfo"  type:"List"  optional:"true"
+Attr: "orderContactMechs"  type:"List"  optional:"true"
+Attr: "orderItemContactMechs"  type:"List"  optional:"true"
+Attr: "orderItemPriceInfos"  type:"List"  optional:"true"
+Attr: "orderProductPromoUses"  type:"List"  optional:"true"
+Attr: "orderProductPromoCodes"  type:"Set"  optional:"true"
+Attr: "orderItemSurveyResponses"  type:"List"  optional:"true"
+Attr: "trackingCodeOrders"  type:"List"  optional:"true"
+Attr: "orderAdditionalPartyRoleMap"  type:"Map"  optional:"true"
+Attr: "orderItemAssociations"  type:"List"  optional:"true"
+Attr: "orderInternalNotes"  type:"List"  optional:"true"
+Attr: "orderNotes"  type:"List"  optional:"true"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "originOrderId"  type:"String"  optional:"true"
+Attr: "partyAcctgPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "createOrderHeader"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"String"  optional:"true"
+Attr: "orderName"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+Attr: "salesChannelEnumId"  type:"String"  optional:"true"
+Attr: "orderDate"  type:"Timestamp"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "pickSheetPrintedDate"  type:"Timestamp"  optional:"true"
+Attr: "visitId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "createdBy"  type:"String"  optional:"true"
+Attr: "firstAttemptOrderId"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"true"
+Attr: "syncStatusId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "originFacilityId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "terminalId"  type:"String"  optional:"true"
+Attr: "transactionId"  type:"String"  optional:"true"
+Attr: "autoOrderShoppingListId"  type:"String"  optional:"true"
+Attr: "needsInventoryIssuance"  type:"String"  optional:"true"
+Attr: "isRushOrder"  type:"String"  optional:"true"
+Attr: "internalCode"  type:"String"  optional:"true"
+Attr: "remainingSubTotal"  type:"BigDecimal"  optional:"true"
+Attr: "grandTotal"  type:"BigDecimal"  optional:"true"
+Attr: "isViewed"  type:"String"  optional:"true"
+Attr: "invoicePerShipment"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderHeader"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderTypeId"  type:"String"  optional:"true"
+Attr: "orderName"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+Attr: "salesChannelEnumId"  type:"String"  optional:"true"
+Attr: "orderDate"  type:"Timestamp"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "pickSheetPrintedDate"  type:"Timestamp"  optional:"true"
+Attr: "visitId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "createdBy"  type:"String"  optional:"true"
+Attr: "firstAttemptOrderId"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"true"
+Attr: "syncStatusId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "originFacilityId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "terminalId"  type:"String"  optional:"true"
+Attr: "transactionId"  type:"String"  optional:"true"
+Attr: "autoOrderShoppingListId"  type:"String"  optional:"true"
+Attr: "needsInventoryIssuance"  type:"String"  optional:"true"
+Attr: "isRushOrder"  type:"String"  optional:"true"
+Attr: "internalCode"  type:"String"  optional:"true"
+Attr: "remainingSubTotal"  type:"BigDecimal"  optional:"true"
+Attr: "grandTotal"  type:"BigDecimal"  optional:"true"
+Attr: "isViewed"  type:"String"  optional:"true"
+Attr: "invoicePerShipment"  type:"String"  optional:"true"
+
+
+Servicename: "createCommunicationEventOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "communicationEventId"  type:"String"  optional:"false"
+
+
+Servicename: "removeCommunicationEventOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "communicationEventId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemShipGroup"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "vendorPartyId"  type:"String"  optional:"true"
+Attr: "carrierPartyId"  type:"String"  optional:"true"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "telecomContactMechId"  type:"String"  optional:"true"
+Attr: "trackingNumber"  type:"String"  optional:"true"
+Attr: "shippingInstructions"  type:"String"  optional:"true"
+Attr: "maySplit"  type:"String"  optional:"true"
+Attr: "giftMessage"  type:"String"  optional:"true"
+Attr: "isGift"  type:"String"  optional:"true"
+Attr: "shipAfterDate"  type:"Timestamp"  optional:"true"
+Attr: "shipByDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedShipDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedDeliveryDate"  type:"Timestamp"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemShipGroup"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "vendorPartyId"  type:"String"  optional:"true"
+Attr: "carrierPartyId"  type:"String"  optional:"true"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "telecomContactMechId"  type:"String"  optional:"true"
+Attr: "trackingNumber"  type:"String"  optional:"true"
+Attr: "shippingInstructions"  type:"String"  optional:"true"
+Attr: "maySplit"  type:"String"  optional:"true"
+Attr: "giftMessage"  type:"String"  optional:"true"
+Attr: "isGift"  type:"String"  optional:"true"
+Attr: "shipAfterDate"  type:"Timestamp"  optional:"true"
+Attr: "shipByDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedShipDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedDeliveryDate"  type:"Timestamp"  optional:"true"
+Attr: "oldContactMechId"  type:"String"  optional:"true"
+Attr: "shipmentMethod"  type:"String"  optional:"true"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "createOrderContactMech"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "updateOrderContactMech"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "oldContactMechId"  type:"String"  optional:"true"
+
+
+Servicename: "removeOrderContactMech"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderTerm"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderTerm"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "removeOrderTerm"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "checkCreateDropShipPurchaseOrders"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "addPaymentMethodToOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "paymentMethodId"  type:"String"  optional:"false"
+Attr: "maxAmount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "completePurchaseOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "cancelRemainingPurchaseOrderItems"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "generateReqsFromCancelledPOItems"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "getOrderItemInvoicedAmountAndQuantity"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "findOrders"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderName"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"List"  optional:"true"
+Attr: "orderStatusId"  type:"List"  optional:"true"
+Attr: "productStoreId"  type:"List"  optional:"true"
+Attr: "orderWebSiteId"  type:"List"  optional:"true"
+Attr: "salesChannelEnumId"  type:"List"  optional:"true"
+Attr: "createdBy"  type:"String"  optional:"true"
+Attr: "terminalId"  type:"String"  optional:"true"
+Attr: "transactionId"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+Attr: "internalCode"  type:"String"  optional:"true"
+Attr: "useEntryDate"  type:"String"  optional:"true"
+Attr: "minDate"  type:"String"  optional:"true"
+Attr: "maxDate"  type:"String"  optional:"true"
+Attr: "hasBackOrders"  type:"String"  optional:"true"
+Attr: "userLoginId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"List"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "correspondingPoId"  type:"String"  optional:"true"
+Attr: "subscriptionId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "budgetId"  type:"String"  optional:"true"
+Attr: "quoteId"  type:"String"  optional:"true"
+Attr: "goodIdentificationTypeId"  type:"String"  optional:"true"
+Attr: "goodIdentificationIdValue"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "cardNumber"  type:"String"  optional:"true"
+Attr: "accountNumber"  type:"String"  optional:"true"
+Attr: "paymentStatusId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "softIdentifier"  type:"String"  optional:"true"
+Attr: "serialNumber"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "filterInventoryProblems"  type:"String"  optional:"true"
+Attr: "filterPOsWithRejectedItems"  type:"String"  optional:"true"
+Attr: "filterPOsOpenPastTheirETA"  type:"String"  optional:"true"
+Attr: "filterPartiallyReceivedPOs"  type:"String"  optional:"true"
+Attr: "isViewed"  type:"String"  optional:"true"
+Attr: "shipmentMethod"  type:"String"  optional:"true"
+Attr: "gatewayAvsResult"  type:"String"  optional:"true"
+Attr: "gatewayScoreResult"  type:"String"  optional:"true"
+Attr: "countryGeoId"  type:"String"  optional:"true"
+Attr: "includeCountry"  type:"String"  optional:"true"
+Attr: "viewIndex"  type:"Integer"  optional:"true"
+Attr: "viewSize"  type:"Integer"  optional:"true"
+Attr: "showAll"  type:"String"  optional:"true"
+
+
+Servicename: "checkOrderIsOnBackOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "createTestSalesOrders"
+Attr: "productCategoryId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "numberOfOrders"  type:"Integer"  optional:"true"
+Attr: "shipOrder"  type:"Boolean"  optional:"true"
+Attr: "numberOfProductsPerOrder"  type:"Integer"  optional:"true"
+Attr: "salesChannel"  type:"String"  optional:"true"
+
+
+Servicename: "createTestSalesOrderSingle"
+Attr: "productCategoryId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "numberOfProductsPerOrder"  type:"Integer"  optional:"true"
+Attr: "salesChannel"  type:"String"  optional:"true"
+Attr: "shipOrder"  type:"Boolean"  optional:"true"
+
+
+Servicename: "changeOrderPaymentStatus"
+Attr: "orderPaymentPreferenceId"  type:"String"  optional:"false"
+Attr: "changeReason"  type:"String"  optional:"true"
+
+
+Servicename: "createOrderItemChange"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "changeTypeEnumId"  type:"String"  optional:"false"
+Attr: "changeDatetime"  type:"Timestamp"  optional:"true"
+Attr: "changeUserLogin"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "unitPrice"  type:"BigDecimal"  optional:"true"
+Attr: "itemDescription"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "changeComments"  type:"String"  optional:"true"
+
+
+Servicename: "runSubscriptionAutoReorders"
+
+
+Servicename: "createUpdateShippingAddress"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "setDefaultShipping"  type:"String"  optional:"true"
+Attr: "keepAddressBook"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shipToAttnName"  type:"String"  optional:"true"
+Attr: "shipToName"  type:"String"  optional:"true"
+Attr: "shipToAddress1"  type:"String"  optional:"false"
+Attr: "shipToAddress2"  type:"String"  optional:"true"
+Attr: "shipToCity"  type:"String"  optional:"false"
+Attr: "shipToStateProvinceGeoId"  type:"String"  optional:"false"
+Attr: "shipToPostalCode"  type:"String"  optional:"false"
+Attr: "shipToCountryGeoId"  type:"String"  optional:"false"
+Attr: "shipToContactMechId"  type:"String"  optional:"true"
+Attr: "billToContactMechId"  type:"String"  optional:"true"
+
+
+Servicename: "createUpdateBillingAddress"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "setDefaultBilling"  type:"String"  optional:"true"
+Attr: "keepAddressBook"  type:"String"  optional:"true"
+Attr: "useShippingAddressForBilling"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billToAttnName"  type:"String"  optional:"true"
+Attr: "billToName"  type:"String"  optional:"true"
+Attr: "billToAddress1"  type:"String"  optional:"true"
+Attr: "billToAddress2"  type:"String"  optional:"true"
+Attr: "billToCity"  type:"String"  optional:"true"
+Attr: "billToStateProvinceGeoId"  type:"String"  optional:"true"
+Attr: "billToPostalCode"  type:"String"  optional:"true"
+Attr: "billToCountryGeoId"  type:"String"  optional:"true"
+Attr: "shipToContactMechId"  type:"String"  optional:"true"
+Attr: "billToContactMechId"  type:"String"  optional:"true"
+
+
+Servicename: "createUpdateCreditCard"
+Attr: "expMonth"  type:"String"  optional:"false"
+Attr: "expYear"  type:"String"  optional:"false"
+Attr: "cardType"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "companyNameOnCard"  type:"String"  optional:"true"
+Attr: "titleOnCard"  type:"String"  optional:"true"
+Attr: "firstNameOnCard"  type:"String"  optional:"false"
+Attr: "middleNameOnCard"  type:"String"  optional:"true"
+Attr: "lastNameOnCard"  type:"String"  optional:"false"
+Attr: "suffixOnCard"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+
+
+Servicename: "setUnitPriceAsLastPrice"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "orderTypeId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItems"  type:"List"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "unitCost"  type:"String"  optional:"true"
+Attr: "itemPriceMap"  type:"Map"  optional:"true"
+Attr: "overridePriceMap"  type:"Map"  optional:"true"
+Attr: "orderCurrencyUnitPrice"  type:"String"  optional:"true"
+
+
+Servicename: "cancelAllBackOrders"
+
+
+Servicename: "updateShippingMethodAndCharges"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "oldContactMechId"  type:"String"  optional:"false"
+Attr: "shipmentMethodAndAmount"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "orderAdjustmentId"  type:"String"  optional:"false"
+Attr: "shippingAmount"  type:"String"  optional:"false"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+
+Servicename: "setShippingInstructions"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "shippingInstructions"  type:"String"  optional:"true"
+
+
+Servicename: "setGiftMessage"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "giftMessage"  type:"String"  optional:"true"
+
+
+Servicename: "createAlsoBoughtProductAssocs"
+Attr: "orderEntryFromDateTime"  type:"Timestamp"  optional:"true"
+Attr: "processAllOrders"  type:"Boolean"  optional:"true"
+
+
+Servicename: "createAlsoBoughtProductAssocsForOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "productAvailabalityByFacility"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "addOrderItemShipGroup"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "vendorPartyId"  type:"String"  optional:"true"
+Attr: "carrierPartyId"  type:"String"  optional:"true"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "telecomContactMechId"  type:"String"  optional:"true"
+Attr: "trackingNumber"  type:"String"  optional:"true"
+Attr: "shippingInstructions"  type:"String"  optional:"true"
+Attr: "maySplit"  type:"String"  optional:"true"
+Attr: "giftMessage"  type:"String"  optional:"true"
+Attr: "isGift"  type:"String"  optional:"true"
+Attr: "shipAfterDate"  type:"Timestamp"  optional:"true"
+Attr: "shipByDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedShipDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedDeliveryDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteOrderItemShipGroup"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "addOrderItemShipGroupAssoc"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "supplierPartyId"  type:"String"  optional:"true"
+Attr: "vendorPartyId"  type:"String"  optional:"true"
+Attr: "carrierPartyId"  type:"String"  optional:"true"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "telecomContactMechId"  type:"String"  optional:"true"
+Attr: "trackingNumber"  type:"String"  optional:"true"
+Attr: "shippingInstructions"  type:"String"  optional:"true"
+Attr: "maySplit"  type:"String"  optional:"true"
+Attr: "giftMessage"  type:"String"  optional:"true"
+Attr: "isGift"  type:"String"  optional:"true"
+Attr: "shipAfterDate"  type:"Timestamp"  optional:"true"
+Attr: "shipByDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedShipDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedDeliveryDate"  type:"Timestamp"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateOrderItemShipGroupAssoc"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "totalQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "rowCount"  type:"Integer"  optional:"true"
+Attr: "rowNumber"  type:"Integer"  optional:"true"
+
+
+Servicename: "deleteOrderItemShipGroupAssoc"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createQuoteTerm"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "quoteId"  type:"String"  optional:"false"
+Attr: "quoteItemSeqId"  type:"String"  optional:"true"
+Attr: "termValue"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateQuoteTerm"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "quoteId"  type:"String"  optional:"false"
+Attr: "quoteItemSeqId"  type:"String"  optional:"false"
+Attr: "termValue"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteQuoteTerm"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "quoteId"  type:"String"  optional:"false"
+Attr: "quoteItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderPaymentApplication"
+Attr: "paymentId"  type:"String"  optional:"false"
+
+
+Servicename: "createTestOrderRentalProduct"
+
+
+Servicename: "testCreateShoppinCartAndOrder"
+
+
+Servicename: "createOrderItemAttribute"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemAttribute"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderItemAttribute"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemGroupOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "groupOrderId"  type:"String"  optional:"false"
+
+
+Servicename: "countProductQuantityOrdered"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "MoveItemBetweenShipGroups"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "fromGroupIndex"  type:"String"  optional:"false"
+Attr: "toGroupIndex"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "updateShipGroupShipInfo"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "oldContactMechId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "shipmentMethod"  type:"String"  optional:"true"
+
+
+Servicename: "createOrderContent"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "orderContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "expireOrderContent"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "orderContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createOrderAdjustmentTypeAttr"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderAdjustmentTypeAttr"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderAdjustmentTypeAttr"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesOrderItemFact"
+
+
+Servicename: "updateSalesOrderItemFact"
+
+
+Servicename: "deleteSalesOrderItemFact"
+
+
+Servicename: "createProductOrderItem"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "engagementId"  type:"String"  optional:"false"
+Attr: "engagementItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "updateProductOrderItem"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "engagementId"  type:"String"  optional:"false"
+Attr: "engagementItemSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductOrderItem"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "engagementId"  type:"String"  optional:"false"
+Attr: "engagementItemSeqId"  type:"String"  optional:"false"
+
+

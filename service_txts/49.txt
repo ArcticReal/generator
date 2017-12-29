@@ -1,0 +1,550 @@
+ofbiz_applications_marketing_servicedef_services.xml
+Servicename: "createMarketingCampaign"
+Attr: "parentCampaignId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "campaignName"  type:"String"  optional:"true"
+Attr: "campaignSummary"  type:"String"  optional:"true"
+Attr: "budgetedCost"  type:"BigDecimal"  optional:"true"
+Attr: "actualCost"  type:"BigDecimal"  optional:"true"
+Attr: "estimatedCost"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "isActive"  type:"String"  optional:"true"
+Attr: "convertedLeads"  type:"String"  optional:"true"
+Attr: "expectedResponsePercent"  type:"BigDecimal"  optional:"true"
+Attr: "expectedRevenue"  type:"BigDecimal"  optional:"true"
+Attr: "numSent"  type:"Long"  optional:"true"
+Attr: "startDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateMarketingCampaign"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "parentCampaignId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "campaignName"  type:"String"  optional:"true"
+Attr: "campaignSummary"  type:"String"  optional:"true"
+Attr: "budgetedCost"  type:"BigDecimal"  optional:"true"
+Attr: "actualCost"  type:"BigDecimal"  optional:"true"
+Attr: "estimatedCost"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "isActive"  type:"String"  optional:"true"
+Attr: "convertedLeads"  type:"String"  optional:"true"
+Attr: "expectedResponsePercent"  type:"BigDecimal"  optional:"true"
+Attr: "expectedRevenue"  type:"BigDecimal"  optional:"true"
+Attr: "numSent"  type:"Long"  optional:"true"
+Attr: "startDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "deleteMarketingCampaign"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+
+
+Servicename: "addPriceRuleToMarketingCampaign"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+
+
+Servicename: "removePriceRuleFromMarketingCampaign"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+
+
+Servicename: "addPromoToMarketingCampaign"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "productPromoId"  type:"String"  optional:"false"
+
+
+Servicename: "removePromoFromMarketingCampaign"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "productPromoId"  type:"String"  optional:"false"
+
+
+Servicename: "signUpForContactList"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "email"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "unsubscribeContactListParty"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "email"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "unsubscribeContactListPartyContachMech"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "preferredContactMechId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "createMarketingCampaignRole"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteMarketingCampaignRole"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createContactList"
+Attr: "contactListId"  type:"String"  optional:"true"
+Attr: "contactListTypeId"  type:"String"  optional:"false"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+Attr: "marketingCampaignId"  type:"String"  optional:"true"
+Attr: "contactListName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "singleUse"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "verifyEmailFrom"  type:"String"  optional:"true"
+Attr: "verifyEmailScreen"  type:"String"  optional:"true"
+Attr: "verifyEmailSubject"  type:"String"  optional:"true"
+Attr: "verifyEmailWebSiteId"  type:"String"  optional:"true"
+Attr: "optOutScreen"  type:"String"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactList"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "contactListTypeId"  type:"String"  optional:"true"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+Attr: "marketingCampaignId"  type:"String"  optional:"true"
+Attr: "contactListName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "singleUse"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "verifyEmailFrom"  type:"String"  optional:"true"
+Attr: "verifyEmailScreen"  type:"String"  optional:"true"
+Attr: "verifyEmailSubject"  type:"String"  optional:"true"
+Attr: "verifyEmailWebSiteId"  type:"String"  optional:"true"
+Attr: "optOutScreen"  type:"String"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "removeContactList"
+Attr: "contactListId"  type:"String"  optional:"false"
+
+
+Servicename: "createContactListParty"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "preferredContactMechId"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactListParty"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "preferredContactMechId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "optInVerifyCode"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactListPartyNoUserLogin"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "preferredContactMechId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "optInVerifyCode"  type:"String"  optional:"true"
+Attr: "email"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyEmailContactListParty"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "oldContactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteContactListParty"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createContactListPartyStatus"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "optInVerifyCode"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+Attr: "preferredContactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "sendContactListPartyVerifyEmail"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "optOutOfListFromCommEvent"
+Attr: "communicationEventId"  type:"String"  optional:"false"
+
+
+Servicename: "sendContactListPartySubscribeEmail"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contactListId"  type:"String"  optional:"true"
+Attr: "preferredContactMechId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "sendContactListPartyUnSubscribeVerifyEmail"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contactListId"  type:"String"  optional:"true"
+Attr: "preferredContactMechId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "baseLocation"  type:"String"  optional:"true"
+
+
+Servicename: "sendContactListPartyUnSubscribeEmail"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contactListId"  type:"String"  optional:"true"
+Attr: "preferredContactMechId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactListCommStatus"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "communicationEventId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "messageId"  type:"Long"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "updateCommStatusFromCommEvent"
+Attr: "communicationEventId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "createWebSiteContactList"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateWebSiteContactList"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteWebSiteContactList"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "contactListId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createTrackingCode"
+Attr: "trackingCodeId"  type:"String"  optional:"false"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+Attr: "marketingCampaignId"  type:"String"  optional:"true"
+Attr: "redirectUrl"  type:"String"  optional:"true"
+Attr: "overrideLogo"  type:"String"  optional:"true"
+Attr: "overrideCss"  type:"String"  optional:"true"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "trackableLifetime"  type:"Long"  optional:"true"
+Attr: "billableLifetime"  type:"Long"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "groupId"  type:"String"  optional:"true"
+Attr: "subgroupId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateTrackingCode"
+Attr: "trackingCodeId"  type:"String"  optional:"false"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"true"
+Attr: "marketingCampaignId"  type:"String"  optional:"true"
+Attr: "redirectUrl"  type:"String"  optional:"true"
+Attr: "overrideLogo"  type:"String"  optional:"true"
+Attr: "overrideCss"  type:"String"  optional:"true"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "trackableLifetime"  type:"Long"  optional:"true"
+Attr: "billableLifetime"  type:"Long"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "groupId"  type:"String"  optional:"true"
+Attr: "subgroupId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTrackingCode"
+Attr: "trackingCodeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTrackingCodeType"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateTrackingCodeType"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTrackingCodeType"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSegmentGroup"
+Attr: "segmentGroupTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSegmentGroup"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "segmentGroupTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSegmentGroup"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createSegmentGroupClassification"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "partyClassificationGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSegmentGroupClassification"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "partyClassificationGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteSegmentGroupClassification"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "partyClassificationGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createSegmentGroupGeo"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "geoId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSegmentGroupGeo"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "geoId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteSegmentGroupGeo"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "geoId"  type:"String"  optional:"false"
+
+
+Servicename: "createSegmentGroupRole"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSegmentGroupRole"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteSegmentGroupRole"
+Attr: "segmentGroupId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "arePartiesRelatedThroughSegmentGroup"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "toPartyId"  type:"String"  optional:"false"
+Attr: "toRoleTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "createTrackingCodeOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+Attr: "trackingCodeId"  type:"String"  optional:"true"
+Attr: "isBillable"  type:"String"  optional:"true"
+Attr: "siteId"  type:"String"  optional:"true"
+Attr: "hasExported"  type:"String"  optional:"true"
+Attr: "affiliateReferredTimeStamp"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateTrackingCodeOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+Attr: "trackingCodeId"  type:"String"  optional:"true"
+Attr: "isBillable"  type:"String"  optional:"true"
+Attr: "siteId"  type:"String"  optional:"true"
+Attr: "hasExported"  type:"String"  optional:"true"
+Attr: "affiliateReferredTimeStamp"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createTrackingCodeOrderReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "trackingCodeId"  type:"String"  optional:"true"
+Attr: "isBillable"  type:"String"  optional:"true"
+Attr: "siteId"  type:"String"  optional:"true"
+Attr: "hasExported"  type:"String"  optional:"true"
+Attr: "affiliateReferredTimeStamp"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateTrackingCodeOrderReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "trackingCodeId"  type:"String"  optional:"true"
+Attr: "isBillable"  type:"String"  optional:"true"
+Attr: "siteId"  type:"String"  optional:"true"
+Attr: "hasExported"  type:"String"  optional:"true"
+Attr: "affiliateReferredTimeStamp"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteTrackingCodeOrderReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "trackingCodeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTrackingCodeOrderReturns"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "marketingPermissionService"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "createLead"
+Attr: "emailAddress"  type:"String"  optional:"true"
+Attr: "groupName"  type:"String"  optional:"true"
+Attr: "title"  type:"String"  optional:"true"
+Attr: "numEmployees"  type:"String"  optional:"true"
+Attr: "officeSiteName"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "contactListId"  type:"String"  optional:"true"
+
+
+Servicename: "createContact"
+Attr: "emailAddress"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "quickAdd"  type:"String"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "contactListId"  type:"String"  optional:"true"
+
+
+Servicename: "mergeContacts"
+Attr: "addrContactMechIdTo"  type:"String"  optional:"true"
+Attr: "phoneContactMechIdTo"  type:"String"  optional:"true"
+Attr: "emailContactMechIdTo"  type:"String"  optional:"true"
+Attr: "addrContactMechId"  type:"String"  optional:"true"
+Attr: "phoneContactMechId"  type:"String"  optional:"true"
+Attr: "emailContactMechId"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "useAddress2"  type:"String"  optional:"true"
+Attr: "useContactNum2"  type:"String"  optional:"true"
+Attr: "useEmail2"  type:"String"  optional:"true"
+
+
+Servicename: "createAccount"
+Attr: "emailAddress"  type:"String"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+
+
+Servicename: "convertLeadToContact"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "partyGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "importVCard"
+Attr: "infile"  type:"java.nio.ByteBuffer"  optional:"false"
+Attr: "partyType"  type:"String"  optional:"true"
+Attr: "serviceContext"  type:"Map"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"false"
+
+
+Servicename: "exportVCard"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "createMarketingCampaignNote"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "noteId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteMarketingCampaignNote"
+Attr: "marketingCampaignId"  type:"String"  optional:"false"
+Attr: "noteId"  type:"String"  optional:"false"
+
+
+Servicename: "createSegmentGroupType"
+Attr: "segmentGroupTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateSegmentGroupType"
+Attr: "segmentGroupTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSegmentGroupType"
+Attr: "segmentGroupTypeId"  type:"String"  optional:"false"
+
+

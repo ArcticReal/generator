@@ -1,0 +1,10 @@
+ofbiz_applications_product_servicedef_services_upgrade.xml
+Servicename: "migrateFacilityRole"
+
+
+Servicename: "migrateFacilitySquareFootage"
+
+
+Servicename: "migrateProductKeyword"
+
+

@@ -1,0 +1,946 @@
+ofbiz_applications_humanres_servicedef_services.xml
+Servicename: "createPartyQual"
+Attr: "qualificationDesc"  type:"String"  optional:"true"
+Attr: "title"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "verifStatusId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "partyQualTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updatePartyQual"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "partyQualTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "qualificationDesc"  type:"String"  optional:"true"
+Attr: "title"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "verifStatusId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deletePartyQual"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "partyQualTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createPartyResume"
+Attr: "resumeId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "resumeDate"  type:"Timestamp"  optional:"true"
+Attr: "resumeText"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyResume"
+Attr: "resumeId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "resumeDate"  type:"Timestamp"  optional:"true"
+Attr: "resumeText"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyResume"
+Attr: "resumeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartySkill"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "skillTypeId"  type:"String"  optional:"false"
+Attr: "yearsExperience"  type:"Long"  optional:"true"
+Attr: "rating"  type:"Long"  optional:"true"
+Attr: "skillLevel"  type:"Long"  optional:"true"
+Attr: "startedUsingDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updatePartySkill"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "skillTypeId"  type:"String"  optional:"false"
+Attr: "yearsExperience"  type:"Long"  optional:"true"
+Attr: "rating"  type:"Long"  optional:"true"
+Attr: "skillLevel"  type:"Long"  optional:"true"
+Attr: "startedUsingDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deletePartySkill"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "skillTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPerfReview"
+Attr: "managerPartyId"  type:"String"  optional:"true"
+Attr: "managerRoleTypeId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "perfReviewId"  type:"String"  optional:"true"
+Attr: "employeePartyId"  type:"String"  optional:"false"
+Attr: "employeeRoleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updatePerfReview"
+Attr: "employeePartyId"  type:"String"  optional:"false"
+Attr: "employeeRoleTypeId"  type:"String"  optional:"false"
+Attr: "perfReviewId"  type:"String"  optional:"false"
+Attr: "managerPartyId"  type:"String"  optional:"true"
+Attr: "managerRoleTypeId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deletePerfReview"
+Attr: "employeePartyId"  type:"String"  optional:"false"
+Attr: "employeeRoleTypeId"  type:"String"  optional:"false"
+Attr: "perfReviewId"  type:"String"  optional:"false"
+
+
+Servicename: "createPerfReviewItem"
+Attr: "perfReviewItemTypeId"  type:"String"  optional:"true"
+Attr: "perfRatingTypeId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "employeePartyId"  type:"String"  optional:"false"
+Attr: "employeeRoleTypeId"  type:"String"  optional:"false"
+Attr: "perfReviewId"  type:"String"  optional:"false"
+
+
+Servicename: "updatePerfReviewItem"
+Attr: "employeePartyId"  type:"String"  optional:"false"
+Attr: "employeeRoleTypeId"  type:"String"  optional:"false"
+Attr: "perfReviewId"  type:"String"  optional:"false"
+Attr: "perfReviewItemSeqId"  type:"String"  optional:"false"
+Attr: "perfReviewItemTypeId"  type:"String"  optional:"true"
+Attr: "perfRatingTypeId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deletePerfReviewItem"
+Attr: "employeePartyId"  type:"String"  optional:"false"
+Attr: "employeeRoleTypeId"  type:"String"  optional:"false"
+Attr: "perfReviewId"  type:"String"  optional:"false"
+Attr: "perfReviewItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createPerformanceNote"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "communicationDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updatePerformanceNote"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "communicationDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deletePerformanceNote"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createEmployment"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "terminationReasonId"  type:"String"  optional:"true"
+Attr: "terminationTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmployment"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "terminationReasonId"  type:"String"  optional:"true"
+Attr: "terminationTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEmployment"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createEmploymentApp"
+Attr: "applicationId"  type:"String"  optional:"true"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"true"
+Attr: "applyingPartyId"  type:"String"  optional:"true"
+Attr: "referredByPartyId"  type:"String"  optional:"true"
+Attr: "applicationDate"  type:"Timestamp"  optional:"true"
+Attr: "approverPartyId"  type:"String"  optional:"true"
+Attr: "jobRequisitionId"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmploymentApp"
+Attr: "applicationId"  type:"String"  optional:"false"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"true"
+Attr: "applyingPartyId"  type:"String"  optional:"true"
+Attr: "referredByPartyId"  type:"String"  optional:"true"
+Attr: "applicationDate"  type:"Timestamp"  optional:"true"
+Attr: "approverPartyId"  type:"String"  optional:"true"
+Attr: "jobRequisitionId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEmploymentApp"
+Attr: "applicationId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyBenefit"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "benefitTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "cost"  type:"BigDecimal"  optional:"true"
+Attr: "actualEmployerPaidPercent"  type:"BigDecimal"  optional:"true"
+Attr: "availableTime"  type:"Long"  optional:"true"
+
+
+Servicename: "updatePartyBenefit"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "benefitTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "cost"  type:"BigDecimal"  optional:"true"
+Attr: "actualEmployerPaidPercent"  type:"BigDecimal"  optional:"true"
+Attr: "availableTime"  type:"Long"  optional:"true"
+
+
+Servicename: "deletePartyBenefit"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "benefitTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createPayGrade"
+Attr: "payGradeId"  type:"String"  optional:"true"
+Attr: "payGradeName"  type:"String"  optional:"false"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updatePayGrade"
+Attr: "payGradeId"  type:"String"  optional:"false"
+Attr: "payGradeName"  type:"String"  optional:"false"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deletePayGrade"
+Attr: "payGradeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPayHistory"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "salaryStepSeqId"  type:"String"  optional:"true"
+Attr: "payGradeId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updatePayHistory"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "salaryStepSeqId"  type:"String"  optional:"true"
+Attr: "payGradeId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deletePayHistory"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createPayrollPreference"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "payrollPreferenceSeqId"  type:"String"  optional:"false"
+Attr: "deductionTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "percentage"  type:"BigDecimal"  optional:"true"
+Attr: "flatAmount"  type:"BigDecimal"  optional:"true"
+Attr: "routingNumber"  type:"String"  optional:"true"
+Attr: "accountNumber"  type:"String"  optional:"true"
+Attr: "bankName"  type:"String"  optional:"true"
+
+
+Servicename: "updatePayrollPreference"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "payrollPreferenceSeqId"  type:"String"  optional:"false"
+Attr: "deductionTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "percentage"  type:"BigDecimal"  optional:"true"
+Attr: "flatAmount"  type:"BigDecimal"  optional:"true"
+Attr: "routingNumber"  type:"String"  optional:"true"
+Attr: "accountNumber"  type:"String"  optional:"true"
+Attr: "bankName"  type:"String"  optional:"true"
+
+
+Servicename: "deletePayrollPreference"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "payrollPreferenceSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalaryStep"
+Attr: "salaryStepSeqId"  type:"String"  optional:"false"
+Attr: "payGradeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "dateModified"  type:"Timestamp"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateSalaryStep"
+Attr: "salaryStepSeqId"  type:"String"  optional:"false"
+Attr: "payGradeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "dateModified"  type:"Timestamp"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSalaryStep"
+Attr: "salaryStepSeqId"  type:"String"  optional:"false"
+Attr: "payGradeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createTerminationReason"
+Attr: "terminationReasonId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateTerminationReason"
+Attr: "terminationReasonId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteTerminationReason"
+Attr: "terminationReasonId"  type:"String"  optional:"false"
+
+
+Servicename: "createUnemploymentClaim"
+Attr: "unemploymentClaimId"  type:"String"  optional:"true"
+Attr: "unemploymentClaimDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateUnemploymentClaim"
+Attr: "unemploymentClaimId"  type:"String"  optional:"false"
+Attr: "unemploymentClaimDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteUnemploymentClaim"
+Attr: "unemploymentClaimId"  type:"String"  optional:"false"
+
+
+Servicename: "createEmplPosition"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "budgetId"  type:"String"  optional:"true"
+Attr: "budgetItemSeqId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "estimatedFromDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedThruDate"  type:"Timestamp"  optional:"true"
+Attr: "salaryFlag"  type:"String"  optional:"true"
+Attr: "exemptFlag"  type:"String"  optional:"true"
+Attr: "fulltimeFlag"  type:"String"  optional:"true"
+Attr: "temporaryFlag"  type:"String"  optional:"true"
+Attr: "actualFromDate"  type:"Timestamp"  optional:"true"
+Attr: "actualThruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateEmplPosition"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "budgetId"  type:"String"  optional:"true"
+Attr: "budgetItemSeqId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "estimatedFromDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedThruDate"  type:"Timestamp"  optional:"true"
+Attr: "salaryFlag"  type:"String"  optional:"true"
+Attr: "exemptFlag"  type:"String"  optional:"true"
+Attr: "fulltimeFlag"  type:"String"  optional:"true"
+Attr: "temporaryFlag"  type:"String"  optional:"true"
+Attr: "actualFromDate"  type:"Timestamp"  optional:"true"
+Attr: "actualThruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteEmplPosition"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+
+
+Servicename: "createEmplPositionFulfillment"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmplPositionFulfillment"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEmplPositionFulfillment"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createEmplPositionReportingStruct"
+Attr: "emplPositionIdReportingTo"  type:"String"  optional:"false"
+Attr: "emplPositionIdManagedBy"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "primaryFlag"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmplPositionReportingStruct"
+Attr: "emplPositionIdReportingTo"  type:"String"  optional:"false"
+Attr: "emplPositionIdManagedBy"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "primaryFlag"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEmplPositionReportingStruct"
+Attr: "emplPositionIdReportingTo"  type:"String"  optional:"false"
+Attr: "emplPositionIdManagedBy"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createEmplPositionResponsibility"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmplPositionResponsibility"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEmplPositionResponsibility"
+Attr: "emplPositionId"  type:"String"  optional:"false"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createValidResponsibility"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updateValidResponsibility"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deleteValidResponsibility"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "humanResManagerPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "createSkillType"
+Attr: "skillTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateSkillType"
+Attr: "skillTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteSkillType"
+Attr: "skillTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createEmployee"
+Attr: "emailAddress"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"String"  optional:"true"
+Attr: "postalAddContactMechPurpTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createResponsibilityType"
+Attr: "responsibilityTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateResponsibilityType"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteResponsibilityType"
+Attr: "responsibilityTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTerminationType"
+Attr: "terminationTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateTerminationType"
+Attr: "terminationTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteTerminationType"
+Attr: "terminationTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createEmplPositionType"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateEmplPositionType"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteEmplPositionType"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateEmplPositionTypeRate"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "payGradeId"  type:"String"  optional:"true"
+Attr: "salaryStepSeqId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "rateAmount"  type:"BigDecimal"  optional:"true"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteEmplPositionTypeRate"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "rateAmountFromDate"  type:"Timestamp"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "createAgreementEmploymentAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "agreementDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateAgreementEmploymentAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "agreementDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteAgreementEmploymentAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createEmplLeave"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "leaveTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "emplLeaveReasonTypeId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+Attr: "approverPartyId"  type:"String"  optional:"false"
+Attr: "leaveStatus"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmplLeave"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "leaveTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "emplLeaveReasonTypeId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+Attr: "approverPartyId"  type:"String"  optional:"false"
+Attr: "leaveStatus"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEmplLeave"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "leaveTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createEmplLeaveType"
+Attr: "leaveTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateEmplLeaveType"
+Attr: "leaveTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteEmplLeaveType"
+Attr: "leaveTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "getCurrentPartyEmploymentData"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "createJobRequisition"
+Attr: "jobRequisitionId"  type:"String"  optional:"true"
+Attr: "durationMonths"  type:"Long"  optional:"true"
+Attr: "age"  type:"Long"  optional:"true"
+Attr: "gender"  type:"String"  optional:"true"
+Attr: "experienceMonths"  type:"Long"  optional:"false"
+Attr: "experienceYears"  type:"Long"  optional:"false"
+Attr: "qualification"  type:"String"  optional:"false"
+Attr: "jobLocation"  type:"String"  optional:"false"
+Attr: "skillTypeId"  type:"String"  optional:"false"
+Attr: "noOfResources"  type:"Long"  optional:"false"
+Attr: "jobPostingTypeEnumId"  type:"String"  optional:"true"
+Attr: "jobRequisitionDate"  type:"Timestamp"  optional:"true"
+Attr: "examTypeEnumId"  type:"String"  optional:"true"
+Attr: "requiredOnDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateJobRequisition"
+Attr: "jobRequisitionId"  type:"String"  optional:"false"
+Attr: "durationMonths"  type:"Long"  optional:"true"
+Attr: "age"  type:"Long"  optional:"true"
+Attr: "gender"  type:"String"  optional:"true"
+Attr: "experienceMonths"  type:"Long"  optional:"false"
+Attr: "experienceYears"  type:"Long"  optional:"false"
+Attr: "qualification"  type:"String"  optional:"true"
+Attr: "jobLocation"  type:"String"  optional:"false"
+Attr: "skillTypeId"  type:"String"  optional:"false"
+Attr: "noOfResources"  type:"Long"  optional:"false"
+Attr: "jobPostingTypeEnumId"  type:"String"  optional:"true"
+Attr: "jobRequisitionDate"  type:"Timestamp"  optional:"true"
+Attr: "examTypeEnumId"  type:"String"  optional:"true"
+Attr: "requiredOnDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteJobRequisition"
+Attr: "jobRequisitionId"  type:"String"  optional:"false"
+
+
+Servicename: "createInternalJobPosting"
+Attr: "applicationId"  type:"String"  optional:"true"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"true"
+Attr: "applyingPartyId"  type:"String"  optional:"false"
+Attr: "referredByPartyId"  type:"String"  optional:"true"
+Attr: "applicationDate"  type:"Timestamp"  optional:"true"
+Attr: "approverPartyId"  type:"String"  optional:"false"
+Attr: "jobRequisitionId"  type:"String"  optional:"false"
+
+
+Servicename: "updateInternalJobPosting"
+Attr: "applicationId"  type:"String"  optional:"false"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"true"
+Attr: "applyingPartyId"  type:"String"  optional:"false"
+Attr: "referredByPartyId"  type:"String"  optional:"true"
+Attr: "applicationDate"  type:"Timestamp"  optional:"true"
+Attr: "approverPartyId"  type:"String"  optional:"false"
+Attr: "jobRequisitionId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteInternalJobPosting"
+Attr: "applicationId"  type:"String"  optional:"false"
+
+
+Servicename: "createJobInterview"
+Attr: "jobInterviewId"  type:"String"  optional:"true"
+Attr: "jobIntervieweePartyId"  type:"String"  optional:"false"
+Attr: "jobRequisitionId"  type:"String"  optional:"false"
+Attr: "jobInterviewerPartyId"  type:"String"  optional:"false"
+Attr: "jobInterviewTypeId"  type:"String"  optional:"true"
+Attr: "gradeSecuredEnumId"  type:"String"  optional:"true"
+Attr: "jobInterviewResult"  type:"String"  optional:"true"
+Attr: "jobInterviewDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateJobInterview"
+Attr: "jobInterviewId"  type:"String"  optional:"false"
+Attr: "jobIntervieweePartyId"  type:"String"  optional:"false"
+Attr: "jobRequisitionId"  type:"String"  optional:"false"
+Attr: "jobInterviewerPartyId"  type:"String"  optional:"true"
+Attr: "jobInterviewTypeId"  type:"String"  optional:"false"
+Attr: "gradeSecuredEnumId"  type:"String"  optional:"true"
+Attr: "jobInterviewResult"  type:"String"  optional:"true"
+Attr: "jobInterviewDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteJobInterview"
+Attr: "jobInterviewId"  type:"String"  optional:"false"
+
+
+Servicename: "createJobInterviewType"
+Attr: "jobInterviewTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateJobInterviewType"
+Attr: "jobInterviewTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteJobInterviewType"
+Attr: "jobInterviewTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateApprovalStatus"
+Attr: "applicationId"  type:"String"  optional:"false"
+Attr: "emplPositionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"true"
+Attr: "applyingPartyId"  type:"String"  optional:"true"
+Attr: "referredByPartyId"  type:"String"  optional:"true"
+Attr: "applicationDate"  type:"Timestamp"  optional:"true"
+Attr: "approverPartyId"  type:"String"  optional:"true"
+Attr: "jobRequisitionId"  type:"String"  optional:"true"
+
+
+Servicename: "updateTrainingStatus"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "trainingClassTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "trainingRequestId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "approverId"  type:"String"  optional:"true"
+Attr: "approvalStatus"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"false"
+
+
+Servicename: "applyTraining"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "trainingClassTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "trainingRequestId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "approverId"  type:"String"  optional:"false"
+Attr: "approvalStatus"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+
+
+Servicename: "assignTraining"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "trainingClassTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "trainingRequestId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "approverId"  type:"String"  optional:"false"
+Attr: "approvalStatus"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+
+
+Servicename: "createTrainingTypes"
+Attr: "trainingClassTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateTrainingTypes"
+Attr: "trainingClassTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteTrainingTypes"
+Attr: "trainingClassTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createEmplLeaveReasonType"
+Attr: "emplLeaveReasonTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateEmplLeaveReasonType"
+Attr: "emplLeaveReasonTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "deleteEmplLeaveReasonType"
+Attr: "emplLeaveReasonTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateEmplLeaveStatus"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "leaveTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "emplLeaveReasonTypeId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "approverPartyId"  type:"String"  optional:"true"
+Attr: "leaveStatus"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createPartyQualType"
+Attr: "partyQualTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyQualType"
+Attr: "partyQualTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyQualType"
+Attr: "partyQualTypeId"  type:"String"  optional:"false"
+
+

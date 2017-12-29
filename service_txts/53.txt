@@ -1,0 +1,128 @@
+ofbiz_applications_order_servicedef_services_cart.xml
+Servicename: "interfaceProductPromoCond"
+Attr: "productPromoCond"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "nowTimestamp"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "interfaceProductPromoAction"
+Attr: "productPromoAction"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "nowTimestamp"  type:"Timestamp"  optional:"false"
+Attr: "actionResultInfo"  type:"org.apache.ofbiz.order.shoppingcart.product.ProductPromoWorker$ActionResultInfo"  optional:"false"
+
+
+Servicename: "assignItemShipGroup"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "fromGroupIndex"  type:"Integer"  optional:"false"
+Attr: "toGroupIndex"  type:"Integer"  optional:"false"
+Attr: "itemIndex"  type:"Integer"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "clearEmptyGroups"  type:"Boolean"  optional:"true"
+
+
+Servicename: "setCartShippingOptions"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "groupIndex"  type:"Integer"  optional:"false"
+Attr: "shippingContactMechId"  type:"String"  optional:"false"
+Attr: "shipmentMethodString"  type:"String"  optional:"false"
+Attr: "shippingInstructions"  type:"String"  optional:"true"
+Attr: "maySplit"  type:"Boolean"  optional:"false"
+Attr: "isGift"  type:"Boolean"  optional:"false"
+Attr: "giftMessage"  type:"String"  optional:"true"
+
+
+Servicename: "setCartShippingAddress"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "groupIndex"  type:"Integer"  optional:"false"
+Attr: "shippingContactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "setCartPaymentOptions"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "paymentInfoId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "refNum"  type:"String"  optional:"true"
+
+
+Servicename: "setCartOtherOptions"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "orderAdditionalEmails"  type:"String"  optional:"true"
+Attr: "correspondingPoId"  type:"String"  optional:"true"
+
+
+Servicename: "loadCartFromOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "createAsNewOrder"  type:"String"  optional:"false"
+Attr: "skipInventoryChecks"  type:"Boolean"  optional:"true"
+Attr: "skipProductChecks"  type:"Boolean"  optional:"true"
+Attr: "includePromoItems"  type:"Boolean"  optional:"true"
+
+
+Servicename: "loadCartFromQuote"
+Attr: "quoteId"  type:"String"  optional:"false"
+Attr: "applyQuoteAdjustments"  type:"String"  optional:"true"
+
+
+Servicename: "loadCartFromShoppingList"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "applyStorePromotions"  type:"String"  optional:"true"
+Attr: "orderPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "getShoppingCartData"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+
+
+Servicename: "getShoppingCartItemIndex"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "resetShipGroupItems"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+
+
+Servicename: "prepareVendorShipGroups"
+Attr: "shoppingCart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+
+
+Servicename: "createCartAbandonedLine"
+Attr: "visitId"  type:"String"  optional:"false"
+Attr: "cartAbandonedLineSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "unitPrice"  type:"BigDecimal"  optional:"true"
+Attr: "reserv2ndPPPerc"  type:"BigDecimal"  optional:"true"
+Attr: "reservNthPPPerc"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "totalWithAdjustments"  type:"BigDecimal"  optional:"true"
+Attr: "wasReserved"  type:"String"  optional:"true"
+
+
+Servicename: "updateCartAbandonedLine"
+Attr: "visitId"  type:"String"  optional:"false"
+Attr: "cartAbandonedLineSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "unitPrice"  type:"BigDecimal"  optional:"true"
+Attr: "reserv2ndPPPerc"  type:"BigDecimal"  optional:"true"
+Attr: "reservNthPPPerc"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "totalWithAdjustments"  type:"BigDecimal"  optional:"true"
+Attr: "wasReserved"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCartAbandonedLine"
+Attr: "visitId"  type:"String"  optional:"false"
+Attr: "cartAbandonedLineSeqId"  type:"String"  optional:"false"
+
+

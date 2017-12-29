@@ -1,0 +1,694 @@
+ofbiz_applications_accounting_servicedef_services_invoice.xml
+Servicename: "getNextInvoiceId"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceTypeId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "invoiceDate"  type:"Timestamp"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "paidDate"  type:"Timestamp"  optional:"true"
+Attr: "invoiceMessage"  type:"String"  optional:"true"
+Attr: "referenceNumber"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+
+
+Servicename: "invoiceSequenceEnforced"
+Attr: "invoiceTypeId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "invoiceDate"  type:"Timestamp"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "paidDate"  type:"Timestamp"  optional:"true"
+Attr: "invoiceMessage"  type:"String"  optional:"true"
+Attr: "referenceNumber"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+Attr: "partyAcctgPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "invoiceSequenceRestart"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceTypeId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "invoiceDate"  type:"Timestamp"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "paidDate"  type:"Timestamp"  optional:"true"
+Attr: "invoiceMessage"  type:"String"  optional:"true"
+Attr: "referenceNumber"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+Attr: "partyAcctgPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "createInvoice"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "invoiceDate"  type:"Timestamp"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "paidDate"  type:"Timestamp"  optional:"true"
+Attr: "invoiceMessage"  type:"String"  optional:"true"
+Attr: "referenceNumber"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+
+
+Servicename: "copyInvoice"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceIdToCopyFrom"  type:"String"  optional:"false"
+
+
+Servicename: "getInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "updateInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceTypeId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "invoiceDate"  type:"Timestamp"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "paidDate"  type:"Timestamp"  optional:"true"
+Attr: "invoiceMessage"  type:"String"  optional:"true"
+Attr: "referenceNumber"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+
+
+Servicename: "setInvoiceStatus"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusDate"  type:"Timestamp"  optional:"true"
+Attr: "paidDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "copyInvoiceToTemplate"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceItem"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "overrideOrgPartyId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "parentInvoiceId"  type:"String"  optional:"true"
+Attr: "parentInvoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "taxableFlag"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "salesOpportunityId"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceItem"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "overrideOrgPartyId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "parentInvoiceId"  type:"String"  optional:"true"
+Attr: "parentInvoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "taxableFlag"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "salesOpportunityId"  type:"String"  optional:"true"
+
+
+Servicename: "removeInvoiceItem"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceStatus"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "statusDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createInvoiceRole"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "datetimePerformed"  type:"Timestamp"  optional:"true"
+Attr: "percentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "removeInvoiceRole"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceTerm"
+Attr: "termTypeId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceTerm"
+Attr: "invoiceTermId"  type:"String"  optional:"false"
+Attr: "termTypeId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceTerm"
+Attr: "invoiceTermId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceForOrderAllItems"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceForOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "billItems"  type:"List"  optional:"false"
+Attr: "eventDate"  type:"Timestamp"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+
+
+Servicename: "createInvoiceFromReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "billItems"  type:"List"  optional:"true"
+
+
+Servicename: "createCommissionInvoices"
+Attr: "partyIds"  type:"List"  optional:"true"
+Attr: "invoiceIds"  type:"List"  optional:"false"
+
+
+Servicename: "sampleInvoiceAffiliateCommission"
+Attr: "paymentId"  type:"String"  optional:"false"
+
+
+Servicename: "readyInvoices"
+Attr: "invoicesCreated"  type:"List"  optional:"false"
+
+
+Servicename: "createInvoicesFromShipment"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "eventDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "setInvoicesToReadyFromShipment"
+Attr: "shipmentId"  type:"String"  optional:"false"
+
+
+Servicename: "createSalesInvoicesFromDropShipment"
+Attr: "shipmentId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoicesFromShipments"
+Attr: "shipmentIds"  type:"List"  optional:"false"
+Attr: "createSalesInvoicesForDropShipments"  type:"Boolean"  optional:"true"
+Attr: "eventDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createInvoicesFromReturnShipment"
+Attr: "shipmentId"  type:"String"  optional:"false"
+
+
+Servicename: "sendInvoicePerEmail"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "sendFrom"  type:"String"  optional:"false"
+Attr: "sendTo"  type:"String"  optional:"false"
+Attr: "sendCc"  type:"String"  optional:"true"
+Attr: "subject"  type:"String"  optional:"true"
+Attr: "bodyText"  type:"String"  optional:"true"
+Attr: "other"  type:"String"  optional:"true"
+
+
+Servicename: "checkInvoicePaymentApplications"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceContactMech"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteInvoiceContactMech"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "calculateInvoicedAdjustmentTotal"
+Attr: "orderAdjustment"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "updateInvoiceItemType"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "defaultGlAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "autoGenerateInvoiceFromExistingInvoice"
+Attr: "recurrenceInfoId"  type:"String"  optional:"false"
+
+
+Servicename: "cancelInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "getInvoiceRunningTotal"
+Attr: "invoiceIds"  type:"List"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "addtax"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "getInvoicesFilterByAssocType"
+Attr: "invoiceList"  type:"List"  optional:"false"
+Attr: "invoiceItemAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceItemAssoc"
+Attr: "invoiceIdFrom"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqIdFrom"  type:"String"  optional:"false"
+Attr: "invoiceIdTo"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqIdTo"  type:"String"  optional:"false"
+Attr: "invoiceItemAssocTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateInvoiceItemAssoc"
+Attr: "invoiceIdFrom"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqIdFrom"  type:"String"  optional:"false"
+Attr: "invoiceIdTo"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqIdTo"  type:"String"  optional:"false"
+Attr: "invoiceItemAssocTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteInvoiceItemAssoc"
+Attr: "invoiceIdFrom"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqIdFrom"  type:"String"  optional:"false"
+Attr: "invoiceIdTo"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqIdTo"  type:"String"  optional:"false"
+Attr: "invoiceItemAssocTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "removeInvoiceItemAssocOnCancelInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "resetOrderItemBillingAndOrderAdjustmentBillingOnCancelInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "massChangeInvoiceStatus"
+Attr: "invoiceIds"  type:"List"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceFromOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceContent"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceContent"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "removeInvoiceContent"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createSimpleTextContentForInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "text"  type:"String"  optional:"false"
+
+
+Servicename: "updateSimpleTextContentForInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "textDataResourceId"  type:"String"  optional:"true"
+Attr: "text"  type:"String"  optional:"true"
+
+
+Servicename: "isInvoiceInForeignCurrency"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "importInvoice"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+
+
+Servicename: "createInvoiceItemAttribute"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceItemAttribute"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceItemAttribute"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceTermAttribute"
+Attr: "invoiceTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceTermAttribute"
+Attr: "invoiceTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceTermAttribute"
+Attr: "invoiceTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceTypeAttr"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceTypeAttr"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceTypeAttr"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceAttribute"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateInvoiceAttribute"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceAttribute"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceItemAssocType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "invoiceItemAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceItemAssocType"
+Attr: "invoiceItemAssocTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceItemAssocType"
+Attr: "invoiceItemAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceNote"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "noteId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteInvoiceNote"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "noteId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceContentType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceContentType"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceContentType"
+Attr: "invoiceContentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceItemTypeAttr"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceItemTypeAttr"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceItemTypeAttr"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceItemTypeMap"
+Attr: "invoiceItemMapKey"  type:"String"  optional:"false"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceItemTypeMap"
+Attr: "invoiceItemMapKey"  type:"String"  optional:"false"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceItemTypeMap"
+Attr: "invoiceItemMapKey"  type:"String"  optional:"false"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createInvoiceType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "invoiceTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateInvoiceType"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInvoiceType"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+
+

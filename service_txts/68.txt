@@ -1,0 +1,136 @@
+ofbiz_applications_party_servicedef_services_party.xml
+Servicename: "createPartyClassificationType"
+Attr: "partyClassificationTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyClassificationType"
+Attr: "partyClassificationTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyClassificationType"
+Attr: "partyClassificationTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyContentType"
+Attr: "partyContentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyContentType"
+Attr: "partyContentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyContentType"
+Attr: "partyContentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyGeoPoint"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updatePartyGeoPoint"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "expirePartyGeoPoint"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createPartyIcsAvsOverride"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "avsDeclineString"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyIcsAvsOverride"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "avsDeclineString"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyIcsAvsOverride"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyIdentificationType"
+Attr: "partyIdentificationTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyIdentificationType"
+Attr: "partyIdentificationTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyIdentificationType"
+Attr: "partyIdentificationTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyType"
+Attr: "partyTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyType"
+Attr: "partyTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyType"
+Attr: "partyTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyTypeAttr"
+Attr: "partyTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyTypeAttr"
+Attr: "partyTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyTypeAttr"
+Attr: "partyTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createPriorityType"
+Attr: "priorityTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePriorityType"
+Attr: "priorityTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePriorityType"
+Attr: "priorityTypeId"  type:"String"  optional:"false"
+
+

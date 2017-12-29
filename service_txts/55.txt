@@ -1,0 +1,423 @@
+ofbiz_applications_order_servicedef_services_order.xml
+Servicename: "createOrderAdjustmentAttribute"
+Attr: "orderAdjustmentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderAdjustmentAttribute"
+Attr: "orderAdjustmentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderAdjustmentAttribute"
+Attr: "orderAdjustmentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderAdjustmentType"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderAdjustmentType"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderAdjustmentType"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderAttribute"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderAttribute"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderAttribute"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderBlacklist"
+Attr: "blacklistString"  type:"String"  optional:"false"
+Attr: "orderBlacklistTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteOrderBlacklist"
+Attr: "blacklistString"  type:"String"  optional:"false"
+Attr: "orderBlacklistTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderBlacklistType"
+Attr: "orderBlacklistTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderBlacklistType"
+Attr: "orderBlacklistTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderBlacklistType"
+Attr: "orderBlacklistTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemAssoc"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "toOrderId"  type:"String"  optional:"false"
+Attr: "toOrderItemSeqId"  type:"String"  optional:"false"
+Attr: "toShipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemAssocTypeId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateOrderItemAssoc"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "toOrderId"  type:"String"  optional:"false"
+Attr: "toOrderItemSeqId"  type:"String"  optional:"false"
+Attr: "toShipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemAssocTypeId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteOrderItemAssoc"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "toOrderId"  type:"String"  optional:"false"
+Attr: "toOrderItemSeqId"  type:"String"  optional:"false"
+Attr: "toShipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemAssocType"
+Attr: "orderItemAssocTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemAssocType"
+Attr: "orderItemAssocTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderItemAssocType"
+Attr: "orderItemAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemContactMech"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemContactMech"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderItemContactMech"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemGroup"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemGroupSeqId"  type:"String"  optional:"false"
+Attr: "parentGroupSeqId"  type:"String"  optional:"true"
+Attr: "groupName"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemGroup"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemGroupSeqId"  type:"String"  optional:"false"
+Attr: "parentGroupSeqId"  type:"String"  optional:"true"
+Attr: "groupName"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderItemGroup"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemGroupSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemPriceInfo"
+Attr: "orderItemPriceInfoId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "productPriceRuleId"  type:"String"  optional:"true"
+Attr: "productPriceActionSeqId"  type:"String"  optional:"true"
+Attr: "modifyAmount"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "rateCode"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemPriceInfo"
+Attr: "orderItemPriceInfoId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "productPriceRuleId"  type:"String"  optional:"true"
+Attr: "productPriceActionSeqId"  type:"String"  optional:"true"
+Attr: "modifyAmount"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "rateCode"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderItemPriceInfo"
+Attr: "orderItemPriceInfoId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemRole"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteOrderItemRole"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemShipGrpInvRes"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "quantityNotAvailable"  type:"BigDecimal"  optional:"true"
+Attr: "reservedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "createdDatetime"  type:"Timestamp"  optional:"true"
+Attr: "promisedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "currentPromisedDate"  type:"Timestamp"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"Long"  optional:"true"
+Attr: "oldPickStartDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateOrderItemShipGrpInvRes"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "quantityNotAvailable"  type:"BigDecimal"  optional:"true"
+Attr: "reservedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "createdDatetime"  type:"Timestamp"  optional:"true"
+Attr: "promisedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "currentPromisedDate"  type:"Timestamp"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"Long"  optional:"true"
+Attr: "oldPickStartDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteOrderItemShipGrpInvRes"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemType"
+Attr: "orderItemTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemType"
+Attr: "orderItemTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderItemType"
+Attr: "orderItemTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderItemTypeAttr"
+Attr: "orderItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderItemTypeAttr"
+Attr: "orderItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderItemTypeAttr"
+Attr: "orderItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateOrderNotification"
+Attr: "orderNotificationId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "emailType"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "notificationDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteOrderNotification"
+Attr: "orderNotificationId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderProductPromoCode"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteOrderProductPromoCode"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateOrderRequirementCommitment"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteOrderRequirementCommitment"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderSummaryEntry"
+Attr: "entryDate"  type:"Timestamp"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "totalQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "grossSales"  type:"BigDecimal"  optional:"true"
+Attr: "productCost"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateOrderSummaryEntry"
+Attr: "entryDate"  type:"Timestamp"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "totalQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "grossSales"  type:"BigDecimal"  optional:"true"
+Attr: "productCost"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteOrderSummaryEntry"
+Attr: "entryDate"  type:"Timestamp"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderTermAttribute"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderTermAttribute"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderTermAttribute"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderType"
+Attr: "orderTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderType"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderType"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderTypeAttr"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderTypeAttr"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderTypeAttr"
+Attr: "orderTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createOrderContentType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "orderContentTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrderContentType"
+Attr: "orderContentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteOrderContentType"
+Attr: "orderContentTypeId"  type:"String"  optional:"false"
+
+

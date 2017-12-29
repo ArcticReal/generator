@@ -1,0 +1,5 @@
+ofbiz_applications_manufacturing_servicedef_services.xml
+Servicename: "createShipmentPackages"
+Attr: "shipmentId"  type:"String"  optional:"false"
+
+

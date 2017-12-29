@@ -1,0 +1,21 @@
+ofbiz_applications_manufacturing_servicedef_services_formula.xml
+Servicename: "interfaceBomFormula"
+Attr: "arguments"  type:"java.util.Map"  optional:"false"
+
+
+Servicename: "exampleComponentFormula"
+Attr: "arguments"  type:"java.util.Map"  optional:"false"
+
+
+Servicename: "linearComponentFormula"
+Attr: "arguments"  type:"java.util.Map"  optional:"false"
+
+
+Servicename: "interfaceTaskFormula"
+Attr: "arguments"  type:"java.util.Map"  optional:"false"
+
+
+Servicename: "exampleTaskFormula"
+Attr: "arguments"  type:"java.util.Map"  optional:"false"
+
+

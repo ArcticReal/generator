@@ -1,0 +1,1056 @@
+ofbiz_applications_product_servicedef_services_facility.xml
+Servicename: "facilityGenericPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "checkProductFacilityRelatedPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "createInventoryItem"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "datetimeReceived"  type:"Timestamp"  optional:"true"
+Attr: "datetimeManufactured"  type:"Timestamp"  optional:"true"
+Attr: "expireDate"  type:"Timestamp"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "containerId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "binNumber"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "accountingQuantityTotal"  type:"BigDecimal"  optional:"true"
+Attr: "oldQuantityOnHand"  type:"BigDecimal"  optional:"true"
+Attr: "oldAvailableToPromise"  type:"BigDecimal"  optional:"true"
+Attr: "serialNumber"  type:"Long"  optional:"true"
+Attr: "softIdentifier"  type:"Long"  optional:"true"
+Attr: "activationNumber"  type:"Long"  optional:"true"
+Attr: "activationValidThru"  type:"Timestamp"  optional:"true"
+Attr: "unitCost"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "isReturned"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryItemCheckSetAtpQoh"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "availableToPromiseTotal"  type:"BigDecimal"  optional:"true"
+Attr: "quantityOnHandTotal"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateInventoryItem"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "datetimeReceived"  type:"Timestamp"  optional:"true"
+Attr: "datetimeManufactured"  type:"Timestamp"  optional:"true"
+Attr: "expireDate"  type:"Timestamp"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "containerId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "binNumber"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "accountingQuantityTotal"  type:"BigDecimal"  optional:"true"
+Attr: "oldQuantityOnHand"  type:"BigDecimal"  optional:"true"
+Attr: "oldAvailableToPromise"  type:"BigDecimal"  optional:"true"
+Attr: "serialNumber"  type:"Long"  optional:"true"
+Attr: "softIdentifier"  type:"Long"  optional:"true"
+Attr: "activationNumber"  type:"Long"  optional:"true"
+Attr: "activationValidThru"  type:"Timestamp"  optional:"true"
+Attr: "unitCost"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+
+
+Servicename: "changeOwnerUponIssuance"
+Attr: "itemIssuanceId"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryItemStatus"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusDatetime"  type:"Timestamp"  optional:"true"
+Attr: "statusEndDatetime"  type:"Timestamp"  optional:"true"
+Attr: "changeByUserLoginId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+
+
+Servicename: "checkProductInventoryDiscontinuation"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "inventoryItemCheckSetDefaultValues"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "inventoryItem"  type:"Map"  optional:"true"
+
+
+Servicename: "createInventoryItemDetail"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "quantityOnHandDiff"  type:"BigDecimal"  optional:"true"
+Attr: "availableToPromiseDiff"  type:"BigDecimal"  optional:"true"
+Attr: "accountingQuantityDiff"  type:"BigDecimal"  optional:"true"
+Attr: "unitCost"  type:"BigDecimal"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "shipmentItemSeqId"  type:"String"  optional:"true"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "maintHistSeqId"  type:"String"  optional:"true"
+Attr: "itemIssuanceId"  type:"String"  optional:"true"
+Attr: "receiptId"  type:"String"  optional:"true"
+Attr: "physicalInventoryId"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateInventoryItemFromDetail"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "updateSerializedInventoryTotals"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryItemVariance"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "physicalInventoryId"  type:"String"  optional:"false"
+Attr: "varianceReasonId"  type:"String"  optional:"true"
+Attr: "availableToPromiseVar"  type:"BigDecimal"  optional:"true"
+Attr: "quantityOnHandVar"  type:"BigDecimal"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "createPhysicalInventory"
+Attr: "physicalInventoryDate"  type:"Timestamp"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "generalComments"  type:"String"  optional:"true"
+
+
+Servicename: "createPhysicalInventoryAndVariance"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "physicalInventoryDate"  type:"Timestamp"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "generalComments"  type:"String"  optional:"true"
+Attr: "varianceReasonId"  type:"String"  optional:"true"
+Attr: "availableToPromiseVar"  type:"BigDecimal"  optional:"true"
+Attr: "quantityOnHandVar"  type:"BigDecimal"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "getMktgPackagesAvailable"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "getProductInventoryAvailable"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "useCache"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getInventoryAvailableByFacility"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "useCache"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getInventoryAvailableByLocation"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "useCache"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getInventoryAvailableByContainer"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "containerId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "getInventoryAvailableByItem"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "useCache"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getProductInventoryAvailableFromAssocProducts"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "assocProducts"  type:"List"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "getProductInventoryAvailableBySupplier"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "useCache"  type:"Boolean"  optional:"true"
+
+
+Servicename: "countProductInventoryOnHand"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "inventoryCountDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "countProductInventoryShippedForSales"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "getProductInventorySummaryForItems"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+
+
+Servicename: "getProductInventoryAndFacilitySummary"
+Attr: "checkTime"  type:"Timestamp"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "minimumStock"  type:"BigDecimal"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "checkInventoryAvailability"
+
+
+Servicename: "balanceInventoryItems"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "priorityOrderId"  type:"String"  optional:"true"
+Attr: "priorityOrderItemSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "reassignInventoryReservations"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+
+
+Servicename: "balanceOrderItemsWithNegativeReservations"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "reserveAnInventoryItem"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "reservedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "requireInventory"  type:"String"  optional:"false"
+Attr: "serialNumber"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"Long"  optional:"true"
+Attr: "promisedDatetime"  type:"Timestamp"  optional:"false"
+Attr: "priority"  type:"String"  optional:"true"
+
+
+Servicename: "reserveProductInventory"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "reservedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "requireInventory"  type:"String"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"false"
+Attr: "sequenceId"  type:"Long"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+
+
+Servicename: "reserveProductInventoryByFacility"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "reservedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "requireInventory"  type:"String"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"Long"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+
+
+Servicename: "reserveProductInventoryByContainer"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "containerId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "reservedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "requireInventory"  type:"String"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"Long"  optional:"true"
+
+
+Servicename: "reserveOrderItemInventory"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "quantityNotAvailable"  type:"BigDecimal"  optional:"true"
+Attr: "reservedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "promisedDatetime"  type:"Timestamp"  optional:"true"
+Attr: "currentPromisedDate"  type:"Timestamp"  optional:"true"
+Attr: "priority"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"Long"  optional:"true"
+Attr: "oldPickStartDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "cancelOrderInventoryReservation"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "cancelOrderItemInvResQty"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "cancelOrderItemShipGrpInvRes"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "interfaceInventoryTransfer"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "containerId"  type:"String"  optional:"true"
+Attr: "facilityIdTo"  type:"String"  optional:"true"
+Attr: "locationSeqIdTo"  type:"String"  optional:"true"
+Attr: "containerIdTo"  type:"String"  optional:"true"
+Attr: "itemIssuanceId"  type:"String"  optional:"true"
+Attr: "sendDate"  type:"Timestamp"  optional:"true"
+Attr: "receiveDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "createInventoryTransfer"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "containerId"  type:"String"  optional:"true"
+Attr: "facilityIdTo"  type:"String"  optional:"true"
+Attr: "locationSeqIdTo"  type:"String"  optional:"true"
+Attr: "containerIdTo"  type:"String"  optional:"true"
+Attr: "itemIssuanceId"  type:"String"  optional:"true"
+Attr: "sendDate"  type:"Timestamp"  optional:"true"
+Attr: "receiveDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "xferQty"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "updateInventoryTransfer"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "containerId"  type:"String"  optional:"true"
+Attr: "facilityIdTo"  type:"String"  optional:"true"
+Attr: "locationSeqIdTo"  type:"String"  optional:"true"
+Attr: "containerIdTo"  type:"String"  optional:"true"
+Attr: "itemIssuanceId"  type:"String"  optional:"true"
+Attr: "sendDate"  type:"Timestamp"  optional:"true"
+Attr: "receiveDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "inventoryTransferId"  type:"String"  optional:"false"
+
+
+Servicename: "prepareInventoryTransfer"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "xferQty"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "completeInventoryTransfer"
+Attr: "inventoryTransferId"  type:"String"  optional:"false"
+Attr: "receiveDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "cancelInventoryTransfer"
+Attr: "inventoryTransferId"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryTransfersForProduct"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "containerId"  type:"String"  optional:"true"
+Attr: "facilityIdTo"  type:"String"  optional:"false"
+Attr: "sendDate"  type:"Timestamp"  optional:"true"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "issueImmediatelyFulfilledOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "issueImmediatelyFulfilledOrderItem"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "orderHeader"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "productStore"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "createProductFacility"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "minimumStock"  type:"BigDecimal"  optional:"true"
+Attr: "reorderQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "daysToShip"  type:"Long"  optional:"true"
+Attr: "lastInventoryCount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateProductFacility"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "minimumStock"  type:"BigDecimal"  optional:"true"
+Attr: "reorderQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "daysToShip"  type:"Long"  optional:"true"
+Attr: "lastInventoryCount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteProductFacility"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductFacilityLocation"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+Attr: "minimumStock"  type:"BigDecimal"  optional:"true"
+Attr: "moveQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateProductFacilityLocation"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+Attr: "minimumStock"  type:"BigDecimal"  optional:"true"
+Attr: "moveQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteProductFacilityLocation"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacility"
+Attr: "facilityTypeId"  type:"String"  optional:"false"
+Attr: "parentFacilityId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"false"
+Attr: "defaultInventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "facilityName"  type:"String"  optional:"false"
+Attr: "primaryFacilityGroupId"  type:"String"  optional:"true"
+Attr: "oldSquareFootage"  type:"Long"  optional:"true"
+Attr: "facilitySize"  type:"BigDecimal"  optional:"true"
+Attr: "facilitySizeUomId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "defaultDaysToShip"  type:"Long"  optional:"true"
+Attr: "openedDate"  type:"Timestamp"  optional:"true"
+Attr: "closedDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "defaultDimensionUomId"  type:"String"  optional:"true"
+Attr: "defaultWeightUomId"  type:"String"  optional:"true"
+Attr: "geoPointId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacility"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "facilityTypeId"  type:"String"  optional:"true"
+Attr: "parentFacilityId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "defaultInventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "facilityName"  type:"String"  optional:"true"
+Attr: "primaryFacilityGroupId"  type:"String"  optional:"true"
+Attr: "oldSquareFootage"  type:"Long"  optional:"true"
+Attr: "facilitySize"  type:"BigDecimal"  optional:"true"
+Attr: "facilitySizeUomId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "defaultDaysToShip"  type:"Long"  optional:"true"
+Attr: "openedDate"  type:"Timestamp"  optional:"true"
+Attr: "closedDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "defaultDimensionUomId"  type:"String"  optional:"true"
+Attr: "defaultWeightUomId"  type:"String"  optional:"true"
+Attr: "geoPointId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFacility"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityAttribute"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacilityAttribute"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFacilityAttribute"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityLocation"
+Attr: "locationTypeEnumId"  type:"String"  optional:"true"
+Attr: "areaId"  type:"String"  optional:"true"
+Attr: "aisleId"  type:"String"  optional:"true"
+Attr: "sectionId"  type:"String"  optional:"true"
+Attr: "levelId"  type:"String"  optional:"true"
+Attr: "positionId"  type:"String"  optional:"true"
+Attr: "geoPointId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "updateFacilityLocation"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+Attr: "locationTypeEnumId"  type:"String"  optional:"true"
+Attr: "areaId"  type:"String"  optional:"true"
+Attr: "aisleId"  type:"String"  optional:"true"
+Attr: "sectionId"  type:"String"  optional:"true"
+Attr: "levelId"  type:"String"  optional:"true"
+Attr: "positionId"  type:"String"  optional:"true"
+Attr: "geoPointId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFacilityLocation"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityGroup"
+Attr: "facilityGroupTypeId"  type:"String"  optional:"false"
+Attr: "primaryParentGroupId"  type:"String"  optional:"true"
+Attr: "facilityGroupName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacilityGroup"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "facilityGroupTypeId"  type:"String"  optional:"true"
+Attr: "primaryParentGroupId"  type:"String"  optional:"true"
+Attr: "facilityGroupName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFacilityGroup"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityContactMech"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+Attr: "infoString"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacilityContactMech"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "infoString"  type:"String"  optional:"true"
+Attr: "newContactMechId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFacilityContactMech"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityPostalAddress"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "toName"  type:"String"  optional:"true"
+Attr: "attnName"  type:"String"  optional:"true"
+Attr: "address1"  type:"String"  optional:"false"
+Attr: "address2"  type:"String"  optional:"true"
+Attr: "houseNumber"  type:"Long"  optional:"true"
+Attr: "houseNumberExt"  type:"String"  optional:"true"
+Attr: "directions"  type:"String"  optional:"true"
+Attr: "city"  type:"String"  optional:"false"
+Attr: "cityGeoId"  type:"String"  optional:"true"
+Attr: "postalCode"  type:"String"  optional:"true"
+Attr: "postalCodeExt"  type:"String"  optional:"true"
+Attr: "countryGeoId"  type:"String"  optional:"true"
+Attr: "stateProvinceGeoId"  type:"String"  optional:"true"
+Attr: "countyGeoId"  type:"String"  optional:"true"
+Attr: "municipalityGeoId"  type:"String"  optional:"true"
+Attr: "postalCodeGeoId"  type:"String"  optional:"true"
+Attr: "geoPointId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacilityPostalAddress"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "toName"  type:"String"  optional:"true"
+Attr: "attnName"  type:"String"  optional:"true"
+Attr: "address1"  type:"String"  optional:"true"
+Attr: "address2"  type:"String"  optional:"true"
+Attr: "houseNumber"  type:"Long"  optional:"true"
+Attr: "houseNumberExt"  type:"String"  optional:"true"
+Attr: "directions"  type:"String"  optional:"true"
+Attr: "city"  type:"String"  optional:"true"
+Attr: "cityGeoId"  type:"String"  optional:"true"
+Attr: "postalCode"  type:"String"  optional:"true"
+Attr: "postalCodeExt"  type:"String"  optional:"true"
+Attr: "countryGeoId"  type:"String"  optional:"true"
+Attr: "stateProvinceGeoId"  type:"String"  optional:"true"
+Attr: "countyGeoId"  type:"String"  optional:"true"
+Attr: "municipalityGeoId"  type:"String"  optional:"true"
+Attr: "postalCodeGeoId"  type:"String"  optional:"true"
+Attr: "geoPointId"  type:"String"  optional:"true"
+
+
+Servicename: "createFacilityTelecomNumber"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "countryCode"  type:"String"  optional:"true"
+Attr: "areaCode"  type:"String"  optional:"true"
+Attr: "contactNumber"  type:"String"  optional:"true"
+Attr: "askForName"  type:"String"  optional:"true"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacilityTelecomNumber"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "countryCode"  type:"String"  optional:"true"
+Attr: "areaCode"  type:"String"  optional:"true"
+Attr: "contactNumber"  type:"String"  optional:"true"
+Attr: "askForName"  type:"String"  optional:"true"
+
+
+Servicename: "createFacilityEmailAddress"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+Attr: "infoString"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"true"
+Attr: "emailAddress"  type:"String"  optional:"false"
+
+
+Servicename: "updateFacilityEmailAddress"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extension"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "emailAddress"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityContactMechPurpose"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteFacilityContactMechPurpose"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "addContactMechToFacility"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "removeContactMechFromFacility"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "addFacilityToGroup"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "updateFacilityToGroup"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "removeFacilityFromGroup"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "addFacilityGroupToGroup"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "parentFacilityGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "updateFacilityGroupToGroup"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "parentFacilityGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "removeFacilityGroupFromGroup"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "parentFacilityGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "addPartyToFacility"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removePartyFromFacility"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "addPartyToFacilityGroup"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "removePartyFromFacilityGroup"
+Attr: "facilityGroupId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityContent"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteFacilityContent"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "findStockMovesNeeded"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "findStockMovesRecommended"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "stockMoveHandled"  type:"Map"  optional:"true"
+
+
+Servicename: "processPhysicalStockMove"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+Attr: "targetLocationSeqId"  type:"String"  optional:"false"
+Attr: "quantityMoved"  type:"BigDecimal"  optional:"false"
+Attr: "warningMessageList"  type:"List"  optional:"true"
+
+
+Servicename: "createInventoryItemLabelType"
+Attr: "inventoryItemLabelTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateInventoryItemLabelType"
+Attr: "inventoryItemLabelTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInventoryItemLabelType"
+Attr: "inventoryItemLabelTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryItemLabel"
+Attr: "inventoryItemLabelId"  type:"String"  optional:"false"
+Attr: "inventoryItemLabelTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateInventoryItemLabel"
+Attr: "inventoryItemLabelId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInventoryItemLabel"
+Attr: "inventoryItemLabelId"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryItemLabelAppl"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "inventoryItemLabelId"  type:"String"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "updateInventoryItemLabelAppl"
+Attr: "inventoryItemLabelTypeId"  type:"String"  optional:"false"
+Attr: "inventoryItemLabelId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteInventoryItemLabelAppl"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "inventoryItemLabelTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "setOrderReservationPriority"
+Attr: "priority"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "findProductInventorylocations"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "setLastInventoryCount"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "createUpdateFacilityGeoPoint"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"true"
+Attr: "geoPointTypeEnumId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"false"
+Attr: "latitude"  type:"String"  optional:"false"
+Attr: "longitude"  type:"String"  optional:"false"
+Attr: "elevation"  type:"BigDecimal"  optional:"true"
+Attr: "elevationUomId"  type:"String"  optional:"true"
+Attr: "information"  type:"String"  optional:"true"
+
+
+Servicename: "createContainer"
+Attr: "containerId"  type:"String"  optional:"true"
+Attr: "containerTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContainer"
+Attr: "containerId"  type:"String"  optional:"false"
+Attr: "containerTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteContainer"
+Attr: "containerId"  type:"String"  optional:"false"
+
+
+Servicename: "createContainerType"
+Attr: "containerTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContainerType"
+Attr: "containerTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteContainerType"
+Attr: "containerTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityGroupType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "facilityGroupTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacilityGroupType"
+Attr: "facilityGroupTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFacilityGroupType"
+Attr: "facilityGroupTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityTypeAttr"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "facilityTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateFacilityTypeAttr"
+Attr: "facilityTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeFacilityTypeAttr"
+Attr: "facilityTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityType"
+Attr: "facilityTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateFacilityType"
+Attr: "facilityTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFacilityType"
+Attr: "facilityTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityCarrierShipment"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteFacilityCarrierShipment"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFacilityLocationGeoPoint"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "expireFacilityLocationGeoPoint"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "locationSeqId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createInventoryItemType"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateInventoryItemType"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInventoryItemType"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"false"
+
+

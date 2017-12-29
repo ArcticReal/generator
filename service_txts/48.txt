@@ -1,0 +1,34 @@
+ofbiz_applications_manufacturing_servicedef_services_routing.xml
+Servicename: "lookupRoutingTask"
+Attr: "workEffortName"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+
+
+Servicename: "checkRoutingTaskAssoc"
+Attr: "workEffortIdFrom"  type:"String"  optional:"false"
+Attr: "workEffortIdTo"  type:"String"  optional:"false"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "thruDate"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "create"  type:"String"  optional:"true"
+
+
+Servicename: "getProductRouting"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "applicableDate"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "ignoreDefaultRouting"  type:"String"  optional:"true"
+
+
+Servicename: "getRoutingTaskAssocs"
+Attr: "workEffortId"  type:"String"  optional:"false"
+
+
+Servicename: "getEstimatedTaskTime"
+Attr: "taskId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "routingId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+

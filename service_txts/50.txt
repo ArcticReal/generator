@@ -1,0 +1,16 @@
+ofbiz_applications_marketing_servicedef_services_contact.xml
+Servicename: "createContactListType"
+Attr: "contactListTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactListType"
+Attr: "contactListTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteContactListType"
+Attr: "contactListTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+

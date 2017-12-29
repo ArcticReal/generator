@@ -1,0 +1,102 @@
+ofbiz_framework_common_servicedef_services_security.xml
+Servicename: "createSecurityGroup"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateSecurityGroup"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createSecurityPermission"
+Attr: "permissionId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateSecurityPermission"
+Attr: "permissionId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "addSecurityPermissionToSecurityGroup"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "permissionId"  type:"String"  optional:"false"
+
+
+Servicename: "removeSecurityPermissionFromSecurityGroup"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "permissionId"  type:"String"  optional:"false"
+
+
+Servicename: "addUserLoginToSecurityGroup"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateUserLoginToSecurityGroup"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeUserLoginToSecurityGroup"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "addProtectedViewToSecurityGroup"
+Attr: "viewNameId"  type:"String"  optional:"false"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "maxHits"  type:"Long"  optional:"false"
+Attr: "maxHitsDuration"  type:"Long"  optional:"false"
+Attr: "tarpitDuration"  type:"Long"  optional:"false"
+
+
+Servicename: "updateProtectedViewToSecurityGroup"
+Attr: "viewNameId"  type:"String"  optional:"false"
+Attr: "groupId"  type:"String"  optional:"false"
+Attr: "maxHits"  type:"Long"  optional:"false"
+Attr: "maxHitsDuration"  type:"Long"  optional:"false"
+Attr: "tarpitDuration"  type:"Long"  optional:"false"
+
+
+Servicename: "removeProtectedViewFromSecurityGroup"
+Attr: "viewNameId"  type:"String"  optional:"false"
+Attr: "groupId"  type:"String"  optional:"false"
+
+
+Servicename: "securityPermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "createUserLoginSecurityQuestion"
+Attr: "questionEnumId"  type:"String"  optional:"false"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "securityAnswer"  type:"String"  optional:"true"
+
+
+Servicename: "updateUserLoginSecurityQuestion"
+Attr: "questionEnumId"  type:"String"  optional:"false"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "securityAnswer"  type:"String"  optional:"true"
+
+
+Servicename: "removeUserLoginSecurityQuestion"
+Attr: "questionEnumId"  type:"String"  optional:"false"
+Attr: "userLoginId"  type:"String"  optional:"false"
+Attr: "securityAnswer"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSecurityGroup"
+Attr: "groupId"  type:"String"  optional:"false"
+
+

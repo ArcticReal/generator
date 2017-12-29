@@ -1,0 +1,59 @@
+ofbiz_applications_product_servicedef_services_inventory.xml
+Servicename: "createInventoryItemTempRes"
+Attr: "visitId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "reservedDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateInventoryItemTempRes"
+Attr: "visitId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "reservedDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteInventoryItemTempRes"
+Attr: "visitId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryItemAttribute"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateInventoryItemAttribute"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInventoryItemAttribute"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createInventoryItemTypeAttr"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateInventoryItemTypeAttr"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteInventoryItemTypeAttr"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+

@@ -1,0 +1,222 @@
+ofbiz_applications_workeffort_servicedef_services_workeffort.xml
+Servicename: "createDeliverable"
+Attr: "deliverableId"  type:"String"  optional:"true"
+Attr: "deliverableTypeId"  type:"String"  optional:"true"
+Attr: "deliverableName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateDeliverable"
+Attr: "deliverableId"  type:"String"  optional:"false"
+Attr: "deliverableTypeId"  type:"String"  optional:"true"
+Attr: "deliverableName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteDeliverable"
+Attr: "deliverableId"  type:"String"  optional:"false"
+
+
+Servicename: "createDeliverableType"
+Attr: "deliverableTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateDeliverableType"
+Attr: "deliverableTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteDeliverableType"
+Attr: "deliverableTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortAssocAttribute"
+Attr: "workEffortIdFrom"  type:"String"  optional:"false"
+Attr: "workEffortIdTo"  type:"String"  optional:"false"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortAssocAttribute"
+Attr: "workEffortIdFrom"  type:"String"  optional:"false"
+Attr: "workEffortIdTo"  type:"String"  optional:"false"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortAssocAttribute"
+Attr: "workEffortIdFrom"  type:"String"  optional:"false"
+Attr: "workEffortIdTo"  type:"String"  optional:"false"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortAssocType"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortAssocType"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortAssocType"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortAssocTypeAttr"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortAssocTypeAttr"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortAssocTypeAttr"
+Attr: "workEffortAssocTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortBilling"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "percentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateWorkEffortBilling"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "percentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteWorkEffortBilling"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortContentType"
+Attr: "workEffortContentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortContentType"
+Attr: "workEffortContentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortContentType"
+Attr: "workEffortContentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortGoodStandardType"
+Attr: "workEffortGoodStdTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortGoodStandardType"
+Attr: "workEffortGoodStdTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortGoodStandardType"
+Attr: "workEffortGoodStdTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortPurposeType"
+Attr: "workEffortPurposeTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortPurposeType"
+Attr: "workEffortPurposeTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortPurposeType"
+Attr: "workEffortPurposeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortType"
+Attr: "workEffortTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortType"
+Attr: "workEffortTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortType"
+Attr: "workEffortTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkEffortTypeAttr"
+Attr: "workEffortTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkEffortTypeAttr"
+Attr: "workEffortTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkEffortTypeAttr"
+Attr: "workEffortTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createApplicationSandbox"
+Attr: "applicationId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "runtimeDataId"  type:"String"  optional:"true"
+
+
+Servicename: "updateApplicationSandbox"
+Attr: "applicationId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "runtimeDataId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteApplicationSandbox"
+Attr: "applicationId"  type:"String"  optional:"false"
+
+

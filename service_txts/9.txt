@@ -1,0 +1,508 @@
+ofbiz_applications_accounting_servicedef_services_fixedasset.xml
+Servicename: "createFixedAsset"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "parentFixedAssetId"  type:"String"  optional:"true"
+Attr: "instanceOfProductId"  type:"String"  optional:"true"
+Attr: "classEnumId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "fixedAssetName"  type:"String"  optional:"true"
+Attr: "acquireOrderId"  type:"String"  optional:"true"
+Attr: "acquireOrderItemSeqId"  type:"String"  optional:"true"
+Attr: "dateAcquired"  type:"Timestamp"  optional:"true"
+Attr: "dateLastServiced"  type:"Timestamp"  optional:"true"
+Attr: "dateNextService"  type:"Timestamp"  optional:"true"
+Attr: "expectedEndOfLife"  type:"Timestamp"  optional:"true"
+Attr: "actualEndOfLife"  type:"Timestamp"  optional:"true"
+Attr: "productionCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "calendarId"  type:"String"  optional:"true"
+Attr: "serialNumber"  type:"String"  optional:"true"
+Attr: "locatedAtFacilityId"  type:"String"  optional:"true"
+Attr: "locatedAtLocationSeqId"  type:"String"  optional:"true"
+Attr: "salvageValue"  type:"BigDecimal"  optional:"true"
+Attr: "depreciation"  type:"BigDecimal"  optional:"true"
+Attr: "purchaseCost"  type:"BigDecimal"  optional:"true"
+Attr: "purchaseCostUomId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAsset"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "parentFixedAssetId"  type:"String"  optional:"true"
+Attr: "instanceOfProductId"  type:"String"  optional:"true"
+Attr: "classEnumId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "fixedAssetName"  type:"String"  optional:"true"
+Attr: "acquireOrderId"  type:"String"  optional:"true"
+Attr: "acquireOrderItemSeqId"  type:"String"  optional:"true"
+Attr: "dateAcquired"  type:"Timestamp"  optional:"true"
+Attr: "dateLastServiced"  type:"Timestamp"  optional:"true"
+Attr: "dateNextService"  type:"Timestamp"  optional:"true"
+Attr: "expectedEndOfLife"  type:"Timestamp"  optional:"true"
+Attr: "actualEndOfLife"  type:"Timestamp"  optional:"true"
+Attr: "productionCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "calendarId"  type:"String"  optional:"true"
+Attr: "serialNumber"  type:"String"  optional:"true"
+Attr: "locatedAtFacilityId"  type:"String"  optional:"true"
+Attr: "locatedAtLocationSeqId"  type:"String"  optional:"true"
+Attr: "salvageValue"  type:"BigDecimal"  optional:"true"
+Attr: "depreciation"  type:"BigDecimal"  optional:"true"
+Attr: "purchaseCost"  type:"BigDecimal"  optional:"true"
+Attr: "purchaseCostUomId"  type:"String"  optional:"true"
+
+
+Servicename: "addFixedAssetProduct"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "fixedAssetProductTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "quantityUomId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetProduct"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "fixedAssetProductTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "quantityUomId"  type:"String"  optional:"true"
+
+
+Servicename: "removeFixedAssetProduct"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "fixedAssetProductTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createFixedAssetStdCost"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fixedAssetStdCostTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "amountUomId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateFixedAssetStdCost"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fixedAssetStdCostTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "amountUomId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "cancelFixedAssetStdCost"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fixedAssetStdCostTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "amountUomId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createFixedAssetIdent"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fixedAssetIdentTypeId"  type:"String"  optional:"false"
+Attr: "idValue"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetIdent"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fixedAssetIdentTypeId"  type:"String"  optional:"false"
+Attr: "idValue"  type:"String"  optional:"true"
+
+
+Servicename: "removeFixedAssetIdent"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fixedAssetIdentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetRegistration"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "registrationDate"  type:"Timestamp"  optional:"true"
+Attr: "govAgencyPartyId"  type:"String"  optional:"true"
+Attr: "registrationNumber"  type:"String"  optional:"true"
+Attr: "licenseNumber"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetRegistration"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "registrationDate"  type:"Timestamp"  optional:"true"
+Attr: "govAgencyPartyId"  type:"String"  optional:"true"
+Attr: "registrationNumber"  type:"String"  optional:"true"
+Attr: "licenseNumber"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetRegistration"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createFixedAssetMaint"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "productMaintTypeId"  type:"String"  optional:"true"
+Attr: "productMaintSeqId"  type:"String"  optional:"true"
+Attr: "scheduleWorkEffortId"  type:"String"  optional:"true"
+Attr: "intervalQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "intervalUomId"  type:"String"  optional:"true"
+Attr: "intervalMeterTypeId"  type:"String"  optional:"true"
+Attr: "purchaseOrderId"  type:"String"  optional:"true"
+Attr: "estimatedStartDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedCompletionDate"  type:"Timestamp"  optional:"true"
+Attr: "maintTemplateWorkEffortId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetMaint"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "maintHistSeqId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "productMaintTypeId"  type:"String"  optional:"true"
+Attr: "productMaintSeqId"  type:"String"  optional:"true"
+Attr: "scheduleWorkEffortId"  type:"String"  optional:"true"
+Attr: "intervalQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "intervalUomId"  type:"String"  optional:"true"
+Attr: "intervalMeterTypeId"  type:"String"  optional:"true"
+Attr: "purchaseOrderId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetMaint"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "maintHistSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createMaintsFromTimeInterval"
+
+
+Servicename: "createFixedAssetMeter"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "productMeterTypeId"  type:"String"  optional:"false"
+Attr: "readingDate"  type:"Timestamp"  optional:"false"
+Attr: "meterValue"  type:"BigDecimal"  optional:"true"
+Attr: "readingReasonEnumId"  type:"String"  optional:"true"
+Attr: "maintHistSeqId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetMeter"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "productMeterTypeId"  type:"String"  optional:"false"
+Attr: "readingDate"  type:"Timestamp"  optional:"false"
+Attr: "meterValue"  type:"BigDecimal"  optional:"true"
+Attr: "readingReasonEnumId"  type:"String"  optional:"true"
+Attr: "maintHistSeqId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetMeter"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "productMeterTypeId"  type:"String"  optional:"false"
+Attr: "readingDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createFixedAssetMaintOrder"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "maintHistSeqId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetMaintOrder"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "maintHistSeqId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyFixedAssetAssignment"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "allocatedDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyFixedAssetAssignment"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "allocatedDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyFixedAssetAssignment"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createFixedAssetDepMethod"
+Attr: "depreciationCustomMethodId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateFixedAssetDepMethod"
+Attr: "depreciationCustomMethodId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteFixedAssetDepMethod"
+Attr: "depreciationCustomMethodId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+
+
+Servicename: "checkUpdateFixedAssetDepreciation"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+
+
+Servicename: "fixedAssetDepCalcInterface"
+Attr: "expEndOfLifeYear"  type:"Integer"  optional:"false"
+Attr: "assetAcquiredYear"  type:"Integer"  optional:"false"
+Attr: "purchaseCost"  type:"BigDecimal"  optional:"false"
+Attr: "salvageValue"  type:"BigDecimal"  optional:"false"
+Attr: "usageYears"  type:"Integer"  optional:"false"
+
+
+Servicename: "straightLineDepreciation"
+Attr: "expEndOfLifeYear"  type:"Integer"  optional:"false"
+Attr: "assetAcquiredYear"  type:"Integer"  optional:"false"
+Attr: "purchaseCost"  type:"BigDecimal"  optional:"false"
+Attr: "salvageValue"  type:"BigDecimal"  optional:"false"
+Attr: "usageYears"  type:"Integer"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+
+
+Servicename: "doubleDecliningBalanceDepreciation"
+Attr: "expEndOfLifeYear"  type:"Integer"  optional:"false"
+Attr: "assetAcquiredYear"  type:"Integer"  optional:"false"
+Attr: "purchaseCost"  type:"BigDecimal"  optional:"false"
+Attr: "salvageValue"  type:"BigDecimal"  optional:"false"
+Attr: "usageYears"  type:"Integer"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+
+
+Servicename: "calculateFixedAssetDepreciation"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetTypeGlAccount"
+Attr: "assetGlAccountId"  type:"String"  optional:"true"
+Attr: "accDepGlAccountId"  type:"String"  optional:"true"
+Attr: "depGlAccountId"  type:"String"  optional:"true"
+Attr: "profitGlAccountId"  type:"String"  optional:"true"
+Attr: "lossGlAccountId"  type:"String"  optional:"true"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "updateFixedAssetTypeGlAccount"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteFixedAssetTypeGlAccount"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetGeoPoint"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateFixedAssetGeoPoint"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteFixedAssetGeoPoint"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "geoPointId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createAccommodationClass"
+Attr: "parentClassId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "accommodationClassId"  type:"String"  optional:"true"
+
+
+Servicename: "updateAccommodationClass"
+Attr: "accommodationClassId"  type:"String"  optional:"false"
+Attr: "parentClassId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAccommodationClass"
+Attr: "accommodationClassId"  type:"String"  optional:"false"
+
+
+Servicename: "createAccommodationMapType"
+Attr: "accommodationMapTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAccommodationMapType"
+Attr: "accommodationMapTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAccommodationMapType"
+Attr: "accommodationMapTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createAccommodationMap"
+Attr: "accommodationMapId"  type:"String"  optional:"true"
+Attr: "accommodationClassId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "accommodationMapTypeId"  type:"String"  optional:"true"
+Attr: "numberOfSpaces"  type:"Long"  optional:"true"
+
+
+Servicename: "updateAccommodationMap"
+Attr: "accommodationMapId"  type:"String"  optional:"false"
+Attr: "accommodationClassId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "accommodationMapTypeId"  type:"String"  optional:"true"
+Attr: "numberOfSpaces"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteAccommodationMap"
+Attr: "accommodationMapId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetAttribute"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateFixedAssetAttribute"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetAttribute"
+Attr: "fixedAssetId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetIdentType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "fixedAssetIdentTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetIdentType"
+Attr: "fixedAssetIdentTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetIdentType"
+Attr: "fixedAssetIdentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetProductType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "fixedAssetProductTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetProductType"
+Attr: "fixedAssetProductTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetProductType"
+Attr: "fixedAssetProductTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetStdCostType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "fixedAssetStdCostTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetStdCostType"
+Attr: "fixedAssetStdCostTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetStdCostType"
+Attr: "fixedAssetStdCostTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFixedAssetType"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetType"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFixedAssetTypeAttr"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateFixedAssetTypeAttr"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFixedAssetTypeAttr"
+Attr: "fixedAssetTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+

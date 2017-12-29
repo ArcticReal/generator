@@ -1,0 +1,10 @@
+ofbiz_applications_order_servicedef_services_upgrade.xml
+Servicename: "migrateOrderItemAssociation"
+
+
+Servicename: "migrateCustRequestRole"
+
+
+Servicename: "migrateOrderShipment"
+
+

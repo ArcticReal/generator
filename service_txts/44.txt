@@ -1,0 +1,99 @@
+ofbiz_applications_manufacturing_servicedef_services_calendar.xml
+Servicename: "createCalendar"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "calendarWeekId"  type:"String"  optional:"true"
+
+
+Servicename: "updateCalendar"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "calendarWeekId"  type:"String"  optional:"true"
+
+
+Servicename: "removeCalendar"
+Attr: "calendarId"  type:"String"  optional:"false"
+
+
+Servicename: "createCalendarWeek"
+Attr: "calendarWeekId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "mondayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "mondayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "tuesdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "tuesdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "wednesdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "wednesdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "thursdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "thursdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "fridayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "fridayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "saturdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "saturdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "sundayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "sundayCapacity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateCalendarWeek"
+Attr: "calendarWeekId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "mondayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "mondayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "tuesdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "tuesdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "wednesdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "wednesdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "thursdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "thursdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "fridayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "fridayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "saturdayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "saturdayCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "sundayStartTime"  type:"Timestamp"  optional:"true"
+Attr: "sundayCapacity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "removeCalendarWeek"
+Attr: "calendarWeekId"  type:"String"  optional:"false"
+
+
+Servicename: "createCalendarExceptionDay"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "exceptionDateStartTime"  type:"Timestamp"  optional:"false"
+Attr: "exceptionCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "usedCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCalendarExceptionDay"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "exceptionDateStartTime"  type:"Timestamp"  optional:"false"
+Attr: "exceptionCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "usedCapacity"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeCalendarExceptionDay"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "exceptionDateStartTime"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createCalendarExceptionWeek"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "exceptionDateStart"  type:"Timestamp"  optional:"false"
+Attr: "calendarWeekId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCalendarExceptionWeek"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "exceptionDateStart"  type:"Timestamp"  optional:"false"
+Attr: "calendarWeekId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeCalendarExceptionWeek"
+Attr: "calendarId"  type:"String"  optional:"false"
+Attr: "exceptionDateStart"  type:"Timestamp"  optional:"false"
+
+

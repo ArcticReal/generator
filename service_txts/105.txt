@@ -1,0 +1,13 @@
+ofbiz_framework_common_servicedef_services_qrcode.xml
+Servicename: "generateQRCodeImage"
+Attr: "message"  type:"String"  optional:"false"
+Attr: "format"  type:"String"  optional:"true"
+Attr: "height"  type:"Integer"  optional:"true"
+Attr: "width"  type:"Integer"  optional:"true"
+Attr: "encoding"  type:"String"  optional:"true"
+Attr: "logoImage"  type:"java.awt.image.BufferedImage"  optional:"true"
+Attr: "logoImageMaxWidth"  type:"Integer"  optional:"true"
+Attr: "logoImageMaxHeight"  type:"Integer"  optional:"true"
+Attr: "verifyOutput"  type:"Boolean"  optional:"true"
+
+

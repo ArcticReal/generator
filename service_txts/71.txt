@@ -1,0 +1,47 @@
+ofbiz_applications_product_servicedef_services_config.xml
+Servicename: "createConfigOptionProductOption"
+Attr: "configId"  type:"String"  optional:"false"
+Attr: "configItemId"  type:"String"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"false"
+Attr: "configOptionId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productOptionId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateConfigOptionProductOption"
+Attr: "configId"  type:"String"  optional:"false"
+Attr: "configItemId"  type:"String"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"false"
+Attr: "configOptionId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productOptionId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteConfigOptionProductOption"
+Attr: "configId"  type:"String"  optional:"false"
+Attr: "configItemId"  type:"String"  optional:"false"
+Attr: "sequenceNum"  type:"Long"  optional:"false"
+Attr: "configOptionId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "createProdConfItemContentType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "confItemContentTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProdConfItemContentType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "confItemContentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteProdConfItemContentType"
+Attr: "confItemContentTypeId"  type:"String"  optional:"false"
+
+

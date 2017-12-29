@@ -1,0 +1,9 @@
+ofbiz_applications_securityext_servicedef_services.xml
+Servicename: "importIssuerProvision"
+Attr: "componentName"  type:"String"  optional:"false"
+Attr: "keystoreName"  type:"String"  optional:"false"
+Attr: "certString"  type:"String"  optional:"false"
+Attr: "importIssuer"  type:"String"  optional:"true"
+Attr: "alias"  type:"String"  optional:"false"
+
+

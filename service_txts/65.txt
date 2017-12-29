@@ -1,0 +1,113 @@
+ofbiz_applications_party_servicedef_services_agreement.xml
+Servicename: "createAgreementTermAttribute"
+Attr: "agreementTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateAgreementTermAttribute"
+Attr: "agreementTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAgreementTermAttribute"
+Attr: "agreementTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementItemType"
+Attr: "agreementItemTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAgreementItemType"
+Attr: "agreementItemTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAgreementItemType"
+Attr: "agreementItemTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTermType"
+Attr: "termTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateTermType"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTermType"
+Attr: "termTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTermTypeAttr"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateTermTypeAttr"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTermTypeAttr"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createAddendum"
+Attr: "addendumId"  type:"String"  optional:"true"
+Attr: "agreementId"  type:"String"  optional:"true"
+Attr: "agreementItemSeqId"  type:"String"  optional:"true"
+Attr: "addendumCreationDate"  type:"Timestamp"  optional:"true"
+Attr: "addendumEffectiveDate"  type:"Timestamp"  optional:"true"
+Attr: "addendumText"  type:"String"  optional:"true"
+
+
+Servicename: "updateAddendum"
+Attr: "addendumId"  type:"String"  optional:"false"
+Attr: "agreementId"  type:"String"  optional:"true"
+Attr: "agreementItemSeqId"  type:"String"  optional:"true"
+Attr: "addendumCreationDate"  type:"Timestamp"  optional:"true"
+Attr: "addendumEffectiveDate"  type:"Timestamp"  optional:"true"
+Attr: "addendumText"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAddendum"
+Attr: "addendumId"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementContentType"
+Attr: "agreementContentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAgreementContentType"
+Attr: "agreementContentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAgreementContentType"
+Attr: "agreementContentTypeId"  type:"String"  optional:"false"
+
+

@@ -1,0 +1,104 @@
+ofbiz_applications_product_servicedef_services_shipment_usps.xml
+Servicename: "uspsRateInquire"
+Attr: "serviceConfigProps"  type:"String"  optional:"true"
+Attr: "initialEstimateAmt"  type:"BigDecimal"  optional:"true"
+Attr: "shippingContactMechId"  type:"String"  optional:"true"
+Attr: "shippingOriginContactMechId"  type:"String"  optional:"true"
+Attr: "shippingPostalCode"  type:"String"  optional:"true"
+Attr: "shippingCountryCode"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"false"
+Attr: "carrierPartyId"  type:"String"  optional:"false"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"false"
+Attr: "productStoreShipMethId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "shippableItemInfo"  type:"List"  optional:"false"
+Attr: "shippableWeight"  type:"BigDecimal"  optional:"false"
+Attr: "shippableQuantity"  type:"BigDecimal"  optional:"false"
+Attr: "shippableTotal"  type:"BigDecimal"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "shipmentCustomMethodId"  type:"String"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "uspsInternationalRateInquire"
+Attr: "serviceConfigProps"  type:"String"  optional:"true"
+Attr: "initialEstimateAmt"  type:"BigDecimal"  optional:"true"
+Attr: "shippingContactMechId"  type:"String"  optional:"true"
+Attr: "shippingOriginContactMechId"  type:"String"  optional:"true"
+Attr: "shippingPostalCode"  type:"String"  optional:"true"
+Attr: "shippingCountryCode"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"false"
+Attr: "carrierPartyId"  type:"String"  optional:"false"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"false"
+Attr: "productStoreShipMethId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "shippableItemInfo"  type:"List"  optional:"false"
+Attr: "shippableWeight"  type:"BigDecimal"  optional:"false"
+Attr: "shippableQuantity"  type:"BigDecimal"  optional:"false"
+Attr: "shippableTotal"  type:"BigDecimal"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "shipmentCustomMethodId"  type:"String"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "uspsTrackConfirm"
+Attr: "trackingId"  type:"String"  optional:"false"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "configProps"  type:"String"  optional:"false"
+
+
+Servicename: "uspsAddressValidation"
+Attr: "firmName"  type:"String"  optional:"true"
+Attr: "address1"  type:"String"  optional:"false"
+Attr: "address2"  type:"String"  optional:"true"
+Attr: "city"  type:"String"  optional:"true"
+Attr: "state"  type:"String"  optional:"true"
+Attr: "zip5"  type:"String"  optional:"true"
+Attr: "zip4"  type:"String"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "configProps"  type:"String"  optional:"false"
+
+
+Servicename: "uspsCityStateLookup"
+Attr: "zip5"  type:"String"  optional:"false"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "configProps"  type:"String"  optional:"false"
+
+
+Servicename: "uspsPriorityMailStandard"
+Attr: "originZip"  type:"String"  optional:"false"
+Attr: "destinationZip"  type:"String"  optional:"false"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "configProps"  type:"String"  optional:"false"
+
+
+Servicename: "uspsPackageServicesStandard"
+Attr: "originZip"  type:"String"  optional:"false"
+Attr: "destinationZip"  type:"String"  optional:"false"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "configProps"  type:"String"  optional:"false"
+
+
+Servicename: "uspsDomesticRate"
+Attr: "service"  type:"String"  optional:"false"
+Attr: "originZip"  type:"String"  optional:"false"
+Attr: "destinationZip"  type:"String"  optional:"false"
+Attr: "pounds"  type:"String"  optional:"false"
+Attr: "ounces"  type:"String"  optional:"false"
+Attr: "container"  type:"String"  optional:"true"
+Attr: "size"  type:"String"  optional:"true"
+Attr: "machinable"  type:"String"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"false"
+Attr: "configProps"  type:"String"  optional:"false"
+
+
+Servicename: "uspsUpdateShipmentRateInfo"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+
+Servicename: "uspsDeliveryConfirmation"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+

@@ -1,0 +1,477 @@
+ofbiz_applications_accounting_servicedef_services_payment.xml
+Servicename: "createPayment"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "paymentGatewayResponseId"  type:"String"  optional:"true"
+Attr: "paymentPreferenceId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "effectiveDate"  type:"Timestamp"  optional:"true"
+Attr: "paymentRefNum"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "actualCurrencyAmount"  type:"BigDecimal"  optional:"true"
+Attr: "actualCurrencyUomId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePayment"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "paymentTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "paymentGatewayResponseId"  type:"String"  optional:"true"
+Attr: "paymentPreferenceId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "effectiveDate"  type:"Timestamp"  optional:"true"
+Attr: "paymentRefNum"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "actualCurrencyAmount"  type:"BigDecimal"  optional:"true"
+Attr: "actualCurrencyUomId"  type:"String"  optional:"true"
+
+
+Servicename: "setPaymentStatus"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "checkPaymentInvoices"
+Attr: "paymentId"  type:"String"  optional:"false"
+
+
+Servicename: "quickSendPayment"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "paymentTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "paymentGatewayResponseId"  type:"String"  optional:"true"
+Attr: "paymentPreferenceId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "effectiveDate"  type:"Timestamp"  optional:"true"
+Attr: "paymentRefNum"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "actualCurrencyAmount"  type:"BigDecimal"  optional:"true"
+Attr: "actualCurrencyUomId"  type:"String"  optional:"true"
+
+
+Servicename: "createPaymentApplication"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "toPaymentId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "amountApplied"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updatePaymentApplication"
+Attr: "paymentApplicationId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "toPaymentId"  type:"String"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "amountApplied"  type:"BigDecimal"  optional:"true"
+Attr: "invoiceProcessing"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentApplicationDef"
+Attr: "paymentApplicationId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "toPaymentId"  type:"String"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "amountApplied"  type:"BigDecimal"  optional:"true"
+Attr: "invoiceProcessing"  type:"String"  optional:"true"
+
+
+Servicename: "removePaymentApplication"
+Attr: "paymentApplicationId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentAndApplication"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "paymentGatewayResponseId"  type:"String"  optional:"true"
+Attr: "paymentPreferenceId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"false"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "effectiveDate"  type:"Timestamp"  optional:"true"
+Attr: "paymentRefNum"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "actualCurrencyAmount"  type:"BigDecimal"  optional:"true"
+Attr: "actualCurrencyUomId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+
+
+Servicename: "getInvoicePaymentInfoList"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoice"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "getInvoicePaymentInfoListByDueDateOffset"
+Attr: "invoiceTypeId"  type:"String"  optional:"false"
+Attr: "daysOffset"  type:"Long"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+
+
+Servicename: "voidPayment"
+Attr: "paymentId"  type:"String"  optional:"false"
+
+
+Servicename: "getPaymentRunningTotal"
+Attr: "paymentIds"  type:"List"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "cancelPaymentBatch"
+Attr: "paymentGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentAndPaymentGroupForInvoices"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "checkStartNumber"  type:"Long"  optional:"true"
+Attr: "invoiceIds"  type:"List"  optional:"false"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentAndApplicationForParty"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "invoices"  type:"List"  optional:"false"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"false"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "checkStartNumber"  type:"Long"  optional:"true"
+
+
+Servicename: "createPaymentGroupAndMember"
+Attr: "paymentIds"  type:"List"  optional:"false"
+Attr: "paymentGroupTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "paymentGroupName"  type:"String"  optional:"true"
+
+
+Servicename: "cancelCheckRunPayments"
+Attr: "paymentGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccoutnTransFromPayment"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "glReconciliationId"  type:"String"  optional:"true"
+Attr: "transactionDate"  type:"Timestamp"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "performedByPartyId"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "invoiceIds"  type:"List"  optional:"true"
+
+
+Servicename: "getPayments"
+Attr: "paymentGroupId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+
+
+Servicename: "getPaymentGroupReconciliationId"
+Attr: "paymentGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "checkAndCreateBatchForValidPayments"
+Attr: "paymentIds"  type:"List"  optional:"false"
+Attr: "paymentGroupTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "paymentGroupName"  type:"String"  optional:"true"
+
+
+Servicename: "massChangePaymentStatus"
+Attr: "paymentIds"  type:"List"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentFromOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "paymentRefNum"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "createMatchingPaymentApplication"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+
+
+Servicename: "createPaymentContent"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "paymentContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentContent"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "paymentContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "removePaymentContent"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "paymentContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createBillingAccountTermAttr"
+Attr: "billingAccountTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+
+
+Servicename: "updateBillingAccountTermAttr"
+Attr: "billingAccountTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteBillingAccountTermAttr"
+Attr: "billingAccountTermId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createDeduction"
+Attr: "deductionId"  type:"String"  optional:"true"
+Attr: "deductionTypeId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateDeduction"
+Attr: "deductionId"  type:"String"  optional:"false"
+Attr: "deductionTypeId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteDeduction"
+Attr: "deductionId"  type:"String"  optional:"false"
+
+
+Servicename: "createDeductionType"
+Attr: "deductionTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateDeductionType"
+Attr: "deductionTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteDeductionType"
+Attr: "deductionTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentAttribute"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentAttribute"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deletePaymentAttribute"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentBudgetAllocation"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updatePaymentBudgetAllocation"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "paymentId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deletePaymentBudgetAllocation"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "paymentId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentContentType"
+Attr: "paymentContentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentContentType"
+Attr: "paymentContentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePaymentContentType"
+Attr: "paymentContentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentGroupType"
+Attr: "paymentGroupTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentGroupType"
+Attr: "paymentGroupTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePaymentGroupType"
+Attr: "paymentGroupTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentType"
+Attr: "paymentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentType"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePaymentType"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPaymentTypeAttr"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentTypeAttr"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePaymentTypeAttr"
+Attr: "paymentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+

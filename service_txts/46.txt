@@ -1,0 +1,47 @@
+ofbiz_applications_manufacturing_servicedef_services_mrp.xml
+Servicename: "executeMrp"
+Attr: "facilityGroupId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "mrpName"  type:"String"  optional:"true"
+Attr: "defaultYearsOffset"  type:"Integer"  optional:"true"
+
+
+Servicename: "initMrpEvents"
+Attr: "mrpId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "manufacturingFacilityId"  type:"String"  optional:"false"
+Attr: "reInitialize"  type:"Boolean"  optional:"false"
+Attr: "defaultYearsOffset"  type:"Integer"  optional:"true"
+
+
+Servicename: "findProductMrpQoh"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "createMrpEvent"
+Attr: "mrpId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "eventDate"  type:"Timestamp"  optional:"false"
+Attr: "mrpEventTypeId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "eventName"  type:"String"  optional:"true"
+
+
+Servicename: "setEstimatedDeliveryDates"
+
+
+Servicename: "createMrpEventType"
+Attr: "mrpEventTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateMrpEventType"
+Attr: "mrpEventTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteMrpEventType"
+Attr: "mrpEventTypeId"  type:"String"  optional:"false"
+
+

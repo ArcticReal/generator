@@ -1,0 +1,89 @@
+ofbiz_applications_accounting_servicedef_services_cost.xml
+Servicename: "createCostComponentCalc"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "costGlAccountTypeId"  type:"String"  optional:"true"
+Attr: "offsettingGlAccountTypeId"  type:"String"  optional:"true"
+Attr: "fixedCost"  type:"BigDecimal"  optional:"true"
+Attr: "variableCost"  type:"BigDecimal"  optional:"true"
+Attr: "perMilliSecond"  type:"Long"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "costCustomMethodId"  type:"String"  optional:"true"
+
+
+Servicename: "updateCostComponentCalc"
+Attr: "costComponentCalcId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "costGlAccountTypeId"  type:"String"  optional:"true"
+Attr: "offsettingGlAccountTypeId"  type:"String"  optional:"true"
+Attr: "fixedCost"  type:"BigDecimal"  optional:"true"
+Attr: "variableCost"  type:"BigDecimal"  optional:"true"
+Attr: "perMilliSecond"  type:"Long"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "costCustomMethodId"  type:"String"  optional:"true"
+
+
+Servicename: "removeCostComponentCalc"
+Attr: "costComponentCalcId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "costGlAccountTypeId"  type:"String"  optional:"true"
+Attr: "offsettingGlAccountTypeId"  type:"String"  optional:"true"
+Attr: "fixedCost"  type:"BigDecimal"  optional:"true"
+Attr: "variableCost"  type:"BigDecimal"  optional:"true"
+Attr: "perMilliSecond"  type:"Long"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "costCustomMethodId"  type:"String"  optional:"true"
+
+
+Servicename: "createWorkEffortCostCalc"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "costComponentCalcId"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeWorkEffortCostCalc"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "costComponentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createProductAverageCost"
+Attr: "productAverageCostTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "averageCost"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "updateProductAverageCost"
+Attr: "productAverageCostTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "averageCost"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteProductAverageCost"
+Attr: "productAverageCostTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "updateProductAverageCostOnReceiveInventory"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "quantityAccepted"  type:"BigDecimal"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "getProductAverageCost"
+Attr: "inventoryItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+

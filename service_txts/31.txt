@@ -1,0 +1,177 @@
+ofbiz_applications_content_servicedef_services_contenttypes.xml
+Servicename: "createContentType"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContentType"
+Attr: "contentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeContentType"
+Attr: "contentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createContentAssocType"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContentAssocType"
+Attr: "contentAssocTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeContentAssocType"
+Attr: "contentAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createContentTypeAttr"
+Attr: "contentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeContentTypeAttr"
+Attr: "contentTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createContentAssocPredicate"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContentAssocPredicate"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeContentAssocPredicate"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"false"
+
+
+Servicename: "createContentPurposeType"
+Attr: "contentPurposeTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContentPurposeType"
+Attr: "contentPurposeTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeContentPurposeType"
+Attr: "contentPurposeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createCharacterSet"
+Attr: "characterSetId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCharacterSet"
+Attr: "characterSetId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeCharacterSet"
+Attr: "characterSetId"  type:"String"  optional:"false"
+
+
+Servicename: "createDataResourceType"
+Attr: "dataResourceTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateDataResourceType"
+Attr: "dataResourceTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeDataResourceType"
+Attr: "dataResourceTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createDataResourceTypeAttr"
+Attr: "dataResourceTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateDataResourceTypeAttr"
+Attr: "dataResourceTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeDataResourceTypeAttr"
+Attr: "dataResourceTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFileExtension"
+Attr: "fileExtensionId"  type:"String"  optional:"false"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFileExtension"
+Attr: "fileExtensionId"  type:"String"  optional:"false"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "removeFileExtension"
+Attr: "fileExtensionId"  type:"String"  optional:"false"
+
+
+Servicename: "createMetaDataPredicate"
+Attr: "metaDataPredicateId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateMetaDataPredicate"
+Attr: "metaDataPredicateId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeMetaDataPredicate"
+Attr: "metaDataPredicateId"  type:"String"  optional:"false"
+
+
+Servicename: "createMimeType"
+Attr: "mimeTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateMimeType"
+Attr: "mimeTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeMimeType"
+Attr: "mimeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createMimeTypeHtmlTemplate"
+Attr: "mimeTypeId"  type:"String"  optional:"false"
+Attr: "templateLocation"  type:"String"  optional:"true"
+
+
+Servicename: "updateMimeTypeHtmlTemplate"
+Attr: "mimeTypeId"  type:"String"  optional:"false"
+Attr: "templateLocation"  type:"String"  optional:"true"
+
+
+Servicename: "removeMimeTypeHtmlTemplate"
+Attr: "mimeTypeId"  type:"String"  optional:"false"
+
+

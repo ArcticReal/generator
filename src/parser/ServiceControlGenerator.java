@@ -1,6 +1,7 @@
 package parser;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.charset.Charset;
@@ -18,7 +19,7 @@ import java.util.Set;
 public class ServiceControlGenerator {
 
 	private String pathToFolder = System.getProperty("user.dir")+ "/parsed_files/service_controller/";
-	String pathToXmls = "/home/work/ofbiz_Miscellaneous/parsed/";
+	public String pathToXmls = System.getProperty("user.dir") + "/service_txts/";
 	private final Charset ENCODING = StandardCharsets.UTF_8;
 	private Set<String> descriptions = new HashSet<>();
 	private List<String> doubleDescr = new LinkedList<>();
@@ -31,36 +32,52 @@ public class ServiceControlGenerator {
 		File directory = new File(pathToXmls);
 
 		int count = 0;
-		
+		int counterr = 0;
+
+		Parser parser = new Parser();
+
 		for (File f : directory.listFiles()) {
+
 			String className = "";
+
+			String[] fileNames = getFirstLine(f).split("_");
+
+			for(int i = 0; i < fileNames.length; i++){
+				if(!(fileNames[i].equals("applications") || fileNames[i].equals("framework")
+						|| fileNames[i].equals("servicedef")|| fileNames[i].equals("services")
+						|| fileNames[i].equals("ofbiz")|| fileNames[i].equals("") )){
+					className += parser.firstToUpperCase(fileNames[i]);
+				}
+			}
+
+
+			className = className.replace(".xml", "").replace("Service", "") + "ServiceController";
+
+
+			/*
 			try {
 				className = getDescriptionToClassname(f.getAbsolutePath());
 				
 			}catch(Exception e) {
 				if(e.getMessage().contains("No description found")) {
-					className = count +"StandardServiceController";
+					className = "StandardServiceController"+counterr;
+					counterr ++;
 				}
-			}
+			}*/
 
 			
 			Map<String, Map<Boolean, Map<String, String>>> allServices = readAllServices(f.getAbsolutePath());
 
 			String wrVal = "";
 
-			wrVal += getControllerHeader(className);
+			wrVal += getControllerHeader(className, fileNames[2]);
 
 			Iterator<String> it = allServices.keySet().iterator();
 
 			while (it.hasNext()) {
 				String serviceName = it.next();
 
-				if (serviceName.equals("generateQRCodeImage")) {
-					System.out.println(serviceName);
-					System.out.println(className);
-					System.out.println(f.getAbsolutePath());
-					System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-				}
+
 				Map<Boolean, Map<String, String>> attributes = allServices.get(serviceName);
 
 				Map<String, String> params = attributes.get(false);
@@ -141,23 +158,35 @@ public class ServiceControlGenerator {
 		return allServices;
 	}
 
-	public String getControllerHeader(String className) {
+	public String getControllerHeader(String className, String parentPackage) throws IOException {
+
+		String mapping = "";
+		Parser parser = new Parser();
+		mapping = parser.firstToLowerCase(className.replaceAll("Service", "").replace("Controller", ""));
 
 		String retVal = "";
-		retVal += "" + "package com.skytala.eCommerce.service;\n\n" + "import java.math.BigDecimal;\n"
-				+ "import java.sql.Timestamp;\n" + "import java.util.List;\n" + "import java.util.HashMap;\n"
-				+ "import java.util.Map;\n\n" + "import javax.servlet.http.HttpSession;\n\n"
+		retVal += "" + "package com.skytala.eCommerce.service." + parentPackage + ";\n\n"
+				+ "import java.math.BigDecimal;\n"
+				+ "import java.sql.Timestamp;\n"
+				+ "import java.util.List;\n"
+				+ "import java.util.HashMap;\n"
+				+ "import java.util.Map;\n\n"
+				+ "import javax.servlet.http.HttpSession;\n\n"
 				+ "import org.apache.ofbiz.service.GenericServiceException;\n"
 				+ "import org.apache.ofbiz.service.LocalDispatcher;\n"
 				+ "import org.apache.ofbiz.entity.GenericValue;\n"
 				+ "import org.apache.ofbiz.service.ServiceAuthException;\n"
 				+ "import org.apache.ofbiz.service.ServiceValidationException;\n"
-				+ "import org.springframework.http.HttpStatus;\n" + "import org.springframework.http.ResponseEntity;\n"
+				+ "import org.springframework.http.HttpStatus;\n"
+				+ "import org.springframework.http.ResponseEntity;\n"
 				+ "import org.springframework.web.bind.annotation.RequestMapping;\n"
 				+ "import org.springframework.web.bind.annotation.RequestParam;\n"
-				+ "import org.springframework.web.bind.annotation.RequestMethod;\n" + "\n"
-				+ "import org.springframework.web.bind.annotation.RestController;\n\n" + "" + "" + ""
-				+ "@RestController\n" + "@RequestMapping(\"/service/" + className.replaceAll("Service", "") + "\")\n"
+				+ "import org.springframework.web.bind.annotation.RequestMethod;\n"
+				+ "\n"
+				+ "import org.springframework.web.bind.annotation.RestController;\n" +
+				"\n" +
+				"import static com.skytala.eCommerce.framework.pubsub.ResponseUtil.*;\n\n"
+				+ "@RestController\n" + "@RequestMapping(\"/service/" + mapping + "\")\n"
 				+ "public class " + className + "{\n\n" + "" + "";
 
 		return retVal;
@@ -167,7 +196,7 @@ public class ServiceControlGenerator {
 
 		String retVal = "";
 		retVal += "	@RequestMapping(method = RequestMethod.POST, value = \"/" + serviceName + "\")\n"
-				+ "	public ResponseEntity<Object> " + serviceName + "(HttpSession session, ";
+				+ "	public ResponseEntity<Map<String, Object>> " + serviceName + "(HttpSession session, ";
 
 		if (!params.isEmpty()) {
 			Iterator<String> it = params.keySet().iterator();
@@ -226,12 +255,17 @@ public class ServiceControlGenerator {
 				+ "		LocalDispatcher dispatcher = (LocalDispatcher) session.getServletContext().getAttribute(\"dispatcher\");\n"
 				+ "		try {\n" + "			result = dispatcher.runSync(\"" + serviceName + "\", paramMap);\n"
 				+ "		} catch (ServiceAuthException e) {\n" + "\n" + "			e.printStackTrace();\n"
-				+ "			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(null);\n" + "\n"
+				+ "			return unauthorized();\n" + "\n"
 				+ "		} catch (ServiceValidationException e) {\n"
-				+ "			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).header(\"Session-ID\", \"JSESSIONID=\" + session.getId()).body(e.getMessage());\n"
-				+ "		} catch (GenericServiceException e) {\n" + "			e.printStackTrace();\n"
-				+ "			return ResponseEntity.badRequest().header(\"Session-ID\", \"JSESSIONID=\" + session.getId()).body(e.getMessage());\n" + "		}"
-				+ "\n		return ResponseEntity.ok().header(\"Session-ID\", \"JSESSIONID=\" + session.getId()).body(result);\n"
+				+ "			return serverError();\n"
+				+ "		} catch (GenericServiceException e) {\n"
+				+ "			e.printStackTrace();\n"
+				+ "			return badRequest();\n"
+				+ "		}\n"
+				+ "		if(result.get(\"responseMessage\").equals(\"error\")) {\n" + 
+				"			return badRequest();\n" +
+				"		}\n"
+				+ "\n		return successful(result);\n"
 				+ "	}\n\n" + "" + "";
 
 		return retVal;
@@ -244,7 +278,7 @@ public class ServiceControlGenerator {
 				+ "		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(\"Requested service does not exist. JSESSIONID=\" + session.getId());\n"
 				+ "	}\n";
 
-		return retVal;
+		return "\n";
 	}
 
 	public String getDescriptionToClassname(String path) throws Exception {
@@ -258,7 +292,7 @@ public class ServiceControlGenerator {
 			if (line.contains("<description>")) {
 
 				returnVal = line.split(">")[1].split("<")[0].replaceAll(" ", "").replace("(", "").replace(")", "")
-						.replaceAll("Services", "Service%%%").split("%%%")[0] + "Controller";;
+						.replaceAll("Services", "Service%%%").split("%%%")[0] + "Controller";
 			}
 
 		}
@@ -279,6 +313,22 @@ public class ServiceControlGenerator {
 		}
 
 		return returnVal;
+	}
+
+	public String getFirstLine(File f) throws Exception{
+
+		Scanner scanner = new Scanner(f);
+		String line = "";
+		if(scanner.hasNextLine()){
+			line = scanner.nextLine();
+		}else{
+			throw new Exception("empty file");
+		}
+
+		scanner.close();
+
+
+		return line;
 	}
 
 }

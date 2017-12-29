@@ -1,0 +1,167 @@
+ofbiz_applications_product_servicedef_services_picklist.xml
+Servicename: "convertPickOrderIdListToHeaders"
+Attr: "orderIdList"  type:"List"  optional:"true"
+Attr: "orderHeaderList"  type:"List"  optional:"true"
+
+
+Servicename: "findOrdersToPickMove"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "isRushOrder"  type:"String"  optional:"true"
+Attr: "maxNumberOfOrders"  type:"Long"  optional:"true"
+Attr: "orderHeaderList"  type:"List"  optional:"true"
+Attr: "groupByNoOfOrderItems"  type:"String"  optional:"true"
+Attr: "groupByWarehouseArea"  type:"String"  optional:"true"
+Attr: "groupByShippingMethod"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+
+
+Servicename: "createPicklistFromOrders"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "maxNumberOfOrders"  type:"Long"  optional:"true"
+Attr: "isRushOrder"  type:"String"  optional:"true"
+Attr: "orderIdList"  type:"List"  optional:"true"
+Attr: "orderHeaderList"  type:"List"  optional:"true"
+
+
+Servicename: "printPickSheets"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "maxNumberOfOrdersToPrint"  type:"Long"  optional:"true"
+Attr: "printGroupName"  type:"String"  optional:"true"
+Attr: "groupByNoOfOrderItems"  type:"String"  optional:"true"
+Attr: "groupByWarehouseArea"  type:"String"  optional:"true"
+Attr: "groupByShippingMethod"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+
+
+Servicename: "getPicklistDisplayInfo"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "viewIndex"  type:"Integer"  optional:"true"
+Attr: "viewSize"  type:"Integer"  optional:"true"
+
+
+Servicename: "getPickAndPackReportInfo"
+Attr: "picklistId"  type:"String"  optional:"false"
+
+
+Servicename: "createPicklist"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePicklist"
+Attr: "picklistId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "deletePicklist"
+Attr: "picklistId"  type:"String"  optional:"false"
+
+
+Servicename: "createPicklistBin"
+Attr: "picklistId"  type:"String"  optional:"false"
+Attr: "binLocationNumber"  type:"Long"  optional:"false"
+Attr: "primaryOrderId"  type:"String"  optional:"false"
+Attr: "primaryShipGroupSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "updatePicklistBin"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+Attr: "picklistId"  type:"String"  optional:"true"
+Attr: "binLocationNumber"  type:"Long"  optional:"true"
+Attr: "primaryOrderId"  type:"String"  optional:"true"
+Attr: "primaryShipGroupSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "deletePicklistBin"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+
+
+Servicename: "checkPicklistBinItemStatuses"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+
+
+Servicename: "createPicklistItem"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "itemStatusId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "updatePicklistItem"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "itemStatusId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deletePicklistItem"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "editPicklistItem"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "lotId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "oldLotId"  type:"String"  optional:"true"
+
+
+Servicename: "setPicklistItemToComplete"
+Attr: "picklistBinId"  type:"String"  optional:"false"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "itemStatusId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "cancelPicklistAndItems"
+Attr: "picklistId"  type:"String"  optional:"false"
+
+
+Servicename: "createPicklistRole"
+Attr: "picklistId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updatePicklistRole"
+Attr: "picklistId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deletePicklistRole"
+Attr: "picklistId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+

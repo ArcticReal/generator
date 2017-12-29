@@ -1,0 +1,89 @@
+ofbiz_framework_webtools_servicedef_services.xml
+Servicename: "parseEntityXmlFile"
+Attr: "url"  type:"java.net.URL"  optional:"true"
+Attr: "xmltext"  type:"String"  optional:"true"
+Attr: "mostlyInserts"  type:"String"  optional:"true"
+Attr: "maintainTimeStamps"  type:"String"  optional:"true"
+Attr: "txTimeout"  type:"Integer"  optional:"true"
+Attr: "createDummyFks"  type:"String"  optional:"true"
+Attr: "checkDataOnly"  type:"String"  optional:"true"
+Attr: "placeholderValues"  type:"java.util.Map"  optional:"true"
+
+
+Servicename: "entityImport"
+Attr: "filename"  type:"String"  optional:"true"
+Attr: "fmfilename"  type:"String"  optional:"true"
+Attr: "fulltext"  type:"String"  optional:"true"
+Attr: "isUrl"  type:"String"  optional:"true"
+Attr: "mostlyInserts"  type:"String"  optional:"true"
+Attr: "maintainTimeStamps"  type:"String"  optional:"true"
+Attr: "createDummyFks"  type:"String"  optional:"true"
+Attr: "checkDataOnly"  type:"String"  optional:"true"
+Attr: "txTimeout"  type:"Integer"  optional:"true"
+Attr: "placeholderValues"  type:"java.util.Map"  optional:"true"
+
+
+Servicename: "entityImportDir"
+Attr: "path"  type:"String"  optional:"true"
+Attr: "mostlyInserts"  type:"String"  optional:"true"
+Attr: "maintainTimeStamps"  type:"String"  optional:"true"
+Attr: "createDummyFks"  type:"String"  optional:"true"
+Attr: "checkDataOnly"  type:"String"  optional:"true"
+Attr: "deleteFiles"  type:"String"  optional:"true"
+Attr: "txTimeout"  type:"Integer"  optional:"true"
+Attr: "filePause"  type:"Long"  optional:"true"
+Attr: "placeholderValues"  type:"java.util.Map"  optional:"true"
+
+
+Servicename: "entityImportReaders"
+Attr: "readers"  type:"String"  optional:"true"
+Attr: "overrideDelegator"  type:"String"  optional:"true"
+Attr: "overrideGroup"  type:"String"  optional:"true"
+Attr: "mostlyInserts"  type:"String"  optional:"true"
+Attr: "maintainTimeStamps"  type:"String"  optional:"true"
+Attr: "createDummyFks"  type:"String"  optional:"true"
+Attr: "checkDataOnly"  type:"String"  optional:"true"
+Attr: "txTimeout"  type:"Integer"  optional:"true"
+
+
+Servicename: "entityExportAll"
+Attr: "outpath"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "txTimeout"  type:"Integer"  optional:"true"
+
+
+Servicename: "getEntityRefData"
+
+
+Servicename: "exportEntityEoModelBundle"
+Attr: "eomodeldFullPath"  type:"java.lang.String"  optional:"false"
+Attr: "entityPackageName"  type:"java.lang.String"  optional:"true"
+Attr: "entityGroupId"  type:"java.lang.String"  optional:"true"
+Attr: "datasourceName"  type:"java.lang.String"  optional:"true"
+Attr: "entityNamePrefix"  type:"java.lang.String"  optional:"true"
+
+
+Servicename: "entityMaintPermCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "exportServiceEoModelBundle"
+Attr: "eomodeldFullPath"  type:"java.lang.String"  optional:"false"
+Attr: "serviceName"  type:"java.lang.String"  optional:"false"
+
+
+Servicename: "saveLabelsToXmlFile"
+Attr: "key"  type:"String"  optional:"true"
+Attr: "keyComment"  type:"String"  optional:"true"
+Attr: "update_label"  type:"String"  optional:"false"
+Attr: "fileName"  type:"String"  optional:"false"
+Attr: "confirm"  type:"String"  optional:"true"
+Attr: "removeLabel"  type:"String"  optional:"true"
+Attr: "localeNames"  type:"List"  optional:"true"
+Attr: "localeValues"  type:"List"  optional:"true"
+Attr: "localeComments"  type:"List"  optional:"true"
+
+

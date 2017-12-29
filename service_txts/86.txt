@@ -1,0 +1,81 @@
+ofbiz_applications_product_servicedef_services_shipment_ups.xml
+Servicename: "upsRateEstimate"
+Attr: "serviceConfigProps"  type:"String"  optional:"true"
+Attr: "initialEstimateAmt"  type:"BigDecimal"  optional:"true"
+Attr: "shippingContactMechId"  type:"String"  optional:"true"
+Attr: "shippingOriginContactMechId"  type:"String"  optional:"true"
+Attr: "shippingPostalCode"  type:"String"  optional:"true"
+Attr: "shippingCountryCode"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"false"
+Attr: "carrierPartyId"  type:"String"  optional:"false"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"false"
+Attr: "productStoreShipMethId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "shippableItemInfo"  type:"List"  optional:"false"
+Attr: "shippableWeight"  type:"BigDecimal"  optional:"false"
+Attr: "shippableQuantity"  type:"BigDecimal"  optional:"false"
+Attr: "shippableTotal"  type:"BigDecimal"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "shipmentCustomMethodId"  type:"String"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "upsRateInquireMode"  type:"String"  optional:"true"
+Attr: "packageWeights"  type:"List"  optional:"true"
+
+
+Servicename: "upsShipmentConfirm"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+
+Servicename: "upsShipmentAccept"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+
+Servicename: "upsVoidShipment"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+
+Servicename: "upsTrackShipment"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+
+Servicename: "upsEmailReturnLabel"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"false"
+
+
+Servicename: "upsRateEstimateByPostalCode"
+Attr: "serviceConfigProps"  type:"String"  optional:"true"
+Attr: "initialEstimateAmt"  type:"BigDecimal"  optional:"true"
+Attr: "shippingPostalCode"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"false"
+Attr: "carrierPartyId"  type:"String"  optional:"false"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "packageWeights"  type:"List"  optional:"true"
+Attr: "shippableItemInfo"  type:"List"  optional:"false"
+Attr: "shippableWeight"  type:"BigDecimal"  optional:"false"
+Attr: "shippableQuantity"  type:"BigDecimal"  optional:"false"
+Attr: "shippableTotal"  type:"BigDecimal"  optional:"false"
+Attr: "upsRateInquireMode"  type:"String"  optional:"true"
+Attr: "isResidentialAddress"  type:"String"  optional:"true"
+Attr: "shippingCountryCode"  type:"String"  optional:"true"
+Attr: "shipFromAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shipmentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "upsAddressValidation"
+Attr: "city"  type:"String"  optional:"true"
+Attr: "stateProvinceGeoId"  type:"String"  optional:"true"
+Attr: "postalCode"  type:"String"  optional:"true"
+
+
+Servicename: "upsShipmentAlternateRatesEstimate"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentRouteSegmentId"  type:"String"  optional:"true"
+
+

@@ -1,0 +1,16 @@
+ofbiz_framework_entityext_servicedef_services_tenant.xml
+Servicename: "createComponent"
+Attr: "componentName"  type:"String"  optional:"false"
+Attr: "rootLocation"  type:"String"  optional:"true"
+
+
+Servicename: "updateComponent"
+Attr: "componentName"  type:"String"  optional:"false"
+Attr: "rootLocation"  type:"String"  optional:"true"
+
+
+Servicename: "deleteComponent"
+Attr: "componentName"  type:"String"  optional:"false"
+Attr: "rootLocation"  type:"String"  optional:"true"
+
+

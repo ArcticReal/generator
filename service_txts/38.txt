@@ -1,0 +1,37 @@
+ofbiz_applications_humanres_servicedef_services_ability.xml
+Servicename: "createPerfRatingType"
+Attr: "perfRatingTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePerfRatingType"
+Attr: "perfRatingTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePerfRatingType"
+Attr: "perfRatingTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPerfReviewItemType"
+Attr: "perfReviewItemTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updatePerfReviewItemType"
+Attr: "perfReviewItemTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deletePerfReviewItemType"
+Attr: "perfReviewItemTypeId"  type:"String"  optional:"false"
+
+

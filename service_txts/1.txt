@@ -1,0 +1,411 @@
+ofbiz_applications_accounting_servicedef_services_agreement.xml
+Servicename: "createAgreement"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "agreementTypeId"  type:"String"  optional:"true"
+Attr: "agreementDate"  type:"Timestamp"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+
+
+Servicename: "updateAgreement"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "agreementTypeId"  type:"String"  optional:"true"
+Attr: "agreementDate"  type:"Timestamp"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+
+
+Servicename: "cancelAgreement"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "agreementTypeId"  type:"String"  optional:"true"
+Attr: "agreementDate"  type:"Timestamp"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+
+
+Servicename: "copyAgreement"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "copyAgreementTerms"  type:"String"  optional:"true"
+Attr: "copyAgreementProducts"  type:"String"  optional:"true"
+Attr: "copyAgreementParties"  type:"String"  optional:"true"
+Attr: "copyAgreementFacilities"  type:"String"  optional:"true"
+
+
+Servicename: "createAgreementItem"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"true"
+Attr: "agreementItemTypeId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "agreementText"  type:"String"  optional:"true"
+Attr: "agreementImage"  type:"Object"  optional:"true"
+
+
+Servicename: "updateAgreementItem"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "agreementItemTypeId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "agreementText"  type:"String"  optional:"true"
+Attr: "agreementImage"  type:"Object"  optional:"true"
+
+
+Servicename: "removeAgreementItem"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "agreementItemTypeId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "agreementText"  type:"String"  optional:"true"
+Attr: "agreementImage"  type:"Object"  optional:"true"
+
+
+Servicename: "createAgreementItemAttribute"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateAgreementItemAttribute"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAgreementItemAttribute"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementTerm"
+Attr: "agreementTermId"  type:"String"  optional:"true"
+Attr: "termTypeId"  type:"String"  optional:"true"
+Attr: "agreementId"  type:"String"  optional:"true"
+Attr: "agreementItemSeqId"  type:"String"  optional:"true"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "minQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "maxQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAgreementTerm"
+Attr: "agreementTermId"  type:"String"  optional:"false"
+Attr: "termTypeId"  type:"String"  optional:"true"
+Attr: "agreementId"  type:"String"  optional:"true"
+Attr: "agreementItemSeqId"  type:"String"  optional:"true"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "minQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "maxQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAgreementTerm"
+Attr: "agreementTermId"  type:"String"  optional:"false"
+Attr: "termTypeId"  type:"String"  optional:"true"
+Attr: "agreementId"  type:"String"  optional:"true"
+Attr: "agreementItemSeqId"  type:"String"  optional:"true"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "textValue"  type:"String"  optional:"true"
+Attr: "minQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "maxQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createAgreementPromoAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "updateAgreementPromoAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "removeAgreementPromoAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "createAgreementProductAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "price"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateAgreementProductAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "price"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "removeAgreementProductAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "price"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createAgreementFacilityAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "updateAgreementFacilityAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "removeAgreementFacilityAppl"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementPartyApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "updateAgreementPartyApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "removeAgreementPartyApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementGeographicalApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "geoId"  type:"String"  optional:"false"
+
+
+Servicename: "updateAgreementGeographicalApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "geoId"  type:"String"  optional:"false"
+
+
+Servicename: "removeAgreementGeographicalApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "geoId"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementRole"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateAgreementRole"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteAgreementRole"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementType"
+Attr: "agreementTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAgreementType"
+Attr: "agreementTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeAgreementType"
+Attr: "agreementTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementContent"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "agreementContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateAgreementContent"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "agreementContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeAgreementContent"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "agreementContentTypeId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "uploadAgreementContentFile"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "skipPermissionCheck"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_uploadedFile_fileName"  type:"String"  optional:"true"
+Attr: "_uploadedFile_contentType"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+Attr: "roleTypeList"  type:"List"  optional:"true"
+Attr: "contentPurposeTypeId"  type:"String"  optional:"true"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "contentIdFrom"  type:"String"  optional:"true"
+Attr: "contentIdTo"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "agreementContentTypeId"  type:"String"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "getCommissionForProduct"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"true"
+Attr: "invoiceItemTypeId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createAgreementWorkEffortApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteAgreementWorkEffortApplic"
+Attr: "agreementId"  type:"String"  optional:"false"
+Attr: "agreementItemSeqId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"false"
+
+
+Servicename: "createAgreementTypeAttr"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "agreementTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateAgreementTypeAttr"
+Attr: "agreementTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeAgreementTypeAttr"
+Attr: "agreementTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+

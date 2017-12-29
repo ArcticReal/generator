@@ -1,0 +1,267 @@
+ofbiz_applications_manufacturing_servicedef_services_production_run.xml
+Servicename: "createProductionRun"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "pRQuantity"  type:"BigDecimal"  optional:"false"
+Attr: "startDate"  type:"java.sql.Timestamp"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "routingId"  type:"String"  optional:"true"
+Attr: "workEffortName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createProductionRunPartyAssign"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createProductionRunAssoc"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "productionRunIdTo"  type:"String"  optional:"false"
+Attr: "workFlowSequenceTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductionRunsForProductBom"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "startDate"  type:"java.sql.Timestamp"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "routingId"  type:"String"  optional:"true"
+Attr: "workEffortName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createProductionRunsForOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "fromDate"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+
+
+Servicename: "createProductionRunFromRequirement"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createProductionRunFromConfiguration"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "config"  type:"org.apache.ofbiz.product.config.ProductConfigWrapper"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "createProductionRunForMktgPkg"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"false"
+
+
+Servicename: "updateProductionRun"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "estimatedStartDate"  type:"Timestamp"  optional:"true"
+Attr: "workEffortName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+
+
+Servicename: "changeProductionRunStatus"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "changeProductionRunTaskStatus"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "issueAllComponents"  type:"Boolean"  optional:"true"
+
+
+Servicename: "addProductionRunRoutingTask"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "routingTaskId"  type:"String"  optional:"false"
+Attr: "priority"  type:"Long"  optional:"false"
+Attr: "estimatedSetupMillis"  type:"BigDecimal"  optional:"true"
+Attr: "estimatedMilliSeconds"  type:"BigDecimal"  optional:"true"
+Attr: "workEffortName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "estimatedStartDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedCompletionDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "checkUpdatePrunRoutingTask"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "routingTaskId"  type:"String"  optional:"false"
+Attr: "priority"  type:"Long"  optional:"false"
+Attr: "estimatedStartDate"  type:"Timestamp"  optional:"false"
+Attr: "estimatedSetupMillis"  type:"BigDecimal"  optional:"false"
+Attr: "estimatedMilliSeconds"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "deleteProductionRunRoutingTask"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "routingTaskId"  type:"String"  optional:"false"
+
+
+Servicename: "addProductionRunComponent"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "estimatedQuantity"  type:"BigDecimal"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductionRunComponent"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "estimatedQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteProductionRunComponent"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "issueProductionRunTask"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "failIfItemsAreNotAvailable"  type:"String"  optional:"true"
+Attr: "failIfItemsAreNotOnHand"  type:"String"  optional:"true"
+
+
+Servicename: "issueProductionRunTaskComponent"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "failIfItemsAreNotAvailable"  type:"String"  optional:"true"
+Attr: "failIfItemsAreNotOnHand"  type:"String"  optional:"true"
+Attr: "reserveOrderEnumId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "secondaryLocationSeqId"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "issueInventoryItemToWorkEffort"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "inventoryItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "productionRunProduce"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "quantityUomId"  type:"String"  optional:"true"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "createLotIfNeeded"  type:"Boolean"  optional:"true"
+Attr: "autoCreateLot"  type:"Boolean"  optional:"true"
+
+
+Servicename: "productionRunDeclareAndProduce"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "quantityUomId"  type:"String"  optional:"true"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "createLotIfNeeded"  type:"Boolean"  optional:"true"
+Attr: "autoCreateLot"  type:"Boolean"  optional:"true"
+Attr: "componentsLocationMap"  type:"Map"  optional:"true"
+
+
+Servicename: "productionRunTaskProduce"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "locationSeqId"  type:"String"  optional:"true"
+Attr: "unitCost"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+Attr: "isReturned"  type:"String"  optional:"true"
+
+
+Servicename: "productionRunTaskReturnMaterial"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "inventoryItemTypeId"  type:"String"  optional:"true"
+Attr: "lotId"  type:"String"  optional:"true"
+
+
+Servicename: "checkDecomposeInventoryItem"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "quantityAccepted"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "decomposeInventoryItem"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateProductionRunTask"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "productionRunTaskId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "addQuantityProduced"  type:"BigDecimal"  optional:"true"
+Attr: "addQuantityRejected"  type:"BigDecimal"  optional:"true"
+Attr: "addSetupTime"  type:"BigDecimal"  optional:"true"
+Attr: "addTaskTime"  type:"BigDecimal"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "issueRequiredComponents"  type:"Boolean"  optional:"true"
+Attr: "componentsLocationMap"  type:"Map"  optional:"true"
+
+
+Servicename: "quickRunProductionRunTask"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "taskId"  type:"String"  optional:"false"
+
+
+Servicename: "quickRunAllProductionRunTasks"
+Attr: "productionRunId"  type:"String"  optional:"false"
+
+
+Servicename: "quickStartAllProductionRunTasks"
+Attr: "productionRunId"  type:"String"  optional:"false"
+
+
+Servicename: "quickChangeProductionRunStatus"
+Attr: "productionRunId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "cancelProductionRun"
+Attr: "productionRunId"  type:"String"  optional:"false"
+
+
+Servicename: "getProductionRunTotResQty"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "startDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "getWorkEffortCosts"
+Attr: "workEffortId"  type:"String"  optional:"false"
+
+
+Servicename: "getProductionRunCost"
+Attr: "workEffortId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductionRunTaskCosts"
+Attr: "productionRunTaskId"  type:"String"  optional:"false"
+
+

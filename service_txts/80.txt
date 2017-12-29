@@ -1,0 +1,395 @@
+ofbiz_applications_product_servicedef_services_pricepromo.xml
+Servicename: "calculateProductPrice"
+Attr: "product"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "productStoreGroupId"  type:"String"  optional:"true"
+Attr: "agreementId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "currencyUomIdTo"  type:"String"  optional:"true"
+Attr: "productPricePurposeId"  type:"String"  optional:"true"
+Attr: "termUomId"  type:"String"  optional:"true"
+Attr: "autoUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "checkIncludeVat"  type:"String"  optional:"true"
+Attr: "findAllQuantityPrices"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "customAttributes"  type:"Map"  optional:"true"
+Attr: "optimizeForLargeRuleSet"  type:"String"  optional:"true"
+
+
+Servicename: "createProductPriceRule"
+Attr: "ruleName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "isSale"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateProductPriceRule"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+Attr: "ruleName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "isSale"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteProductPriceRule"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPriceCond"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+Attr: "inputParamEnumId"  type:"String"  optional:"true"
+Attr: "operatorEnumId"  type:"String"  optional:"true"
+Attr: "condValue"  type:"String"  optional:"true"
+Attr: "condValueInput"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPriceCond"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+Attr: "productPriceCondSeqId"  type:"String"  optional:"false"
+Attr: "inputParamEnumId"  type:"String"  optional:"true"
+Attr: "operatorEnumId"  type:"String"  optional:"true"
+Attr: "condValue"  type:"String"  optional:"true"
+Attr: "condValueInput"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPriceCond"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+Attr: "productPriceCondSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPriceAction"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+Attr: "productPriceActionTypeId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "rateCode"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPriceAction"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+Attr: "productPriceActionSeqId"  type:"String"  optional:"false"
+Attr: "productPriceActionTypeId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "rateCode"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPriceAction"
+Attr: "productPriceRuleId"  type:"String"  optional:"false"
+Attr: "productPriceActionSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromo"
+Attr: "promoName"  type:"String"  optional:"false"
+Attr: "promoText"  type:"String"  optional:"true"
+Attr: "userEntered"  type:"String"  optional:"true"
+Attr: "showToCustomer"  type:"String"  optional:"true"
+Attr: "requireCode"  type:"String"  optional:"true"
+Attr: "useLimitPerOrder"  type:"Long"  optional:"true"
+Attr: "useLimitPerCustomer"  type:"Long"  optional:"true"
+Attr: "useLimitPerPromotion"  type:"Long"  optional:"true"
+Attr: "billbackFactor"  type:"BigDecimal"  optional:"true"
+Attr: "overrideOrgPartyId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPromo"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "promoName"  type:"String"  optional:"true"
+Attr: "promoText"  type:"String"  optional:"true"
+Attr: "userEntered"  type:"String"  optional:"true"
+Attr: "showToCustomer"  type:"String"  optional:"true"
+Attr: "requireCode"  type:"String"  optional:"true"
+Attr: "useLimitPerOrder"  type:"Long"  optional:"true"
+Attr: "useLimitPerCustomer"  type:"Long"  optional:"true"
+Attr: "useLimitPerPromotion"  type:"Long"  optional:"true"
+Attr: "billbackFactor"  type:"BigDecimal"  optional:"true"
+Attr: "overrideOrgPartyId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPromo"
+Attr: "productPromoId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromoAction"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionEnumId"  type:"String"  optional:"false"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "useCartQuantity"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPromoAction"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+Attr: "productPromoActionEnumId"  type:"String"  optional:"true"
+Attr: "orderAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "useCartQuantity"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPromoAction"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromoCategory"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "andGroupId"  type:"String"  optional:"false"
+Attr: "productPromoApplEnumId"  type:"String"  optional:"true"
+Attr: "includeSubCategories"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPromoCategory"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "andGroupId"  type:"String"  optional:"false"
+Attr: "productPromoApplEnumId"  type:"String"  optional:"true"
+Attr: "includeSubCategories"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPromoCategory"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "andGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromoCode"
+Attr: "productPromoCodeId"  type:"String"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "userEntered"  type:"String"  optional:"true"
+Attr: "requireEmailOrParty"  type:"String"  optional:"true"
+Attr: "useLimitPerCode"  type:"Long"  optional:"true"
+Attr: "useLimitPerCustomer"  type:"Long"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPromoCode"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "userEntered"  type:"String"  optional:"true"
+Attr: "requireEmailOrParty"  type:"String"  optional:"true"
+Attr: "useLimitPerCode"  type:"Long"  optional:"true"
+Attr: "useLimitPerCustomer"  type:"Long"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPromoCode"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBulkProductPromoCode"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_uploadedFile_fileName"  type:"String"  optional:"true"
+Attr: "_uploadedFile_contentType"  type:"String"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "userEntered"  type:"String"  optional:"true"
+Attr: "requireEmailOrParty"  type:"String"  optional:"true"
+Attr: "useLimitPerCode"  type:"Long"  optional:"true"
+Attr: "useLimitPerCustomer"  type:"Long"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "createProductPromoCodeEmail"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+Attr: "emailAddress"  type:"String"  optional:"false"
+
+
+Servicename: "deleteProductPromoCodeEmail"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+Attr: "emailAddress"  type:"String"  optional:"false"
+
+
+Servicename: "createBulkProductPromoCodeEmail"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_uploadedFile_fileName"  type:"String"  optional:"true"
+Attr: "_uploadedFile_contentType"  type:"String"  optional:"true"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromoCodeParty"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteProductPromoCodeParty"
+Attr: "productPromoCodeId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromoCodeSet"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "userEntered"  type:"String"  optional:"true"
+Attr: "requireEmailOrParty"  type:"String"  optional:"true"
+Attr: "useLimitPerCode"  type:"Long"  optional:"true"
+Attr: "useLimitPerCustomer"  type:"Long"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "quantity"  type:"Long"  optional:"false"
+Attr: "codeLength"  type:"Integer"  optional:"true"
+Attr: "promoCodeLayout"  type:"String"  optional:"true"
+
+
+Servicename: "createProductPromoCond"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "inputParamEnumId"  type:"String"  optional:"true"
+Attr: "operatorEnumId"  type:"String"  optional:"true"
+Attr: "condValue"  type:"String"  optional:"true"
+Attr: "otherValue"  type:"String"  optional:"true"
+Attr: "carrierShipmentMethod"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPromoCond"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+Attr: "inputParamEnumId"  type:"String"  optional:"true"
+Attr: "operatorEnumId"  type:"String"  optional:"true"
+Attr: "condValue"  type:"String"  optional:"true"
+Attr: "otherValue"  type:"String"  optional:"true"
+Attr: "carrierShipmentMethod"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPromoCond"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromoProduct"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productPromoApplEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPromoProduct"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productPromoApplEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPromoProduct"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"false"
+Attr: "productPromoCondSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPromoRule"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "ruleName"  type:"String"  optional:"false"
+
+
+Servicename: "updateProductPromoRule"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+Attr: "ruleName"  type:"String"  optional:"false"
+
+
+Servicename: "deleteProductPromoRule"
+Attr: "productPromoId"  type:"String"  optional:"false"
+Attr: "productPromoRuleId"  type:"String"  optional:"false"
+
+
+Servicename: "calculatePurchasePrice"
+Attr: "product"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "getAssociatedPriceRulesConds"
+Attr: "inputParamEnumId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPriceActionType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productPriceActionTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPriceActionType"
+Attr: "productPriceActionTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPriceActionType"
+Attr: "productPriceActionTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPriceAutoNotice"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "runDate"  type:"Timestamp"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "productPriceNoticeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPriceAutoNotice"
+Attr: "productPriceNoticeId"  type:"String"  optional:"false"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "runDate"  type:"Timestamp"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteProductPriceAutoNotice"
+Attr: "productPriceNoticeId"  type:"String"  optional:"false"
+
+

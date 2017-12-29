@@ -1,0 +1,23 @@
+ofbiz_applications_commonext_servicedef_services.xml
+Servicename: "createSystemInfoNote"
+Attr: "noteName"  type:"String"  optional:"true"
+Attr: "noteInfo"  type:"String"  optional:"true"
+Attr: "noteDateTime"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteSystemInfoNote"
+Attr: "noteId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteAllSystemNotes"
+
+
+Servicename: "getSystemInfoNotes"
+
+
+Servicename: "getLastSystemInfoNote"
+
+
+Servicename: "getSystemInfoStatus"
+
+

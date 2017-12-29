@@ -1,0 +1,157 @@
+ofbiz_framework_service_servicedef_services_test_se.xml
+Servicename: "testServiceDeadLockRetry"
+Attr: "test"  type:"junit.framework.Test"  optional:"false"
+Attr: "testResult"  type:"junit.framework.TestResult"  optional:"false"
+
+
+Servicename: "testServiceDeadLockRetryThreadA"
+
+
+Servicename: "testServiceDeadLockRetryThreadB"
+
+
+Servicename: "testServiceLockWaitTimeoutRetry"
+Attr: "test"  type:"junit.framework.Test"  optional:"false"
+Attr: "testResult"  type:"junit.framework.TestResult"  optional:"false"
+
+
+Servicename: "testServiceLockWaitTimeoutRetryGrabber"
+
+
+Servicename: "testServiceLockWaitTimeoutRetryWaiter"
+
+
+Servicename: "testEntityAutoCreateTestingPkPresent"
+Attr: "testingId"  type:"String"  optional:"false"
+Attr: "testingTypeId"  type:"String"  optional:"true"
+Attr: "testingName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "testingSize"  type:"Long"  optional:"true"
+Attr: "testingDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "testEntityAutoCreateTestingPkMissing"
+Attr: "testingTypeId"  type:"String"  optional:"true"
+Attr: "testingName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "testingSize"  type:"Long"  optional:"true"
+Attr: "testingDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "testEntityAutoCreateTestingItemPkPresent"
+Attr: "testingId"  type:"String"  optional:"false"
+Attr: "testingSeqId"  type:"String"  optional:"false"
+Attr: "testingHistory"  type:"String"  optional:"true"
+
+
+Servicename: "testEntityAutoCreateTestingItemPkMissing"
+Attr: "testingHistory"  type:"String"  optional:"true"
+Attr: "testingId"  type:"String"  optional:"false"
+
+
+Servicename: "testEntityAutoCreateTestingNodeMemberPkPresent"
+Attr: "testingNodeId"  type:"String"  optional:"false"
+Attr: "testingId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extendFromDate"  type:"Timestamp"  optional:"true"
+Attr: "extendThruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "testEntityAutoCreateTestingNodeMemberPkMissing"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "extendFromDate"  type:"Timestamp"  optional:"true"
+Attr: "extendThruDate"  type:"Timestamp"  optional:"true"
+Attr: "testingId"  type:"String"  optional:"false"
+Attr: "testingNodeId"  type:"String"  optional:"false"
+
+
+Servicename: "testEntityAutoUpdateTesting"
+Attr: "testingId"  type:"String"  optional:"false"
+Attr: "testingTypeId"  type:"String"  optional:"true"
+Attr: "testingName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "testingSize"  type:"Long"  optional:"true"
+Attr: "testingDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "testEntityAutoRemoveTesting"
+Attr: "testingId"  type:"String"  optional:"false"
+
+
+Servicename: "testEntityAutoExpireTestingNodeMember"
+Attr: "testingNodeId"  type:"String"  optional:"false"
+Attr: "testingId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "testEntityAutoExpireTestFieldType"
+Attr: "testFieldTypeId"  type:"String"  optional:"false"
+Attr: "dateTimeField"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "testEntityAutoCreateTestingStatus"
+Attr: "testingId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "testEntityAutoUpdateTestingStatus"
+Attr: "testingStatusId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "testEntityAutoDeleteTestingStatus"
+Attr: "testingStatusId"  type:"String"  optional:"false"
+
+
+Servicename: "testServiceLockWaitTimeoutRetryCantRecover"
+Attr: "test"  type:"junit.framework.Test"  optional:"false"
+Attr: "testResult"  type:"junit.framework.TestResult"  optional:"false"
+
+
+Servicename: "testServiceLockWaitTimeoutRetryCantRecoverWaiter"
+
+
+Servicename: "testServiceOwnTxSubServiceAfterSetRollbackOnlyInParentErrorCatchWrapper"
+Attr: "test"  type:"junit.framework.Test"  optional:"false"
+Attr: "testResult"  type:"junit.framework.TestResult"  optional:"false"
+
+
+Servicename: "testServiceOwnTxSubServiceAfterSetRollbackOnlyInParent"
+
+
+Servicename: "testServiceOwnTxSubServiceAfterSetRollbackOnlyInParentSubService"
+
+
+Servicename: "testServiceEcaGlobalEventExec"
+Attr: "test"  type:"junit.framework.Test"  optional:"false"
+Attr: "testResult"  type:"junit.framework.TestResult"  optional:"false"
+
+
+Servicename: "testServiceEcaGlobalEventExecOnCommit"
+
+
+Servicename: "testServiceEcaGlobalEventExecToRollback"
+
+
+Servicename: "testServiceEcaGlobalEventExecOnRollback"
+
+
+Servicename: "testXmlRpcAdd"
+Attr: "num1"  type:"Integer"  optional:"false"
+Attr: "num2"  type:"Integer"  optional:"false"
+
+
+Servicename: "testXmlRpcLocalEngine"
+Attr: "num1"  type:"Integer"  optional:"false"
+Attr: "num2"  type:"Integer"  optional:"false"
+
+
+Servicename: "testXmlRpcClientAdd"
+Attr: "test"  type:"junit.framework.Test"  optional:"false"
+Attr: "testResult"  type:"junit.framework.TestResult"  optional:"false"
+
+

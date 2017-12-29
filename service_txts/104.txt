@@ -1,0 +1,37 @@
+ofbiz_framework_common_servicedef_services_method.xml
+Servicename: "createCustomMethod"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "customMethodTypeId"  type:"String"  optional:"true"
+Attr: "customMethodName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustomMethod"
+Attr: "customMethodId"  type:"String"  optional:"false"
+Attr: "customMethodTypeId"  type:"String"  optional:"true"
+Attr: "customMethodName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustomMethod"
+Attr: "customMethodId"  type:"String"  optional:"false"
+
+
+Servicename: "createCustomMethodType"
+Attr: "customMethodTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustomMethodType"
+Attr: "customMethodTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustomMethodType"
+Attr: "customMethodTypeId"  type:"String"  optional:"false"
+
+

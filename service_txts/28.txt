@@ -1,0 +1,934 @@
+ofbiz_applications_content_servicedef_services.xml
+Servicename: "uploadFileInterface"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_uploadedFile_fileName"  type:"String"  optional:"true"
+Attr: "_uploadedFile_contentType"  type:"String"  optional:"true"
+
+
+Servicename: "getPublicForumMessage"
+Attr: "contentId"  type:"String"  optional:"false"
+
+
+Servicename: "getSubContentWithPermCheck"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "contentOperationId"  type:"String"  optional:"true"
+Attr: "useCache"  type:"Boolean"  optional:"true"
+Attr: "filterByDate"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getSubSubContentWithPermCheck"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "contentOperationId"  type:"String"  optional:"true"
+Attr: "useCache"  type:"Boolean"  optional:"true"
+Attr: "filterByDate"  type:"Boolean"  optional:"true"
+Attr: "subContentAssocTypeId"  type:"String"  optional:"true"
+Attr: "subMapKey"  type:"String"  optional:"true"
+
+
+Servicename: "getContentAndDataResource"
+Attr: "contentId"  type:"String"  optional:"false"
+
+
+Servicename: "getDataResource"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+
+
+Servicename: "createDataCategory"
+Attr: "dataCategoryId"  type:"String"  optional:"false"
+Attr: "parentCategoryId"  type:"String"  optional:"true"
+Attr: "categoryName"  type:"String"  optional:"true"
+
+
+Servicename: "updateDataCategory"
+Attr: "dataCategoryId"  type:"String"  optional:"false"
+Attr: "parentCategoryId"  type:"String"  optional:"true"
+Attr: "categoryName"  type:"String"  optional:"true"
+
+
+Servicename: "removeDataCategory"
+Attr: "dataCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "createDataResourceAttribute"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateDataResourceAttribute"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "removeDataResourceAttribute"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createDataResourceRole"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateDataResourceRole"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeDataResourceRole"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createEmailContent"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "subject"  type:"String"  optional:"false"
+Attr: "plainBody"  type:"String"  optional:"false"
+Attr: "htmlBody"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmailContent"
+Attr: "subjectDataResourceId"  type:"String"  optional:"true"
+Attr: "subject"  type:"String"  optional:"true"
+Attr: "plainBodyDataResourceId"  type:"String"  optional:"true"
+Attr: "plainBody"  type:"String"  optional:"true"
+Attr: "htmlBodyDataResourceId"  type:"String"  optional:"true"
+Attr: "htmlBody"  type:"String"  optional:"true"
+
+
+Servicename: "createDownloadContent"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "file"  type:"String"  optional:"false"
+
+
+Servicename: "updateDownloadContent"
+Attr: "fileDataResourceId"  type:"String"  optional:"true"
+Attr: "file"  type:"String"  optional:"true"
+
+
+Servicename: "createSimpleTextContent"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "text"  type:"String"  optional:"false"
+
+
+Servicename: "updateSimpleTextContent"
+Attr: "textDataResourceId"  type:"String"  optional:"true"
+Attr: "text"  type:"String"  optional:"true"
+
+
+Servicename: "findAssocContent"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "mapKeys"  type:"List"  optional:"false"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "contentIdTo"  type:"String"  optional:"true"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "upperCoordinate"  type:"Long"  optional:"true"
+Attr: "leftCoordinate"  type:"Long"  optional:"true"
+Attr: "Content"  type:"String"  optional:"true"
+Attr: "ContentAssoc"  type:"String"  optional:"true"
+
+
+Servicename: "getAssocAndContentAndDataResourceCache"
+Attr: "assocTypes"  type:"List"  optional:"true"
+Attr: "assocTypesString"  type:"String"  optional:"true"
+Attr: "contentTypes"  type:"List"  optional:"true"
+Attr: "contentTypesString"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "direction"  type:"String"  optional:"true"
+Attr: "fromDateStr"  type:"String"  optional:"true"
+Attr: "thruDateStr"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "nullThruDatesOnly"  type:"Boolean"  optional:"true"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"true"
+Attr: "contentIdFrom"  type:"String"  optional:"true"
+
+
+Servicename: "getAssocAndContentAndDataResource"
+Attr: "assocTypes"  type:"List"  optional:"true"
+Attr: "contentTypes"  type:"List"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "direction"  type:"String"  optional:"true"
+Attr: "fromDateStr"  type:"String"  optional:"true"
+Attr: "thruDateStr"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "nullThruDatesOnly"  type:"Boolean"  optional:"true"
+
+
+Servicename: "traverseContent"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDateStr"  type:"String"  optional:"true"
+Attr: "thruDateStr"  type:"String"  optional:"true"
+Attr: "followWhen"  type:"String"  optional:"true"
+Attr: "pickWhen"  type:"String"  optional:"true"
+Attr: "returnBeforePickWhen"  type:"String"  optional:"true"
+Attr: "returnAfterPickWhen"  type:"String"  optional:"true"
+Attr: "direction"  type:"String"  optional:"true"
+
+
+Servicename: "getContent"
+Attr: "contentId"  type:"String"  optional:"true"
+
+
+Servicename: "getSubContent"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "subContentId"  type:"String"  optional:"true"
+Attr: "assocTypes"  type:"List"  optional:"true"
+Attr: "assocTypesString"  type:"String"  optional:"true"
+Attr: "contentTypes"  type:"List"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "persistContentAndAssoc"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "upperCoordinate"  type:"Long"  optional:"true"
+Attr: "leftCoordinate"  type:"Long"  optional:"true"
+Attr: "Content"  type:"String"  optional:"true"
+Attr: "DataResource"  type:"String"  optional:"true"
+Attr: "caContentIdTo"  type:"String"  optional:"true"
+Attr: "caContentId"  type:"String"  optional:"true"
+Attr: "caContentAssocTypeId"  type:"String"  optional:"true"
+Attr: "caFromDate"  type:"Timestamp"  optional:"true"
+Attr: "caSequenceNum"  type:"Long"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_imageData_contentType"  type:"String"  optional:"true"
+Attr: "_imageData_fileName"  type:"String"  optional:"true"
+Attr: "deactivateExisting"  type:"String"  optional:"true"
+Attr: "forceElectronicText"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+Attr: "roleTypeList"  type:"List"  optional:"true"
+
+
+Servicename: "persistDataResourceAndData"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+Attr: "Content"  type:"String"  optional:"true"
+Attr: "DataResource"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_imageData_contentType"  type:"String"  optional:"true"
+Attr: "_imageData_fileName"  type:"String"  optional:"true"
+Attr: "forceElectronicText"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+
+
+Servicename: "persistCompDocContent"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+Attr: "Content"  type:"String"  optional:"true"
+Attr: "DataResource"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_imageData_contentType"  type:"String"  optional:"true"
+Attr: "_imageData_fileName"  type:"String"  optional:"true"
+Attr: "forceElectronicText"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+Attr: "rootContentId"  type:"String"  optional:"true"
+
+
+Servicename: "persistCompDocPdf2Survey"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+Attr: "Content"  type:"String"  optional:"true"
+Attr: "DataResource"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_imageData_contentType"  type:"String"  optional:"true"
+Attr: "_imageData_fileName"  type:"String"  optional:"true"
+Attr: "forceElectronicText"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+Attr: "rootContentId"  type:"String"  optional:"true"
+Attr: "pdfName"  type:"String"  optional:"true"
+
+
+Servicename: "persistContentWithRevision"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "upperCoordinate"  type:"Long"  optional:"true"
+Attr: "leftCoordinate"  type:"Long"  optional:"true"
+Attr: "Content"  type:"String"  optional:"true"
+Attr: "DataResource"  type:"String"  optional:"true"
+Attr: "caContentIdTo"  type:"String"  optional:"true"
+Attr: "caContentId"  type:"String"  optional:"true"
+Attr: "caContentAssocTypeId"  type:"String"  optional:"true"
+Attr: "caFromDate"  type:"Timestamp"  optional:"true"
+Attr: "caSequenceNum"  type:"Long"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_imageData_contentType"  type:"String"  optional:"true"
+Attr: "_imageData_fileName"  type:"String"  optional:"true"
+Attr: "deactivateExisting"  type:"String"  optional:"true"
+Attr: "forceElectronicText"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+Attr: "roleTypeList"  type:"List"  optional:"true"
+Attr: "masterRevisionContentId"  type:"String"  optional:"false"
+
+
+Servicename: "findContentParents"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentAssocTypeId"  type:"String"  optional:"false"
+Attr: "direction"  type:"String"  optional:"true"
+
+
+Servicename: "deactivateAssocs"
+Attr: "contentIdTo"  type:"String"  optional:"false"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "activeContentId"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "contentAssocTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deactivateContentAssoc"
+Attr: "contentIdTo"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createArticleContent"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "skipPermissionCheck"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_uploadedFile_fileName"  type:"String"  optional:"true"
+Attr: "_uploadedFile_contentType"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "contentTypeId"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "decoratorContentId"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "serviceName"  type:"String"  optional:"true"
+Attr: "customMethodId"  type:"String"  optional:"true"
+Attr: "contentName"  type:"Long"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "childLeafCount"  type:"Long"  optional:"true"
+Attr: "childBranchCount"  type:"Long"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+Attr: "roleTypeList"  type:"List"  optional:"true"
+Attr: "contentPurposeTypeId"  type:"String"  optional:"true"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "contentIdFrom"  type:"String"  optional:"true"
+Attr: "contentIdTo"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+Attr: "pubPtContentId"  type:"String"  optional:"false"
+Attr: "threadContentId"  type:"String"  optional:"true"
+Attr: "summaryData"  type:"String"  optional:"true"
+
+
+Servicename: "renderSubContentAsText"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "outWriter"  type:"java.io.Writer"  optional:"false"
+Attr: "subContentId"  type:"String"  optional:"true"
+Attr: "templateContext"  type:"Map"  optional:"false"
+Attr: "locale"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "subContentDataResourceView"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "renderContentAsText"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "outWriter"  type:"java.io.Writer"  optional:"true"
+Attr: "templateContext"  type:"Map"  optional:"true"
+Attr: "locale"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "subContentDataResourceView"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "renderDataResourceAsText"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "outWriter"  type:"java.io.Writer"  optional:"false"
+Attr: "templateContext"  type:"Map"  optional:"false"
+Attr: "locale"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "subContentDataResourceView"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "createTopic"
+Attr: "newTopicId"  type:"String"  optional:"false"
+Attr: "newTopicDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateSiteRoles"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "blogUser"  type:"String"  optional:"true"
+Attr: "blogAuthor"  type:"String"  optional:"true"
+Attr: "blogEditor"  type:"String"  optional:"true"
+Attr: "blogAdmin"  type:"String"  optional:"true"
+Attr: "blogPublisher"  type:"String"  optional:"true"
+Attr: "blogUserFromDate"  type:"Timestamp"  optional:"true"
+Attr: "blogAuthorFromDate"  type:"Timestamp"  optional:"true"
+Attr: "blogEditorFromDate"  type:"Timestamp"  optional:"true"
+Attr: "blogAdminFromDate"  type:"Timestamp"  optional:"true"
+Attr: "blogPublisherFromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "linkContentToPubPt"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentIdTo"  type:"String"  optional:"false"
+Attr: "publish"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "privilegeEnumId"  type:"String"  optional:"true"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+
+
+Servicename: "updateSiteRolesDyn"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+
+
+Servicename: "updateOrRemove"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "action"  type:"String"  optional:"true"
+Attr: "pkFieldCount"  type:"String"  optional:"false"
+Attr: "fieldName0"  type:"String"  optional:"true"
+Attr: "fieldValue1"  type:"String"  optional:"true"
+Attr: "fieldName2"  type:"String"  optional:"true"
+Attr: "fieldValue2"  type:"String"  optional:"true"
+Attr: "fieldName3"  type:"String"  optional:"true"
+Attr: "fieldValue3"  type:"String"  optional:"true"
+Attr: "fieldName1"  type:"String"  optional:"true"
+Attr: "fieldValue0"  type:"String"  optional:"true"
+
+
+Servicename: "resequence"
+Attr: "contentIdTo"  type:"String"  optional:"false"
+Attr: "seqInc"  type:"Integer"  optional:"true"
+Attr: "typeList"  type:"List"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+Attr: "dir"  type:"String"  optional:"true"
+
+
+Servicename: "changeLeafToNode"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "updatePageType"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "pageMode"  type:"String"  optional:"true"
+
+
+Servicename: "resetToOutlineMode"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "pageMode"  type:"String"  optional:"true"
+
+
+Servicename: "clearContentAssocViewCache"
+
+
+Servicename: "clearContentAssocDataResourceViewCache"
+
+
+Servicename: "findSubNodes"
+Attr: "contentId"  type:"String"  optional:"false"
+
+
+Servicename: "initContentChildCounts"
+Attr: "content"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "incrementContentChildStats"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "decrementContentChildStats"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateContentChildStats"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateImage"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"false"
+
+
+Servicename: "createImage"
+Attr: "dataResourceId"  type:"String"  optional:"false"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"false"
+
+
+Servicename: "updateContentSubscription"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "useRoleTypeId"  type:"String"  optional:"true"
+Attr: "useTimeUomId"  type:"String"  optional:"false"
+Attr: "useTime"  type:"Integer"  optional:"false"
+
+
+Servicename: "updateContentSubscriptionByProduct"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "orderCreatedDate"  type:"Timestamp"  optional:"true"
+Attr: "quantity"  type:"Integer"  optional:"false"
+
+
+Servicename: "updateContentSubscriptionByOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "followNodeChildren"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "serviceName"  type:"String"  optional:"false"
+Attr: "contentAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "publishContent"
+Attr: "content"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "getPrefixedMembers"
+Attr: "mapIn"  type:"java.util.Map"  optional:"true"
+Attr: "prefix"  type:"String"  optional:"false"
+
+
+Servicename: "splitString"
+Attr: "inputString"  type:"String"  optional:"true"
+Attr: "delimiter"  type:"String"  optional:"true"
+
+
+Servicename: "joinString"
+Attr: "inputList"  type:"java.util.List"  optional:"false"
+Attr: "delimiter"  type:"String"  optional:"true"
+
+
+Servicename: "urlEncodeArgs"
+Attr: "mapIn"  type:"java.util.Map"  optional:"false"
+
+
+Servicename: "persistContentRevisionAndItem"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "committedByPartyId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "itemContentId"  type:"String"  optional:"true"
+Attr: "oldDataResourceId"  type:"String"  optional:"true"
+Attr: "newDataResourceId"  type:"String"  optional:"true"
+
+
+Servicename: "prepForApproval"
+Attr: "rootContentId"  type:"String"  optional:"false"
+
+
+Servicename: "getFinalApprovalStatus"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentRevisionSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "getApprovalsWithPermissions"
+Attr: "rootContentId"  type:"String"  optional:"false"
+Attr: "contentRevisionSeqId"  type:"String"  optional:"false"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "checkPermission"  type:"String"  optional:"true"
+
+
+Servicename: "hasApprovalPermission"
+Attr: "contentApprovalId"  type:"String"  optional:"false"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "genCompDocInstance"
+Attr: "contentName"  type:"String"  optional:"true"
+Attr: "instanceOfContentId"  type:"String"  optional:"true"
+Attr: "rootInstanceContentId"  type:"String"  optional:"true"
+
+
+Servicename: "persistCompDoc"
+Attr: "dataResourceTypeId"  type:"String"  optional:"true"
+Attr: "dataTemplateTypeId"  type:"String"  optional:"true"
+Attr: "dataCategoryId"  type:"String"  optional:"true"
+Attr: "dataSourceId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "dataResourceName"  type:"Long"  optional:"true"
+Attr: "localeString"  type:"String"  optional:"true"
+Attr: "mimeTypeId"  type:"String"  optional:"true"
+Attr: "characterSetId"  type:"String"  optional:"true"
+Attr: "objectInfo"  type:"String"  optional:"true"
+Attr: "surveyId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "relatedDetailId"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "textData"  type:"String"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "contentAssocPredicateId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "mapKey"  type:"String"  optional:"true"
+Attr: "upperCoordinate"  type:"Long"  optional:"true"
+Attr: "leftCoordinate"  type:"Long"  optional:"true"
+Attr: "Content"  type:"String"  optional:"true"
+Attr: "DataResource"  type:"String"  optional:"true"
+Attr: "caContentIdTo"  type:"String"  optional:"true"
+Attr: "caContentId"  type:"String"  optional:"true"
+Attr: "caContentAssocTypeId"  type:"String"  optional:"true"
+Attr: "caFromDate"  type:"Timestamp"  optional:"true"
+Attr: "caSequenceNum"  type:"Long"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "targetOperationList"  type:"List"  optional:"true"
+Attr: "contentPurposeList"  type:"List"  optional:"true"
+Attr: "targetOperationString"  type:"String"  optional:"true"
+Attr: "contentPurposeString"  type:"String"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "imageData"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_imageData_contentType"  type:"String"  optional:"true"
+Attr: "_imageData_fileName"  type:"String"  optional:"true"
+Attr: "deactivateExisting"  type:"String"  optional:"true"
+Attr: "forceElectronicText"  type:"String"  optional:"true"
+Attr: "displayFailCond"  type:"Boolean"  optional:"true"
+Attr: "roleTypeList"  type:"List"  optional:"true"
+Attr: "rootContentId"  type:"String"  optional:"true"
+
+
+Servicename: "cloneTemplateContentApprovals"
+Attr: "contentRevisionSeqId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+
+
+Servicename: "cloneInstanceContentApprovals"
+Attr: "contentRevisionSeqId"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"false"
+
+
+Servicename: "checkForWaitingApprovals"
+Attr: "thisUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "getMostRecentRevision"
+Attr: "contentId"  type:"String"  optional:"false"
+
+
+Servicename: "renderCompDocPdf"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentRevisionSeqId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "https"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "locale"  type:"java.util.Locale"  optional:"true"
+
+
+Servicename: "renderContentPdf"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentRevisionSeqId"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+Attr: "https"  type:"String"  optional:"true"
+Attr: "rootDir"  type:"String"  optional:"true"
+Attr: "locale"  type:"java.util.Locale"  optional:"true"
+
+
+Servicename: "createBlogEntry"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_uploadedFile_fileName"  type:"String"  optional:"true"
+Attr: "_uploadedFile_contentType"  type:"String"  optional:"true"
+Attr: "blogContentId"  type:"String"  optional:"false"
+Attr: "contentName"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "articleData"  type:"String"  optional:"true"
+Attr: "summaryData"  type:"String"  optional:"true"
+
+
+Servicename: "updateBlogEntry"
+Attr: "uploadedFile"  type:"java.nio.ByteBuffer"  optional:"true"
+Attr: "_uploadedFile_fileName"  type:"String"  optional:"true"
+Attr: "_uploadedFile_contentType"  type:"String"  optional:"true"
+Attr: "blogContentId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "contentName"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "templateDataResourceId"  type:"String"  optional:"true"
+Attr: "articleData"  type:"String"  optional:"true"
+Attr: "summaryData"  type:"String"  optional:"true"
+
+
+Servicename: "getBlogEntry"
+Attr: "blogContentId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"true"
+
+
+Servicename: "getOwnedOrPublishedBlogEntries"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "generateBlogRssFeed"
+Attr: "feedType"  type:"String"  optional:"false"
+Attr: "mainLink"  type:"String"  optional:"false"
+Attr: "entryLink"  type:"String"  optional:"false"
+Attr: "blogContentId"  type:"String"  optional:"false"
+
+
+Servicename: "checkContentAssocIds"
+Attr: "contentIdFrom"  type:"String"  optional:"true"
+Attr: "contentIdTo"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+
+
+Servicename: "contentManagerRolePermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "contentManagerPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+
+Servicename: "genericContentPermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+Attr: "ownerContentId"  type:"String"  optional:"true"
+Attr: "contentIdFrom"  type:"String"  optional:"true"
+Attr: "contentIdTo"  type:"String"  optional:"true"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "contentPurposeTypeId"  type:"String"  optional:"true"
+Attr: "contentOperationId"  type:"String"  optional:"true"
+
+
+Servicename: "genericDataResourcePermission"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+Attr: "dataResourceId"  type:"String"  optional:"true"
+
+
+Servicename: "createContentAlternativeUrl"
+Attr: "contentId"  type:"String"  optional:"true"
+
+
+Servicename: "createWebPreferenceType"
+Attr: "contentId"  type:"String"  optional:"true"
+Attr: "contentRevisionSeqId"  type:"String"  optional:"true"
+Attr: "itemContentId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWebPreferenceType"
+Attr: "webPreferenceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWebPreferenceType"
+Attr: "webPreferenceTypeId"  type:"String"  optional:"false"
+
+

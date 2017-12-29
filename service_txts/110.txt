@@ -1,0 +1,16 @@
+ofbiz_framework_entityext_servicedef_services_synchronization.xml
+Servicename: "createEntitySyncIncludeGroup"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "updateEntitySyncIncludeGroup"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteEntitySyncIncludeGroup"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+
+

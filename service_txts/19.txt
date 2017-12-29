@@ -1,0 +1,110 @@
+ofbiz_applications_accounting_servicedef_services_rate.xml
+Servicename: "updateRateAmount"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "rateAmount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "deleteRateAmount"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "getRateAmount"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "getRatesAmountsFromWorkEffortId"
+Attr: "rateTypeId"  type:"String"  optional:"true"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "getRatesAmountsFromPartyId"
+Attr: "rateTypeId"  type:"String"  optional:"true"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "getRatesAmountsFromEmplPositionTypeId"
+Attr: "rateTypeId"  type:"String"  optional:"true"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "filterRateAmountList"
+Attr: "rateTypeId"  type:"String"  optional:"true"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "emplPositionTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "rateAmount"  type:"BigDecimal"  optional:"true"
+Attr: "ratesList"  type:"List"  optional:"true"
+
+
+Servicename: "updatePartyRate"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "defaultRate"  type:"String"  optional:"true"
+Attr: "percentageUsed"  type:"BigDecimal"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "rateAmount"  type:"BigDecimal"  optional:"true"
+Attr: "rateCurrencyUomId"  type:"String"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deletePartyRate"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "rateAmountFromDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createRateType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "rateTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateRateType"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteRateType"
+Attr: "rateTypeId"  type:"String"  optional:"false"
+
+

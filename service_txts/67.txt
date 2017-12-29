@@ -1,0 +1,69 @@
+ofbiz_applications_party_servicedef_services_contact.xml
+Servicename: "createContactMechType"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactMechType"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteContactMechType"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createContactMechPurposeType"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactMechPurposeType"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteContactMechPurposeType"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createContactMechTypeAttr"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateContactMechTypeAttr"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteContactMechTypeAttr"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createContactMechTypePurpose"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateContactMechTypePurpose"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteContactMechTypePurpose"
+Attr: "contactMechTypeId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+
+

@@ -1,0 +1,25 @@
+ofbiz_applications_party_servicedef_services_communication.xml
+Servicename: "createCommunicationEventType"
+Attr: "communicationEventTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateCommunicationEventType"
+Attr: "communicationEventTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCommunicationEventType"
+Attr: "communicationEventTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+
+

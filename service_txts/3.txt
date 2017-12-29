@@ -1,0 +1,83 @@
+ofbiz_applications_accounting_servicedef_services_billing.xml
+Servicename: "createBillingAccount"
+Attr: "accountLimit"  type:"BigDecimal"  optional:"true"
+Attr: "accountCurrencyUomId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "externalAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "updateBillingAccount"
+Attr: "billingAccountId"  type:"String"  optional:"false"
+Attr: "accountLimit"  type:"BigDecimal"  optional:"true"
+Attr: "accountCurrencyUomId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "externalAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "createBillingAccountRole"
+Attr: "billingAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateBillingAccountRole"
+Attr: "billingAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeBillingAccountRole"
+Attr: "billingAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createBillingAccountAndRole"
+Attr: "accountLimit"  type:"BigDecimal"  optional:"true"
+Attr: "accountCurrencyUomId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "externalAccountId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBillingAccountTerm"
+Attr: "billingAccountId"  type:"String"  optional:"false"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "updateBillingAccountTerm"
+Attr: "billingAccountTermId"  type:"String"  optional:"false"
+Attr: "billingAccountId"  type:"String"  optional:"false"
+Attr: "termTypeId"  type:"String"  optional:"false"
+Attr: "termValue"  type:"BigDecimal"  optional:"true"
+Attr: "termDays"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "removeBillingAccountTerm"
+Attr: "billingAccountTermId"  type:"String"  optional:"false"
+
+
+Servicename: "calcBillingAccountBalance"
+Attr: "billingAccountId"  type:"String"  optional:"false"
+
+

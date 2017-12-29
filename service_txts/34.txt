@@ -1,0 +1,19 @@
+ofbiz_applications_content_servicedef_services_output.xml
+Servicename: "sendPrintFromScreen"
+Attr: "screenLocation"  type:"String"  optional:"false"
+Attr: "screenContext"  type:"Map"  optional:"true"
+Attr: "contentType"  type:"String"  optional:"true"
+Attr: "printerContentType"  type:"String"  optional:"true"
+Attr: "printerName"  type:"String"  optional:"true"
+Attr: "docAttributes"  type:"List"  optional:"true"
+Attr: "printRequestAttributes"  type:"List"  optional:"true"
+
+
+Servicename: "createFileFromScreen"
+Attr: "screenLocation"  type:"String"  optional:"false"
+Attr: "screenContext"  type:"Map"  optional:"true"
+Attr: "contentType"  type:"String"  optional:"true"
+Attr: "filePath"  type:"String"  optional:"true"
+Attr: "fileName"  type:"String"  optional:"false"
+
+

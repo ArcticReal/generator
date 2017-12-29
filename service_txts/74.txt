@@ -1,0 +1,261 @@
+ofbiz_applications_product_servicedef_services_feature.xml
+Servicename: "createProductFeatureCategory"
+Attr: "parentCategoryId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "updateProductFeatureCategory"
+Attr: "productFeatureCategoryId"  type:"String"  optional:"false"
+Attr: "parentCategoryId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+
+
+Servicename: "createProductFeature"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "productFeatureTypeId"  type:"String"  optional:"false"
+Attr: "productFeatureCategoryId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "numberSpecified"  type:"BigDecimal"  optional:"true"
+Attr: "defaultAmount"  type:"BigDecimal"  optional:"true"
+Attr: "defaultSequenceNum"  type:"Long"  optional:"true"
+Attr: "abbrev"  type:"String"  optional:"true"
+Attr: "idCode"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductFeature"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "productFeatureTypeId"  type:"String"  optional:"false"
+Attr: "productFeatureCategoryId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"false"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "numberSpecified"  type:"BigDecimal"  optional:"true"
+Attr: "defaultAmount"  type:"BigDecimal"  optional:"true"
+Attr: "defaultSequenceNum"  type:"Long"  optional:"true"
+Attr: "abbrev"  type:"String"  optional:"true"
+Attr: "idCode"  type:"String"  optional:"true"
+
+
+Servicename: "applyFeatureToProduct"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "productFeatureApplTypeId"  type:"String"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "recurringAmount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateFeatureToProductApplication"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "productFeatureApplTypeId"  type:"String"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "recurringAmount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "removeFeatureFromProduct"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "applyFeatureToProductFromTypeAndCode"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureTypeId"  type:"String"  optional:"false"
+Attr: "idCode"  type:"String"  optional:"false"
+Attr: "productFeatureApplTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "thruDate"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "createProductFeatureCategoryAppl"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "productFeatureCategoryId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateProductFeatureCategoryAppl"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "productFeatureCategoryId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeProductFeatureCategoryAppl"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "productFeatureCategoryId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createProductFeatureCatGrpAppl"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "productFeatureGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateProductFeatureCatGrpAppl"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "productFeatureGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeProductFeatureCatGrpAppl"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "productFeatureGroupId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createProductFeatureGroup"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductFeatureGroup"
+Attr: "productFeatureGroupId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createProductFeatureGroupAppl"
+Attr: "productFeatureGroupId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "updateProductFeatureGroupAppl"
+Attr: "productFeatureGroupId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+
+
+Servicename: "removeProductFeatureGroupAppl"
+Attr: "productFeatureGroupId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"java.sql.Timestamp"  optional:"false"
+
+
+Servicename: "createProductFeatureIactn"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "productFeatureIdTo"  type:"String"  optional:"false"
+Attr: "productFeatureIactnTypeId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+
+
+Servicename: "removeProductFeatureIactn"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "productFeatureIdTo"  type:"String"  optional:"false"
+
+
+Servicename: "createProductFeatureType"
+Attr: "productFeatureTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductFeatureType"
+Attr: "productFeatureTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeProductFeatureType"
+Attr: "productFeatureTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductFeatureApplAttr"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+
+
+Servicename: "updateProductFeatureApplAttr"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+
+
+Servicename: "removeProductFeatureApplAttr"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFeaturePrice"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "productPriceTypeId"  type:"String"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "price"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "updateFeaturePrice"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "productPriceTypeId"  type:"String"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "price"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "deleteFeaturePrice"
+Attr: "productFeatureId"  type:"String"  optional:"false"
+Attr: "productPriceTypeId"  type:"String"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createProductFeatureApplType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productFeatureApplTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductFeatureApplType"
+Attr: "productFeatureApplTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductFeatureApplType"
+Attr: "productFeatureApplTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductFeatureIactnType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productFeatureIactnTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductFeatureIactnType"
+Attr: "productFeatureIactnTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductFeatureIactnType"
+Attr: "productFeatureIactnTypeId"  type:"String"  optional:"false"
+
+

@@ -1,0 +1,136 @@
+ofbiz_applications_party_servicedef_services_view.xml
+Servicename: "findParty"
+Attr: "extInfo"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "VIEW_INDEX"  type:"String"  optional:"true"
+Attr: "VIEW_SIZE"  type:"String"  optional:"true"
+Attr: "lookupFlag"  type:"String"  optional:"true"
+Attr: "showAll"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "partyTypeId"  type:"String"  optional:"true"
+Attr: "userLoginId"  type:"String"  optional:"true"
+Attr: "groupName"  type:"String"  optional:"true"
+Attr: "firstName"  type:"String"  optional:"true"
+Attr: "lastName"  type:"String"  optional:"true"
+Attr: "address1"  type:"String"  optional:"true"
+Attr: "address2"  type:"String"  optional:"true"
+Attr: "city"  type:"String"  optional:"true"
+Attr: "stateProvinceGeoId"  type:"String"  optional:"true"
+Attr: "postalCode"  type:"String"  optional:"true"
+Attr: "infoString"  type:"String"  optional:"true"
+Attr: "countryCode"  type:"String"  optional:"true"
+Attr: "areaCode"  type:"String"  optional:"true"
+Attr: "contactNumber"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "serialNumber"  type:"String"  optional:"true"
+Attr: "softIdentifier"  type:"String"  optional:"true"
+Attr: "partyRelationshipTypeId"  type:"String"  optional:"true"
+Attr: "ownerPartyIds"  type:"List"  optional:"true"
+Attr: "sortField"  type:"String"  optional:"true"
+
+
+Servicename: "performFindParty"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "noConditionFind"  type:"String"  optional:"true"
+Attr: "extInfo"  type:"String"  optional:"true"
+Attr: "extCond"  type:"org.apache.ofbiz.entity.condition.EntityCondition"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "partyTypeId"  type:"String"  optional:"true"
+Attr: "userLoginId"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+Attr: "groupName"  type:"String"  optional:"true"
+Attr: "firstName"  type:"String"  optional:"true"
+Attr: "lastName"  type:"String"  optional:"true"
+Attr: "address1"  type:"String"  optional:"true"
+Attr: "address2"  type:"String"  optional:"true"
+Attr: "city"  type:"String"  optional:"true"
+Attr: "stateProvinceGeoId"  type:"String"  optional:"true"
+Attr: "postalCode"  type:"String"  optional:"true"
+Attr: "infoString"  type:"String"  optional:"true"
+Attr: "countryCode"  type:"String"  optional:"true"
+Attr: "areaCode"  type:"String"  optional:"true"
+Attr: "contactNumber"  type:"String"  optional:"true"
+Attr: "idValue"  type:"String"  optional:"true"
+Attr: "partyIdentificationTypeId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "serialNumber"  type:"String"  optional:"true"
+Attr: "softIdentifier"  type:"String"  optional:"true"
+Attr: "partyRelationshipTypeId"  type:"String"  optional:"true"
+Attr: "ownerPartyIds"  type:"List"  optional:"true"
+Attr: "sortField"  type:"String"  optional:"true"
+
+
+Servicename: "getPartyContactMechValueMaps"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+Attr: "showOld"  type:"Boolean"  optional:"true"
+Attr: "userLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "getPerson"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "getPartyFromEmail"
+Attr: "email"  type:"String"  optional:"false"
+
+
+Servicename: "getPartyFromUserLogin"
+Attr: "userLoginId"  type:"String"  optional:"false"
+
+
+Servicename: "getPartyFromName"
+Attr: "firstName"  type:"String"  optional:"true"
+Attr: "lastName"  type:"String"  optional:"true"
+
+
+Servicename: "getPartyFromGroupName"
+Attr: "groupName"  type:"String"  optional:"false"
+
+
+Servicename: "getPartyFromExternalId"
+Attr: "externalId"  type:"String"  optional:"false"
+
+
+Servicename: "getPartiesByRelationship"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "relationshipName"  type:"String"  optional:"true"
+Attr: "securityGroupId"  type:"String"  optional:"true"
+Attr: "priorityTypeId"  type:"String"  optional:"true"
+Attr: "partyRelationshipTypeId"  type:"String"  optional:"true"
+Attr: "permissionsEnumId"  type:"String"  optional:"true"
+Attr: "positionTitle"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "getRelatedParties"
+Attr: "partyIdFrom"  type:"String"  optional:"false"
+Attr: "partyRelationshipTypeId"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdFromInclueAllChildTypes"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdToIncludeAllChildTypes"  type:"String"  optional:"true"
+Attr: "includeFromToSwitched"  type:"String"  optional:"true"
+Attr: "recurse"  type:"String"  optional:"true"
+Attr: "useCache"  type:"String"  optional:"true"
+
+
+Servicename: "getParentOrganizations"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "getParentsOfParents"  type:"String"  optional:"true"
+
+
+Servicename: "getChildRoleTypes"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "getPostalAddressBoundary"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+

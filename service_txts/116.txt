@@ -1,0 +1,4 @@
+ofbiz_plugins_eCommerce_servicedef_services.xml
+Servicename: "noSyntaxError"
+
+

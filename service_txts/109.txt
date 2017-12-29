@@ -1,0 +1,32 @@
+ofbiz_framework_entityext_servicedef_services_group.xml
+Servicename: "createEntityGroup"
+Attr: "entityGroupId"  type:"String"  optional:"true"
+Attr: "entityGroupName"  type:"String"  optional:"true"
+
+
+Servicename: "updateEntityGroup"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+Attr: "entityGroupName"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEntityGroup"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createEntityGroupEntry"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+Attr: "entityOrPackage"  type:"String"  optional:"false"
+Attr: "applEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "updateEntityGroupEntry"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+Attr: "entityOrPackage"  type:"String"  optional:"false"
+Attr: "applEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEntityGroupEntry"
+Attr: "entityGroupId"  type:"String"  optional:"false"
+Attr: "entityOrPackage"  type:"String"  optional:"false"
+
+

@@ -1,0 +1,163 @@
+ofbiz_framework_common_servicedef_services_test.xml
+Servicename: "testScv"
+Attr: "defaultValue"  type:"Double"  optional:"false"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testSOAPScv"
+Attr: "testing"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "blockingTestScv"
+Attr: "duration"  type:"Long"  optional:"true"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testError"
+
+
+Servicename: "testRmi"
+Attr: "defaultValue"  type:"Double"  optional:"false"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testRollback"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testCommit"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "groupTest"
+
+
+Servicename: "testHttp"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testSoap"
+Attr: "testing"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "testSoapSimple"
+Attr: "defaultValue"  type:"Double"  optional:"false"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testRemoteSoap"
+Attr: "defaultValue"  type:"Double"  optional:"false"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testRemoteSoap1"
+Attr: "ZipCode"  type:"String"  optional:"false"
+Attr: "invoke"  type:"String"  optional:"false"
+
+
+Servicename: "testRemoteSoap2"
+Attr: "CityName"  type:"String"  optional:"false"
+Attr: "invoke"  type:"String"  optional:"false"
+
+
+Servicename: "testRemoteSoap3"
+Attr: "ZipCode"  type:"String"  optional:"false"
+Attr: "invoke"  type:"String"  optional:"false"
+
+
+Servicename: "testRemoteSoap4"
+Attr: "invoke"  type:"String"  optional:"false"
+
+
+Servicename: "testGroovy"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testGroovyMethod"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testScriptEngineGroovy"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testScriptEngineGroovyMethod"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testScriptEngineJavaScript"
+Attr: "message"  type:"String"  optional:"true"
+Attr: "exampleId"  type:"String"  optional:"true"
+
+
+Servicename: "testScriptEngineJavaScriptFunction"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testJMSQueue"
+Attr: "message"  type:"String"  optional:"false"
+
+
+Servicename: "testJMSTopic"
+Attr: "message"  type:"String"  optional:"false"
+
+
+Servicename: "testMca"
+Attr: "messageWrapper"  type:"org.apache.ofbiz.service.mail.MimeMessageWrapper"  optional:"false"
+
+
+Servicename: "testRoute"
+
+
+Servicename: "simpleMapListTest"
+Attr: "listOfStrings"  type:"List"  optional:"false"
+Attr: "mapOfStrings"  type:"Map"  optional:"false"
+
+
+Servicename: "testJavaScript"
+Attr: "message"  type:"String"  optional:"true"
+
+
+Servicename: "testEntityFailure"
+
+
+Servicename: "entitySortTest"
+
+
+Servicename: "makeALotOfVisits"
+Attr: "count"  type:"Integer"  optional:"false"
+Attr: "rollback"  type:"Boolean"  optional:"true"
+
+
+Servicename: "byteBufferTest"
+Attr: "byteBuffer1"  type:"java.nio.ByteBuffer"  optional:"false"
+Attr: "saveAsFileName1"  type:"String"  optional:"false"
+Attr: "byteBuffer2"  type:"java.nio.ByteBuffer"  optional:"false"
+Attr: "saveAsFileName2"  type:"String"  optional:"false"
+
+
+Servicename: "uploadContentTest"
+Attr: "uploadFile"  type:"java.nio.ByteBuffer"  optional:"false"
+Attr: "_uploadFile_contentType"  type:"String"  optional:"false"
+Attr: "_uploadFile_fileName"  type:"String"  optional:"false"
+
+
+Servicename: "conditionReturnTrue"
+Attr: "serviceContext"  type:"Map"  optional:"false"
+Attr: "serviceName"  type:"String"  optional:"false"
+
+
+Servicename: "conditionReturnFalse"
+Attr: "serviceContext"  type:"Map"  optional:"false"
+Attr: "serviceName"  type:"String"  optional:"false"
+
+
+Servicename: "serviceStreamTest"
+Attr: "inputStream"  type:"java.io.InputStream"  optional:"false"
+Attr: "outputStream"  type:"java.io.OutputStream"  optional:"false"
+
+
+Servicename: "ping"
+Attr: "message"  type:"String"  optional:"true"
+
+

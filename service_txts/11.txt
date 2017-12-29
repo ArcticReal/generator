@@ -1,0 +1,955 @@
+ofbiz_applications_accounting_servicedef_services_ledger.xml
+Servicename: "createGlAccount"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+Attr: "glAccountClassId"  type:"String"  optional:"false"
+Attr: "glResourceTypeId"  type:"String"  optional:"false"
+Attr: "glXbrlClassId"  type:"String"  optional:"true"
+Attr: "parentGlAccountId"  type:"String"  optional:"true"
+Attr: "accountCode"  type:"String"  optional:"true"
+Attr: "accountName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlAccount"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountTypeId"  type:"String"  optional:"true"
+Attr: "glAccountClassId"  type:"String"  optional:"true"
+Attr: "glResourceTypeId"  type:"String"  optional:"true"
+Attr: "glXbrlClassId"  type:"String"  optional:"true"
+Attr: "parentGlAccountId"  type:"String"  optional:"true"
+Attr: "accountCode"  type:"String"  optional:"true"
+Attr: "accountName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "externalId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlAccount"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountOrganization"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateGlAccountOrganization"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteGlAccountOrganization"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "quickCreateAcctgTransAndEntries"
+Attr: "acctgTransTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "transactionDate"  type:"Timestamp"  optional:"true"
+Attr: "isPosted"  type:"String"  optional:"true"
+Attr: "postedDate"  type:"Timestamp"  optional:"true"
+Attr: "scheduledPostingDate"  type:"Timestamp"  optional:"true"
+Attr: "glJournalId"  type:"String"  optional:"true"
+Attr: "glFiscalTypeId"  type:"String"  optional:"true"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "voucherDate"  type:"Timestamp"  optional:"true"
+Attr: "groupStatusId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "physicalInventoryId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "receiptId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "theirAcctgTransId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "acctgTransEntryTypeId"  type:"String"  optional:"true"
+Attr: "theirPartyId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "theirProductId"  type:"String"  optional:"true"
+Attr: "glAccountTypeId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "origAmount"  type:"BigDecimal"  optional:"true"
+Attr: "origCurrencyUomId"  type:"String"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "groupId"  type:"String"  optional:"true"
+Attr: "taxId"  type:"String"  optional:"true"
+Attr: "reconcileStatusId"  type:"String"  optional:"true"
+Attr: "settlementTermId"  type:"String"  optional:"true"
+Attr: "isSummary"  type:"String"  optional:"true"
+Attr: "debitGlAccountId"  type:"String"  optional:"false"
+Attr: "creditGlAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "calculateGlJournalTrialBalance"
+Attr: "glJournalId"  type:"String"  optional:"false"
+
+
+Servicename: "postGlJournal"
+Attr: "glJournalId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlJournal"
+Attr: "glJournalName"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "updateGlJournal"
+Attr: "glJournalId"  type:"String"  optional:"false"
+Attr: "glJournalName"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlJournal"
+Attr: "glJournalId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlReconciliation"
+Attr: "glReconciliationName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "reconciledBalance"  type:"BigDecimal"  optional:"true"
+Attr: "openingBalance"  type:"BigDecimal"  optional:"true"
+Attr: "reconciledDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateGlReconciliation"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+Attr: "glReconciliationName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "reconciledBalance"  type:"BigDecimal"  optional:"true"
+Attr: "openingBalance"  type:"BigDecimal"  optional:"true"
+Attr: "reconciledDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteGlReconciliation"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlReconciliationEntry"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "acctgTransEntrySeqId"  type:"String"  optional:"false"
+Attr: "reconciledAmount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "updateGlReconciliationEntry"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "acctgTransEntrySeqId"  type:"String"  optional:"false"
+Attr: "reconciledAmount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "deleteGlReconciliationEntry"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "acctgTransEntrySeqId"  type:"String"  optional:"false"
+
+
+Servicename: "completeAcctgTransEntries"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+
+
+Servicename: "interfaceAcctgTrans"
+Attr: "acctgTransTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "transactionDate"  type:"Timestamp"  optional:"false"
+Attr: "scheduledPostingDate"  type:"Timestamp"  optional:"true"
+Attr: "glJournalId"  type:"String"  optional:"true"
+Attr: "glFiscalTypeId"  type:"String"  optional:"false"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "voucherDate"  type:"Timestamp"  optional:"true"
+Attr: "groupStatusId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "physicalInventoryId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "receiptId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "theirAcctgTransId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createAcctgTrans"
+Attr: "acctgTransTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "transactionDate"  type:"Timestamp"  optional:"true"
+Attr: "scheduledPostingDate"  type:"Timestamp"  optional:"true"
+Attr: "glJournalId"  type:"String"  optional:"true"
+Attr: "glFiscalTypeId"  type:"String"  optional:"true"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "voucherDate"  type:"Timestamp"  optional:"true"
+Attr: "groupStatusId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "physicalInventoryId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "receiptId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "theirAcctgTransId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateAcctgTrans"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "acctgTransTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "transactionDate"  type:"Timestamp"  optional:"true"
+Attr: "isPosted"  type:"String"  optional:"true"
+Attr: "postedDate"  type:"Timestamp"  optional:"true"
+Attr: "scheduledPostingDate"  type:"Timestamp"  optional:"true"
+Attr: "glJournalId"  type:"String"  optional:"true"
+Attr: "glFiscalTypeId"  type:"String"  optional:"true"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "voucherDate"  type:"Timestamp"  optional:"true"
+Attr: "groupStatusId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "physicalInventoryId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "receiptId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "theirAcctgTransId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAcctgTrans"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+
+
+Servicename: "interfaceAcctgTransEntry"
+Attr: "acctgTransEntryTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "theirPartyId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "theirProductId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "glAccountTypeId"  type:"String"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "origAmount"  type:"BigDecimal"  optional:"true"
+Attr: "origCurrencyUomId"  type:"String"  optional:"true"
+Attr: "debitCreditFlag"  type:"String"  optional:"false"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "groupId"  type:"String"  optional:"true"
+Attr: "taxId"  type:"String"  optional:"true"
+Attr: "settlementTermId"  type:"String"  optional:"true"
+Attr: "isSummary"  type:"String"  optional:"true"
+
+
+Servicename: "createAcctgTransEntry"
+Attr: "acctgTransEntryTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "theirPartyId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "theirProductId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "glAccountTypeId"  type:"String"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "origAmount"  type:"BigDecimal"  optional:"true"
+Attr: "origCurrencyUomId"  type:"String"  optional:"true"
+Attr: "debitCreditFlag"  type:"String"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "groupId"  type:"String"  optional:"true"
+Attr: "taxId"  type:"String"  optional:"true"
+Attr: "settlementTermId"  type:"String"  optional:"true"
+Attr: "isSummary"  type:"String"  optional:"true"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "purposeEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "updateAcctgTransEntry"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "acctgTransEntrySeqId"  type:"String"  optional:"false"
+Attr: "acctgTransEntryTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "theirPartyId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "theirProductId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "glAccountTypeId"  type:"String"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "origAmount"  type:"BigDecimal"  optional:"true"
+Attr: "origCurrencyUomId"  type:"String"  optional:"true"
+Attr: "debitCreditFlag"  type:"String"  optional:"true"
+Attr: "dueDate"  type:"Timestamp"  optional:"true"
+Attr: "groupId"  type:"String"  optional:"true"
+Attr: "taxId"  type:"String"  optional:"true"
+Attr: "reconcileStatusId"  type:"String"  optional:"true"
+Attr: "settlementTermId"  type:"String"  optional:"true"
+Attr: "isSummary"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAcctgTransEntry"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "acctgTransEntrySeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransAndEntries"
+Attr: "acctgTransTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "transactionDate"  type:"Timestamp"  optional:"true"
+Attr: "isPosted"  type:"String"  optional:"true"
+Attr: "postedDate"  type:"Timestamp"  optional:"true"
+Attr: "scheduledPostingDate"  type:"Timestamp"  optional:"true"
+Attr: "glJournalId"  type:"String"  optional:"true"
+Attr: "glFiscalTypeId"  type:"String"  optional:"true"
+Attr: "voucherRef"  type:"String"  optional:"true"
+Attr: "voucherDate"  type:"Timestamp"  optional:"true"
+Attr: "groupStatusId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "physicalInventoryId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "receiptId"  type:"String"  optional:"true"
+Attr: "workEffortId"  type:"String"  optional:"true"
+Attr: "theirAcctgTransId"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "acctgTransEntries"  type:"java.util.List"  optional:"false"
+
+
+Servicename: "calculateAcctgTransTrialBalance"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+
+
+Servicename: "postAcctgTrans"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "verifyOnly"  type:"String"  optional:"true"
+
+
+Servicename: "closeFinancialTimePeriod"
+Attr: "customTimePeriodId"  type:"String"  optional:"false"
+
+
+Servicename: "computeGlAccountBalanceForTimePeriod"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "customTimePeriodId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "computeAndStoreGlAccountHistoryBalance"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "customTimePeriodId"  type:"String"  optional:"false"
+
+
+Servicename: "prepareIncomeStatement"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+Attr: "glFiscalTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "getGlAccountFromAccountType"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountTypeId"  type:"String"  optional:"true"
+Attr: "acctgTransTypeId"  type:"String"  optional:"true"
+Attr: "debitCreditFlag"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "invoiceId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+
+
+Servicename: "getInventoryItemOwner"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForSalesShipmentIssuance"
+Attr: "itemIssuanceId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForCanceledSalesShipmentIssuance"
+Attr: "itemIssuanceId"  type:"String"  optional:"false"
+Attr: "canceledQuantity"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "createAcctgTransForInventoryItemCostChange"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "inventoryItemDetailSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForShipmentReceipt"
+Attr: "receiptId"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountTypeGlAccount"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "updateFinAccountTypeGlAccount"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteFinAccountTypeGlAccount"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "createVarianceReasonGlAccount"
+Attr: "varianceReasonId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "updateVarianceReasonGlAccount"
+Attr: "varianceReasonId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteVarianceReasonGlAccount"
+Attr: "varianceReasonId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForWorkEffortIssuance"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForPhysicalInventoryVariance"
+Attr: "physicalInventoryId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForWorkEffortInventoryProduced"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForWorkEffortCost"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "costComponentId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForInventoryItemOwnerChange"
+Attr: "inventoryItemId"  type:"String"  optional:"false"
+Attr: "oldOwnerPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransAndEntriesForIncomingPayment"
+Attr: "paymentId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForFixedAssetMaintIssuance"
+Attr: "itemIssuanceId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForCustomerReturnInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForPurchaseInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransForSalesInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransAndEntriesForOutgoingPayment"
+Attr: "paymentId"  type:"String"  optional:"false"
+
+
+Servicename: "copyAcctgTransAndEntries"
+Attr: "fromAcctgTransId"  type:"String"  optional:"false"
+Attr: "revert"  type:"String"  optional:"true"
+
+
+Servicename: "createAcctgTransAndEntriesForPaymentApplication"
+Attr: "paymentApplicationId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransAndEntriesForCustomerRefundPaymentApplication"
+Attr: "paymentApplicationId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyGlAccount"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "updatePartyGlAccount"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "deletePartyGlAccount"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "findCustomTimePeriods"
+Attr: "findDate"  type:"Timestamp"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "excludeNoOrganizationPeriods"  type:"String"  optional:"true"
+Attr: "onlyIncludePeriodTypeIdList"  type:"List"  optional:"true"
+
+
+Servicename: "findLastClosedDate"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "findDate"  type:"Timestamp"  optional:"true"
+Attr: "periodTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "getPreviousTimePeriod"
+Attr: "customTimePeriodId"  type:"String"  optional:"false"
+
+
+Servicename: "getAcctgTransEntriesAndTransTotal"
+Attr: "customTimePeriodStartDate"  type:"Timestamp"  optional:"false"
+Attr: "customTimePeriodEndDate"  type:"Timestamp"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "isPosted"  type:"String"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "calculateGlAccountTrialBalance"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "isPosted"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "revertAcctgTransOnCancelInvoice"
+Attr: "invoiceId"  type:"String"  optional:"false"
+
+
+Servicename: "revertAcctgTransOnRemovePaymentApplications"
+Attr: "paymentApplicationId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountCategory"
+Attr: "glAccountCategoryTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlAccountCategory"
+Attr: "glAccountCategoryId"  type:"String"  optional:"false"
+Attr: "glAccountCategoryTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createGlAccountCategoryMember"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountCategoryId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "amountPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteGlAccountCategoryMember"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountCategoryId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "updateGlAccountCategoryMember"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountCategoryId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "amountPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createGlAcctCatMemFromCostCenters"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountCategoryId"  type:"String"  optional:"false"
+Attr: "amountPercentage"  type:"BigDecimal"  optional:"true"
+Attr: "totalAmountPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "getGlAcctgAndAmountPercentage"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "getInventoryValuationList"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "productCategoryId"  type:"String"  optional:"true"
+Attr: "cogsMethodId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "setGlReconciliationStatus"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "createUpdateCostCenter"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "amountPercentageMap"  type:"Map"  optional:"true"
+
+
+Servicename: "createAcctgTransAttribute"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateAcctgTransAttribute"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAcctgTransAttribute"
+Attr: "acctgTransId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransTypeAttr"
+Attr: "acctgTransTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAcctgTransTypeAttr"
+Attr: "acctgTransTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAcctgTransTypeAttr"
+Attr: "acctgTransTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransEntryType"
+Attr: "acctgTransEntryTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateAcctgTransEntryType"
+Attr: "acctgTransEntryTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteAcctgTransEntryType"
+Attr: "acctgTransEntryTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createAcctgTransType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "acctgTransTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateAcctgTransType"
+Attr: "acctgTransTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeAcctgTransType"
+Attr: "acctgTransTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountCategoryType"
+Attr: "glAccountCategoryTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlAccountCategoryType"
+Attr: "glAccountCategoryTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlAccountCategoryType"
+Attr: "glAccountCategoryTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountClass"
+Attr: "parentClassId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "isAssetClass"  type:"String"  optional:"true"
+Attr: "glAccountClassId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlAccountClass"
+Attr: "glAccountClassId"  type:"String"  optional:"false"
+Attr: "parentClassId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "isAssetClass"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlAccountClass"
+Attr: "glAccountClassId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountGroup"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "glAccountGroupId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlAccountGroup"
+Attr: "glAccountGroupId"  type:"String"  optional:"false"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlAccountGroup"
+Attr: "glAccountGroupId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountGroupMember"
+Attr: "glAccountGroupId"  type:"String"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "updateGlAccountGroupMember"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"false"
+Attr: "glAccountGroupId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlAccountGroupMember"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountGroupType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlAccountGroupType"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlAccountGroupType"
+Attr: "glAccountGroupTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlAccountRole"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "expireGlAccountRole"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createGlAccountType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "glAccountTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlAccountType"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlAccountType"
+Attr: "glAccountTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlBudgetXref"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "allocationPercentage"  type:"BigDecimal"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "updateGlBudgetXref"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "allocationPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "expireGlBudgetXref"
+Attr: "glAccountId"  type:"String"  optional:"false"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createGlFiscalType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "glFiscalTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlFiscalType"
+Attr: "glFiscalTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlFiscalType"
+Attr: "glFiscalTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlResourceType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "glResourceTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlResourceType"
+Attr: "glResourceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlResourceType"
+Attr: "glResourceTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createGlXbrlClass"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "glXbrlClassId"  type:"String"  optional:"true"
+
+
+Servicename: "updateGlXbrlClass"
+Attr: "glXbrlClassId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteGlXbrlClass"
+Attr: "glXbrlClassId"  type:"String"  optional:"false"
+
+
+Servicename: "createSettlementTerm"
+Attr: "termName"  type:"String"  optional:"true"
+Attr: "termValue"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+Attr: "settlementTermId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSettlementTerm"
+Attr: "settlementTermId"  type:"String"  optional:"false"
+Attr: "termName"  type:"String"  optional:"true"
+Attr: "termValue"  type:"Long"  optional:"true"
+Attr: "uomId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSettlementTerm"
+Attr: "settlementTermId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductAverageCostType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "productAverageCostTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductAverageCostType"
+Attr: "productAverageCostTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductAverageCostType"
+Attr: "productAverageCostTypeId"  type:"String"  optional:"false"
+
+

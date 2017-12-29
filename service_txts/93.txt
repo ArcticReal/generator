@@ -1,0 +1,88 @@
+ofbiz_applications_product_servicedef_services_view.xml
+Servicename: "getProduct"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "getProductVariant"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "selectedFeatures"  type:"java.util.Map"  optional:"false"
+
+
+Servicename: "getProductFeatureSet"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productFeatureApplTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "getProductVariantTree"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "featureOrder"  type:"java.util.Collection"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "checkInventory"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getAllProductVariants"
+Attr: "productId"  type:"String"  optional:"false"
+
+
+Servicename: "getAssociatedProducts"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productIdTo"  type:"String"  optional:"true"
+Attr: "checkViewAllow"  type:"Boolean"  optional:"true"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "type"  type:"String"  optional:"false"
+Attr: "bidirectional"  type:"Boolean"  optional:"true"
+Attr: "sortDescending"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getProductFeatures"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "type"  type:"String"  optional:"true"
+Attr: "distinct"  type:"String"  optional:"true"
+
+
+Servicename: "getSuppliersForProduct"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "canDropShip"  type:"String"  optional:"true"
+
+
+Servicename: "convertFeaturesForSupplier"
+Attr: "productFeatures"  type:"java.util.Collection"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "getProductCategoryMembers"
+Attr: "categoryId"  type:"String"  optional:"false"
+
+
+Servicename: "getAssociatedProductsList"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "getPreviousNextProducts"
+Attr: "categoryId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "activeOnly"  type:"Boolean"  optional:"true"
+Attr: "introductionDateLimit"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "releaseDateLimit"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "orderByFields"  type:"List"  optional:"true"
+
+
+Servicename: "getProductCategoryAndLimitedMembers"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+Attr: "prodCatalogId"  type:"String"  optional:"true"
+Attr: "defaultViewSize"  type:"Integer"  optional:"false"
+Attr: "limitView"  type:"Boolean"  optional:"false"
+Attr: "checkViewAllow"  type:"Boolean"  optional:"true"
+Attr: "viewIndexString"  type:"String"  optional:"true"
+Attr: "viewSizeString"  type:"String"  optional:"true"
+Attr: "useCacheForMembers"  type:"Boolean"  optional:"true"
+Attr: "activeOnly"  type:"Boolean"  optional:"true"
+Attr: "introductionDateLimit"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "releaseDateLimit"  type:"java.sql.Timestamp"  optional:"true"
+Attr: "orderByFields"  type:"List"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+
+

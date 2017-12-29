@@ -1,0 +1,6 @@
+ofbiz_framework_testtools_servicedef_services.xml
+Servicename: "testServiceInterface"
+Attr: "test"  type:"junit.framework.Test"  optional:"false"
+Attr: "testResult"  type:"junit.framework.TestResult"  optional:"false"
+
+

@@ -1,0 +1,262 @@
+ofbiz_applications_accounting_servicedef_services_tax.xml
+Servicename: "calcTaxInterface"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "payToPartyId"  type:"String"  optional:"true"
+Attr: "billToPartyId"  type:"String"  optional:"true"
+Attr: "itemProductList"  type:"java.util.List"  optional:"false"
+Attr: "itemAmountList"  type:"java.util.List"  optional:"false"
+Attr: "itemPriceList"  type:"java.util.List"  optional:"false"
+Attr: "itemQuantityList"  type:"java.util.List"  optional:"true"
+Attr: "itemShippingList"  type:"java.util.List"  optional:"true"
+Attr: "orderShippingAmount"  type:"BigDecimal"  optional:"true"
+Attr: "orderPromotionsAmount"  type:"BigDecimal"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "calcTaxTotalForDisplayInterface"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "billToPartyId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "basePrice"  type:"BigDecimal"  optional:"false"
+Attr: "shippingPrice"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "calcTax"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "payToPartyId"  type:"String"  optional:"true"
+Attr: "billToPartyId"  type:"String"  optional:"true"
+Attr: "itemProductList"  type:"java.util.List"  optional:"false"
+Attr: "itemAmountList"  type:"java.util.List"  optional:"false"
+Attr: "itemPriceList"  type:"java.util.List"  optional:"false"
+Attr: "itemQuantityList"  type:"java.util.List"  optional:"true"
+Attr: "itemShippingList"  type:"java.util.List"  optional:"true"
+Attr: "orderShippingAmount"  type:"BigDecimal"  optional:"true"
+Attr: "orderPromotionsAmount"  type:"BigDecimal"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "calcTaxForDisplay"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "billToPartyId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "basePrice"  type:"BigDecimal"  optional:"false"
+Attr: "shippingPrice"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createTaxAuthority"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "requireTaxIdForExemption"  type:"String"  optional:"true"
+Attr: "taxIdFormatPattern"  type:"String"  optional:"true"
+Attr: "includeTaxInPrice"  type:"String"  optional:"true"
+
+
+Servicename: "updateTaxAuthority"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "requireTaxIdForExemption"  type:"String"  optional:"true"
+Attr: "taxIdFormatPattern"  type:"String"  optional:"true"
+Attr: "includeTaxInPrice"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTaxAuthority"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "createTaxAuthorityAssoc"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "toTaxAuthGeoId"  type:"String"  optional:"false"
+Attr: "toTaxAuthPartyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "taxAuthorityAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateTaxAuthorityAssoc"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "toTaxAuthGeoId"  type:"String"  optional:"false"
+Attr: "toTaxAuthPartyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "taxAuthorityAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTaxAuthorityAssoc"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "toTaxAuthGeoId"  type:"String"  optional:"false"
+Attr: "toTaxAuthPartyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createTaxAuthorityCategory"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "updateTaxAuthorityCategory"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteTaxAuthorityCategory"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "productCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "createTaxAuthorityGlAccount"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "updateTaxAuthorityGlAccount"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTaxAuthorityGlAccount"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "createTaxAuthorityRateProduct"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateTypeId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "productCategoryId"  type:"String"  optional:"true"
+Attr: "titleTransferEnumId"  type:"String"  optional:"true"
+Attr: "minItemPrice"  type:"BigDecimal"  optional:"true"
+Attr: "minPurchase"  type:"BigDecimal"  optional:"true"
+Attr: "taxShipping"  type:"String"  optional:"true"
+Attr: "taxPercentage"  type:"BigDecimal"  optional:"true"
+Attr: "taxPromotions"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateTaxAuthorityRateProduct"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"false"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateTypeId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "productCategoryId"  type:"String"  optional:"true"
+Attr: "titleTransferEnumId"  type:"String"  optional:"true"
+Attr: "minItemPrice"  type:"BigDecimal"  optional:"true"
+Attr: "minPurchase"  type:"BigDecimal"  optional:"true"
+Attr: "taxShipping"  type:"String"  optional:"true"
+Attr: "taxPercentage"  type:"BigDecimal"  optional:"true"
+Attr: "taxPromotions"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTaxAuthorityRateProduct"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyTaxAuthInfo"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "partyTaxId"  type:"String"  optional:"true"
+Attr: "isExempt"  type:"String"  optional:"true"
+Attr: "isNexus"  type:"String"  optional:"true"
+
+
+Servicename: "updatePartyTaxAuthInfo"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "partyTaxId"  type:"String"  optional:"true"
+Attr: "isExempt"  type:"String"  optional:"true"
+Attr: "isNexus"  type:"String"  optional:"true"
+
+
+Servicename: "deletePartyTaxAuthInfo"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "taxAuthGeoId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createCustomerTaxAuthInfo"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "partyTaxId"  type:"String"  optional:"true"
+Attr: "isExempt"  type:"String"  optional:"true"
+Attr: "isNexus"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "taxAuthPartyGeoIds"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"String"  optional:"true"
+
+
+Servicename: "importZipSalesTaxData"
+Attr: "taxFileLocation"  type:"String"  optional:"false"
+Attr: "ruleFileLocation"  type:"String"  optional:"false"
+
+
+Servicename: "flatZipSalesTaxCalc"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "payToPartyId"  type:"String"  optional:"true"
+Attr: "billToPartyId"  type:"String"  optional:"true"
+Attr: "itemProductList"  type:"java.util.List"  optional:"false"
+Attr: "itemAmountList"  type:"java.util.List"  optional:"false"
+Attr: "itemPriceList"  type:"java.util.List"  optional:"false"
+Attr: "itemQuantityList"  type:"java.util.List"  optional:"true"
+Attr: "itemShippingList"  type:"java.util.List"  optional:"true"
+Attr: "orderShippingAmount"  type:"BigDecimal"  optional:"true"
+Attr: "orderPromotionsAmount"  type:"BigDecimal"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "createTaxAuthorityAssocType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "taxAuthorityAssocTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateTaxAuthorityAssocType"
+Attr: "taxAuthorityAssocTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTaxAuthorityAssocType"
+Attr: "taxAuthorityAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTaxAuthorityRateType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateTaxAuthorityRateType"
+Attr: "taxAuthorityRateTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTaxAuthorityRateType"
+Attr: "taxAuthorityRateTypeId"  type:"String"  optional:"false"
+
+

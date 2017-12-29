@@ -1,0 +1,299 @@
+ofbiz_applications_order_servicedef_services_requirement.xml
+Servicename: "requirementInterface"
+Attr: "requirementTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "deliverableId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "requirementStartDate"  type:"Timestamp"  optional:"true"
+Attr: "requiredByDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedBudget"  type:"BigDecimal"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "useCase"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+
+
+Servicename: "createRequirement"
+Attr: "requirementTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "deliverableId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "requirementStartDate"  type:"Timestamp"  optional:"true"
+Attr: "requiredByDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedBudget"  type:"BigDecimal"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "useCase"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+Attr: "custRequestId"  type:"String"  optional:"true"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"true"
+Attr: "requirementId"  type:"String"  optional:"true"
+
+
+Servicename: "updateRequirement"
+Attr: "requirementTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "deliverableId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "requirementStartDate"  type:"Timestamp"  optional:"true"
+Attr: "requiredByDate"  type:"Timestamp"  optional:"true"
+Attr: "estimatedBudget"  type:"BigDecimal"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "useCase"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+Attr: "requirementId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteRequirement"
+Attr: "requirementId"  type:"String"  optional:"false"
+
+
+Servicename: "createRequirementRole"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateRequirementRole"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeRequirementRole"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createRequirementStatus"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusDate"  type:"Timestamp"  optional:"true"
+Attr: "changeByUserLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "associatedRequirementWithRequestItem"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "addRequirementTask"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "workEffortId"  type:"String"  optional:"false"
+Attr: "workReqFulfTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "getRequirementsForSupplier"
+Attr: "requirementConditions"  type:"org.apache.ofbiz.entity.condition.EntityCondition"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "unassignedRequirements"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "statusIds"  type:"List"  optional:"true"
+
+
+Servicename: "createOrderRequirementCommitment"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "checkCreateOrderRequirement"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "checkCreateStockRequirementQoh"
+Attr: "itemIssuanceId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "shipmentId"  type:"String"  optional:"true"
+Attr: "shipmentItemSeqId"  type:"String"  optional:"true"
+Attr: "fixedAssetId"  type:"String"  optional:"true"
+Attr: "maintHistSeqId"  type:"String"  optional:"true"
+Attr: "issuedByUserLoginId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "cancelQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "checkCreateStockRequirementAtp"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createRequirementFromItemATP"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "shipGroupSeqId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"false"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "checkCreateProductRequirementForFacility"
+Attr: "facilityId"  type:"String"  optional:"false"
+Attr: "defaultRequirementMethodId"  type:"String"  optional:"true"
+
+
+Servicename: "approveRequirement"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "autoAssignRequirementToSupplier"
+Attr: "requirementId"  type:"String"  optional:"false"
+
+
+Servicename: "createTransferFromRequirement"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "fromFacilityId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createAutoRequirementsForOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "createATPRequirementsForOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "updateRequirementsToOrdered"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "createDesiredFeature"
+Attr: "desiredFeatureId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "optionalInd"  type:"String"  optional:"true"
+
+
+Servicename: "updateDesiredFeature"
+Attr: "desiredFeatureId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "optionalInd"  type:"String"  optional:"true"
+
+
+Servicename: "deleteDesiredFeature"
+Attr: "desiredFeatureId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+
+
+Servicename: "createRequirementAttribute"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateRequirementAttribute"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteRequirementAttribute"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createRequirementBudgetAllocation"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateRequirementBudgetAllocation"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteRequirementBudgetAllocation"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+
+
+Servicename: "createRequirementType"
+Attr: "requirementTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateRequirementType"
+Attr: "requirementTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteRequirementType"
+Attr: "requirementTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createRequirementTypeAttr"
+Attr: "requirementTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateRequirementTypeAttr"
+Attr: "requirementTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteRequirementTypeAttr"
+Attr: "requirementTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "deleteRequirementCustRequest"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"false"
+Attr: "requirementId"  type:"String"  optional:"false"
+
+
+Servicename: "createWorkReqFulfType"
+Attr: "workReqFulfTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateWorkReqFulfType"
+Attr: "workReqFulfTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteWorkReqFulfType"
+Attr: "workReqFulfTypeId"  type:"String"  optional:"false"
+
+

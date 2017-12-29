@@ -1,0 +1,9 @@
+ofbiz_framework_common_servicedef_services_cdyne.xml
+Servicename: "cdynePostalAddressFillInCounty"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "cdyneReturnCityState"
+Attr: "zipcode"  type:"String"  optional:"true"
+
+

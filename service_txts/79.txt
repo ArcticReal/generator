@@ -1,0 +1,57 @@
+ofbiz_applications_product_servicedef_services_price.xml
+Servicename: "createQuantityBreakType"
+Attr: "quantityBreakTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateQuantityBreakType"
+Attr: "quantityBreakTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteQuantityBreakType"
+Attr: "quantityBreakTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createSaleType"
+Attr: "saleTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateSaleType"
+Attr: "saleTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSaleType"
+Attr: "saleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPricePurpose"
+Attr: "productPricePurposeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPricePurpose"
+Attr: "productPricePurposeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPricePurpose"
+Attr: "productPricePurposeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProductPriceType"
+Attr: "productPriceTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateProductPriceType"
+Attr: "productPriceTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProductPriceType"
+Attr: "productPriceTypeId"  type:"String"  optional:"false"
+
+

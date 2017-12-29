@@ -1,0 +1,307 @@
+ofbiz_applications_accounting_servicedef_services_budget.xml
+Servicename: "createBudget"
+Attr: "budgetId"  type:"String"  optional:"true"
+Attr: "budgetTypeId"  type:"String"  optional:"true"
+Attr: "customTimePeriodId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudget"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetTypeId"  type:"String"  optional:"true"
+Attr: "customTimePeriodId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "createBudgetStatus"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "changeByUserLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetStatus"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusDate"  type:"Timestamp"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "changeByUserLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "createBudgetItem"
+Attr: "budgetItemTypeId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "purpose"  type:"String"  optional:"true"
+Attr: "justification"  type:"String"  optional:"true"
+Attr: "budgetId"  type:"String"  optional:"false"
+
+
+Servicename: "updateBudgetItem"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "budgetItemTypeId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "purpose"  type:"String"  optional:"true"
+Attr: "justification"  type:"String"  optional:"true"
+
+
+Servicename: "removeBudgetItem"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetRole"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "removeBudgetRole"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetReview"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "budgetReviewResultTypeId"  type:"String"  optional:"false"
+Attr: "reviewDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "removeBudgetReview"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetReviewId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "budgetReviewResultTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetType"
+Attr: "budgetTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetType"
+Attr: "budgetTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteBudgetType"
+Attr: "budgetTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createBudgetItemAttribute"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetItemAttribute"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteBudgetItemAttribute"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetItemType"
+Attr: "budgetItemTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetItemType"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "removeBudgetItemType"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetItemTypeAttr"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetItemTypeAttr"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteBudgetItemTypeAttr"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetReviewResultType"
+Attr: "budgetReviewResultTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetReviewResultType"
+Attr: "budgetReviewResultTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+
+
+Servicename: "deleteBudgetReviewResultType"
+Attr: "budgetReviewResultTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetRevision"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "revisionSeqId"  type:"String"  optional:"false"
+Attr: "dateRevised"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateBudgetRevision"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "revisionSeqId"  type:"String"  optional:"false"
+Attr: "dateRevised"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteBudgetRevision"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "revisionSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetScenario"
+Attr: "budgetScenarioId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetScenario"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteBudgetScenario"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "createBudgetRevisionImpact"
+Attr: "revisedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "addDeleteFlag"  type:"String"  optional:"true"
+Attr: "revisionReason"  type:"String"  optional:"true"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "revisionSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "updateBudgetRevisionImpact"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "revisionSeqId"  type:"String"  optional:"false"
+Attr: "revisedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "addDeleteFlag"  type:"String"  optional:"true"
+Attr: "revisionReason"  type:"String"  optional:"true"
+
+
+Servicename: "removeBudgetRevisionImpact"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "budgetItemSeqId"  type:"String"  optional:"false"
+Attr: "revisionSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetScenarioRule"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "amountChange"  type:"BigDecimal"  optional:"true"
+Attr: "percentageChange"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateBudgetScenarioRule"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+Attr: "amountChange"  type:"BigDecimal"  optional:"true"
+Attr: "percentageChange"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteBudgetScenarioRule"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+Attr: "budgetItemTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetAttribute"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetAttribute"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "removeBudgetAttribute"
+Attr: "budgetId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetTypeAttr"
+Attr: "budgetTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateBudgetTypeAttr"
+Attr: "budgetTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteBudgetTypeAttr"
+Attr: "budgetTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createBudgetScenarioApplication"
+Attr: "budgetScenarioApplicId"  type:"String"  optional:"false"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+Attr: "budgetId"  type:"String"  optional:"true"
+Attr: "budgetItemSeqId"  type:"String"  optional:"true"
+Attr: "amountChange"  type:"BigDecimal"  optional:"true"
+Attr: "percentageChange"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateBudgetScenarioApplication"
+Attr: "budgetScenarioApplicId"  type:"String"  optional:"false"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+Attr: "budgetId"  type:"String"  optional:"true"
+Attr: "budgetItemSeqId"  type:"String"  optional:"true"
+Attr: "amountChange"  type:"BigDecimal"  optional:"true"
+Attr: "percentageChange"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteBudgetScenarioApplication"
+Attr: "budgetScenarioApplicId"  type:"String"  optional:"false"
+Attr: "budgetScenarioId"  type:"String"  optional:"false"
+
+

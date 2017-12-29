@@ -1,0 +1,465 @@
+ofbiz_framework_entityext_servicedef_services.xml
+Servicename: "watchEntity"
+Attr: "newValue"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "fieldName"  type:"String"  optional:"true"
+
+
+Servicename: "distributedClearAllEntityCaches"
+
+
+Servicename: "distributedClearAllEntityCaches"
+
+
+Servicename: "clearAllEntityCaches"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "distributedClearCacheLineByValue"
+Attr: "value"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "distributedClearCacheLineByValue"
+Attr: "value"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "clearCacheLineByValue"
+Attr: "value"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "distributedClearCacheLineByDummyPK"
+Attr: "dummyPK"  type:"GenericEntity"  optional:"false"
+
+
+Servicename: "distributedClearCacheLineByDummyPK"
+Attr: "dummyPK"  type:"GenericEntity"  optional:"false"
+
+
+Servicename: "clearCacheLineByDummyPK"
+Attr: "dummyPK"  type:"GenericEntity"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "distributedClearCacheLineByPrimaryKey"
+Attr: "primaryKey"  type:"GenericPK"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "distributedClearCacheLineByPrimaryKey"
+Attr: "primaryKey"  type:"GenericPK"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "clearCacheLineByPrimaryKey"
+Attr: "primaryKey"  type:"GenericPK"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "distributedClearCacheLineByCondition"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "condition"  type:"org.apache.ofbiz.entity.condition.EntityCondition"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "clearCacheLineByCondition"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "condition"  type:"org.apache.ofbiz.entity.condition.EntityCondition"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "localhostClearAllEntityCaches"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "localhostClearCacheLineByValue"
+Attr: "value"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "localhostClearCacheLineByDummyPK"
+Attr: "dummyPK"  type:"GenericEntity"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "localhostClearCacheLineByPrimaryKey"
+Attr: "primaryKey"  type:"GenericPK"  optional:"false"
+Attr: "distribute"  type:"Boolean"  optional:"true"
+
+
+Servicename: "rebuildEntityIndexesAndKeys"
+Attr: "groupName"  type:"String"  optional:"false"
+Attr: "fixColSizes"  type:"Boolean"  optional:"true"
+
+
+Servicename: "importEntityFileDirectory"
+Attr: "rootDirectory"  type:"String"  optional:"false"
+Attr: "delimiter"  type:"String"  optional:"true"
+
+
+Servicename: "importDelimitedEntityFile"
+Attr: "file"  type:"java.io.File"  optional:"false"
+Attr: "delimiter"  type:"String"  optional:"true"
+
+
+Servicename: "unwrapByteWrappers"
+Attr: "entityName"  type:"String"  optional:"false"
+Attr: "fieldName"  type:"String"  optional:"false"
+
+
+Servicename: "reencryptPrivateKeys"
+Attr: "oldKey"  type:"String"  optional:"true"
+Attr: "newKey"  type:"String"  optional:"true"
+
+
+Servicename: "reencryptFields"
+Attr: "groupName"  type:"String"  optional:"true"
+
+
+Servicename: "createEntitySync"
+Attr: "runStatusId"  type:"String"  optional:"true"
+Attr: "lastSuccessfulSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "lastHistoryStartDate"  type:"Timestamp"  optional:"true"
+Attr: "preOfflineSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "offlineSyncSplitMillis"  type:"Long"  optional:"true"
+Attr: "syncSplitMillis"  type:"Long"  optional:"true"
+Attr: "syncEndBufferMillis"  type:"Long"  optional:"true"
+Attr: "maxRunningNoUpdateMillis"  type:"Long"  optional:"true"
+Attr: "targetServiceName"  type:"String"  optional:"true"
+Attr: "targetDelegatorName"  type:"String"  optional:"true"
+Attr: "keepRemoveInfoHours"  type:"BigDecimal"  optional:"true"
+Attr: "forPullOnly"  type:"String"  optional:"true"
+Attr: "forPushOnly"  type:"String"  optional:"true"
+
+
+Servicename: "updateEntitySync"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "runStatusId"  type:"String"  optional:"true"
+Attr: "lastSuccessfulSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "lastHistoryStartDate"  type:"Timestamp"  optional:"true"
+Attr: "preOfflineSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "offlineSyncSplitMillis"  type:"Long"  optional:"true"
+Attr: "syncSplitMillis"  type:"Long"  optional:"true"
+Attr: "syncEndBufferMillis"  type:"Long"  optional:"true"
+Attr: "maxRunningNoUpdateMillis"  type:"Long"  optional:"true"
+Attr: "targetServiceName"  type:"String"  optional:"true"
+Attr: "targetDelegatorName"  type:"String"  optional:"true"
+Attr: "keepRemoveInfoHours"  type:"BigDecimal"  optional:"true"
+Attr: "forPullOnly"  type:"String"  optional:"true"
+Attr: "forPushOnly"  type:"String"  optional:"true"
+
+
+Servicename: "createEntitySyncInclude"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "entityOrPackage"  type:"String"  optional:"false"
+Attr: "applEnumId"  type:"String"  optional:"false"
+
+
+Servicename: "updateEntitySyncInclude"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "entityOrPackage"  type:"String"  optional:"false"
+Attr: "applEnumId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEntitySyncInclude"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "entityOrPackage"  type:"String"  optional:"false"
+
+
+Servicename: "updateEntitySyncRunning"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "runStatusId"  type:"String"  optional:"true"
+Attr: "lastSuccessfulSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "lastHistoryStartDate"  type:"Timestamp"  optional:"true"
+Attr: "preOfflineSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "offlineSyncSplitMillis"  type:"Long"  optional:"true"
+Attr: "syncSplitMillis"  type:"Long"  optional:"true"
+Attr: "syncEndBufferMillis"  type:"Long"  optional:"true"
+Attr: "maxRunningNoUpdateMillis"  type:"Long"  optional:"true"
+Attr: "targetServiceName"  type:"String"  optional:"true"
+Attr: "targetDelegatorName"  type:"String"  optional:"true"
+Attr: "keepRemoveInfoHours"  type:"BigDecimal"  optional:"true"
+Attr: "forPullOnly"  type:"String"  optional:"true"
+Attr: "forPushOnly"  type:"String"  optional:"true"
+
+
+Servicename: "createEntitySyncHistory"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "runStatusId"  type:"String"  optional:"true"
+Attr: "beginningSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "lastSuccessfulSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "lastCandidateEndTime"  type:"Timestamp"  optional:"true"
+Attr: "lastSplitStartTime"  type:"Long"  optional:"true"
+Attr: "toCreateInserted"  type:"Long"  optional:"true"
+Attr: "toCreateUpdated"  type:"Long"  optional:"true"
+Attr: "toCreateNotUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreInserted"  type:"Long"  optional:"true"
+Attr: "toStoreUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreNotUpdated"  type:"Long"  optional:"true"
+Attr: "toRemoveDeleted"  type:"Long"  optional:"true"
+Attr: "toRemoveAlreadyDeleted"  type:"Long"  optional:"true"
+Attr: "totalRowsExported"  type:"Long"  optional:"true"
+Attr: "totalRowsToCreate"  type:"Long"  optional:"true"
+Attr: "totalRowsToStore"  type:"Long"  optional:"true"
+Attr: "totalRowsToRemove"  type:"Long"  optional:"true"
+Attr: "totalSplits"  type:"Long"  optional:"true"
+Attr: "totalStoreCalls"  type:"Long"  optional:"true"
+Attr: "runningTimeMillis"  type:"Long"  optional:"true"
+Attr: "perSplitMinMillis"  type:"Long"  optional:"true"
+Attr: "perSplitMaxMillis"  type:"Long"  optional:"true"
+Attr: "perSplitMinItems"  type:"Long"  optional:"true"
+Attr: "perSplitMaxItems"  type:"Long"  optional:"true"
+
+
+Servicename: "updateEntitySyncHistory"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "startDate"  type:"Timestamp"  optional:"false"
+Attr: "runStatusId"  type:"String"  optional:"true"
+Attr: "beginningSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "lastSuccessfulSynchTime"  type:"Timestamp"  optional:"true"
+Attr: "lastCandidateEndTime"  type:"Timestamp"  optional:"true"
+Attr: "lastSplitStartTime"  type:"Long"  optional:"true"
+Attr: "toCreateInserted"  type:"Long"  optional:"true"
+Attr: "toCreateUpdated"  type:"Long"  optional:"true"
+Attr: "toCreateNotUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreInserted"  type:"Long"  optional:"true"
+Attr: "toStoreUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreNotUpdated"  type:"Long"  optional:"true"
+Attr: "toRemoveDeleted"  type:"Long"  optional:"true"
+Attr: "toRemoveAlreadyDeleted"  type:"Long"  optional:"true"
+Attr: "totalRowsExported"  type:"Long"  optional:"true"
+Attr: "totalRowsToCreate"  type:"Long"  optional:"true"
+Attr: "totalRowsToStore"  type:"Long"  optional:"true"
+Attr: "totalRowsToRemove"  type:"Long"  optional:"true"
+Attr: "totalSplits"  type:"Long"  optional:"true"
+Attr: "totalStoreCalls"  type:"Long"  optional:"true"
+Attr: "runningTimeMillis"  type:"Long"  optional:"true"
+Attr: "perSplitMinMillis"  type:"Long"  optional:"true"
+Attr: "perSplitMaxMillis"  type:"Long"  optional:"true"
+Attr: "perSplitMinItems"  type:"Long"  optional:"true"
+Attr: "perSplitMaxItems"  type:"Long"  optional:"true"
+
+
+Servicename: "deleteEntitySyncHistory"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "startDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "updateOfflineEntitySync"
+
+
+Servicename: "cleanSyncRemoveInfo"
+
+
+Servicename: "resetEntitySyncStatusToNotStarted"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+
+
+Servicename: "runOfflineEntitySync"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "fileName"  type:"String"  optional:"true"
+
+
+Servicename: "loadOfflineEntitySyncData"
+Attr: "xmlFileName"  type:"String"  optional:"false"
+
+
+Servicename: "runEntitySync"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+
+
+Servicename: "storeEntitySyncData"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "valuesToCreate"  type:"List"  optional:"false"
+Attr: "valuesToStore"  type:"List"  optional:"false"
+Attr: "keysToRemove"  type:"List"  optional:"false"
+Attr: "delegatorName"  type:"String"  optional:"true"
+
+
+Servicename: "runPullEntitySync"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "remotePullAndReportEntitySyncDataName"  type:"String"  optional:"false"
+Attr: "localDelegatorName"  type:"String"  optional:"true"
+Attr: "remoteDelegatorName"  type:"String"  optional:"true"
+
+
+Servicename: "pullAndReportEntitySyncData"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "delegatorName"  type:"String"  optional:"true"
+Attr: "startDate"  type:"Timestamp"  optional:"true"
+Attr: "toCreateInserted"  type:"Long"  optional:"true"
+Attr: "toCreateUpdated"  type:"Long"  optional:"true"
+Attr: "toCreateNotUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreInserted"  type:"Long"  optional:"true"
+Attr: "toStoreUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreNotUpdated"  type:"Long"  optional:"true"
+Attr: "toRemoveDeleted"  type:"Long"  optional:"true"
+Attr: "toRemoveAlreadyDeleted"  type:"Long"  optional:"true"
+
+
+Servicename: "remoteStoreEntitySyncDataHttp"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "valuesToCreate"  type:"List"  optional:"false"
+Attr: "valuesToStore"  type:"List"  optional:"false"
+Attr: "keysToRemove"  type:"List"  optional:"false"
+Attr: "delegatorName"  type:"String"  optional:"true"
+
+
+Servicename: "remoteStoreEntitySyncDataRmi"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "valuesToCreate"  type:"List"  optional:"false"
+Attr: "valuesToStore"  type:"List"  optional:"false"
+Attr: "keysToRemove"  type:"List"  optional:"false"
+Attr: "delegatorName"  type:"String"  optional:"true"
+
+
+Servicename: "remotePullAndReportEntitySyncDataHttp"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "delegatorName"  type:"String"  optional:"true"
+Attr: "startDate"  type:"Timestamp"  optional:"true"
+Attr: "toCreateInserted"  type:"Long"  optional:"true"
+Attr: "toCreateUpdated"  type:"Long"  optional:"true"
+Attr: "toCreateNotUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreInserted"  type:"Long"  optional:"true"
+Attr: "toStoreUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreNotUpdated"  type:"Long"  optional:"true"
+Attr: "toRemoveDeleted"  type:"Long"  optional:"true"
+Attr: "toRemoveAlreadyDeleted"  type:"Long"  optional:"true"
+
+
+Servicename: "remotePullAndReportEntitySyncDataRmi"
+Attr: "entitySyncId"  type:"String"  optional:"false"
+Attr: "delegatorName"  type:"String"  optional:"true"
+Attr: "startDate"  type:"Timestamp"  optional:"true"
+Attr: "toCreateInserted"  type:"Long"  optional:"true"
+Attr: "toCreateUpdated"  type:"Long"  optional:"true"
+Attr: "toCreateNotUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreInserted"  type:"Long"  optional:"true"
+Attr: "toStoreUpdated"  type:"Long"  optional:"true"
+Attr: "toStoreNotUpdated"  type:"Long"  optional:"true"
+Attr: "toRemoveDeleted"  type:"Long"  optional:"true"
+Attr: "toRemoveAlreadyDeleted"  type:"Long"  optional:"true"
+
+
+Servicename: "createTestingSubtype"
+Attr: "testingTypeId"  type:"String"  optional:"true"
+Attr: "subtypeDescription"  type:"String"  optional:"true"
+
+
+Servicename: "updateTestingSubtype"
+Attr: "testingTypeId"  type:"String"  optional:"false"
+Attr: "subtypeDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTestingSubtype"
+Attr: "testingTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createTestingType"
+Attr: "testingTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateTestingType"
+Attr: "testingTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteTestingType"
+Attr: "testingTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createUserAgentType"
+Attr: "userAgentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateUserAgentType"
+Attr: "userAgentTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteUserAgentType"
+Attr: "userAgentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createUserAgentMethodType"
+Attr: "userAgentMethodTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateUserAgentMethodType"
+Attr: "userAgentMethodTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteUserAgentMethodType"
+Attr: "userAgentMethodTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createBrowserType"
+Attr: "browserName"  type:"String"  optional:"true"
+Attr: "browserVersion"  type:"String"  optional:"true"
+Attr: "browserTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateBrowserType"
+Attr: "browserTypeId"  type:"String"  optional:"false"
+Attr: "browserName"  type:"String"  optional:"true"
+Attr: "browserVersion"  type:"String"  optional:"true"
+
+
+Servicename: "deleteBrowserType"
+Attr: "browserTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPlatformType"
+Attr: "platformName"  type:"String"  optional:"true"
+Attr: "platformVersion"  type:"String"  optional:"true"
+Attr: "platformTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePlatformType"
+Attr: "platformTypeId"  type:"String"  optional:"false"
+Attr: "platformName"  type:"String"  optional:"true"
+Attr: "platformVersion"  type:"String"  optional:"true"
+
+
+Servicename: "deletePlatformType"
+Attr: "platformTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createProtocolType"
+Attr: "protocolName"  type:"String"  optional:"true"
+Attr: "protocolTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateProtocolType"
+Attr: "protocolTypeId"  type:"String"  optional:"false"
+Attr: "protocolName"  type:"String"  optional:"true"
+
+
+Servicename: "deleteProtocolType"
+Attr: "protocolTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createServerHitType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "hitTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateServerHitType"
+Attr: "hitTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteServerHitType"
+Attr: "hitTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "entitySyncPermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+
+

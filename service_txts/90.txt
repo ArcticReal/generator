@@ -1,0 +1,45 @@
+ofbiz_applications_product_servicedef_services_supplier.xml
+Servicename: "createReorderGuideline"
+Attr: "reorderGuidelineId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "reorderQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "reorderLevel"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateReorderGuideline"
+Attr: "reorderGuidelineId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "facilityId"  type:"String"  optional:"true"
+Attr: "geoId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "reorderQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "reorderLevel"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteReorderGuideline"
+Attr: "reorderGuidelineId"  type:"String"  optional:"false"
+
+
+Servicename: "createSupplierRatingType"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "supplierRatingTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateSupplierRatingType"
+Attr: "supplierRatingTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteSupplierRatingType"
+Attr: "supplierRatingTypeId"  type:"String"  optional:"false"
+
+

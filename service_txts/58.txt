@@ -1,0 +1,372 @@
+ofbiz_applications_order_servicedef_services_request.xml
+Servicename: "custRequestPermissionCheck"
+Attr: "mainAction"  type:"String"  optional:"true"
+Attr: "primaryPermission"  type:"String"  optional:"true"
+Attr: "altPermission"  type:"String"  optional:"true"
+Attr: "resourceDescription"  type:"String"  optional:"true"
+Attr: "fromPartyId"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequest"
+Attr: "custRequestId"  type:"String"  optional:"true"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "custRequestCategoryId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "fromPartyId"  type:"String"  optional:"true"
+Attr: "priority"  type:"Long"  optional:"true"
+Attr: "custRequestDate"  type:"Timestamp"  optional:"true"
+Attr: "responseRequiredDate"  type:"Timestamp"  optional:"true"
+Attr: "custRequestName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "maximumAmountUomId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "salesChannelEnumId"  type:"String"  optional:"true"
+Attr: "fulfillContactMechId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "openDateTime"  type:"Timestamp"  optional:"true"
+Attr: "closedDateTime"  type:"Timestamp"  optional:"true"
+Attr: "internalComment"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"true"
+Attr: "custRequestResolutionId"  type:"String"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "requiredByDate"  type:"Timestamp"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "selectedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "maximumAmount"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "story"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustRequest"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"false"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "custRequestCategoryId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "fromPartyId"  type:"String"  optional:"true"
+Attr: "priority"  type:"Long"  optional:"true"
+Attr: "custRequestDate"  type:"Timestamp"  optional:"true"
+Attr: "responseRequiredDate"  type:"Timestamp"  optional:"true"
+Attr: "custRequestName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "maximumAmountUomId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "salesChannelEnumId"  type:"String"  optional:"true"
+Attr: "fulfillContactMechId"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "openDateTime"  type:"Timestamp"  optional:"true"
+Attr: "closedDateTime"  type:"Timestamp"  optional:"true"
+Attr: "internalComment"  type:"String"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "story"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustRequest"
+Attr: "custRequestId"  type:"String"  optional:"false"
+
+
+Servicename: "createCustRequestAttribute"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"String"  optional:"false"
+
+
+Servicename: "updateCustRequestAttribute"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"String"  optional:"false"
+
+
+Servicename: "createCustRequestItem"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"true"
+Attr: "custRequestResolutionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "priority"  type:"Long"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "requiredByDate"  type:"Timestamp"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "selectedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "maximumAmount"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "story"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustRequestItem"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"false"
+Attr: "custRequestResolutionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "priority"  type:"Long"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "requiredByDate"  type:"Timestamp"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "selectedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "maximumAmount"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "story"  type:"String"  optional:"true"
+
+
+Servicename: "copyCustRequestItem"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"false"
+Attr: "custRequestResolutionId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "priority"  type:"Long"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "requiredByDate"  type:"Timestamp"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "selectedAmount"  type:"BigDecimal"  optional:"true"
+Attr: "maximumAmount"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "story"  type:"String"  optional:"true"
+Attr: "custRequestIdTo"  type:"String"  optional:"true"
+Attr: "custRequestItemSeqIdTo"  type:"String"  optional:"true"
+Attr: "copyLinkedQuotes"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequestParty"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateCustRequestParty"
+Attr: "custRequestId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteCustRequestParty"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "expireCustRequestParty"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createCustRequestNote"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "noteInfo"  type:"String"  optional:"false"
+
+
+Servicename: "updateCustRequestNote"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "noteId"  type:"String"  optional:"false"
+Attr: "noteInfo"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequestItemNote"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"false"
+Attr: "note"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequestFromCart"
+Attr: "cart"  type:"org.apache.ofbiz.order.shoppingcart.ShoppingCart"  optional:"false"
+Attr: "custRequestName"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequestFromShoppingList"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+
+
+Servicename: "getCustRequestsByRole"
+Attr: "roleTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "setCustRequestStatus"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "reason"  type:"String"  optional:"true"
+Attr: "webSiteId"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequestFromCommEvent"
+Attr: "communicationEventId"  type:"String"  optional:"false"
+Attr: "communicationEventTypeId"  type:"String"  optional:"true"
+Attr: "origCommEventId"  type:"String"  optional:"true"
+Attr: "parentCommEventId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "contactMechTypeId"  type:"String"  optional:"true"
+Attr: "contactMechIdFrom"  type:"String"  optional:"true"
+Attr: "contactMechIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdFrom"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "datetimeStarted"  type:"Timestamp"  optional:"true"
+Attr: "datetimeEnded"  type:"Timestamp"  optional:"true"
+Attr: "subject"  type:"String"  optional:"true"
+Attr: "contentMimeTypeId"  type:"String"  optional:"true"
+Attr: "content"  type:"String"  optional:"true"
+Attr: "note"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "contactListId"  type:"String"  optional:"true"
+Attr: "headerString"  type:"String"  optional:"true"
+Attr: "fromString"  type:"String"  optional:"true"
+Attr: "toString"  type:"String"  optional:"true"
+Attr: "ccString"  type:"String"  optional:"true"
+Attr: "bccString"  type:"String"  optional:"true"
+Attr: "messageId"  type:"Long"  optional:"true"
+Attr: "custRequestId"  type:"String"  optional:"true"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "custRequestName"  type:"String"  optional:"true"
+Attr: "story"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequestStatus"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "custRequestId"  type:"String"  optional:"true"
+Attr: "custRequestItemSeqId"  type:"String"  optional:"true"
+Attr: "statusDate"  type:"Timestamp"  optional:"true"
+Attr: "changeByUserLoginId"  type:"String"  optional:"true"
+
+
+Servicename: "createCustRequestContent"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteCustRequestContent"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createCustRequestCategory"
+Attr: "custRequestCategoryId"  type:"String"  optional:"true"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustRequestCategory"
+Attr: "custRequestCategoryId"  type:"String"  optional:"false"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustRequestCategory"
+Attr: "custRequestCategoryId"  type:"String"  optional:"false"
+
+
+Servicename: "createCustRequestResolution"
+Attr: "custRequestResolutionId"  type:"String"  optional:"true"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustRequestResolution"
+Attr: "custRequestResolutionId"  type:"String"  optional:"false"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustRequestResolution"
+Attr: "custRequestResolutionId"  type:"String"  optional:"false"
+
+
+Servicename: "createCustRequestType"
+Attr: "custRequestTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustRequestType"
+Attr: "custRequestTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustRequestType"
+Attr: "custRequestTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createCustRequestTypeAttr"
+Attr: "custRequestTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateCustRequestTypeAttr"
+Attr: "custRequestTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCustRequestTypeAttr"
+Attr: "custRequestTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createRespondingParty"
+Attr: "respondingPartySeqId"  type:"String"  optional:"false"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "dateSent"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateRespondingParty"
+Attr: "respondingPartySeqId"  type:"String"  optional:"false"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "dateSent"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteRespondingParty"
+Attr: "respondingPartySeqId"  type:"String"  optional:"false"
+Attr: "custRequestId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+

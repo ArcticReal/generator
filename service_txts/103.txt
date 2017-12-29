@@ -1,0 +1,73 @@
+ofbiz_framework_common_servicedef_services_geo.xml
+Servicename: "createCountryTeleCode"
+Attr: "countryCode"  type:"String"  optional:"false"
+Attr: "teleCode"  type:"String"  optional:"true"
+
+
+Servicename: "updateCountryTeleCode"
+Attr: "countryCode"  type:"String"  optional:"false"
+Attr: "teleCode"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCountryTeleCode"
+Attr: "countryCode"  type:"String"  optional:"false"
+
+
+Servicename: "createCountryCapital"
+Attr: "countryCode"  type:"String"  optional:"false"
+Attr: "countryCapital"  type:"String"  optional:"true"
+
+
+Servicename: "updateCountryCapital"
+Attr: "countryCode"  type:"String"  optional:"false"
+Attr: "countryCapital"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCountryCapital"
+Attr: "countryCode"  type:"String"  optional:"false"
+
+
+Servicename: "createCountryCode"
+Attr: "countryCode"  type:"String"  optional:"false"
+Attr: "countryAbbr"  type:"String"  optional:"true"
+Attr: "countryNumber"  type:"String"  optional:"true"
+Attr: "countryName"  type:"String"  optional:"true"
+
+
+Servicename: "updateCountryCode"
+Attr: "countryCode"  type:"String"  optional:"false"
+Attr: "countryAbbr"  type:"String"  optional:"true"
+Attr: "countryNumber"  type:"String"  optional:"true"
+Attr: "countryName"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCountryCode"
+Attr: "countryCode"  type:"String"  optional:"false"
+
+
+Servicename: "createCountryAddressFormat"
+Attr: "geoId"  type:"String"  optional:"false"
+Attr: "geoAssocTypeId"  type:"String"  optional:"true"
+Attr: "requireStateProvinceId"  type:"String"  optional:"true"
+Attr: "requirePostalCode"  type:"String"  optional:"true"
+Attr: "postalCodeRegex"  type:"String"  optional:"true"
+Attr: "hasPostalCodeExt"  type:"String"  optional:"true"
+Attr: "requirePostalCodeExt"  type:"String"  optional:"true"
+Attr: "addressFormat"  type:"String"  optional:"true"
+
+
+Servicename: "updateCountryAddressFormat"
+Attr: "geoId"  type:"String"  optional:"false"
+Attr: "geoAssocTypeId"  type:"String"  optional:"true"
+Attr: "requireStateProvinceId"  type:"String"  optional:"true"
+Attr: "requirePostalCode"  type:"String"  optional:"true"
+Attr: "postalCodeRegex"  type:"String"  optional:"true"
+Attr: "hasPostalCodeExt"  type:"String"  optional:"true"
+Attr: "requirePostalCodeExt"  type:"String"  optional:"true"
+Attr: "addressFormat"  type:"String"  optional:"true"
+
+
+Servicename: "deleteCountryAddressFormat"
+Attr: "geoId"  type:"String"  optional:"false"
+
+

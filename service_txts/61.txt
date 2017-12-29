@@ -1,0 +1,633 @@
+ofbiz_applications_order_servicedef_services_return.xml
+Servicename: "quickReturnOrder"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "returnReasonId"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+Attr: "receiveReturn"  type:"Boolean"  optional:"true"
+
+
+Servicename: "createReturnHeader"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "createdBy"  type:"String"  optional:"true"
+Attr: "fromPartyId"  type:"String"  optional:"true"
+Attr: "toPartyId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "originContactMechId"  type:"String"  optional:"true"
+Attr: "destinationFacilityId"  type:"String"  optional:"true"
+Attr: "needsInventoryReceive"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "supplierRmaId"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnHeader"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "createdBy"  type:"String"  optional:"true"
+Attr: "fromPartyId"  type:"String"  optional:"true"
+Attr: "toPartyId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "originContactMechId"  type:"String"  optional:"true"
+Attr: "destinationFacilityId"  type:"String"  optional:"true"
+Attr: "needsInventoryReceive"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "supplierRmaId"  type:"String"  optional:"true"
+
+
+Servicename: "createReturnItemBilling"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"false"
+Attr: "invoiceId"  type:"String"  optional:"false"
+Attr: "invoiceItemSeqId"  type:"String"  optional:"false"
+Attr: "shipmentReceiptId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "createReturnItem"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnReasonId"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"false"
+Attr: "returnItemTypeId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "expectedItemStatus"  type:"String"  optional:"true"
+Attr: "returnQuantity"  type:"BigDecimal"  optional:"false"
+Attr: "receivedQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "returnPrice"  type:"BigDecimal"  optional:"true"
+Attr: "returnItemResponseId"  type:"String"  optional:"true"
+Attr: "includeAdjustments"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnItem"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"false"
+Attr: "returnReasonId"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "returnItemTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "expectedItemStatus"  type:"String"  optional:"true"
+Attr: "returnQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "receivedQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "returnPrice"  type:"BigDecimal"  optional:"true"
+Attr: "returnItemResponseId"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnItemsStatus"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+
+
+Servicename: "removeReturnItem"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnItemResponse"
+Attr: "orderPaymentPreferenceId"  type:"String"  optional:"true"
+Attr: "replacementOrderId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "responseAmount"  type:"BigDecimal"  optional:"true"
+Attr: "responseDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createPaymentApplicationsFromReturnItemResponse"
+Attr: "returnItemResponseId"  type:"String"  optional:"false"
+
+
+Servicename: "cancelReturnItems"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "cancelReplacementOrderItems"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "returnAdjustmentInterface"
+Attr: "returnAdjustmentId"  type:"String"  optional:"true"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "orderAdjustmentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "createReturnAdjustment"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "orderAdjustmentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnAdjustment"
+Attr: "returnAdjustmentId"  type:"String"  optional:"false"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "orderAdjustmentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "originalReturnPrice"  type:"BigDecimal"  optional:"true"
+Attr: "originalReturnQuantity"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "removeReturnAdjustment"
+Attr: "returnAdjustmentId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnAndItemOrAdjustment"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "createdBy"  type:"String"  optional:"true"
+Attr: "fromPartyId"  type:"String"  optional:"true"
+Attr: "toPartyId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "billingAccountId"  type:"String"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "originContactMechId"  type:"String"  optional:"true"
+Attr: "destinationFacilityId"  type:"String"  optional:"true"
+Attr: "needsInventoryReceive"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "supplierRmaId"  type:"String"  optional:"true"
+Attr: "returnAdjustmentId"  type:"String"  optional:"true"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "orderAdjustmentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "returnReasonId"  type:"String"  optional:"true"
+Attr: "returnItemTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "expectedItemStatus"  type:"String"  optional:"true"
+Attr: "returnQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "receivedQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "returnPrice"  type:"BigDecimal"  optional:"true"
+Attr: "returnItemResponseId"  type:"String"  optional:"true"
+
+
+Servicename: "createReturnItemOrAdjustment"
+Attr: "returnAdjustmentId"  type:"String"  optional:"true"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "orderAdjustmentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "returnReasonId"  type:"String"  optional:"true"
+Attr: "returnItemTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "expectedItemStatus"  type:"String"  optional:"true"
+Attr: "returnQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "receivedQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "returnPrice"  type:"BigDecimal"  optional:"true"
+Attr: "returnItemResponseId"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnItemOrAdjustment"
+Attr: "returnAdjustmentId"  type:"String"  optional:"true"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+Attr: "shipGroupSeqId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "orderAdjustmentId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "productPromoId"  type:"String"  optional:"true"
+Attr: "productPromoRuleId"  type:"String"  optional:"true"
+Attr: "productPromoActionSeqId"  type:"String"  optional:"true"
+Attr: "productFeatureId"  type:"String"  optional:"true"
+Attr: "correspondingProductId"  type:"String"  optional:"true"
+Attr: "taxAuthorityRateSeqId"  type:"String"  optional:"true"
+Attr: "sourceReferenceId"  type:"String"  optional:"true"
+Attr: "sourcePercentage"  type:"BigDecimal"  optional:"true"
+Attr: "customerReferenceId"  type:"String"  optional:"true"
+Attr: "primaryGeoId"  type:"String"  optional:"true"
+Attr: "secondaryGeoId"  type:"String"  optional:"true"
+Attr: "exemptAmount"  type:"BigDecimal"  optional:"true"
+Attr: "taxAuthGeoId"  type:"String"  optional:"true"
+Attr: "taxAuthPartyId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "includeInTax"  type:"String"  optional:"true"
+Attr: "includeInShipping"  type:"String"  optional:"true"
+Attr: "createdDate"  type:"Timestamp"  optional:"true"
+Attr: "createdByUserLogin"  type:"String"  optional:"true"
+Attr: "lastModifiedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastModifiedByUserLogin"  type:"String"  optional:"true"
+Attr: "returnReasonId"  type:"String"  optional:"true"
+Attr: "returnItemTypeId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "expectedItemStatus"  type:"String"  optional:"true"
+Attr: "returnQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "receivedQuantity"  type:"BigDecimal"  optional:"true"
+Attr: "returnPrice"  type:"BigDecimal"  optional:"true"
+Attr: "returnItemResponseId"  type:"String"  optional:"true"
+
+
+Servicename: "getReturnAmountByOrder"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "checkPaymentAmountForRefund"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "getReturnItemInitialCost"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "checkReturnComplete"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "sendReturnAcceptNotification"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "sendReturnCompleteNotification"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "sendReturnCancelNotification"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "autoCancelReplacementOrders"
+
+
+Servicename: "processCreditReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processRefundReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "processReplacementReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "processWaitReplacementReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processWaitReplacementReservedReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processCrossShipReplacementReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processRepairReplacementReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processReplaceImmediatelyReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processRefundOnlyReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processRefundImmediatelyReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processSubscriptionReturn"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "processRefundReturnForReplacement"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "updateReturnStatusFromReceipt"
+Attr: "returnId"  type:"String"  optional:"false"
+
+
+Servicename: "getReturnableQuantity"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "getReturnableItems"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "getOrderAvailableReturnedTotal"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "adjustment"  type:"BigDecimal"  optional:"true"
+Attr: "countNewReturnItems"  type:"Boolean"  optional:"true"
+
+
+Servicename: "refundBillingAccountPayment"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "refundAmount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "createReturnItemShipment"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"false"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentItemSeqId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "getStatusItemsForReturn"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createExchangeOrderAssoc"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "originOrderId"  type:"String"  optional:"false"
+
+
+Servicename: "addProductsBackToCategory"
+Attr: "returnId"  type:"String"  optional:"true"
+Attr: "inventoryItemId"  type:"String"  optional:"true"
+
+
+Servicename: "createReturnStatus"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"true"
+
+
+Servicename: "createReturnContactMech"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "returnItemSeqId"  type:"String"  optional:"false"
+Attr: "shipmentId"  type:"String"  optional:"false"
+Attr: "shipmentItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "updateReturnContactMech"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+Attr: "oldContactMechId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteReturnContactMech"
+Attr: "returnId"  type:"String"  optional:"false"
+Attr: "contactMechPurposeTypeId"  type:"String"  optional:"false"
+Attr: "contactMechId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnItemForRental"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnAdjustmentType"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnAdjustmentType"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteReturnAdjustmentType"
+Attr: "returnAdjustmentTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnHeaderType"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnHeaderType"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteReturnHeaderType"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnItemType"
+Attr: "returnItemTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnItemType"
+Attr: "returnItemTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteReturnItemType"
+Attr: "returnItemTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnItemTypeMap"
+Attr: "returnItemMapKey"  type:"String"  optional:"false"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+Attr: "returnItemTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnItemTypeMap"
+Attr: "returnItemMapKey"  type:"String"  optional:"false"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+Attr: "returnItemTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteReturnItemTypeMap"
+Attr: "returnItemMapKey"  type:"String"  optional:"false"
+Attr: "returnHeaderTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnReason"
+Attr: "returnReasonId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnReason"
+Attr: "returnReasonId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteReturnReason"
+Attr: "returnReasonId"  type:"String"  optional:"false"
+
+
+Servicename: "createReturnType"
+Attr: "returnTypeId"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+
+
+Servicename: "updateReturnType"
+Attr: "returnTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "sequenceId"  type:"String"  optional:"true"
+
+
+Servicename: "deleteReturnType"
+Attr: "returnTypeId"  type:"String"  optional:"false"
+
+

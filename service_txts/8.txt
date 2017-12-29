@@ -1,0 +1,604 @@
+ofbiz_applications_accounting_servicedef_services_finaccount.xml
+Servicename: "createFinAccount"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "finAccountTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "finAccountName"  type:"String"  optional:"true"
+Attr: "finAccountCode"  type:"String"  optional:"true"
+Attr: "finAccountPin"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "postToGlAccountId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "isRefundable"  type:"String"  optional:"true"
+Attr: "replenishPaymentId"  type:"String"  optional:"true"
+Attr: "replenishLevel"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateFinAccount"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "finAccountTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "finAccountName"  type:"String"  optional:"true"
+Attr: "finAccountCode"  type:"String"  optional:"true"
+Attr: "finAccountPin"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "postToGlAccountId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "isRefundable"  type:"String"  optional:"true"
+Attr: "replenishPaymentId"  type:"String"  optional:"true"
+Attr: "replenishLevel"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteFinAccount"
+Attr: "finAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "updateFinAccountBalancesFromTrans"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+
+
+Servicename: "updateFinAccountBalancesFromAuth"
+Attr: "finAccountAuthId"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountStatus"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"false"
+Attr: "statusDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "createFinAccountTrans"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "glReconciliationId"  type:"String"  optional:"true"
+Attr: "transactionDate"  type:"Timestamp"  optional:"true"
+Attr: "entryDate"  type:"Timestamp"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "glAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "postFinAccountTransToGl"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountRole"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "updateFinAccountRole"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteFinAccountRole"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "roleTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+
+
+Servicename: "createFinAccountAuth"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "authorizationDate"  type:"Timestamp"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "expireFinAccountAuth"
+Attr: "finAccountAuthId"  type:"String"  optional:"false"
+Attr: "expireDateTime"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "setFinAccountTransStatus"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+
+
+Servicename: "updatePaymentOnFinAccTransStatusSetToCancel"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+
+
+Servicename: "createFinAccountForStore"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "finAccountName"  type:"String"  optional:"true"
+Attr: "finAccountCode"  type:"String"  optional:"true"
+Attr: "finAccountPin"  type:"String"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "organizationPartyId"  type:"String"  optional:"true"
+Attr: "ownerPartyId"  type:"String"  optional:"true"
+Attr: "postToGlAccountId"  type:"String"  optional:"true"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "isRefundable"  type:"String"  optional:"true"
+Attr: "replenishPaymentId"  type:"String"  optional:"true"
+Attr: "replenishLevel"  type:"BigDecimal"  optional:"true"
+Attr: "actualBalance"  type:"BigDecimal"  optional:"true"
+Attr: "availableBalance"  type:"BigDecimal"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"false"
+
+
+Servicename: "finAccountDeposit"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "isRefund"  type:"Boolean"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "finAccountWithdraw"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "requireBalance"  type:"Boolean"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+
+
+Servicename: "finAccountRefund"
+Attr: "finAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "finAccountReplenish"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "productStoreId"  type:"String"  optional:"true"
+
+
+Servicename: "checkFinAccountBalance"
+Attr: "finAccountId"  type:"String"  optional:"false"
+
+
+Servicename: "checkFinAccountStatus"
+Attr: "finAccountAuthId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "getFinAccountTransListAndTotals"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "glReconciliationId"  type:"String"  optional:"true"
+Attr: "fromTransactionDate"  type:"Timestamp"  optional:"true"
+Attr: "thruTransactionDate"  type:"Timestamp"  optional:"true"
+Attr: "fromEntryDate"  type:"Timestamp"  optional:"true"
+Attr: "thruEntryDate"  type:"Timestamp"  optional:"true"
+Attr: "openingBalance"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "getFinAccountTransRunningTotalAndBalances"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "openingBalance"  type:"BigDecimal"  optional:"true"
+Attr: "reconciledBalance"  type:"BigDecimal"  optional:"true"
+Attr: "runningTotal"  type:"BigDecimal"  optional:"true"
+Attr: "numberOfTransactions"  type:"Long"  optional:"true"
+
+
+Servicename: "reconcileFinAccountTrans"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+Attr: "glAccountId"  type:"String"  optional:"true"
+Attr: "debitCreditFlag"  type:"String"  optional:"true"
+
+
+Servicename: "reconcileAdjustmentFinAcctgTrans"
+Attr: "finAccountTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "organizationPartyId"  type:"String"  optional:"false"
+
+
+Servicename: "reconcileDepositFinAcctgTrans"
+Attr: "finAccountTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "reconcileWithdrawalFinAcctgTrans"
+Attr: "finAccountTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "getReconciliationClosingBalance"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+
+
+Servicename: "createServiceCredit"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "finAccountName"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountAndCredit"
+Attr: "finAccountId"  type:"String"  optional:"true"
+Attr: "finAccountName"  type:"String"  optional:"true"
+Attr: "reasonEnumId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "replenishPaymentId"  type:"String"  optional:"true"
+Attr: "replenishLevel"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createPartyFinAccountFromPurchase"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "productContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "ofbFaAuthorize"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "processAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "customerIpAddress"  type:"String"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "finAccountCode"  type:"String"  optional:"true"
+Attr: "finAccountPin"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "ofbFaCapture"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "captureAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "ofbFaRelease"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "releaseAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "ofbFaRefund"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "refundAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"true"
+
+
+Servicename: "createGiftCertificate"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "initialAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "addFundsToGiftCertificate"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pinNumber"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "redeemGiftCertificate"
+Attr: "productStoreId"  type:"String"  optional:"false"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pinNumber"  type:"String"  optional:"false"
+Attr: "amount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "checkGiftCertificateBalance"
+Attr: "cardNumber"  type:"String"  optional:"false"
+Attr: "pinNumber"  type:"String"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+
+
+Servicename: "createGcFulFillmentRecord"
+Attr: "typeEnumId"  type:"String"  optional:"false"
+Attr: "merchantId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"true"
+Attr: "orderItemSeqId"  type:"String"  optional:"true"
+Attr: "surveyResponseId"  type:"String"  optional:"true"
+Attr: "cardNumber"  type:"String"  optional:"true"
+Attr: "pinNumber"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "responseCode"  type:"String"  optional:"true"
+Attr: "referenceNum"  type:"String"  optional:"true"
+Attr: "authCode"  type:"String"  optional:"true"
+
+
+Servicename: "refundGcPurchase"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"false"
+
+
+Servicename: "ofbGcProcessor"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "processAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "customerIpAddress"  type:"String"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "giftCard"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "ofbGcAuthorize"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "processAmount"  type:"BigDecimal"  optional:"false"
+Attr: "orderItems"  type:"List"  optional:"false"
+Attr: "billToParty"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "billToEmail"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "billingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "shippingAddress"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "customerIpAddress"  type:"String"  optional:"true"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+Attr: "giftCard"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "ofbGcRelease"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "releaseAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "authTrans"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "ofbGcRefund"
+Attr: "orderPaymentPreference"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+Attr: "refundAmount"  type:"BigDecimal"  optional:"false"
+Attr: "currency"  type:"String"  optional:"true"
+Attr: "paymentConfig"  type:"String"  optional:"true"
+Attr: "paymentGatewayConfigId"  type:"String"  optional:"true"
+
+
+Servicename: "ofbGcPurchase"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "productContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "ofbGcReload"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "contentId"  type:"String"  optional:"false"
+Attr: "productContentTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"false"
+Attr: "orderItem"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"false"
+
+
+Servicename: "depositWithdrawPayments"
+Attr: "paymentIds"  type:"List"  optional:"false"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "groupInOneTransaction"  type:"String"  optional:"true"
+Attr: "paymentGroupTypeId"  type:"String"  optional:"true"
+Attr: "paymentGroupName"  type:"String"  optional:"true"
+
+
+Servicename: "expirePaymentAssociationsOnFinAccountTransCancel"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+
+
+Servicename: "createPaymentAndFinAccountTrans"
+Attr: "paymentTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodTypeId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "paymentGatewayResponseId"  type:"String"  optional:"true"
+Attr: "paymentPreferenceId"  type:"String"  optional:"true"
+Attr: "partyIdFrom"  type:"String"  optional:"true"
+Attr: "partyIdTo"  type:"String"  optional:"true"
+Attr: "roleTypeIdTo"  type:"String"  optional:"true"
+Attr: "statusId"  type:"String"  optional:"true"
+Attr: "effectiveDate"  type:"Timestamp"  optional:"true"
+Attr: "paymentRefNum"  type:"String"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "comments"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"true"
+Attr: "overrideGlAccountId"  type:"String"  optional:"true"
+Attr: "actualCurrencyAmount"  type:"BigDecimal"  optional:"true"
+Attr: "actualCurrencyUomId"  type:"String"  optional:"true"
+Attr: "paymentId"  type:"String"  optional:"true"
+Attr: "isDepositWithDrawPayment"  type:"String"  optional:"true"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"false"
+Attr: "paymentGroupTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "getTransactionTotalByGlReconcileId"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+
+
+Servicename: "assignGlRecToFinAccTrans"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+
+
+Servicename: "removeFinAccountTransFromReconciliation"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+
+
+Servicename: "isGlReconciliationReconciled"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+
+
+Servicename: "cancelBankReconciliation"
+Attr: "glReconciliationId"  type:"String"  optional:"false"
+
+
+Servicename: "getAssociatedAcctgTransEntriesWithFinAccountTrans"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+
+
+Servicename: "autoFinAccountReconciliation"
+
+
+Servicename: "createFinAccountAttribute"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateFinAccountAttribute"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFinAccountAttribute"
+Attr: "finAccountId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountTransAttribute"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateFinAccountTransAttribute"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"Long"  optional:"true"
+Attr: "attrDescription"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFinAccountTransAttribute"
+Attr: "finAccountTransId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountTransType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFinAccountTransType"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFinAccountTransType"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountTransTypeAttr"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateFinAccountTransTypeAttr"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFinAccountTransTypeAttr"
+Attr: "finAccountTransTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountType"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "replenishEnumId"  type:"String"  optional:"true"
+Attr: "isRefundable"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "finAccountTypeId"  type:"String"  optional:"true"
+
+
+Servicename: "updateFinAccountType"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "replenishEnumId"  type:"String"  optional:"true"
+Attr: "isRefundable"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFinAccountType"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createFinAccountTypeAttr"
+Attr: "attrValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+
+Servicename: "updateFinAccountTypeAttr"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+Attr: "attrValue"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteFinAccountTypeAttr"
+Attr: "finAccountTypeId"  type:"String"  optional:"false"
+Attr: "attrName"  type:"String"  optional:"false"
+
+

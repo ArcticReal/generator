@@ -1,0 +1,209 @@
+ofbiz_applications_order_servicedef_services_shoppinglist.xml
+Servicename: "shoppingListInterface"
+Attr: "shoppingListTypeId"  type:"String"  optional:"true"
+Attr: "parentShoppingListId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "visitorId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "listName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "isActive"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "carrierPartyId"  type:"String"  optional:"true"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+Attr: "lastOrderedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastAdminModified"  type:"Timestamp"  optional:"true"
+Attr: "productPromoCodeId"  type:"String"  optional:"true"
+Attr: "shippingMethodString"  type:"String"  optional:"true"
+
+
+Servicename: "createShoppingList"
+Attr: "startDateTime"  type:"Timestamp"  optional:"true"
+Attr: "endDateTime"  type:"Timestamp"  optional:"true"
+Attr: "frequency"  type:"Integer"  optional:"true"
+Attr: "intervalNumber"  type:"Integer"  optional:"true"
+Attr: "shoppingListTypeId"  type:"String"  optional:"true"
+Attr: "parentShoppingListId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "visitorId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "listName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "isActive"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "carrierPartyId"  type:"String"  optional:"true"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+Attr: "lastOrderedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastAdminModified"  type:"Timestamp"  optional:"true"
+Attr: "productPromoCodeId"  type:"String"  optional:"true"
+Attr: "shippingMethodString"  type:"String"  optional:"true"
+
+
+Servicename: "updateShoppingList"
+Attr: "startDateTime"  type:"Timestamp"  optional:"true"
+Attr: "endDateTime"  type:"Timestamp"  optional:"true"
+Attr: "frequency"  type:"Integer"  optional:"true"
+Attr: "intervalNumber"  type:"Integer"  optional:"true"
+Attr: "shoppingListTypeId"  type:"String"  optional:"true"
+Attr: "parentShoppingListId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "visitorId"  type:"String"  optional:"true"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "listName"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "isPublic"  type:"String"  optional:"true"
+Attr: "isActive"  type:"String"  optional:"true"
+Attr: "currencyUom"  type:"String"  optional:"true"
+Attr: "shipmentMethodTypeId"  type:"String"  optional:"true"
+Attr: "carrierPartyId"  type:"String"  optional:"true"
+Attr: "carrierRoleTypeId"  type:"String"  optional:"true"
+Attr: "contactMechId"  type:"String"  optional:"true"
+Attr: "paymentMethodId"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+Attr: "lastOrderedDate"  type:"Timestamp"  optional:"true"
+Attr: "lastAdminModified"  type:"Timestamp"  optional:"true"
+Attr: "productPromoCodeId"  type:"String"  optional:"true"
+Attr: "shippingMethodString"  type:"String"  optional:"true"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+
+
+Servicename: "removeShoppingList"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+
+
+Servicename: "calculateShoppingListDeepTotalPrice"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "prodCatalogId"  type:"String"  optional:"false"
+Attr: "webSiteId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+Attr: "productStoreGroupId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "currencyUomId"  type:"String"  optional:"true"
+Attr: "autoUserLogin"  type:"org.apache.ofbiz.entity.GenericValue"  optional:"true"
+
+
+Servicename: "runShoppingListAutoReorder"
+
+
+Servicename: "createShoppingListRecurrence"
+Attr: "startDateTime"  type:"Timestamp"  optional:"true"
+Attr: "endDateTime"  type:"Timestamp"  optional:"true"
+Attr: "frequency"  type:"Integer"  optional:"true"
+Attr: "intervalNumber"  type:"Integer"  optional:"true"
+
+
+Servicename: "splitShipmentMethodString"
+Attr: "shippingMethodString"  type:"String"  optional:"true"
+
+
+Servicename: "makeShoppingListFromOrder"
+Attr: "startDateTime"  type:"Timestamp"  optional:"true"
+Attr: "endDateTime"  type:"Timestamp"  optional:"true"
+Attr: "frequency"  type:"Integer"  optional:"true"
+Attr: "intervalNumber"  type:"Integer"  optional:"true"
+Attr: "shoppingListTypeId"  type:"String"  optional:"true"
+Attr: "shoppingListId"  type:"String"  optional:"true"
+Attr: "orderId"  type:"String"  optional:"false"
+Attr: "partyId"  type:"String"  optional:"true"
+
+
+Servicename: "shoppingListItemInterface"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "modifiedPrice"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "quantityPurchased"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+
+
+Servicename: "createShoppingListItem"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "modifiedPrice"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "quantityPurchased"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+
+
+Servicename: "updateShoppingListItem"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "modifiedPrice"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "quantityPurchased"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "shoppingListItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "removeShoppingListItem"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "shoppingListItemSeqId"  type:"String"  optional:"false"
+
+
+Servicename: "addSuggestionsToShoppingList"
+Attr: "orderId"  type:"String"  optional:"false"
+
+
+Servicename: "addDistinctShoppingListItem"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "modifiedPrice"  type:"BigDecimal"  optional:"true"
+Attr: "reservStart"  type:"Timestamp"  optional:"true"
+Attr: "reservLength"  type:"BigDecimal"  optional:"true"
+Attr: "reservPersons"  type:"BigDecimal"  optional:"true"
+Attr: "quantityPurchased"  type:"BigDecimal"  optional:"true"
+Attr: "configId"  type:"String"  optional:"true"
+Attr: "productStoreId"  type:"String"  optional:"true"
+
+
+Servicename: "autoDeleteAutoSaveShoppingList"
+
+
+Servicename: "createShoppingListItemSurvey"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "shoppingListItemSeqId"  type:"String"  optional:"false"
+Attr: "surveyResponseId"  type:"String"  optional:"false"
+
+
+Servicename: "deleteShoppingListItemSurvey"
+Attr: "shoppingListId"  type:"String"  optional:"false"
+Attr: "shoppingListItemSeqId"  type:"String"  optional:"false"
+Attr: "surveyResponseId"  type:"String"  optional:"false"
+
+
+Servicename: "createShoppingListType"
+Attr: "shoppingListTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateShoppingListType"
+Attr: "shoppingListTypeId"  type:"String"  optional:"false"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteShoppingListType"
+Attr: "shoppingListTypeId"  type:"String"  optional:"false"
+
+

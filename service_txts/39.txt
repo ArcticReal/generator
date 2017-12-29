@@ -1,0 +1,41 @@
+ofbiz_applications_humanres_servicedef_services_employment.xml
+Servicename: "createBenefitType"
+Attr: "benefitTypeId"  type:"String"  optional:"true"
+Attr: "benefitName"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "employerPaidPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "updateBenefitType"
+Attr: "benefitTypeId"  type:"String"  optional:"false"
+Attr: "benefitName"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+Attr: "employerPaidPercentage"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "deleteBenefitType"
+Attr: "benefitTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "createEmploymentAppSourceType"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"true"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "updateEmploymentAppSourceType"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"false"
+Attr: "parentTypeId"  type:"String"  optional:"true"
+Attr: "hasTable"  type:"String"  optional:"true"
+Attr: "description"  type:"String"  optional:"true"
+
+
+Servicename: "deleteEmploymentAppSourceType"
+Attr: "employmentAppSourceTypeId"  type:"String"  optional:"false"
+
+

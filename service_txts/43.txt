@@ -1,0 +1,107 @@
+ofbiz_applications_manufacturing_servicedef_services_bom.xml
+Servicename: "createBOMAssoc"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productIdTo"  type:"String"  optional:"false"
+Attr: "productAssocTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+Attr: "sequenceNum"  type:"Long"  optional:"true"
+Attr: "reason"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "scrapFactor"  type:"BigDecimal"  optional:"true"
+Attr: "instruction"  type:"String"  optional:"true"
+Attr: "routingWorkEffortId"  type:"String"  optional:"true"
+Attr: "estimateCalcMethod"  type:"String"  optional:"true"
+Attr: "recurrenceInfoId"  type:"String"  optional:"true"
+
+
+Servicename: "copyBOMAssocs"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productIdTo"  type:"String"  optional:"true"
+Attr: "productAssocTypeId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "copyToProductId"  type:"String"  optional:"false"
+
+
+Servicename: "updateProductManufacturingRule"
+Attr: "ruleId"  type:"String"  optional:"false"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productIdFor"  type:"String"  optional:"true"
+Attr: "productIdIn"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "productIdInSubst"  type:"String"  optional:"true"
+Attr: "productFeature"  type:"String"  optional:"true"
+Attr: "ruleOperator"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "addProductManufacturingRule"
+Attr: "ruleId"  type:"String"  optional:"true"
+Attr: "productId"  type:"String"  optional:"true"
+Attr: "productIdFor"  type:"String"  optional:"true"
+Attr: "productIdIn"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "productIdInSubst"  type:"String"  optional:"true"
+Attr: "productFeature"  type:"String"  optional:"true"
+Attr: "ruleOperator"  type:"String"  optional:"true"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "thruDate"  type:"Timestamp"  optional:"true"
+
+
+Servicename: "deleteProductManufacturingRule"
+Attr: "ruleId"  type:"String"  optional:"false"
+
+
+Servicename: "getMaxDepth"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"String"  optional:"true"
+Attr: "bomType"  type:"String"  optional:"true"
+
+
+Servicename: "updateLowLevelCode"
+Attr: "productIdTo"  type:"String"  optional:"false"
+Attr: "alsoComponents"  type:"Boolean"  optional:"true"
+Attr: "alsoVariants"  type:"Boolean"  optional:"true"
+
+
+Servicename: "initLowLevelCode"
+
+
+Servicename: "searchDuplicatedAncestor"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "productIdTo"  type:"String"  optional:"false"
+Attr: "fromDate"  type:"Timestamp"  optional:"true"
+Attr: "productAssocTypeId"  type:"String"  optional:"false"
+
+
+Servicename: "getBOMTree"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "type"  type:"Integer"  optional:"true"
+Attr: "fromDate"  type:"String"  optional:"true"
+Attr: "bomType"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+
+
+Servicename: "getManufacturingComponents"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "fromDate"  type:"String"  optional:"true"
+Attr: "excludeWIPs"  type:"Boolean"  optional:"true"
+
+
+Servicename: "getProductsInPackages"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "fromDate"  type:"String"  optional:"true"
+
+
+Servicename: "getNotAssembledComponents"
+Attr: "productId"  type:"String"  optional:"false"
+Attr: "quantity"  type:"BigDecimal"  optional:"true"
+Attr: "amount"  type:"BigDecimal"  optional:"true"
+Attr: "fromDate"  type:"String"  optional:"true"
+
+
